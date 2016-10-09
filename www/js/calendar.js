@@ -3,36 +3,46 @@ var month = 1;
 var weekday = null;
 var monthcolorcode = null;
 var calerdarxml = null;
+var prevselmonth = 0;
 
 $(document).on('swipeleft', '[data-role="page"]', function(event){    
-    //if(event.handled !== true) // This will prevent event triggering more then once
-    //{    
-        // swipe using id of next page if exists
-        var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
-        if(months.length > month){
-            $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);
-            month += 1;
-            updatecalendardata();
-        }
-        
-    //    event.handled = true;
-   // }
+    var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
+    if(months.length > month){
+       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
+        nextmonth();
+    }    
     return false;         
 });
 $(document).on('swiperight', '[data-role="page"]', function(event){   
-    //if(event.handled !== true) // This will prevent event triggering more then once
-    //{      
-        if(month > 1){
-            $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
-            month -= 1;
-            updatecalendardata();
-        }
-     //   event.handled = true;
-   // }
+    if(month > 1){
+       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
+        prevmonth();
+    }
     return false;            
 });
 
+function nextmonth(){
+    var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
+    if(months.length > month){
+        prevselmonth = month;
+        month += 1;
+        updatecalendardata();
+    }
+}
+
+function prevmonth(){
+    if(month > 1){
+        prevselmonth = month;
+        month -= 1;
+        updatecalendardata();
+    }
+}
+
 function updatecalendardata(){
+    if(prevselmonth > 0){
+        $('#calheader').removeClass("month"+ prevselmonth +"-theme");
+        $('#calheader').addClass("month"+ month +"-theme");
+    }
     $('.tr-week').remove();
     var monthdatelist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date")
     var monthobj = $(calerdarxml).find("calendar[id='"+ year + "'] >  month[id='"+month+"']");
@@ -45,7 +55,7 @@ function updatecalendardata(){
     }
     
     var lastSelectedtd = null;
-    $( "td").click(function() {
+    $(".tr-week > td").click(function() {
         
         var dateval = $(this).text();
         if(!(dateval === undefined) && dateval != ""){
@@ -53,7 +63,7 @@ function updatecalendardata(){
              $(this).remove();                              
             });
             if(lastSelectedtd != null){   $(lastSelectedtd).removeAttr("style"); }
-            $(this).attr("style",'border-style: solid;border-color:' + monthcolorcode[month] +';border-width: 1px;');
+            $(this).attr("style",'border-style: solid;border-color:' + monthcolorcode[month-1] +';border-width: 1px;');
             lastSelectedtd = $(this);
             
             var datalist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date[dn='"+ dateval +"'] > d")
@@ -88,11 +98,9 @@ function getcalfooterheight(calheaderid){
     return docht - (calheaderht + 240 + 25); //documentheight -(calendar header height + calendar content height - buffer)
 }
 $( document ).on( "pageinit", "#maincalender", function() {
-    $("#calfooter").height(getcalfooterheight("#calheader"));
-    loadCalendar();
-});
-$( document ).on( "pageinit", "#maincalender2", function() {
-    $("#calfooter2").height(getcalfooterheight("#calheader2"));
+    var footerheight = getcalfooterheight("#calheader");
+    $("#calfooter").height(footerheight);
+    $("#datedatacol").height(footerheight - 80);
     loadCalendar();
 });
 
@@ -100,9 +108,16 @@ function loadCalendar(){
     if(calerdarxml != null && weekday != null){ return;  }
     
     monthcolorcode = new Array(12);
-    monthcolorcode[0]="#f6883d";monthcolorcode[1]="#f6886d";monthcolorcode[2]="#86883d";monthcolorcode[3]="#f6c83d";
+    monthcolorcode[0]="#f6883d";monthcolorcode[1]="#f6887d";monthcolorcode[2]="#f6183d";monthcolorcode[3]="#16883d";
     monthcolorcode[4]="#f68c3d";monthcolorcode[5]="#f6c83d";monthcolorcode[6]="#f6183d";monthcolorcode[7]="#f6683d";
     monthcolorcode[8]="#16883d";monthcolorcode[9]="#46883d";monthcolorcode[10]="#86883d";monthcolorcode[11]="#d6883d";
+    
+    $("#prevcalmonth").click(function() {
+        prevmonth();
+    });
+    $("#nextcalmonth").click(function() {
+        nextmonth();
+    });
     $.ajax({
     type: "GET",
     url: "data/calendar-data.xml",
