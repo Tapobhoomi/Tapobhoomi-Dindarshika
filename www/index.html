@@ -44,16 +44,11 @@
         
     <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+
     <title>Tapobhoomi Dindarshika</title>
 </head>
 <style type="text/css">
-body {
-    background: url(img/background.png);
-    background-repeat:repeat-y;
-    background-position:center center;
-    background-attachment:scroll;
-    background-size:100% 100%;
-}
 .ui-page {
     background: transparent;
 }
@@ -81,9 +76,17 @@ body {
    margin: 0 !important;
 }
 
+.calender-header{
+    height: 80px !important; 
+}
 .sriguru-ui-background{
-	background-color: #d1833f !important;
-	border-color: #c77430 !important;
+	background-color: #f6883d !important;
+	border-color: #f6883d !important;
+}
+    
+.sriguru-ui-background2{
+	background-color: #f6887d !important;
+	border-color: #f6887d !important;
 }
 
 .menu-icon-color{
@@ -99,26 +102,6 @@ body {
 	padding-top:5px
 }
 
-.top {
-    border-top:thin solid;
-    border-color:#b28722;
-}
-
-.bottom {
-    border-bottom:thin solid;
-    border-color:#b28722;
-}
-
-.left {
-    border-left:thin solid;
-    border-color:#b28722;
-}
-
-.right {
-    border-right:thin solid;
-    border-color:#b28722;
-}
-    
 .custom-btn{
     width: 50px !important;
     height:50px !important;
@@ -141,55 +124,6 @@ body {
     background-size:100% 100%;
 }
 
-.day-sunday-img {
-    background:url(img/sunday.png) center center no-repeat;    
-    background-size:100% 100%;
-}
-.day-monday-img {
-    background:url(img/monday.png) center center no-repeat;    
-    background-size:100% 100%;
-}
-.day-tuesday-img {
-    background:url(img/tuesday.png) center center no-repeat;    
-    background-size:100% 100%;
-}
-.day-wednesday-img {
-    background:url(img/wednesday.png) center center no-repeat;    
-    background-size:100% 100%;
-}
-.day-thursday-img {
-    background:url(img/thursday.png) center center no-repeat;    
-    background-size:100% 100%;
-}
-.day-friday-img {
-    background:url(img/friday.png) center center no-repeat;    
-    background-size:100%;
-}
-.day-saturday-img {
-    background:url(img/saturday.png) center center no-repeat;    
-    background-size:100% 100%;
-}
-    
-.calender-tr-1{
-    color:#104E8B;
-    background-color:#fff1f1;    
-    text-align:center;
-    vertical-align: text-middle;
-}
-    
-.calender-tr-fade{
-    color:grey;
-    background-color:silver;
-    text-align:center;
-    vertical-align: text-middle;
-}
-.calender-tr-2{
-    color:#104E8B;
-    background-color:#f4ecc8;    
-    text-align:center;
-    vertical-align: text-middle;
-}
-    
 .div-day{
     font-size:12px;
     float: left;
@@ -203,155 +137,85 @@ body {
     text-align: right;
     padding-right:10px;
 }
+.div-selected-month{
+    color:white;
+    float: left;
+    text-align: left;
+    padding-left:5px;
+    padding-top:5px;    
+    font-weight: normal;
+    font-size: 1.3em;    
+}
+.div-selected-year{
+    font-size: 0.8em;
+    color:white;       
+    padding-top:8px;
+    font-weight: normal;
+}
+.tr-week{
+    height:50px
+}
 </style>
 <body>
     
-    <div id="Read" data-role="page">
-        <div data-role="content" class="text-shadow-none">
-            <div class="ui-center-div">
-            <div data-role="controlgroup" data-type="horizontal" >
-                <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn"></a>
-                <a href="#dateonlypage" data-role="button" id="panchang-custom-btn" class="custom-btn"></a>
-                <a href="#about-page" data-role="button" id="about-custom-btn" class="custom-btn"></a>
-            </div>
-            <h5><div style="color:blue;">सुविचार : </div><div>दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h5>
-            </div>
+<div id="Read" data-role="page" style="background-color:#f6883d">
+    <div data-role="content" class="text-shadow-none">
+        <div class="ui-center-div">
+        <div data-role="controlgroup" data-type="horizontal" >
+            <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn"></a>
+            <a href="#dateonlypage" data-role="button" id="panchang-custom-btn" class="custom-btn"></a>
+            <a href="#about-page" data-role="button" id="about-custom-btn" class="custom-btn"></a>
+        </div>
+        <h5><div style="color:blue;">सुविचार : </div><div>दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h5>
         </div>
     </div>
-   <!-- <div id="dateonlypage" data-role="page">
-    <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background text-shadow-none"> 
-		<h1>सप्टेंबर २०१६</h1>
-		<a href="#MenuPanel" data-icon="bars" data-iconpos="notext" class="menu-icon-color">Menu</a>
-        <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse" data-role="button" class="sriguru-ui-background"></a>
-		<a href="#maincalender" data-iconpos="notext" class="ui-btn ui-icon-search ui-btn-icon-left menu-icon-color" style="font-size: 17px;"></a>
-	</div>
-	<div data-role="content" class="text-shadow-none">
-		<table>	
-			<tr>
-				<td style="vertical-align: top;text-align: left; padding-right: 30px;"><div style="font-size:80px;color:#104E8B">२४</div><b>आर्द्रा</b></td>
-				<td>
-					<h5><div class="date-brief-padding-top">भाद्रपद कु. ९ </div>
-					<div class="date-brief-padding-top" style="color:red">अविधवा नवमी </div>
-					<div class="date-brief-padding-top">अन्वाष्टका </div>
-					<div class="date-brief-padding-top">नवमी महालय ( श्राद्ध )</div>	
-					</h5>
-				</td>
-			</tr>	
-		</table>
-	    <h5><div style="color:blue;">सुविचार : </div><div>दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h5>
-		
-		
-	</div> 
-	
-	<div data-role="footer" data-id="persistheader"
-		 data-position="fixed">
-		<marquee style="color:black;font-size:28px;">----Advertising---</marquee>
-	</div>
+</div>   
+
+<div id="maincalender" data-role="page">
+     <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background text-shadow-none calender-header">
+          <div class="div-selected-month"></div><div class="div-selected-year">२०१६</div>
+          <div style="padding-top:30px;color:white;font-weight: normal;">
+         <table style="width:100%;text-align:center;font-size: 1em;"><tr><td width="13%">रवि</td>
+             <td width="13%">सोम</td><td width="13%">मंगळ</td><td width="13%">बुध</td><td width="13%">गुरु</td><td width="13%">शुक्</td>
+             <td width="13%">शनि</td></tr></table>
+         </div>         
+     </div>
+     <div id="calcontent" data-role="content" class="text-shadow-none" style="padding:0px !important">
+        <div style="font-weight: normal;">
+        <table id="caltb" style="width:100%;text-align:center;font-size: 1.2em; "> </table>
+        </div> 
+     </div> 
+     <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
+         <div style="height:5px;background-color:#dddddd;"></div>
+        <div style="text-transform:none;font-size: 0.9em;background-color:transparent !important;padding-left:5px;">
+            <div style="font-weight:bold;background-color: none !important;padding-top:10px;">माहीती :</div>
+            <div style="padding-top:5px;font-weight:normal" id="datedatacol"></div></div>
+     </div>
 </div>
--->
-<div id="maincalender" data-role="page" >
- <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background text-shadow-none">
- <h1>सप्टेंबर २०१६</h1>
- <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse" data-role="button" class="sriguru-ui-background"></a>
+
+<div id="maincalender2" data-role="page">
+ <div id="calheader2" data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background2 text-shadow-none calender-header">
+      <div class="div-selected-month"></div><div class="div-selected-year">२०१६</div>
+      <div style="padding-top:30px;color:white;font-weight: normal;">
+     <table style="width:100%;text-align:center;font-size: 1em;"><tr><td width="13%">रवि</td>
+         <td width="13%">सोम</td><td width="13%">मंगळ</td><td width="13%">बुध</td><td width="13%">गुरु</td><td width="13%">शुक्</td>
+         <td width="13%">शनि</td></tr></table>
+     </div>         
  </div>
-     <div data-role="content" class="text-shadow-none">
-	<table style="font-size:18px;width:100%;" cellspacing="0" cellpadding="0">
-        <tr class="calender-tr-1"><td width="17%"><div class="div-day">गुरुवार</div><div class="div-date-day">१</div></td><td>सं. स. पाळी -वेळगे -भामई </td><td width="20px"/></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">शुक्रवार</div><div class="div-date-day">२</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">शनिवार</div><div class="div-date-day">३</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">रविवार</div><div class="div-date-day">४</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">सोमवार</div><div class="div-date-day">५</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">मंगळवार</div><div class="div-date-day">६</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">बुधवार</div><div class="div-date-day">७</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">गुरुवार</div><div class="div-date-day">८</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">शुक्रवार</div><div class="div-date-day">९</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">शनिवार</div><div class="div-date-day">१०</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">रविवार</div><div class="div-date-day">११</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">सोमवार</div><div class="div-date-day">१२</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">मंगळवार</div><div class="div-date-day">१३</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">बुधवार</div><div class="div-date-day">१४</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">गुरुवार</div><div class="div-date-day">१५</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">शुक्रवार</div><div class="div-date-day">१६</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">शनिवार</div><div class="div-date-day">१७</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">रविवार</div><div class="div-date-day">१८</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">सोमवार</div><div class="div-date-day">१९</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">मंगळवार</div><div class="div-date-day">२०</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">बुधवार</div><div class="div-date-day">२१</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">गुरुवार</div><div class="div-date-day">२२</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">शुक्रवार</div><div class="div-date-day">२३</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td ><div style="font-size:80px;color:#104E8B">२४</div><b>आर्द्रा</b></td>
-				<td colspan="2">
-					<h5><div class="date-brief-padding-top">भाद्रपद कु. ९ </div>
-					<div class="date-brief-padding-top" style="color:red">अविधवा नवमी </div>
-					<div class="date-brief-padding-top">अन्वाष्टका </div>
-					<div class="date-brief-padding-top">नवमी महालय ( श्राद्ध )</div>	
-					</h5>
-				</td></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">रविवार</div><div class="div-date-day">२५</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">सोमवार</div><div class="div-date-day">२६</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">मंगळवार</div><div class="div-date-day">२७</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">बुधवार</div><div class="div-date-day">२८</div></td><td></td><td /></tr>
-        <tr class="calender-tr-1"><td><div class="div-day">गुरुवार</div><div class="div-date-day">२९</div></td><td></td><td /></tr>
-        <tr class="calender-tr-2"><td><div class="div-day">शुक्रवार</div><div class="div-date-day">३०</div></td><td></td><td /></tr>
-    </table>
-    </div>
-   <!-- <div data-role="content" class="text-shadow-none">
-	<table style="font-size:18px;width:100%;" cellspacing="0" cellpadding="0" >
-        <tr class="calender-tr-1"><td width="17%">१</td><td></td><td width="20px" class="day-thursday-img"/></tr>
-        <tr class="calender-tr-2"><td>२</td><td></td><td class="day-friday-img"/></tr>
-        <tr class="calender-tr-1"><td>३</td><td></td><td class="day-saturday-img"/></tr>
-        <tr class="calender-tr-2"><td><div style="font-size:12px;float: left;">रविवार</div><div><b>४</b></div></td><td></td><td class="day-sunday-img" /></tr>
-        <tr class="calender-tr-1"><td>५</td><td>Ganesh Chaturti <img src="img/saturday.png"/></td><td class="day-monday-img" /></tr>
-        <tr class="calender-tr-2"><td>६</td><td></td><td class="day-tuesday-img" /></tr>
-        <tr class="calender-tr-1"><td>७</td><td></td><td class="day-wednesday-img" /></tr>
-        <tr class="calender-tr-2"><td>८</td><td>Gauri Avahan</td><td class="day-thursday-img" /></tr>
-        <tr class="calender-tr-1"><td>९</td><td></td><td class="day-friday-img"/></tr>
-        <tr class="calender-tr-2"><td>१०</td><td></td><td class="day-saturday-img"/></tr>
-        <tr class="calender-tr-1"><td>११</td><td></td><td class="day-sunday-img"/></tr>
-        <tr class="calender-tr-2"><td>१२</td><td>Bakri Eid <img src="img/saturday.png"/></td><td class="day-monday-img" /></td><td class="day-monday-img"/></tr>
-        <tr class="calender-tr-1"><td>१३</td><td></td><td class="day-tuesday-img"/></tr>
-        <tr class="calender-tr-2"><td>१४</td><td></td><td class="day-wednesday-img" /></tr>
-        <tr class="calender-tr-1"><td>१५</td><td></td><td class="day-thursday-img" /></tr>
-        <tr class="calender-tr-2"><td>१६</td><td></td><td class="day-friday-img" /></tr>
-        <tr class="calender-tr-1"><td>१७</td><td></td><td class="day-saturday-img" /></tr>
-        <tr class="calender-tr-2"><td>१८</td><td></td><td class="day-sunday-img" /></tr>
-        <tr class="calender-tr-1"><td>१९</td><td></td><td class="day-monday-img"/></tr>
-        <tr class="calender-tr-2"><td>२०</td><td></td><td class="day-tuesday-img"/></tr>
-        <tr class="calender-tr-1"><td>२१</td><td></td><td class="day-wednesday-img"/></tr>
-        <tr class="calender-tr-2"><td>२२</td><td></td><td class="day-thursday-img"/></tr>
-        <tr class="calender-tr-1"><td>२३</td><td></td><td class="day-friday-img"/></tr>
-        <tr class="calender-tr-2"><td ><div style="font-size:80px;color:#104E8B">२४</div><b>आर्द्रा</b></td>
-				<td colspan="2">
-					<h5><div class="date-brief-padding-top">भाद्रपद कु. ९ </div>
-					<div class="date-brief-padding-top" style="color:red">अविधवा नवमी </div>
-					<div class="date-brief-padding-top">अन्वाष्टका </div>
-					<div class="date-brief-padding-top">नवमी महालय ( श्राद्ध )</div>	
-					</h5>
-				</td></tr>
-        <tr class="calender-tr-1"><td>२५</td><td></td><td class="day-sunday-img" /></tr>
-        <tr class="calender-tr-2"><td>२६</td><td></td><td class="day-monday-img" /></tr>
-        <tr class="calender-tr-1"><td>२७</td><td></td><td class="day-tuesday-img" /></tr>
-        <tr class="calender-tr-2"><td>२८</td><td></td><td class="day-wednesday-img" /></tr>
-        <tr class="calender-tr-1"><td>२९</td><td></td><td class="day-thursday-img"/></tr>
-        <tr class="calender-tr-2"><td>३०</td><td></td><td class="day-friday-img"/></tr>
-    </table>
-    </div>
- <!--<div data-role="content" class="text-shadow-none">
-	<table style="font-size:25px;text-align: center;width:100%;" cellspacing="0" cellpadding="0">
-		<tr style="color:#8B0000;background-color:#fff1f1"><td width="15%" style="text-align: left;padding-left:5px" height="50px" ><img src="img/sunday.png" class="ui-day-center-img"/> </td><td width="17%"></td><td width="17%">४</td><td width="17%">११</td><td width="17%">१८</td><td width="17%" style="padding-right:5px">२५</td></tr>
-		<tr style="color:#00008B;background-color:#f4ecc8"><td style="text-align: left;padding-left:5px" height="50px" ><img src="img/monday.png" class="ui-day-center-img"/>  </td><td> </td><td>५</td><td>१२</td><td>१९</td><td style="padding-right:5px">२६</td></tr>
-		<tr  style="color:#00008B;background-color:#f4ecc8"><td style="text-align: left;padding-left:5px" height="50px" ><img src="img/tuesday.png" class="ui-day-center-img"/> </td><td > </td><td>६</td><td>१३</td><td>२०</td><td style="padding-right:5px">२७</td></tr>
-		<tr  style="color:#00008B;background-color:#f4ecc8"><td style="text-align: left;padding-left:5px" height="50px" ><img src="img/wednesday.png" class="ui-day-center-img"/>  </td><td > </td><td>७</td><td>१४</td><td>२१</td><td style="padding-right:5px">२८</td></tr>
-		<tr  style="color:#00008B;background-color:#f4ecc8"><td style="text-align: left;padding-left:5px" height="50px" ><img src="img/thursday.png" class="ui-day-center-img"/></td><td >१</td><td>८</td><td>१५</td><td>२२</td><td style="padding-right:5px">२९</td></tr>
-		<tr  style="color:#00008B;background-color:#f4ecc8"><td style="text-align: left;padding-left:5px" height="50px" ><img src="img/friday.png" class="ui-day-center-img"/>   </td><td >२</td><td>९</td><td>१६</td><td>२३</td><td style="padding-right:5px">३०</td></tr>
-		<tr  style="color:#00008B;background-color:#f4ecc8"><td style="text-align: left;padding-left:5px" height="50px" ><img src="img/saturday.png" class="ui-day-center-img"/>  </td><td >३</td><td>१०</td><td>१७</td><td style="background-color:#f6e596">२४</td><td style="padding-right:5px"></td></tr>
-	</table>
- </div>-->
- <div data-role="footer" data-id="persistheader"
-		 data-position="fixed">
-		<marquee style="color:black;font-size:28px;">----Advertising---</marquee>
+ <div id="calcontent2" data-role="content" class="text-shadow-none" style="padding:0px !important">
+    <div style="font-weight: normal;">
+    <table id="caltb2" style="width:100%;text-align:center;font-size: 1.2em; ">     
+       </table>
+    </div> 
+ </div> 
+ <div id="calfooter2" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
+     <div style="height:5px;background-color:#dddddd;"></div>
+    <div style="text-transform:none;font-size: 0.9em;background-color:transparent !important;padding-left:5px;">
+        <div style="font-weight:bold;background-color: none !important;padding-top:10px;">माहीती :</div>
+        <div style="padding-top:5px;font-weight:normal" id="datedatacol2"></div></div>
  </div>
- </div>
+</div>
+
     
 <div id="about-page" data-role="page" >
  <div data-role="header" class="sriguru-ui-background">
@@ -385,7 +249,7 @@ This noble ancestry of Padmanabh Shishya Sampraday dates back to H.H. Shri Sushe
 <br/>
 <br/>
 His relentless efforts for a decade and half has put Goa on the global map in fields of various contributions for peace to the human race. One darshana and vichar of P. Swamiji converts the bad into good… the yin into Yan and each one bows in these lotus feet to quench the thirst of self- realization thro this “ Charisma” of this unique “Gurupeeth” which is the sole patent of the “ SATYA SHRESTHA ISHWARI DNYAN”… the supreme knowledge of truth.
-</h4>
+</h5>
  </div>
 </div>
 
@@ -411,14 +275,20 @@ The Hindu Sanatan Sanskriti marches forward through the Hindu Dharma Pracharaks 
 <br/>
 <br/>
 It is this devotion, Principles and philanthropic approach of each individual of Padmanabh Shishya Sampraday that has its contribution globally and would continue still for generations hereafter…
-</h4>
+</h5>
  </div>
 </div>
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript">
-        app.initialize();
-  </script>
+    
+
+    
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">  app.initialize(); </script>
+
+    
+
+
+  
 </body>
 
 </html>
