@@ -7,7 +7,7 @@ var monthcolorcode = null;
 var calerdarxml = null;
 var prevselmonth = 0;
 
-$(document).on('swipeleft', '[data-role="page"]', function(event){    
+/*$(document).on('swipeleft', '[data-role="page"]', function(event){    
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
     if(months.length > month){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
@@ -21,6 +21,24 @@ $(document).on('swiperight', '[data-role="page"]', function(event){
         prevmonth();
     }
     return false;            
+});*/
+
+$(function() {
+  $("#calcontent").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+       
+      if("left" == direction ){
+        var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
+        if(months.length > month){  nextmonth();} 
+      }else if("right" == direction){
+        if(month > 1){prevmonth();}
+      }
+    }
+  });
+
+  //Set some options later
+  $("#calcontent").swipe( {fingers:2} );
 });
 
 function nextmonth(){
