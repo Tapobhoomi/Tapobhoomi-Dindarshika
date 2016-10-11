@@ -95,13 +95,13 @@
 }
 
 .month3-theme{
-	background-color: #f6183d !important;
-	border-color: #f6183d !important;
+	background-color: #df88f0 !important;
+	border-color: #df88f0 !important;
 }
     
 .month4-theme{
-	background-color: #16883d !important;
-	border-color: #16883d !important;
+	background-color: #37ddd0 !important;
+	border-color: #37ddd0 !important;
 }
 
 .menu-icon-color{
@@ -175,6 +175,7 @@
     width: 100%;
     height: 40px;
 }
+    
 </style>
 <body>
     
@@ -191,11 +192,11 @@
     </div>
 </div>   
 
-<div id="maincalender" data-role="page">
-     <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="month1-theme text-shadow-none calender-header">
+<div id="maincalender" data-role="page" >
+     <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none calender-header">
          <table><tr><td><div class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td></tr></table>
-          <div style="padding-top:10px;color:white;font-weight: normal;">
-         <table style="width:100%;text-align:center;font-size: 1em;"><tr><td width="13%">रवि</td>
+          <div style="padding-top:5px;color:white;font-weight: normal;">
+         <table style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">रवि</td>
              <td width="13%">सोम</td><td width="13%">मंगळ</td><td width="13%">बुध</td><td width="13%">गुरु</td><td width="13%">शुक्</td>
              <td width="13%">शनि</td></tr></table>
          </div>         
@@ -212,7 +213,7 @@
             <div style="overflow:auto;padding-top:5px;font-weight:normal" id="datedatacol"></div>
             </div>
          <div style="font-weight:normal;border-top: thin solid #dddddd;" id="calfooterbar">
-             <table width='100%'><tr><td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td width='50%'></td><td id="todaydate" width='20%'></td></tr></table>
+             <table width='100%'><tr><td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td width='60%'></td><td id="currentdate" width='10%' style="border-style: solid;border-color:#f6883d;border-width: 1px;text-align:center"></td></tr></table>
          </div>
      </div>
 </div>
