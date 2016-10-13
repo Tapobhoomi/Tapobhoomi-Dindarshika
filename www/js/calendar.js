@@ -1,13 +1,13 @@
 var year = 2016;
-var month = 2;
+var month = 1;
 var currentday = 20;
-var currentmonth = 3;
+var currentmonth = 1;
 var weekday = null;
 var monthcolorcode = null;
 var calerdarxml = null;
 var prevselmonth = 0;
 
-/*$(document).on('swipeleft', '[data-role="page"]', function(event){    
+$(document).on('swipeleft', '[data-role="page"]', function(event){    
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
     if(months.length > month){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
@@ -21,24 +21,6 @@ $(document).on('swiperight', '[data-role="page"]', function(event){
         prevmonth();
     }
     return false;            
-});*/
-
-$(function() {
-  $("#calcontent").swipe( {
-    //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-       
-      if("left" == direction ){
-        var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
-        if(months.length > month){  nextmonth();} 
-      }else if("right" == direction){
-        if(month > 1){prevmonth();}
-      }
-    }
-  });
-
-  //Set some options later
-  $("#calcontent").swipe( {fingers:2} );
 });
 
 function nextmonth(){
@@ -75,32 +57,10 @@ function updatecalendardata(){
     $("#caltb").append('<tr><td id="td0'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td>     <td id="td1'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td2'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td3'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td4'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td5'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td6'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td></tr>');
     }
     
-    var lastSelectedtd = null;
-    $("#caltb").find("td").click(function() {
-        
+   
+    $("#caltb").find("td").click(function() {        
         var dateval = $(this).attr("id");
-        if(!(dateval === undefined) && dateval != ""){
-            $("#datedatacol").find("div").each(function(){
-             $(this).remove();                              
-            });
-            if(lastSelectedtd != null && !(currentmonth == month && currentday == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
-            if(!(currentmonth == month && currentday == dateval)){
-                $(this).attr("style",'border-style: solid;border-color:' + monthcolorcode[month-1] +';border-width: 1px;');
-            }
-            lastSelectedtd = $(this);
-            
-            var datalist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date[id='"+ dateval +"'] > d")
-            $(datalist).each(function(){
-                var tagstr = $(this).attr("tag");
-                var divstyle = (!(jQuery.type(tagstr) === "undefined") && tagstr.indexOf("NAX") != -1) ? " style='color:green;'" : "";
-                var divstr = "<div"+ divstyle +">";
-                divstr += $(this).text() +"</div>" ;
-                $("#datedatacol").append(divstr);
-            });
-        }
-        
-        
-        
+        selectdate(dateval);        
     });
     
     var y=0;
@@ -114,9 +74,33 @@ function updatecalendardata(){
             $(cell).attr("style",'background-color:' + monthcolorcode[month-1] +';');
         }
         if(wkday == 6){ y += 1;}
-        if(y == 5){ y = 0;}
-        
+        if(y == 5){ y = 0;}        
     });   
+    selectdate("1"); 
+}
+
+ var lastSelectedtd = null;
+function selectdate(id){
+    if(!(id === undefined) && id != ""){
+        var datetd = $("#caltb").find("td[id='"+ id +"']");
+        $("#datedatacol").find("div").each(function(){
+         $(this).remove();                              
+        });
+        if(lastSelectedtd != null && !(currentmonth == month && currentday == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
+        if(!(currentmonth == month && currentday == id)){
+            $(datetd).attr("style",'border-style: solid;border-color:' + monthcolorcode[month-1] +';border-width: 1px;');
+        }
+        lastSelectedtd = $(datetd);
+
+        var datalist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date[id='"+ id +"'] > d")
+        $(datalist).each(function(){
+            var tagstr = $(this).attr("tag");
+            var divstyle = (!(jQuery.type(tagstr) === "undefined") && tagstr.indexOf("NAX") != -1) ? " style='color:green;'" : "";
+            var divstr = "<div"+ divstyle +">";
+            divstr += $(this).text() +"</div>" ;
+            $("#datedatacol").append(divstr);
+        });
+    }
 }
 
 function calculatedimensions(){
@@ -124,11 +108,11 @@ function calculatedimensions(){
     var docwd = $(document).width();
     var calheaderht = $("#calheader").height();
     calcontentrowheight = (docwd * 13)/100;
-    var calcontentheight = (calcontentrowheight * 5) + 10;
+    var calcontentheight = (calcontentrowheight * 5) + 15;
     $("#calcontent").height(calcontentheight);
-    var footerheight =  docht - (calheaderht + calcontentheight + 15); //documentheight -(calendar header height + calendar content height - buffer)
-    $("#calfooter").height(footerheight);
-    $("#datedatacol").height(footerheight - 80);
+    var footerheight =  docht - (calheaderht + calcontentheight); //documentheight -(calendar header height + calendar content height - buffer)
+    $("#calfooter").height(footerheight -15);
+    $("#datedatacol").height(footerheight - 70);
 }
 $( document ).on( "pageinit", "#maincalender", function() {
     calculatedimensions();
@@ -144,9 +128,9 @@ function loadCalendar(){
     monthcolorcode[4]="#f68c3d";monthcolorcode[5]="#f6c83d";monthcolorcode[6]="#f6183d";monthcolorcode[7]="#f6683d";
     monthcolorcode[8]="#16883d";monthcolorcode[9]="#46883d";monthcolorcode[10]="#86883d";monthcolorcode[11]="#d6883d";
     $('#calheader').addClass("month"+ month +"-theme");
-    $("#currentdate > img").remove();
-    $("#currentdate").attr("style",'background-color:' + monthcolorcode[currentmonth-1] +';');
-    $("#currentdate").append('<img src="img/mn/'+ currentday +'.png" width="auto" height="20%"/>');
+    //$("#currentdate > img").remove();
+    //$("#currentdate").attr("style",'background-color:' + monthcolorcode[currentmonth-1] +';');
+    //$("#currentdate").append('<img src="img/mn/'+ currentday +'.png" width="auto" height="20%"/>');
     $("#prevcalmonth").click(function() {
         prevmonth();
     });
