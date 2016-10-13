@@ -7,7 +7,7 @@ var monthcolorcode = null;
 var calerdarxml = null;
 var prevselmonth = 0;
 
-$(document).on('swipeleft', '[data-role="page"]', function(event){    
+$(document).on('swipeleft', '[id="calcontent"]', function(event){    
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
     if(months.length > month){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
@@ -15,7 +15,7 @@ $(document).on('swipeleft', '[data-role="page"]', function(event){
     }    
     return false;         
 });
-$(document).on('swiperight', '[data-role="page"]', function(event){   
+$(document).on('swiperight', '[id="calcontent"]', function(event){   
     if(month > 1){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
         prevmonth();
