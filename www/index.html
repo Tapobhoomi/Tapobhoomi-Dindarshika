@@ -177,7 +177,9 @@
     width: 100%;
     height: 40px;
 }
-    
+.firstDiv, .secondDiv{
+  position: absolute;
+}    
 </style>
 <body>
     
@@ -204,14 +206,14 @@
          </div>         
      </div>
      <div id="calcontent" data-role="content" class="text-shadow-none" style="padding:0px !important">
-        <div style="font-weight: normal;">
-        <table id="caltb" style="width:100%;text-align:center;"> </table>
+        <div>
+        <table id="caltb" style="width:100%;height:100%;text-align:center;"> </table>
         </div> 
      </div> 
      <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
          <div style="height:20px;background-color:#dddddd;"><table width='100%'><tr><td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td></tr></table></div>
         <div style="text-transform:none;font-size: 1em;background-color:transparent !important;padding-left:5px;">
-            <div style="font-weight:bold;background-color: none !important;padding-top:10px;">माहीती :</div>
+            <div style="font-weight:bold;background-color: none !important;padding-top:10px;" id="datahdr">माहीती :</div>
             <div style="overflow:auto;padding-top:5px;font-weight:normal" id="datedatacol"></div>
             </div>
          <!--<div style="font-weight:normal;border-top: thin solid #dddddd;" id="calfooterbar">

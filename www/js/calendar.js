@@ -40,7 +40,6 @@ function prevmonth(){
     }
 }
 
-var calcontentrowheight = 0;
 function updatecalendardata(){
     if(prevselmonth > 0){
         $('#calheader').removeClass("month"+ prevselmonth +"-theme");
@@ -54,7 +53,7 @@ function updatecalendardata(){
     });
     
      for(var i = 0 ; i< 5;i++){
-    $("#caltb").append('<tr><td id="td0'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td>     <td id="td1'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td2'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td3'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td4'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td5'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td><td id="td6'+ i +'" width="13%" height="'+ calcontentrowheight +'px"></td></tr>');
+    $("#caltb").append('<tr height="'+caltddim+'px"><td id="td0'+ i +'" width="'+caltddim+'px"></td>     <td id="td1'+ i +'" width="'+caltddim+'px"></td><td id="td2'+ i +'" width="'+caltddim+'px"></td><td id="td3'+ i +'" width="'+caltddim+'px"></td><td id="td4'+ i +'" width="'+caltddim+'px"></td><td id="td5'+ i +'" width="'+caltddim+'px"></td><td id="td6'+ i +'" width="'+caltddim+'px"></td></tr>');
     }
     
    
@@ -67,11 +66,20 @@ function updatecalendardata(){
     $(monthdatelist).each(function(){
         var wkday = $(this).attr("wd");
         var cell = $("#td"+ wkday + y +"");
-        cell.append('<img src="img/mn/'+$(this).attr("id")+'.png" width="auto" height="60%"/>');
+        cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="img/mn/'+$(this).attr("id")+'.png" width="60%" height="auto"/></div>');
         $(cell).attr("id",$(this).attr("id"));
         
         if(currentmonth == month && currentday == $(this).attr("id")){
-            $(cell).attr("style",'background-color:' + monthcolorcode[month-1] +';');
+            $(cell).attr("style",'background:' + monthcolorcode[month-1] +';width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;border-radius:50%;');            
+            //background-color:' + monthcolorcode[month-1] +';
+        }
+        if(!($(this).attr("mncycle") === undefined)){
+                if($(this).attr("mncycle") == 0){
+                    $(cell).find('#datevalue').attr("style",'background:black;width:' + (caltddim/4) +'px; height:' + (caltddim/4)+'px;border-radius:50%;position: relative;');
+                }else if($(this).attr("mncycle") == 1){
+                    $(cell).find('#datevalue').attr("style",'border: 2px solid grey;width:' + (caltddim/4) +'px; height:' + (caltddim/4)+'px;border-radius:50%;position: relative;');
+                }
+                $(cell).find('#imgdiv').attr("style","position: relative;top:-"+ (caltddim/8) +"px");
         }
         if(wkday == 6){ y += 1;}
         if(y == 5){ y = 0;}        
@@ -81,14 +89,15 @@ function updatecalendardata(){
 
  var lastSelectedtd = null;
 function selectdate(id){
-    if(!(id === undefined) && id != ""){
+    if(!(id === undefined) && id != "" && parseInt(id, 10) > 0){
         var datetd = $("#caltb").find("td[id='"+ id +"']");
         $("#datedatacol").find("div").each(function(){
          $(this).remove();                              
         });
         if(lastSelectedtd != null && !(currentmonth == month && currentday == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
         if(!(currentmonth == month && currentday == id)){
-            $(datetd).attr("style",'border-style: solid;border-color:' + monthcolorcode[month-1] +';border-width: 1px;');
+            //$(datetd).attr("style",'border-style: solid;border-color:' + monthcolorcode[month-1] +';border-width: 0.5px;');
+            $(datetd).attr("style",'border: 2px solid ' + monthcolorcode[month-1] +';width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
         }
         lastSelectedtd = $(datetd);
 
@@ -103,16 +112,17 @@ function selectdate(id){
     }
 }
 
+var caltddim = 0;
 function calculatedimensions(){
     var docht = $(document).height();
     var docwd = $(document).width();
     var calheaderht = $("#calheader").height();
-    calcontentrowheight = (docwd * 13)/100;
-    var calcontentheight = (calcontentrowheight * 5) + 15;
-    $("#calcontent").height(calcontentheight);
-    var footerheight =  docht - (calheaderht + calcontentheight); //documentheight -(calendar header height + calendar content height - buffer)
-    $("#calfooter").height(footerheight -15);
-    $("#datedatacol").height(footerheight - 70);
+    caltddim = (docwd/7) - 5;
+    var calcontentheight = (caltddim * 5);
+    //$("#calcontent").height(calcontentheight);
+    var footerheight =  docht - (calheaderht + calcontentheight + 20); //documentheight -(calendar header height + calendar content height - buffer)
+    $("#calfooter").height(footerheight);
+    $("#datedatacol").height(footerheight - 55);
 }
 $( document ).on( "pageinit", "#maincalender", function() {
     calculatedimensions();
