@@ -51,6 +51,13 @@
     <title>Tapobhoomi Dindarshika</title>
 </head>
 <style type="text/css">
+.landingpage-bg {
+    background: url(img/background.png) !important;
+    background-repeat:repeat;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
 .ui-page {
     background: transparent;
 }
@@ -118,26 +125,60 @@
 .date-brief-padding-top{
 	padding-top:5px
 }
-
+    
 .custom-btn{
+    width: 50px !important;
+    height:50px !important;
+    margin: 5px !important;
+    border: 0px !important;
+}
+
+.round-custom-btn{
     width: 50px !important;
     height:50px !important;
     border-radius: 50% !important;    
     margin: 5px !important;
 }
     
+.small-custom-btn{
+    width: 20px !important;
+    height:20px !important;
+    border-radius: 50% !important;    
+    margin: 5px !important;
+}
+    
 #about-custom-btn {
-    background:url(img/swami_btn_small.jpg) center center no-repeat;    
+    background:url(img/Abt_us.png) center center no-repeat;    
     background-size:100% 100%;
 }
 
 #calender-custom-btn {
-    background:url(img/calender_btn_small.jpg) center center no-repeat;
+    background:url(img/Tapo_Cal.png) center center no-repeat;
     background-size:100% 100%;
 }
     
 #panchang-custom-btn {
-    background:url(img/panchang_btn_small.jpg) center center no-repeat;
+    background:url(img/Pan.png) center center no-repeat;
+    background-size:100% 100%;
+}
+    
+#search-custom-btn {
+    background:url(img/Search.png) center center no-repeat;    
+    background-size:100% 100%;
+}
+
+#edu-custom-btn {
+    background:url(img/Edu.png) center center no-repeat;
+    background-size:100% 100%;
+}
+    
+#contact-custom-btn {
+    background:url(img/Contact_us.png) center center no-repeat;
+    background-size:100% 100%;
+}
+    
+#close-custom-btn {
+    background:url(img/close.png) center center no-repeat;
     background-size:100% 100%;
 }
 
@@ -157,7 +198,6 @@
 .div-selected-month{
     color:white;
     text-align: left;
-    padding-left:15px;
     padding-top:15px;    
     font-weight: normal;
     font-size: 1.5em;    
@@ -176,13 +216,33 @@
     bottom: 0;
     width: 100%;
     height: 40px;
+} 
+.menu-item{
+    padding-top:5px;
+    padding-bottom:5px;
 }
-.firstDiv, .secondDiv{
-  position: absolute;
-}    
 </style>
 <body>
     
+<div id="landingpage" data-role="page" class="landingpage-bg">
+    <div data-role="content" class="text-shadow-none" style="padding:0px">
+        <div class="ui-center-div">        
+        <div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
+        <div><img src="img/title.png" width="70%" height="auto"/></div>
+        <div data-role="controlgroup" data-type="horizontal" >
+            <a href="#about-page" data-role="button" id="about-custom-btn" class="custom-btn"></a>
+            <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn"></a>
+            <a href="#dateonlypage" data-role="button" id="panchang-custom-btn" class="custom-btn"></a>
+        </div>
+        <div data-role="controlgroup" data-type="horizontal" >    
+            <a href="#search-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>
+            <a href="#edu-page" data-role="button" id="edu-custom-btn" class="custom-btn"></a>
+            <a href="#contact-page" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
+        </div>
+        <h5><div style="margin:5px;text-align:left !important">दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h5>
+        </div>
+    </div>
+</div>
 <div id="Read" data-role="page" style="background-color:#f6883d">
     <div data-role="content" class="text-shadow-none">
         <div class="ui-center-div">
@@ -196,9 +256,18 @@
     </div>
 </div>   
 
+    
 <div id="maincalender" data-role="page" >
+     <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:10em">
+         <div id="monthmenuhdr" style="font-size: 1.5em;"><a href="#maincalender" data-rel="close" class="ui-btn ui-btn-inline" style="padding-right:10px">x</a></div>
+        <div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div>
+    </div>
+     <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
+         <div style="font-size: 1.5em;"><a href="#maincalender" data-rel="close" class="ui-btn ui-btn-inline">x</a></div>
+        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div>
+    </div>
      <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none calender-header">
-         <table><tr><td><div class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td></tr></table>
+         <table width="100%"><tr><td width="5%"><a href="#menuPanel"><img id="menu" src="img/menu.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td><td style="text-align:right;" width="5%"><a href="#finderPanel"><img id="finder" src="img/finder.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td></tr></table>
           <div style="padding-top:5px;color:white;font-weight: normal;">
          <table style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">रवि</td>
              <td width="13%">सोम</td><td width="13%">मंगळ</td><td width="13%">बुध</td><td width="13%">गुरु</td><td width="13%">शुक्</td>
@@ -216,16 +285,30 @@
             <div style="font-weight:bold;background-color: none !important;padding-top:10px;" id="datahdr">माहीती :</div>
             <div style="overflow:auto;padding-top:5px;font-weight:normal" id="datedatacol"></div>
             </div>
-         <!--<div style="font-weight:normal;border-top: thin solid #dddddd;" id="calfooterbar">
-             <td id="currentdate" width='20px' style="border-style: solid;border-color:#f6883d;border-width: 1px;"></td>
-         </div>-->
      </div>
+</div>
+<div id="finder-page" data-role="page">
+    <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
+         <div style="font-size: 1.5em;"><a href="#finder-page" data-rel="close" class="ui-btn ui-btn-inline">x</a></div>
+        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div>
+    </div>
+    <div data-role="header" class="sriguru-ui-background">
+        <table width="100%" ><tr>
+        <td style="font-weight: normal;font-size: 1.5em;text-align:center" class="text-shadow-none" id="finderhdrtxt">finder</td>
+        <td width="30px" height="30px">
+        <a href="#finderPanel2"><img id="finder" src="img/finder.png" style="padding-right:5px;x" width="50%" height="50%"/></a>
+        </td>
+        </tr>
+        </table>
+    </div>
+    <div id="findercontent" data-role="content" class="text-shadow-none" style="padding:0px !important">
+        
+     </div> 
 </div>
     
 <div id="about-page" data-role="page" >
  <div data-role="header" class="sriguru-ui-background">
  <h1 class="text-shadow-none">About</h1>
- <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse" data-role="button" class="sriguru-ui-background"></a>
  </div>
  <div data-role="content">
  <a href="#aboutswami" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">Swami</a>
@@ -236,7 +319,6 @@
 <div id="aboutswami" data-role="page" class="text-shadow-none">
  <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">
  <h1 class="text-shadow-none">About Swami</h1> 
-  <a href="#" data-icon="arrow-l" data-iconpos="left" data-rel="back" data-transition="slide" data-direction="reverse" data-role="button" class="sriguru-ui-background"></a>
  </div>
   <div data-role="content">
  
