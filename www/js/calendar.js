@@ -23,6 +23,39 @@ $(document).on('swiperight', '[id="calcontent"]', function(event){
     return false;            
 });
 
+$( document ).on( "pageinit", "#testpage", function() {
+var sliderorder=["#div1","#div2","#div3"];
+$("#testcontent").on('swiperight', function(event){  
+    $(sliderorder[0]).animate({left: '350px'},"slow",function(){
+        
+        //$(sliderorder[1]).attr("style",order1style);
+        $(sliderorder[1]).css("margin-left","-350px");
+        $(sliderorder[1]).css("left","0px");
+        $(sliderorder[1]).css("z-index",3);
+        $(sliderorder[0]).css("z-index",1);
+        //$(sliderorder[1]).css("background-color",color);
+        var order1 = sliderorder[0];
+        sliderorder[0] = sliderorder[1];
+        sliderorder[1] = order1;
+    });
+});
+$("#testcontent").on('swipeleft', function(event){  
+    //var leftval = "220px" 
+   // top: 35px;left: 220px; background-color: green; height: 100px; width:104px; z-index: 1; position: relative; margin-top: -100px;
+        $(sliderorder[2]).animate({left: '0px'},"slow",function(){
+            //$(sliderorder[1]).attr("style",order1style);
+            $(sliderorder[1]).css("margin-left","0px");
+            $(sliderorder[1]).css("left","350px");
+            $(sliderorder[1]).css("z-index",3);
+            $(sliderorder[2]).css("z-index",1);
+            //$(sliderorder[1]).css("background-color",color);
+            var order1 = sliderorder[2];
+            sliderorder[2] = sliderorder[1];
+            sliderorder[1] = order1;
+        });
+});
+});
+
 function nextmonth(){
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
     if(months.length > month){
