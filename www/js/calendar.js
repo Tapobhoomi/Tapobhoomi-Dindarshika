@@ -7,7 +7,7 @@ var monthcolorcode = null;
 var calerdarxml = null;
 var prevselmonth = 0;
 
-$(document).on('swipeleft', '[id="calcontent"]', function(event){    
+/*$(document).on('swipeleft', '[id="calcontent"]', function(event){    
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
     if(months.length > month){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
@@ -21,7 +21,7 @@ $(document).on('swiperight', '[id="calcontent"]', function(event){
         prevmonth();
     }
     return false;            
-});
+});*/
 
 $( document ).on( "pageinit", "#testpage", function() {
 var sliderorder=["#div1","#div2","#div3"];
@@ -158,10 +158,26 @@ function calculatedimensions(){
     $("#calfooter").height(footerheight);
     $("#datedatacol").height(footerheight - 55);
 }
+
 $( document ).on( "pageinit", "#maincalender", function() {
     calculatedimensions();
     
     loadCalendar();
+    $("#calcontent").on('swiperight', function(event){  
+        if(month > 1){
+           // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
+            prevmonth();
+        }
+        return false;        
+    });
+    $("#calcontent").on('swipeleft', function(event){  
+        var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
+        if(months.length > month){
+           // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
+            nextmonth();
+        }    
+        return false;
+    });
 });
 
 function loadCalendar(){
@@ -206,6 +222,7 @@ function loadData(xml){
     var yearName = $(yearObj).attr("dn");
     var monthObj = $(yearObj).find("month[id='"+ month + "']");
     var monthName = $(monthObj).attr("dn"); 
+    //$("#selectedmonth").append('<img src="img/mn/monthname/'+month+'.png" width="auto" height="100%"/>');
     $('.div-selected-month').text(function(i, oldText) {
         return monthName;
     });

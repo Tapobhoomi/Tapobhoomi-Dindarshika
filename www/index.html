@@ -41,12 +41,11 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.4.5.min.css">
     
-        
     <script type="text/javascript" src="jquery/1.12.1/jquery-1.12.4.min.js"></script>
     <!--<script type="text/javascript" src="jquery/1.12.1/jquery-ui.js"></script>-->
     <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="js/calendar.js"></script>
-    <script type="text/javascript" src="jquery/jquery.touchSwipe.min.js"></script>
+    <!--<script type="text/javascript" src="jquery/jquery.touchSwipe.min.js"></script>-->
 
     <title>Tapobhoomi Dindarshika</title>
 </head>
@@ -221,17 +220,20 @@
     padding-top:5px;
     padding-bottom:5px;
 }
-    #aqua,#yellow{
-        width: 355px;
-        float: left;
-    }
-    #yellow{
-        position: relative;
-        right:-23%;
-    }
-    #pink{
-        overflow: hidden;
-    }
+#aqua,#yellow{
+    width: 355px;
+    float: left;
+}
+#yellow{
+    position: relative;
+    right:-23%;
+}
+#pink{
+    overflow: hidden;
+}
+.ui-panel-inner{
+    padding: 0em !important;
+}
 </style>
 <body>
     
@@ -278,15 +280,14 @@
     
 <div id="maincalender" data-role="page" >
      <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:10em">
-         <div id="monthmenuhdr" style="font-size: 1.5em;"><a href="#maincalender" data-rel="close" class="ui-btn ui-btn-inline" style="padding-right:10px">x</a></div>
-        <div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div>
+         <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="15px"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td></tr></table>
     </div>
-     <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
-         <div style="font-size: 1.5em;"><a href="#maincalender" data-rel="close" class="ui-btn ui-btn-inline">x</a></div>
-        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div>
+     <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em;padding:0em !important;">
+         <table width="100%"><tr><td width="15px"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
+        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div></td></tr></table>
     </div>
      <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none calender-header">
-         <table width="100%"><tr><td width="5%"><a href="#menuPanel"><img id="menu" src="img/menu.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td><td style="text-align:right;" width="5%"><a href="#finderPanel"><img id="finder" src="img/finder.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td></tr></table>
+         <table width="100%"><tr><td width="5%"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td><td style="text-align:right;" width="5%"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td></tr></table>
           <div style="padding-top:5px;color:white;font-weight: normal;">
          <table style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">रवि</td>
              <td width="13%">सोम</td><td width="13%">मंगळ</td><td width="13%">बुध</td><td width="13%">गुरु</td><td width="13%">शुक्</td>
@@ -308,14 +309,14 @@
 </div>
 <div id="finder-page" data-role="page">
     <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
-         <div style="font-size: 1.5em;"><a href="#finder-page" data-rel="close" class="ui-btn ui-btn-inline">x</a></div>
-        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div>
+          <table width="100%"><tr><td width="15px"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
+        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div></td></tr></table>
     </div>
     <div data-role="header" class="sriguru-ui-background">
         <table width="100%" ><tr>
         <td style="font-weight: normal;font-size: 1.5em;text-align:center" class="text-shadow-none" id="finderhdrtxt">finder</td>
         <td width="30px" height="30px">
-        <a href="#finderPanel2"><img id="finder" src="img/finder.png" style="padding-right:5px;x" width="50%" height="50%"/></a>
+        <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a>
         </td>
         </tr>
         </table>
