@@ -3,7 +3,6 @@ function gotozoom(){
 	$(document).on("pageshow",function(event,data){
 		  var docLocation = document.location.href;
 		  if(docLocation.indexOf("testpage") !== -1 && isCanvasSet == false){
-		    alert("set img to canvas");
 		    var imgCanvas = document.getElementById('mycanvas');
 	        var gesturableImg = new ImgTouchCanvas({
 	            canvas: imgCanvas,
@@ -13,7 +12,6 @@ function gotozoom(){
 	        isCanvasSet = true;
 		  }
 		  if(docLocation.indexOf("testpage") == -1 && isCanvasSet == true){
-		  	alert("reset canvas");
 		    var imgCanvas = document.getElementById('mycanvas');
 		    var ctx = imgCanvas.getContext("2d");
 		    ctx.clearRect(0, 0, imgCanvas.width,imgCanvas.height);

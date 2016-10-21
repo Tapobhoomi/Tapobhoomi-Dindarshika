@@ -74,10 +74,12 @@ function prevmonth(){
 }
 
 function updatecalendardata(){
-    if(prevselmonth > 0){
-        $('#calheader').removeClass("month"+ prevselmonth +"-theme");
-    }    
-    $('#calheader').addClass("month"+ month +"-theme");
+    //if(prevselmonth > 0){
+       // $('#calheader').removeClass("month"+ prevselmonth +"-theme");
+    //}    
+    //$('#calheader').addClass("month"+ month +"-theme");
+    $('#caldivider').css("background",monthcolorcode[month-1]);
+    $('#calheader').addClass("month1-theme");
     $('#caltb').find('tr').remove();
     var monthdatelist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date")
     var monthobj = $(calerdarxml).find("calendar[id='"+ year + "'] >  month[id='"+month+"']");
@@ -99,11 +101,11 @@ function updatecalendardata(){
     $(monthdatelist).each(function(){
         var wkday = $(this).attr("wd");
         var cell = $("#td"+ wkday + y +"");
-        cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="img/mn/'+$(this).attr("id")+'.png" width="60%" height="auto"/></div>');
+        cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="img/mn/'+$(this).attr("id")+'.png" width="55%" height="auto"/></div>');
         $(cell).attr("id",$(this).attr("id"));
         
         if(currentmonth == month && currentday == $(this).attr("id")){
-            $(cell).attr("style",'background:' + monthcolorcode[month-1] +';width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;border-radius:50%;');            
+            $(cell).attr("style",'background:#f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;border-radius:50%;');            
             //background-color:' + monthcolorcode[month-1] +';
         }
         if(!($(this).attr("mncycle") === undefined)){
@@ -131,7 +133,7 @@ function selectdate(id){
         if(lastSelectedtd != null && !(currentmonth == month && currentday == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
         if(!(currentmonth == month && currentday == id)){
             //$(datetd).attr("style",'border-style: solid;border-color:' + monthcolorcode[month-1] +';border-width: 0.5px;');
-            $(datetd).attr("style",'border: 1px solid ' + monthcolorcode[month-1] +';width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
+            $(datetd).attr("style",'border: 1px solid #f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
         }
         lastSelectedtd = $(datetd);
 
@@ -156,7 +158,7 @@ function calculatedimensions(){
     //$("#calcontent").height(calcontentheight);
     var footerheight =  docht - (calheaderht + calcontentheight + 20); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
-    $("#datedatacol").height(footerheight - 55);
+    $("#datedatacol").height(footerheight - 37);
 }
 
 $( document ).on( "pageinit", "#maincalender", function() {
@@ -229,7 +231,7 @@ function loadData(xml){
     updatecalendardata();
     
     $(xml).find("calendar[id='"+ year + "'] > month").each(function(){
-        $("#monthmenulist").append("<a href='#maincalender' data-role='button' data-rel='close' class='menu-item ui-btn sriguru-ui-background text-shadow-none' style='color:black' data-theme='b' id='mn"+ $(this).attr("id") +"'>"+ $(this).attr("dn")+"</a>")
+        $("#monthmenulist").append("<a href='#menuPanel' data-role='button' data-rel='close' class='menu-item ui-btn sriguru-ui-background text-shadow-none' style='color:black' data-theme='b' id='mn"+ $(this).attr("id") +"'>"+ $(this).attr("dn")+"</a>")
         $("#mn"+$(this).attr("id") ).click(function(){
             var selectedmn = parseInt($(this).attr("id").replace("mn",""), 10);
             if(month != selectedmn){

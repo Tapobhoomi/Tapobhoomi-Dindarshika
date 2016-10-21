@@ -52,11 +52,9 @@
     <title>Tapobhoomi Dindarshika</title>
 </head>
 <style type="text/css">
-.landingpage-bg {
-    background: url(img/background.png) !important;
-    background-repeat:repeat;
-    background-position:center center;
-    background-attachment:scroll;
+body {
+    background: url(img/bg2.jpg) !important;
+    background-repeat:no-repeat;
     background-size:100% 100%;
 }
 .ui-page {
@@ -247,7 +245,6 @@
         <div data-role="controlgroup" data-type="horizontal" >
             <a href="#about-page" data-role="button" id="about-custom-btn" class="custom-btn"></a>
             <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn"></a>
-            <a href="#dateonlypage" data-role="button" id="panchang-custom-btn" class="custom-btn"></a>
             <a href="#testpage" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick="gotozoom();"></a>
         </div>
         <div data-role="controlgroup" data-type="horizontal" >    
@@ -266,6 +263,7 @@
             <div id="div3" style="top: 35px;left: 350px; background-color: white; height: 100px; width:350px; z-index: 2; position: relative; margin-top: -100px;"> </div>-->
             <div id="mycontainer" style="padding:0;width:100%;height:100%">
             <canvas id="mycanvas" style="width: 100%; height: 100%"></canvas>
+            </div>
     </div>
 </div>   
 <div id="Read" data-role="page" style="background-color:#f6883d">
@@ -284,7 +282,7 @@
     
 <div id="maincalender" data-role="page" >
      <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:10em">
-         <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="15px"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td></tr></table>
+         <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="15px"><a href="#menuPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td></tr></table>
     </div>
      <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em;padding:0em !important;">
          <table width="100%"><tr><td width="15px"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
@@ -304,7 +302,7 @@
         </div> 
      </div> 
      <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
-         <div style="height:20px;background-color:#dddddd;"><table width='100%'><tr><td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td></tr></table></div>
+         <div id="caldivider" style="height:2px;background-color:#dddddd;"><!--<table width='100%'><tr><td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td></tr></table>--></div>
         <div style="text-transform:none;font-size: 1em;background-color:transparent !important;padding-left:5px;">
             <div style="font-weight:bold;background-color: none !important;padding-top:10px;" id="datahdr">माहीती :</div>
             <div style="overflow:auto;padding-top:5px;font-weight:normal" id="datedatacol"></div>
@@ -313,7 +311,7 @@
 </div>
 <div id="finder-page" data-role="page">
     <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
-          <table width="100%"><tr><td width="15px"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
+          <table width="100%"><tr><td width="15px"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
         <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div></td></tr></table>
     </div>
     <div data-role="header" class="sriguru-ui-background">
