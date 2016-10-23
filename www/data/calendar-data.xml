@@ -7,15 +7,15 @@
         </wd-data>
         <tag-data>
             <tag id="0">FESTIVAL</tag><tag id="1">SAMPRADAYPROG</tag><tag id="2">SANKASTICHATURTI</tag><tag id="3">EKADASHI</tag>
-            <tag id="4">SANTSAMAJDAY</tag><tag id="5">JATRA</tag><tag id="NAX">NAXATRA</tag>
+            <tag id="4">SANTSAMAJDAY</tag><tag id="5">JATRA</tag><tag id="SMU">SMRUTIDIWAS</tag><tag id="NAX">NAXATRA</tag>
         </tag-data>
         <month id="1" dn="जेनवारी">
+            <odata><d>शके १९३८</d><d>पौष - माघ</d></odata>
             <date id="1" dn="१" wd="5">
-                <d tag="NAX">उत्तर</d>
-                <d>मार्गशीर्ष कु. ७</d>
+                <d tag="NAX">हस्त</d>
                 <d>नूतन इसवीसनारंभ २०१६</d>
                 <d>आदिनाथ जत्रा उसगांव</d>
-                <d>मार्कंडेय उत्सव कुडाळ</d>
+                <d tag="0">मार्कंडेय उत्सव कुडाळ</d>
                 <d tag="5">श्री देवी नारोबा जत्रा-मांद्रे</d>
             </date>
             <date id="2" dn="२" wd="6" mncycle="0">
@@ -89,6 +89,7 @@
             <date id="15" dn="१५" wd="5">
                 <d tag="NAX">हस्त</d>
                 <d>मार्गशीर्ष कु. ८</d>
+                <d tag="SMU" img="img/swamisadanad.png">श्री  सदानंद स्मृ. दि. - सं. स. मडगांव </d>
             </date>
             <date id="16" dn="१६" wd="6">
                 <d tag="NAX">हस्त</d>
@@ -167,9 +168,11 @@
             <date id="31" dn="३१" wd="0">
                 <d tag="NAX">हस्त</d>
                 <d>मार्गशीर्ष कु. ८</d>
+                <d tag="2" img="img/shriganesh.png">श्री गणेश जयंती</d>
             </date>
         </month>
         <month id="2" dn="फ़ेब्रुअरी">
+            <odata><d>शके १९३८</d><d>माघ - फाल्गुन</d></odata>
             <date id="1" dn="१" wd="1">
                 <d tag="NAX">उत्तर</d>
                 <d>मार्गशीर्ष कु. ७</d>
@@ -193,7 +196,7 @@
                 <d tag="NAX">हस्त</d>
                 <d>मार्गशीर्ष कु. ८</d>
                 <d>कालाष्टमी अष्टक</d>
-                <d>श्री भूमिका पूजन, मोरजी</d>
+                <d tag="5">श्री भूमिका पूजन, मोरजी</d>
             </date>
             <date id="3" dn="३" wd="3">
                 <d tag="NAX">हस्त</d>
@@ -203,7 +206,7 @@
                 <d tag="NAX">हस्त</d>
                 <d>मार्गशीर्ष कु. ८</d>
                 <d>कालाष्टमी अष्टक</d>
-                <d>श्री भूमिका पूजन, मोरजी</d>
+                <d tag="5">श्री भूमिका पूजन, मोरजी</d>
             </date>
             <date id="5" dn="५" wd="5">
                 <d tag="NAX">हस्त</d>
@@ -221,7 +224,7 @@
                 <d tag="NAX">हस्त</d>
                 <d>मार्गशीर्ष कु. ८</d>
                 <d>कालाष्टमी अष्टक</d>
-                <d>श्री भूमिका पूजन, मोरजी</d>
+                <d tag="5">श्री भूमिका पूजन, मोरजी</d>
             </date>
             <date id="8" dn="८" wd="1">
                 <d tag="NAX">हस्त</d>
@@ -331,6 +334,7 @@
             </date>            
         </month>
         <month id="3" dn="मार्च">
+            <odata><d>शके १९३८-३९</d><d>फाल्गुन - चैत्र</d></odata>
             <date id="1" dn="१" wd="2">
                 <d tag="NAX">उत्तर</d>
                 <d>मार्गशीर्ष कु. ७</d>
@@ -357,7 +361,7 @@
             </date>
             <date id="5" dn="५" wd="6">
                 <d tag="NAX">हस्त</d>
-                <d>मार्गशीर्ष कु. ८</d>
+                <d tag="5">मार्गशीर्ष कु. ८</d>
             </date>
             <date id="6" dn="६" wd="0">
                 <d tag="NAX">उत्तर</d>
@@ -491,6 +495,7 @@
             </date>
         </month>
         <month id="4" dn="एप्रिल">
+            <odata><d>शके १९३९</d><d>चैत्र - वैशाखर</d></odata>
             <date id="1" dn="१" wd="5">
                 <d tag="NAX">उत्तर</d>
                 <d>मार्गशीर्ष कु. ७</d>
@@ -525,13 +530,13 @@
                 <d>नूतन इसवीसनारंभ २०१६</d>
                 <d>आदिनाथ जत्रा उसगांव</d>
                 <d>मार्कंडेय उत्सव कुडाळ</d>
-                <d>श्री देवी नारोबा जत्रा-मांद्रे</d>
+                <d tag="5">श्री देवी नारोबा जत्रा-मांद्रे</d>
             </date>
             <date id="7" dn="७" wd="4">
                 <d tag="NAX">हस्त</d>
                 <d>मार्गशीर्ष कु. ८</d>
                 <d>कालाष्टमी अष्टक</d>
-                <d>श्री भूमिका पूजन, मोरजी</d>
+                <d tag="5">श्री भूमिका पूजन, मोरजी</d>
             </date>
             <date id="8" dn="८" wd="5">
                 <d tag="NAX">हस्त</d>
@@ -575,7 +580,7 @@
                 <d tag="NAX">हस्त</d>
                 <d>मार्गशीर्ष कु. ८</d>
                 <d>कालाष्टमी अष्टक</d>
-                <d>श्री भूमिका पूजन, मोरजी</d>
+                <d tag="5">श्री भूमिका पूजन, मोरजी</d>
             </date>
             <date id="17" dn="१७" wd="0">
                 <d tag="NAX">हस्त</d>

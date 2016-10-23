@@ -47,6 +47,7 @@
     <script type="text/javascript" src="js/calendar.js"></script>
     <script type="text/javascript" src="js/zoom.js"></script>
     <script type="text/javascript" src="js/img-touch-canvas.js"></script>
+    <script type="text/javascript" src="js/jquery.panzoom.min.js"></script>
     <!--<script type="text/javascript" src="jquery/jquery.touchSwipe.min.js"></script>-->
 
     <title>Tapobhoomi Dindarshika</title>
@@ -201,6 +202,11 @@ body {
     font-weight: normal;
     font-size: 1.5em;    
 }
+.finder-header-text{
+    color:white; 
+    font-weight: normal;
+    font-size: 1em;    
+}
 .div-selected-year{
     font-size: 0.9em;
     color:white;       
@@ -234,6 +240,15 @@ body {
 .ui-panel-inner{
     padding: 0em !important;
 }
+.date-div{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0.1em solid #73AD21;
+}
+.date-div-outer{
+    border-radius: 10px;
+    border: 0.1em solid #73AD21;
+}
 </style>
 <body>
     
@@ -245,7 +260,8 @@ body {
         <div data-role="controlgroup" data-type="horizontal" >
             <a href="#about-page" data-role="button" id="about-custom-btn" class="custom-btn"></a>
             <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn"></a>
-            <a href="#testpage" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick="gotozoom();"></a>
+            <!--<a href="#testpage" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick="gotozoom();"></a>-->
+            <a href="#panchangpage" data-role="button" id="panchang-custom-btn" class="custom-btn"></a>
         </div>
         <div data-role="controlgroup" data-type="horizontal" >    
             <a href="#search-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>
@@ -264,6 +280,13 @@ body {
             <div id="mycontainer" style="padding:0;width:100%;height:100%">
             <canvas id="mycanvas" style="width: 100%; height: 100%"></canvas>
             </div>
+    </div>
+</div>   
+<div id="panchangpage" data-role="page" style="background-color:#f6883d">
+    <div id="panchangcontent" data-role="content" class="text-shadow-none">
+        <div class="panzoom-elements">
+            <img src="img/zoomFullScreen.jpg" width="320px" height="auto"/>
+        </div>
     </div>
 </div>   
 <div id="Read" data-role="page" style="background-color:#f6883d">
@@ -289,7 +312,7 @@ body {
         <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div></td></tr></table>
     </div>
      <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none calender-header">
-         <table width="100%"><tr><td width="5%"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td><td style="text-align:right;" width="5%"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td></tr></table>
+         <table width="100%"><tr><td width="5%"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td><td width="5%"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="70%" height="auto"/></a></td></tr></table>
           <div style="padding-top:5px;color:white;font-weight: normal;">
          <table style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">रवि</td>
              <td width="13%">सोम</td><td width="13%">मंगळ</td><td width="13%">बुध</td><td width="13%">गुरु</td><td width="13%">शुक्</td>
@@ -302,10 +325,11 @@ body {
         </div> 
      </div> 
      <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
-         <div id="caldivider" style="height:2px;background-color:#dddddd;"><!--<table width='100%'><tr><td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td></tr></table>--></div>
-        <div style="text-transform:none;font-size: 1em;background-color:transparent !important;padding-left:5px;">
-            <div style="font-weight:bold;background-color: none !important;padding-top:10px;" id="datahdr">माहीती :</div>
-            <div style="overflow:auto;padding-top:5px;font-weight:normal" id="datedatacol"></div>
+         <div id="caldivider" style="height:20px;background-color:#dddddd;color:white;" class="text-shadow-none"></div>
+         <!--<td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td>-->
+        <div style="text-transform:none;font-size: 1em;background-color:#eaeeaf !important;">
+            <div style="font-weight:bold;background-color: #e7b149;padding-top:2px;padding-left:5px;" class="text-shadow-none" id="datahdr">माहीती :</div>
+            <div style="overflow:auto;padding-top:5px;padding-left:5px;font-weight:normal" class="text-shadow-none" id="datedatacol"></div>
             </div>
      </div>
 </div>
@@ -314,11 +338,11 @@ body {
           <table width="100%"><tr><td width="15px"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
         <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div></td></tr></table>
     </div>
-    <div data-role="header" class="sriguru-ui-background">
+    <div data-role="header" class="sriguru-ui-background text-shadow-none finder-header-text">
         <table width="100%" ><tr>
         <td style="font-weight: normal;font-size: 1.5em;text-align:center" class="text-shadow-none" id="finderhdrtxt">finder</td>
-        <td width="30px" height="30px">
-        <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a>
+        <td width="5%">
+        <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="70%" height="auto"/></a>
         </td>
         </tr>
         </table>

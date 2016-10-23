@@ -22,6 +22,9 @@ $(document).on('swiperight', '[id="calcontent"]', function(event){
     }
     return false;            
 });*/
+$( document ).on( "pageinit", "#panchangpage", function() {
+    $(".panzoom-elements").panzoom({ });
+});
 
 $( document ).on( "pageinit", "#testpage", function() {
 var sliderorder=["#div1","#div2","#div3"];
@@ -79,6 +82,7 @@ function updatecalendardata(){
     //}    
     //$('#calheader').addClass("month"+ month +"-theme");
     $('#caldivider').css("background",monthcolorcode[month-1]);
+    //$('#datahdr').css("background","#e7b149");
     $('#calheader').addClass("month1-theme");
     $('#caltb').find('tr').remove();
     var monthdatelist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date")
@@ -87,6 +91,11 @@ function updatecalendardata(){
         return monthobj.attr("dn");
     });
     
+    var monthaddata = "";
+    monthobj.find("odata > d").each(function(){
+        monthaddata += $(this).text() + " | "
+    });
+    $('#caldivider').text(monthaddata);
      for(var i = 0 ; i< 5;i++){
     $("#caltb").append('<tr height="'+caltddim+'px"><td id="td0'+ i +'" width="'+caltddim+'px"></td>     <td id="td1'+ i +'" width="'+caltddim+'px"></td><td id="td2'+ i +'" width="'+caltddim+'px"></td><td id="td3'+ i +'" width="'+caltddim+'px"></td><td id="td4'+ i +'" width="'+caltddim+'px"></td><td id="td5'+ i +'" width="'+caltddim+'px"></td><td id="td6'+ i +'" width="'+caltddim+'px"></td></tr>');
     }
@@ -140,9 +149,23 @@ function selectdate(id){
         var datalist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date[id='"+ id +"'] > d")
         $(datalist).each(function(){
             var tagstr = $(this).attr("tag");
-            var divstyle = (!(jQuery.type(tagstr) === "undefined") && tagstr.indexOf("NAX") != -1) ? " style='color:green;'" : "";
+            var txtcolor = null;
+            if(!(jQuery.type(tagstr) === "undefined")){
+                if(tagstr.indexOf("NAX") != -1){ txtcolor="green";}
+                else if(tagstr.indexOf("SMU") != -1){ txtcolor="#f04115";}
+                else if(tagstr.indexOf("0") != -1){ txtcolor="red";}
+                else if(tagstr.indexOf("2") != -1){ txtcolor="red";}
+            }
+            var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
             var divstr = "<div"+ divstyle +">";
-            divstr += $(this).text() +"</div>" ;
+            
+            var imgfile = $(this).attr("img");
+            if(!(jQuery.type(imgfile) === "undefined")){
+                divstr += "<table width='100%'><tr><td>"+$(this).text()+"</td><td><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
+            }else{
+                divstr += $(this).text();
+            }
+            divstr +="</div>" ;
             $("#datedatacol").append(divstr);
         });
     }
@@ -158,7 +181,7 @@ function calculatedimensions(){
     //$("#calcontent").height(calcontentheight);
     var footerheight =  docht - (calheaderht + calcontentheight + 20); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
-    $("#datedatacol").height(footerheight - 37);
+    $("#datedatacol").height(footerheight - 44);
 }
 
 $( document ).on( "pageinit", "#maincalender", function() {
@@ -186,7 +209,7 @@ function loadCalendar(){
     if(calerdarxml != null && weekday != null){ return;  }
     
     monthcolorcode = new Array(12);
-    monthcolorcode[0]="#f6883d";monthcolorcode[1]="#f6887d";monthcolorcode[2]="#df88f0";monthcolorcode[3]="#37ddd0";
+    monthcolorcode[0]="#fb60ae";monthcolorcode[1]="#fb6068";monthcolorcode[2]="#df88f0";monthcolorcode[3]="#37ddd0";
     monthcolorcode[4]="#f68c3d";monthcolorcode[5]="#f6c83d";monthcolorcode[6]="#f6183d";monthcolorcode[7]="#f6683d";
     monthcolorcode[8]="#16883d";monthcolorcode[9]="#46883d";monthcolorcode[10]="#86883d";monthcolorcode[11]="#d6883d";
     $('#calheader').addClass("month"+ month +"-theme");
@@ -249,7 +272,13 @@ function loadData(xml){
         var tagid = $(this).attr("id").replace("find","");
        $(calerdarxml).find("calendar[id='"+ year + "'] > month > date > d*[tag='"+tagid+"']").each(function(){
             //alert($(this).text()) 
-           $("#findercontent").append("<div style='border-color:red;padding:10px;'><table width='100%'><tr><td width='30%' style='text-align:center'>"+$(this).parent().parent().attr("dn") + " " + $(this).parent().attr("dn")+"</td><td width='70%'>"+$(this).text()+"</td></tr></table></div>")
+           /*$("#findercontent").append("<div style='padding:10px;'><table width='100%' class='date-div'><tr><td width='30%' style='text-align:center'>"+$(this).parent().parent().attr("dn") + " " + $(this).parent().attr("dn")+"</td><td width='70%'>"+$(this).text()+"</td></tr></table></div>")*/
+           divstr = $(this).text();
+           var imgfile = $(this).attr("img");
+           if(!(jQuery.type(imgfile) === "undefined")){
+            divstr = "<table width='100%'><tr><td>"+$(this).text()+"</td><td><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
+           }
+           $("#findercontent").append("<div style='padding:5px;'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+$(this).parent().parent().attr("dn") + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='25%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
     });
                                
