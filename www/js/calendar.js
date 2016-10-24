@@ -25,7 +25,7 @@ $(document).on('swiperight', '[id="calcontent"]', function(event){
 $( document ).on( "pageinit", "#panchangpage", function() {
     $(".panzoom-elements").panzoom({ });
 });
-
+/*
 $( document ).on( "pageinit", "#testpage", function() {
 var sliderorder=["#div1","#div2","#div3"];
 $("#testcontent").on('swiperight', function(event){  
@@ -58,6 +58,7 @@ $("#testcontent").on('swipeleft', function(event){
         });
 });
 });
+*/
 
 function nextmonth(){
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
@@ -103,7 +104,16 @@ function updatecalendardata(){
    
     $("#caltb").find("td").click(function() {        
         var dateval = $(this).attr("id");
-        selectdate(dateval);        
+        selectdate(dateval); 
+       /* if($("#calnavleft").is(':visible')){
+         $("#calnavleft").css({"left":"0px"}).animate({"left":"-30px"}, "slow",function(){
+             $("#calnavleft").hide(); });} else{ $("#calnavleft").show();        $("#calnavleft").css({"left":"-30px"}).animate({"left":"0px"}, "slow");  }
+        
+        if($("#calnavright").is(':visible')){ $("#calnavright").css({"left":"0px"}).animate({"left":"30px"}, "slow",function(){
+             $("#calnavright").hide();});} else{$("#calnavright").show();$("#calnavright").css({"left":"30px"}).animate({"left":"0px"}, "slow");  }*/
+        hideNav("#calnavleft",-30);hideNav("#calnavright",30);
+        //showNav("#calnavleft",-30);showNav("#calnavright",30);
+        
     });
     
     var y=0;
@@ -182,6 +192,15 @@ function calculatedimensions(){
     var footerheight =  docht - (calheaderht + calcontentheight + 20); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
     $("#datedatacol").height(footerheight - 44);
+    
+    var navheight = (calcontentheight+20);
+    $("#calnavleft").css("height",navheight+"px");
+    $("#calnavright").css("height",navheight+"px");
+    $("#calnavleft").css("margin-top","-"+(navheight-10)+"px");
+    $("#calnavright").css("margin-top","-"+(navheight)+"px");
+    $("#calnavright").css("margin-left",docwd-30+"px");
+    $("#righnavimgid").css("margin-top",((navheight/2)-30)+"px");
+    $("#leftnavimgid").css("margin-top",((navheight/2)-30)+"px");
 }
 
 $( document ).on( "pageinit", "#maincalender", function() {
@@ -193,6 +212,7 @@ $( document ).on( "pageinit", "#maincalender", function() {
            // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
             prevmonth();
         }
+        showNav("#calnavleft",-30);showNav("#calnavright",30);
         return false;        
     });
     $("#calcontent").on('swipeleft', function(event){  
@@ -201,9 +221,20 @@ $( document ).on( "pageinit", "#maincalender", function() {
            // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
             nextmonth();
         }    
+        showNav("#calnavleft",-30);showNav("#calnavright",30);
         return false;
-    });
+    });    
+    
 });
+
+function hideNav(divid,move){
+    if($(divid).is(':visible')){$(divid).css({"left":"0px"}).animate({"left":move+"px"}, "slow",function(){
+             $(divid).hide(); });}
+}
+
+function showNav(divid,move){
+    if(!$(divid).is(':visible')){$(divid).show();$(divid).css({"left":move+"px"}).animate({"left":"0px"}, "slow");}    
+}
 
 function loadCalendar(){
     if(calerdarxml != null && weekday != null){ return;  }
@@ -216,10 +247,16 @@ function loadCalendar(){
     //$("#currentdate > img").remove();
     //$("#currentdate").attr("style",'background-color:' + monthcolorcode[currentmonth-1] +';');
     //$("#currentdate").append('<img src="img/mn/'+ currentday +'.png" width="auto" height="20%"/>');
-    $("#prevcalmonth").click(function() {
+    /*$("#prevcalmonth").click(function() {
         prevmonth();
     });
     $("#nextcalmonth").click(function() {
+        nextmonth();
+    });*/
+    $("#calnavleft").find("img").click(function() {
+        prevmonth();
+    });
+    $("#calnavright").find("img").click(function() {
         nextmonth();
     });
     $.ajax({
