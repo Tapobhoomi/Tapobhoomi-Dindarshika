@@ -1,5 +1,6 @@
 var year = 2016;
 var month = 1;
+var panchmonth = 1;
 var currentday = 20;
 var currentmonth = 1;
 var weekday = null;
@@ -22,43 +23,61 @@ $(document).on('swiperight', '[id="calcontent"]', function(event){
     }
     return false;            
 });*/
+
+var panchangimgtopimg = 0;
+function pospanchangimg(){
+    if(panchangimgtopimg == 0){
+        var panheight = $(".panzoom-elements").height();
+        var height = $(".panzoom-elements > img").height();
+        if(height == 0){
+            height = $(".panzoom-elements > img").css("height");
+        }
+        panchangimgtopimg = (panheight - height) / 2
+    }
+    $(".panzoom-elements > img").css("margin-top",panchangimgtopimg+"px");
+}
+
+$( document ).on( "pageshow", "#panchangpage", function() {
+    pospanchangimg();
+});
 $( document ).on( "pageinit", "#panchangpage", function() {
-    $(".panzoom-elements").panzoom({ });
+    $(".panzoom-elements").panzoom({ });    
+    //var img = document.getElementById('panchangimage'); 
+    //$(".panzoom-elements > img").attr("src","img/panchang/"+panchmonth+".jpg");
+    //$(".panzoom-elements > img").css("margin-top","100px");
+    var height = $(document).height();
+    $(".panzoom-elements").css("height",height - (45 + 86) );
+    
+    updateCurrentPachMonth(panchmonth);
+    $("#footerrightnavimgid").click(function(){
+        if(panchmonth == 3){ return;}
+        panchmonth += 1;
+        updateCurrentPachMonth(panchmonth);
+        pospanchangimg();
+    })
+    $("#footerleftnavimgid").click(function(){
+        if(panchmonth == 1){ return;}
+        panchmonth -= 1;        
+        updateCurrentPachMonth(panchmonth);
+        pospanchangimg();
+    })
 });
-/*
-$( document ).on( "pageinit", "#testpage", function() {
-var sliderorder=["#div1","#div2","#div3"];
-$("#testcontent").on('swiperight', function(event){  
-    $(sliderorder[0]).animate({left: '350px'},"slow",function(){
-        
-        //$(sliderorder[1]).attr("style",order1style);
-        $(sliderorder[1]).css("margin-left","-350px");
-        $(sliderorder[1]).css("left","0px");
-        $(sliderorder[1]).css("z-index",3);
-        $(sliderorder[0]).css("z-index",1);
-        //$(sliderorder[1]).css("background-color",color);
-        var order1 = sliderorder[0];
-        sliderorder[0] = sliderorder[1];
-        sliderorder[1] = order1;
+
+function updateCurrentPachMonth(panchmonth){   
+    var width = $(document).width();    
+    //var headerht = $("#panchangheader").height();
+    //var footerht = $("#panchangfooter").height();
+    //$(".panzoom-elements > img").attr("width",width);
+    
+    var monthObj = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+ panchmonth + "']");
+    var monthName = $(monthObj).attr("dn"); 
+    $("#panchselectedmonth").text(function(i, oldText) {
+        return monthName;
     });
-});
-$("#testcontent").on('swipeleft', function(event){  
-    //var leftval = "220px" 
-   // top: 35px;left: 220px; background-color: green; height: 100px; width:104px; z-index: 1; position: relative; margin-top: -100px;
-        $(sliderorder[2]).animate({left: '0px'},"slow",function(){
-            //$(sliderorder[1]).attr("style",order1style);
-            $(sliderorder[1]).css("margin-left","0px");
-            $(sliderorder[1]).css("left","350px");
-            $(sliderorder[1]).css("z-index",3);
-            $(sliderorder[2]).css("z-index",1);
-            //$(sliderorder[1]).css("background-color",color);
-            var order1 = sliderorder[2];
-            sliderorder[2] = sliderorder[1];
-            sliderorder[1] = order1;
-        });
-});
-});
-*/
+    $(".panzoom-elements").children().remove();
+    $(".panzoom-elements").append("<img src='img/panchang/"+panchmonth+".jpg' width='"+width+"px height='auto' style='margin-left:-15px;' />");
+    
+}
 
 function nextmonth(){
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
@@ -105,14 +124,7 @@ function updatecalendardata(){
     $("#caltb").find("td").click(function() {        
         var dateval = $(this).attr("id");
         selectdate(dateval); 
-       /* if($("#calnavleft").is(':visible')){
-         $("#calnavleft").css({"left":"0px"}).animate({"left":"-30px"}, "slow",function(){
-             $("#calnavleft").hide(); });} else{ $("#calnavleft").show();        $("#calnavleft").css({"left":"-30px"}).animate({"left":"0px"}, "slow");  }
-        
-        if($("#calnavright").is(':visible')){ $("#calnavright").css({"left":"0px"}).animate({"left":"30px"}, "slow",function(){
-             $("#calnavright").hide();});} else{$("#calnavright").show();$("#calnavright").css({"left":"30px"}).animate({"left":"0px"}, "slow");  }*/
         hideNav("#calnavleft",-30);hideNav("#calnavright",30);
-        //showNav("#calnavleft",-30);showNav("#calnavright",30);
         
     });
     
@@ -124,8 +136,7 @@ function updatecalendardata(){
         $(cell).attr("id",$(this).attr("id"));
         
         if(currentmonth == month && currentday == $(this).attr("id")){
-            $(cell).attr("style",'background:#f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;border-radius:50%;');            
-            //background-color:' + monthcolorcode[month-1] +';
+            $(cell).attr("style",'background:#f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;border-radius:50%;');  
         }
         if(!($(this).attr("mncycle") === undefined)){
                 if($(this).attr("mncycle") == 0){
@@ -151,7 +162,6 @@ function selectdate(id){
         });
         if(lastSelectedtd != null && !(currentmonth == month && currentday == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
         if(!(currentmonth == month && currentday == id)){
-            //$(datetd).attr("style",'border-style: solid;border-color:' + monthcolorcode[month-1] +';border-width: 0.5px;');
             $(datetd).attr("style",'border: 1px solid #f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
         }
         lastSelectedtd = $(datetd);
@@ -160,8 +170,11 @@ function selectdate(id){
         $(datalist).each(function(){
             var tagstr = $(this).attr("tag");
             var txtcolor = null;
+            var imgfile = $(this).attr("img");
+            var imgwidth = 40;
+            var defstyle = "style='padding-right:5px'";
             if(!(jQuery.type(tagstr) === "undefined")){
-                if(tagstr.indexOf("NAX") != -1){ txtcolor="green";}
+                if(tagstr.indexOf("NAX") != -1){ txtcolor="green";defstyle="";imgfile = "img/mn/"+id+".png";imgwidth=30;}
                 else if(tagstr.indexOf("SMU") != -1){ txtcolor="#f04115";}
                 else if(tagstr.indexOf("0") != -1){ txtcolor="red";}
                 else if(tagstr.indexOf("2") != -1){ txtcolor="red";}
@@ -169,9 +182,9 @@ function selectdate(id){
             var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
             var divstr = "<div"+ divstyle +">";
             
-            var imgfile = $(this).attr("img");
+            
             if(!(jQuery.type(imgfile) === "undefined")){
-                divstr += "<table width='100%'><tr><td>"+$(this).text()+"</td><td><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
+                divstr += "<table width='100%'><tr><td>"+$(this).text()+"</td><td align='right'><img src='"+ imgfile +"' width='"+imgwidth+"px' height='auto' "+ defstyle +"/></td></tr></table>"
             }else{
                 divstr += $(this).text();
             }
@@ -203,10 +216,22 @@ function calculatedimensions(){
     $("#leftnavimgid").css("margin-top",((navheight/2)-30)+"px");
 }
 
+$( document ).on( "pageinit", "#landingpage", function() {
+    loadCalendar();
+});
+
 $( document ).on( "pageinit", "#maincalender", function() {
     calculatedimensions();
     
-    loadCalendar();
+    loadData(calerdarxml);
+    $('#calheader').addClass("month"+ month +"-theme");
+    
+    $("#calnavleft").find("img").click(function() {
+        prevmonth();
+    });
+    $("#calnavright").find("img").click(function() {
+        nextmonth();
+    });
     $("#calcontent").on('swiperight', function(event){  
         if(month > 1){
            // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
@@ -243,22 +268,7 @@ function loadCalendar(){
     monthcolorcode[0]="#fb60ae";monthcolorcode[1]="#fb6068";monthcolorcode[2]="#df88f0";monthcolorcode[3]="#37ddd0";
     monthcolorcode[4]="#f68c3d";monthcolorcode[5]="#f6c83d";monthcolorcode[6]="#f6183d";monthcolorcode[7]="#f6683d";
     monthcolorcode[8]="#16883d";monthcolorcode[9]="#46883d";monthcolorcode[10]="#86883d";monthcolorcode[11]="#d6883d";
-    $('#calheader').addClass("month"+ month +"-theme");
-    //$("#currentdate > img").remove();
-    //$("#currentdate").attr("style",'background-color:' + monthcolorcode[currentmonth-1] +';');
-    //$("#currentdate").append('<img src="img/mn/'+ currentday +'.png" width="auto" height="20%"/>');
-    /*$("#prevcalmonth").click(function() {
-        prevmonth();
-    });
-    $("#nextcalmonth").click(function() {
-        nextmonth();
-    });*/
-    $("#calnavleft").find("img").click(function() {
-        prevmonth();
-    });
-    $("#calnavright").find("img").click(function() {
-        nextmonth();
-    });
+    
     $.ajax({
     type: "GET",
     url: "data/calendar-data.xml",
@@ -270,8 +280,7 @@ function loadCalendar(){
             weekday[wdc] = $(this).text();
             wdc += 1;
         })
-        calerdarxml = xml;
-        loadData(xml);
+        calerdarxml = xml;        
     },
   error: function() {
     alert("An error occurred while processing XML file.");

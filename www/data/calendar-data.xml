@@ -171,7 +171,7 @@
                 <d tag="2" img="img/shriganesh.png">श्री गणेश जयंती</d>
             </date>
         </month>
-        <month id="2" dn="फ़ेब्रुअरी">
+        <month id="2" dn="फेब्रुवारी">
             <odata><d>शके १९३८</d><d>माघ - फाल्गुन</d></odata>
             <date id="1" dn="१" wd="1">
                 <d tag="NAX">उत्तर</d>
