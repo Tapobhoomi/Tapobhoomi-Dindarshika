@@ -249,7 +249,8 @@ $( document ).on( "pageinit", "#educationpage", function() {
     if (typeof navigator !== "undefined" && navigator.app) {
         // Mobile device.
         alert("navigate");
-        navigator.app.loadUrl('http://srigurudev.org/edu-activities', {openExternal: true});
+        window.open("http://srigurudev.org/edu-activities", "_blank");
+        //navigator.app.loadUrl('http://srigurudev.org/edu-activities', {openExternal: true});
     } else {
         // Possible web browser
         alert("Window open");
