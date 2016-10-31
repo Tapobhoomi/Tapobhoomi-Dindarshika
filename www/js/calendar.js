@@ -37,6 +37,9 @@ function pospanchangimg(){
     $(".panzoom-elements > img").css("margin-top",panchangimgtopimg+"px");
 }
 
+/*$( document ).on( "pageshow", "#panchangpage", function() {
+    pospanchangimg();
+});*/
 $( document ).on( "pageshow", "#panchangpage", function() {
     pospanchangimg();
 });
@@ -46,7 +49,7 @@ $( document ).on( "pageinit", "#panchangpage", function() {
     //$(".panzoom-elements > img").attr("src","img/panchang/"+panchmonth+".jpg");
     //$(".panzoom-elements > img").css("margin-top","100px");
     var height = $(document).height();
-    $(".panzoom-elements").css("height",height - (45 + 86) );
+    $(".panzoom-elements").css("height",height - (45 + 90) );
     
     updateCurrentPachMonth(panchmonth);
     $("#footerrightnavimgid").click(function(){
@@ -150,6 +153,12 @@ function updatecalendardata(){
         if(y == 5){ y = 0;}        
     });   
     selectdate("1"); 
+    $("#caltb").find("td").on('swiperight', function(event){ 
+        return oncalswiperight();
+    });
+    $("#caltb").find("td").on('swipeleft', function(event){  
+        return oncalswipeleft();
+    });
     $('#calcontent').focus();
 }
 
@@ -232,25 +241,27 @@ $( document ).on( "pageinit", "#maincalender", function() {
     $("#calnavright").find("img").click(function() {
         nextmonth();
     });
-    $("#calcontent").on('swiperight', function(event){  
-        if(month > 1){
-           // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
-            prevmonth();
-        }
-        showNav("#calnavleft",-30);showNav("#calnavright",30);
-        return false;        
-    });
-    $("#calcontent").on('swipeleft', function(event){  
-        var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
-        if(months.length > month){
-           // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
-            nextmonth();
-        }    
-        showNav("#calnavleft",-30);showNav("#calnavright",30);
-        return false;
-    });    
     
 });
+
+function oncalswiperight(){
+    if(month > 1){
+       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
+        prevmonth();
+    }
+    showNav("#calnavleft",-30);showNav("#calnavright",30);
+    return false;     
+}
+
+function oncalswipeleft(){
+    var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
+    if(months.length > month){
+       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
+        nextmonth();
+    }    
+    showNav("#calnavleft",-30);showNav("#calnavright",30);
+    return false;
+}
 
 function hideNav(divid,move){
     if($(divid).is(':visible')){$(divid).css({"left":"0px"}).animate({"left":move+"px"}, "slow",function(){
@@ -285,7 +296,20 @@ function loadCalendar(){
   error: function() {
     alert("An error occurred while processing XML file.");
   }
-  });  
+  }); 
+    
+    /*$.ajax({
+        type: "GET",
+        url : "http://www.thomas-bayer.com/sqlrest/CUSTOMER/3/",
+        dataType : 'xml',
+        success : function(data){
+            alert(data);
+        },
+        error : function(XMLHttpRequest,textStatus, errorThrown) {   
+            alert("Something wrong happended on the server. Try again..");  
+ 
+        }
+    });*/
 }
 
 function loadData(xml){
