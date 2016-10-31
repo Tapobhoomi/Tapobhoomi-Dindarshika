@@ -249,7 +249,7 @@ $( document ).on( "pageinit", "#educationpage", function() {
     if (typeof navigator !== "undefined" && navigator.app) {
         // Mobile device.
         alert("navigate");
-        window.open("http://srigurudev.org/edu-activities", '_self ', 'location=yes');
+        window.open("http://www.google.com", '_self ', 'location=yes');
         //navigator.app.loadUrl('http://srigurudev.org/edu-activities', {openExternal: true});
     } else {
         // Possible web browser
@@ -262,11 +262,12 @@ $( document ).on( "pageinit", "#educationpage", function() {
     if (typeof navigator !== "undefined" && navigator.app) {
         // Mobile device.
         alert("navigate2");
-        navigator.app.loadUrl('http://www.google.com', {openExternal: true});
+        //navigator.app.loadUrl('http://www.google.com', {openExternal: true});
+        window.open("http://www.google.com", "_blank");
     } else {
         // Possible web browser
         alert("Window open");
-        window.open("http://srigurudev.org/edu-activities", "_blank");
+       window.open("http://srigurudev.org/edu-activities", '_self ', 'location=yes');
     }
     });
 });
