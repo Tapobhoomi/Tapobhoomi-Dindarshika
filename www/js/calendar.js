@@ -257,6 +257,19 @@ $( document ).on( "pageinit", "#educationpage", function() {
         window.open("http://srigurudev.org/edu-activities", "_blank");
     }
     });
+    
+    $("#btneduandmore").on("click", function() {
+    if (typeof navigator !== "undefined" && navigator.app) {
+        // Mobile device.
+        alert("navigate");
+        window.open("http://srigurudev.org/edu-activities", "_blank");
+        //navigator.app.loadUrl('http://srigurudev.org/edu-activities', {openExternal: true});
+    } else {
+        // Possible web browser
+        alert("Window open");
+        window.open("http://srigurudev.org/edu-activities", "_blank");
+    }
+    });
 });
 
 function oncalswiperight(){
