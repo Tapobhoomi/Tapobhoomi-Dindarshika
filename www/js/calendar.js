@@ -244,6 +244,20 @@ $( document ).on( "pageinit", "#maincalender", function() {
     
 });
 
+$( document ).on( "pageinit", "#educationpage", function() {
+    $("#btnedumore").on("click", function() {
+    if (typeof navigator !== "undefined" && navigator.app) {
+        // Mobile device.
+        alert("navigate");
+        navigator.app.loadUrl('http://srigurudev.org/edu-activities', {openExternal: true});
+    } else {
+        // Possible web browser
+        alert("Window open");
+        window.open("http://srigurudev.org/edu-activities", "_blank");
+    }
+    });
+});
+
 function oncalswiperight(){
     if(month > 1){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
