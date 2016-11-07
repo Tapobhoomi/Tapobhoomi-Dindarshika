@@ -92,25 +92,25 @@ body {
 	background-color: #f6883d !important;
 	border-color: #f6883d !important;
 }
+
+.calerdar-currentdate{
+    background:#f6883d;
+    border-radius:50%;
+}
     
-.month1-theme{
+.panchang-currentdate{
+    background:#db9c5d;
+    border-radius:50%;
+}
+    
+.calendar-theme{
 	background-color: #f6883d !important;
 	border-color: #f6883d !important;
 }
 
-.month2-theme{
-	background-color: #f6887d !important;
-	border-color: #f6887d !important;
-}
-
-.month3-theme{
-	background-color: #df88f0 !important;
-	border-color: #df88f0 !important;
-}
-    
-.month4-theme{
-	background-color: #37ddd0 !important;
-	border-color: #37ddd0 !important;
+.panchang-theme{
+	background-color: #db9c5d !important;
+	border-color: #db9c5d !important;
 }
 
 .menu-icon-color{
@@ -148,7 +148,7 @@ body {
     margin: 5px !important;
 }
     
-#about-custom-btn {
+#home-custom-btn {
     background:url(img/Abt_us.png) center center no-repeat;    
     background-size:100% 100%;
 }
@@ -181,6 +181,15 @@ body {
 #close-custom-btn {
     background:url(img/close.png) center center no-repeat;
     background-size:100% 100%;
+}
+    
+div.panchanglistitem table, td, th {
+    border: 0px;
+}
+    
+
+div.panchanglistitemtable table {
+    border-collapse: collapse;
 }
 
 .div-day{
@@ -273,17 +282,17 @@ body {
         <div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
         <div><img src="img/title.png" width="70%" height="auto"/></div>
         <div data-role="controlgroup" data-type="horizontal" >
-            <a href="#about-page" data-role="button" id="about-custom-btn" class="custom-btn"></a>
-            <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn"></a>
+            <a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn"></a>
+            <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn" onclick='showcalender()'></a>
             <!--<a href="#testpage" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick="gotozoom();"></a>-->
-            <a href="#panchangpage" data-role="button" id="panchang-custom-btn" class="custom-btn"></a>
+            <a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a>
         </div>
         <div data-role="controlgroup" data-type="horizontal" >    
-            <a href="#search-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>
+            <!--<a href="#search-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>-->
             <a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a>
             <a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
         </div>
-        <h5><div style="margin:5px;text-align:left !important">दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h5>
+        <h4><div style="margin:5px;text-align:left !important">दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h4>
         </div>
     </div>
 </div>
@@ -297,13 +306,22 @@ body {
             </div>
     </div>
 </div>   -->
-<div id="panchangpage" data-role="page" style="background-color:#f6883d">
+<!--<div id="panchangpage" data-role="page" style="background-color:#f6883d">
     <div id="panchangheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none sriguru-ui-background"><div id="panchselectedmonth" class="page-header-text-devn">.</div></div>
     <div id="panchangcontent" data-role="content" class="text-shadow-none" style="background-color:#444444">
         <div class="panzoom-elements"></div>
     </div>
     <div id="panchangfooter" data-role="footer" data-id="persistheader" data-position="fixed" class="text-shadow-none sriguru-ui-background"><table width="100%"><tr><td width="50%" align="right"><img id="footerleftnavimgid" src="img/control/footer-left-arrow.jpg" width="50px" height="auto" style="padding-right:10px"/></td><td width="50%" align="left"><img id="footerrightnavimgid" src="img/control/footer-right-arrow.jpg" width="50px" height="auto" style="padding-left:10px"/></td></tr></table></div>
-</div>      
+</div>    
+<div id="panchangpage2" data-role="page">
+    <div id="panchangheader2" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none sriguru-ui-background">
+        <div id="panchselectedmonth" class="page-header-text-devn">.</div>
+    </div>
+    <div id="panchangcontent2" data-role="content" class="text-shadow-none" style="padding:0px !important"> -->
+                 <!--<div style="padding:5px;" class="panchanglistitem panchanglistitemtable"><table width='100%' style='background-color:#f2e9d9;'><tr><td width='20%' style='text-align:center;'><div style='background-color:red;color:white;padding: 3px;'>Wed</div><div style='background-color:#f2e9d9;padding: 3px;'><img src='img/mn/1.png' width='25%' height='auto'/></div></td><td width='75%'><table width="100%"><tr><td  width="30%" style='background-color:#ecb054;color:white;padding: 5px;'>Thiti</td><td style="padding: 5px;">Chaturthi upto 15:50</td></tr><tr><td  width="30%" style='background-color:#bf9351;color:white;padding: 5px;'>Nakshatra</td><td style="padding: 5px;">Punarvasu upto 15:50</td></tr></table></td><td width='5%' style="background-color:#ba8e4a">></td></tr><tr style='text-align:center;background-color:#75eab2'><td colspan="3">Unfavorable</td></tr></table></div>-->
+  <!--      <div style="padding:5px;" class="panchanglistitem panchanglistitemtable"><table width='100%' style='background-color:#f2e9d9;'><tr><td width='20%' style='text-align:center;background-color:red;color:white;padding: 3px;'>Wed<td width='10%' style='background-color:#f2e9d9;padding: 3px;text-align:center;'><img src='img/mn/1.png' width='55%' height='auto'/></td><td width='75%'>Unfavorable</td><td width='5%' style="background-color:#ba8e4a">></td></tr><tr><td colspan="4"><table><tr><td  width="30%" style='background-color:#ecb054;color:white;padding: 5px;'>Thiti</td><td style="padding: 5px;">Chaturthi upto 15:50</td><td  width="30%" style='background-color:#bf9351;color:white;padding: 5px;'>Nakshatra</td><td style="padding: 5px;">Punarvasu upto 15:50</td></tr></table></td></tr></table></div>
+    </div>
+</div>   --> 
 <div id="Read" data-role="page" style="background-color:#f6883d">
     <div data-role="content" class="text-shadow-none">
         <div class="ui-center-div">
@@ -324,14 +342,14 @@ body {
     </div>
      <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em;padding:0em !important;">
          <table width="100%"><tr><td width="15%"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
-        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div></td></tr></table>
+        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
-     <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none calender-header">
-         <table width="100%"><tr><td width="7%"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year">२०१६</div></td><td width="7%"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="70%" height="auto"/></a></td></tr></table>
+     <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none">
+         <table width="100%"><tr><td width="7%"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year">2017</div></td><td width="7%"><a href="#finderPanel" id="calfinderpanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="70%" height="auto"/></a></td></tr></table>
           <div style="padding-top:5px;color:white;font-weight: normal;">
-         <table style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">रवि</td>
-             <td width="13%">सोम</td><td width="13%">मंगळ</td><td width="13%">बुध</td><td width="13%">गुरु</td><td width="13%">शुक्र</td>
-             <td width="13%">शनि</td></tr></table>
+         <table id="calweeknames" style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">Sun</td>
+             <td width="13%">Mon</td><td width="13%">Tue</td><td width="13%">Wed</td><td width="13%">Thu</td><td width="13%">Fri</td>
+             <td width="13%">Sat</td></tr></table>
          </div>         
      </div>
      <div id="calcontent" data-role="content" class="text-shadow-none" style="padding:0px !important">
@@ -345,7 +363,7 @@ body {
          <div id="caldivider" style="height:20px;background-color:#dddddd;color:white;padding-left:5px;" class="text-shadow-none"></div>
          <!--<td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td>-->
         <div style="text-transform:none;font-size: 1em;background-color:#f2e9d9 !important;">
-            <div style="font-weight:bold;background-color: #e7b149;padding-top:2px;padding-left:5px;" class="text-shadow-none" id="datahdr">माहीती :</div>
+            <div style="font-weight:bold;background-color: #e7b149;padding-top:2px;padding-left:5px;" class="text-shadow-none" id="datahdr">Details :</div>
             <div style="overflow:auto;padding-top:5px;padding-left:5px;font-weight:normal" class="text-shadow-none" id="datedatacol"></div>
             </div>
      </div>
@@ -353,11 +371,11 @@ body {
 <div id="finder-page" data-role="page">
     <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
           <table width="100%"><tr><td width="15%"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
-        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find0">सण</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find1">संप्रदाय कारेक्रम</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find2">संकष्टी चतुर्थी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find3">एकादशी</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find4">संत समाज गुरुवार</a><a href="#finder-page" data-role="button" class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id="find5">जत्रा</a></div></td></tr></table>
+        <div id="findermenulist2" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
-    <div data-role="header" class="sriguru-ui-background text-shadow-none finder-header-text">
+    <div data-role="header" class="sriguru-ui-background text-shadow-none finder-header-text" data-id="persistheader" data-position="fixed" >
         <table width="100%" ><tr>
-        <td style="font-weight: normal;font-size: 1.5em;text-align:center" class="text-shadow-none" id="finderhdrtxt">finder</td>
+        <td style="font-weight: normal;font-size: 1.5em;text-align:center;color:white;" class="text-shadow-none" id="finderhdrtxt">finder</td>
         <td width="7%">
         <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="70%" height="auto"/></a>
         </td>
@@ -368,6 +386,13 @@ body {
         
      </div> 
 </div>
+    
+<div id="homepage" data-role="page" >
+ <div data-role="content">
+     <table width="100%" height="100%" ><tr height="30%"><td width="200px"  align="center" style="vertical-align:middle;background-color:rgba(246, 136, 61, 0.3);" ><a href="#aboutswami"><div><img src="img/about_swamiji_sm.png" height="auto" width="100%"/></div></a></td><td width="200px" align="center" style="vertical-align:middle;background-color:rgba(246, 136, 61, 0.3);"><a href="#aboutsampraday"><div style="height:100%;width:100%;"><img src="img/about_sampradaya_sm.png" height="auto" width="100%"/></div></a></td></tr>
+         <tr><td colspan="2"><div style="height:200px"></div></td></tr></table>
+ </div>
+ </div>
     
 <div id="about-page" data-role="page" >
  <div data-role="header" class="sriguru-ui-background">
@@ -384,10 +409,11 @@ body {
  <div class="text-shadow-none page-header-text">About Swami</div> 
  </div>
   <div data-role="content">
- 
+ <div style="background-color:rgba(255, 255, 255, 0.2);">
  <div class="ui-center-div" style="font-weight: normal;font-size: 1em;">
  <img src="img/about_swami_pic.jpg" class="ui-center-img" style="padding:10px;"/>
  </div>
+     <div style="padding:5px;">
 “Tapobhoomi”… Goa’s renowned spiritual hub located at Kundaim in Ponda Taluka has reached great heights due to the incessant efforts of the present Pithadeeshwar of the renowned “PADMANABH SHISHYA SAMPRADAY” his holiness (H.H.) Dharmabhushan Swami Brahmeshanandacharya Maharaj. The revered Swamiji has been instrumental in reviving Goa’s lost historical identity as “DEVBHUMI” and not just a hub for tourism oriented fun and frolic.
 <br/>
 <br/>
@@ -398,7 +424,9 @@ This noble ancestry of Padmanabh Shishya Sampraday dates back to H.H. Shri Sushe
 <br/>
 <br/>
 His relentless efforts for a decade and half has put Goa on the global map in fields of various contributions for peace to the human race. One darshana and vichar of P. Swamiji converts the bad into good… the yin into Yan and each one bows in these lotus feet to quench the thirst of self- realization thro this “ Charisma” of this unique “Gurupeeth” which is the sole patent of the “ SATYA SHRESTHA ISHWARI DNYAN”… the supreme knowledge of truth.
+</div>
  </div>
+</div>
 </div>
 
 
@@ -407,7 +435,7 @@ His relentless efforts for a decade and half has put Goa on the global map in fi
  <div class="text-shadow-none page-header-text">About Sampraday</div> 
  </div>
   <div data-role="content" style="font-weight: normal;font-size: 1em;">
- 
+ <div style="padding:5px;background-color:rgba(255, 255, 255, 0.2);">
 India / Bharat is a sacred land having a rich cultural heritage. This land has borne great many saints and religious leaders who have set a universal bench mark in their transcendental knowledge and experiences. Each one has set a history of spiritual heritage through their exemplary lives. Through these saints the whole of mankind has reached close to Godliness.
 <br/>
 <br/>
@@ -421,6 +449,7 @@ The Hindu Sanatan Sanskriti marches forward through the Hindu Dharma Pracharaks 
 <br/>
 <br/>
 It is this devotion, Principles and philanthropic approach of each individual of Padmanabh Shishya Sampraday that has its contribution globally and would continue still for generations hereafter…
+  </div>
  </div>
 </div>
     
@@ -435,11 +464,11 @@ It is this devotion, Principles and philanthropic approach of each individual of
       <p><b>Diploma in Sangeet Shastra (Classical Indian Music, Harmonium, Tabla, Pakhvad)</b> B.A, M.A and other degree courses.</p>
       <p><b>Diploma in Kirtan Shastra,</b> B.A, M.A and other degree courses.</p>
       <p><b>Diploma in Jyotish Shastra,</b> B.A, M.A and other degree courses.</p>
-      <!--<a href="http://srigurudev.org/edu-activities" target="_blank">more..</a>-->
+      <!--<a href="http://srigurudev.org/edu-activities" target="_blank">more..</a>
       <a id="btnedumore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">More</a>
-      <a id="btneduandmore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">And more</a>
-      <a href="#" onclick="window.open('http://www.kidzout.com', '_system');" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">www.kidzout.com</a>
-      <a href="#" onclick="window.open('http://www.kidzout.com', '_system');">www.kidzout.com</a>
+      <a id="btneduandmore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">And more</a>-->
+      <a href="#" onclick="window.open('http://srigurudev.org/edu-activities', '_system');" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">more</a>
+      <!--<a href="#" onclick="window.open('http://www.kidzout.com', '_system');">www.kidzout.com</a>-->
  </div>
 </div>
     

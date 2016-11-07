@@ -1,4 +1,4 @@
-var year = 2016;
+var year = 2017;
 var month = 1;
 var panchmonth = 1;
 var currentday = 20;
@@ -6,7 +6,12 @@ var currentmonth = 1;
 var weekday = null;
 var monthcolorcode = null;
 var calerdarxml = null;
-var prevselmonth = 0;
+//var prevselmonth = 0;
+
+var calUIdata1 = {"currentday-class":"calerdar-currentdate","header-class":"calendar-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata2 = {"currentday-class":"panchang-currentdate","header-class":"panchang-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata = calUIdata1;
+var calPrevUIdata = calUIdata1;
 
 /*$(document).on('swipeleft', '[id="calcontent"]', function(event){    
     var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
@@ -37,9 +42,7 @@ function pospanchangimg(){
     $(".panzoom-elements > img").css("margin-top",panchangimgtopimg+"px");
 }
 
-/*$( document ).on( "pageshow", "#panchangpage", function() {
-    pospanchangimg();
-});*/
+/*
 $( document ).on( "pageshow", "#panchangpage", function() {
     pospanchangimg();
 });
@@ -80,21 +83,19 @@ function updateCurrentPachMonth(panchmonth){
     $(".panzoom-elements").children().remove();
     $(".panzoom-elements").append("<img src='img/panchang/"+panchmonth+".jpg' width='"+width+"px height='auto' style='margin-left:-15px;' />");
     
-}
+}*/
 
 function nextmonth(){
-    var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
-    if(months.length > month){
-        prevselmonth = month;
-        month += 1;
+    var months = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month");
+    if(months.length > calUIdata["selected-month"]){
+        calUIdata["selected-month"] += 1;
         updatecalendardata();
     }
 }
 
 function prevmonth(){
-    if(month > 1){
-        prevselmonth = month;
-        month -= 1;
+    if(calUIdata["selected-month"] > 1){
+        calUIdata["selected-month"] -= 1;
         updatecalendardata();
     }
 }
@@ -104,12 +105,12 @@ function updatecalendardata(){
        // $('#calheader').removeClass("month"+ prevselmonth +"-theme");
     //}    
     //$('#calheader').addClass("month"+ month +"-theme");
-    $('#caldivider').css("background",monthcolorcode[month-1]);
+    $('#caldivider').css("background",monthcolorcode[calUIdata["selected-month"]-1]);
     //$('#datahdr').css("background","#e7b149");
-    $('#calheader').addClass("month1-theme");
+    $('#calheader').addClass("calendar-theme");
     $('#caltb').find('tr').remove();
-    var monthdatelist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date")
-    var monthobj = $(calerdarxml).find("calendar[id='"+ year + "'] >  month[id='"+month+"']");
+    var monthdatelist = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date")
+    var monthobj = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] >  month[id='"+calUIdata["selected-month"]+"']");
     $('.div-selected-month').text(function(i, oldText) {
         return monthobj.attr("dn");
     });
@@ -138,8 +139,10 @@ function updatecalendardata(){
         cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="img/mn/'+$(this).attr("id")+'.png" width="55%" height="auto"/></div>');
         $(cell).attr("id",$(this).attr("id"));
         
-        if(currentmonth == month && currentday == $(this).attr("id")){
-            $(cell).attr("style",'background:#f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;border-radius:50%;');  
+        if(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == $(this).attr("id")){
+            $(cell).removeClass(calPrevUIdata["currentday-class"]);
+            $(cell).addClass(calUIdata["currentday-class"]);
+            $(cell).attr("style",'width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;');  
         }
         if(!($(this).attr("mncycle") === undefined)){
                 if($(this).attr("mncycle") == 0){
@@ -169,26 +172,28 @@ function selectdate(id){
         $("#datedatacol").find("div").each(function(){
          $(this).remove();                              
         });
-        if(lastSelectedtd != null && !(currentmonth == month && currentday == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
-        if(!(currentmonth == month && currentday == id)){
-            $(datetd).attr("style",'border: 1px solid #f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
+        if(lastSelectedtd != null && !(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
+        if(!(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == id)){
+            $(datetd).attr("style",'border: 2px solid #f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
         }
         lastSelectedtd = $(datetd);
 
-        var datalist = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+month+"'] > date[id='"+ id +"'] > d")
+        var datalist = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date[id='"+ id +"'] > d")
         $(datalist).each(function(){
             var tagstr = $(this).attr("tag");
             var txtcolor = null;
             var imgfile = $(this).attr("img");
             var imgwidth = 40;
             var defstyle = "style='padding-right:5px'";
+            var divstyle = "";
             if(!(jQuery.type(tagstr) === "undefined")){
-                if(tagstr.indexOf("NAX") != -1){ txtcolor="green";defstyle="";imgfile = "img/mn/"+id+".png";imgwidth=30;}
-                else if(tagstr.indexOf("SMU") != -1){ txtcolor="#f04115";}
-                else if(tagstr.indexOf("0") != -1){ txtcolor="red";}
-                else if(tagstr.indexOf("2") != -1){ txtcolor="red";}
+                if(tagstr.indexOf("NAX") != -1){ divstyle=" style='color:green;padding:1px !important;'";defstyle="";imgfile = "img/mn/"+id+".png";imgwidth=30;}
+                else if(tagstr.indexOf("SMU") != -1){ divstyle=" style='color:#f04115;padding:1px !important;'"}
+                else if(tagstr.indexOf("0") != -1){ divstyle = " style='color:red;padding:1px !important;font-size:large;font-weight: bold;'";}
+                else if(tagstr.indexOf("2") != -1){ divstyle=" style='color:red;padding:1px !important;'";}
+                else if(tagstr.indexOf("4") != -1){ divstyle=" style='color:#fb60ae;padding:1px !important;'";}
             }
-            var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
+            //var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
             var divstr = "<div"+ divstyle +">";
             
             
@@ -207,11 +212,51 @@ var caltddim = 0;
 function calculatedimensions(){
     var docht = $(document).height();
     var docwd = $(document).width();
-    var calheaderht = $("#calheader").height();
+    var calheaderht = 80;
+    
+    var selectedyearfontsz = "0.9em";
+    var selectedmonthfontsz = "1.6em";
+    var calweeknamesfontsz = "1.1em";
+    var diff= 80;
+    if(docwd > 420 && docwd < 440){
+        selectedmonthfontsz = "1.6em";
+        selectedyearfontsz = "0.9em";
+        calweeknamesfontsz = "1.1em";
+    }else if(docwd >= 440 && docwd < 460){
+        calheaderht += 10
+        selectedmonthfontsz = "1.7em";
+        selectedyearfontsz = "0.95em";
+        calweeknamesfontsz = "1.15em";
+        diff += 5;
+    }else if(docwd >= 460 && docwd < 480){
+        calheaderht += 10
+        selectedmonthfontsz = "1.8em";
+        selectedyearfontsz = "1em";
+        calweeknamesfontsz = "1.2em";
+        diff += 5;
+    }else if(docwd >= 480 && docwd < 500){
+        calheaderht += 20
+        selectedmonthfontsz = "1.9em";
+         selectedyearfontsz = "1.1em";
+        calweeknamesfontsz = "1.3em";
+        diff += 10;
+    }else if(docwd >= 500){
+        calheaderht += 30
+        selectedyearfontsz = "1.2em";
+        selectedmonthfontsz = "2em";
+        calweeknamesfontsz = "1.4em";
+        diff += 20;
+    }
+    
+    $("#calweeknames").css("font-size",calweeknamesfontsz);
+    $(".div-selected-year").css("font-size",selectedyearfontsz);
+    $("#selectedmonth").css("font-size",selectedmonthfontsz)
+    $("#calheader").css("height",(calheaderht) + "px !important");
+    //calheaderht = $("#calheader").height();
     caltddim = (docwd/7) - 5;
     var calcontentheight = (caltddim * 5);
     //$("#calcontent").height(calcontentheight);
-    var footerheight =  docht - (calheaderht + calcontentheight + 20); //documentheight -(calendar header height + calendar content height - buffer)
+    var footerheight =  docht - (diff + calcontentheight + 20); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
     $("#datedatacol").height(footerheight - 44);
     
@@ -223,6 +268,8 @@ function calculatedimensions(){
     $("#calnavright").css("margin-left",docwd-30+"px");
     $("#righnavimgid").css("margin-top",((navheight/2)-30)+"px");
     $("#leftnavimgid").css("margin-top",((navheight/2)-30)+"px");
+    
+    
 }
 
 $( document ).on( "pageinit", "#landingpage", function() {
@@ -230,9 +277,10 @@ $( document ).on( "pageinit", "#landingpage", function() {
 });
 
 $( document ).on( "pageinit", "#maincalender", function() {
-    calculatedimensions();
-    
+    calculatedimensions();    
+    createFinderMenu("#findermenulist");    
     loadData(calerdarxml);
+    
     $('#calheader').addClass("month"+ month +"-theme");
     
     $("#calnavleft").find("img").click(function() {
@@ -244,8 +292,45 @@ $( document ).on( "pageinit", "#maincalender", function() {
     
 });
 
+function createFinderMenu(findermenuid){
+    $(calerdarxml).find("calendar[id='"+ year + "'] > tag-data > tag").each(function(){
+        if(!($(this).attr("dn") === undefined)){
+            $(findermenuid).append("<a href='#finder-page' data-role='button' class='menu-item ui-btn sriguru-ui-background text-shadow-none find-menu-item' style='color:black' data-theme='b' id='find"+ $(this).attr("id")+ "'>"+ $(this).attr("dn")+"</a>");
+
+        }
+    });
+}
+
+
+
+function showcalender(){
+    calPrevUIdata = calUIdata;
+    calUIdata = calUIdata1;
+    updateHeaderClass();
+    $('#calfinderpanel').show();
+    updatecalendardata();
+}
+
+function showpanchang(){
+    calPrevUIdata = calUIdata;
+    calUIdata = calUIdata2;
+    updateHeaderClass();
+    $('#calfinderpanel').hide();
+    updatecalendardata();
+}
+
+function updateHeaderClass(){
+    $('#calheader').removeClass(calPrevUIdata["header-class"])
+    $('#calheader').addClass(calUIdata["header-class"]);
+}
+
+$( document ).on( "pageinit", "#finder-page", function() {
+    createFinderMenu("#findermenulist2");
+    findermenuonclick();
+});
+
 $( document ).on( "pageinit", "#educationpage", function() {
-    $("#btnedumore").on("click", function() {
+    /* $("#btnedumore").on("click", function() {
     if (typeof navigator !== "undefined" && navigator.app) {
         // Mobile device.
         alert("navigate");
@@ -258,7 +343,7 @@ $( document ).on( "pageinit", "#educationpage", function() {
     }
     });
     
-    $("#btneduandmore").on("click", function() {
+   $("#btneduandmore").on("click", function() {
     if (typeof navigator !== "undefined" && navigator.app) {
         // Mobile device.
         alert("navigate2");
@@ -269,11 +354,11 @@ $( document ).on( "pageinit", "#educationpage", function() {
         alert("Window open");
        window.open("http://srigurudev.org/edu-activities", '_self ', 'location=yes');
     }
-    });
+    });*/
 });
 
 function oncalswiperight(){
-    if(month > 1){
+    if(calUIdata["selected-month"] > 1){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
         prevmonth();
     }
@@ -282,8 +367,8 @@ function oncalswiperight(){
 }
 
 function oncalswipeleft(){
-    var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
-    if(months.length > month){
+    var months = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month");
+    if(months.length > calUIdata["selected-month"]){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
         nextmonth();
     }    
@@ -341,9 +426,9 @@ function loadCalendar(){
 }
 
 function loadData(xml){
-    var yearObj = $(xml).find("calendar[id='"+ year + "']");
+    var yearObj = $(xml).find("calendar[id='"+ calUIdata["current-year"] + "']");
     var yearName = $(yearObj).attr("dn");
-    var monthObj = $(yearObj).find("month[id='"+ month + "']");
+    var monthObj = $(yearObj).find("month[id='"+ calUIdata["current-month"] + "']");
     var monthName = $(monthObj).attr("dn"); 
     //$("#selectedmonth").append('<img src="img/mn/monthname/'+month+'.png" width="auto" height="100%"/>');
     $('.div-selected-month').text(function(i, oldText) {
@@ -351,26 +436,29 @@ function loadData(xml){
     });
     updatecalendardata();
     
-    $(xml).find("calendar[id='"+ year + "'] > month").each(function(){
+    $(xml).find("calendar[id='"+ calUIdata["selected-year"]  + "'] > month").each(function(){
         $("#monthmenulist").append("<a href='#menuPanel' data-role='button' data-rel='close' class='menu-item ui-btn sriguru-ui-background text-shadow-none' style='color:black' data-theme='b' id='mn"+ $(this).attr("id") +"'>"+ $(this).attr("dn")+"</a>")
         $("#mn"+$(this).attr("id") ).click(function(){
             var selectedmn = parseInt($(this).attr("id").replace("mn",""), 10);
-            if(month != selectedmn){
-                prevselmonth = month;
-                month = selectedmn;
+            if(calUIdata["selected-month"] != selectedmn){
+                //prevselmonth = month;
+                calUIdata["selected-month"] = selectedmn;
                 updatecalendardata();
             }
             
         });
     })
     
+    findermenuonclick();
+                               
+}
+
+function findermenuonclick(){
     $(".find-menu-item").click(function(){
        $("#finderhdrtxt").text($(this).text());
        $("#findercontent").children().remove();
         var tagid = $(this).attr("id").replace("find","");
-       $(calerdarxml).find("calendar[id='"+ year + "'] > month > date > d*[tag='"+tagid+"']").each(function(){
-            //alert($(this).text()) 
-           /*$("#findercontent").append("<div style='padding:10px;'><table width='100%' class='date-div'><tr><td width='30%' style='text-align:center'>"+$(this).parent().parent().attr("dn") + " " + $(this).parent().attr("dn")+"</td><td width='70%'>"+$(this).text()+"</td></tr></table></div>")*/
+       $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month > date > d*[tag='"+tagid+"']").each(function(){
            divstr = $(this).text();
            var imgfile = $(this).attr("img");
            if(!(jQuery.type(imgfile) === "undefined")){
@@ -379,5 +467,4 @@ function loadData(xml){
            $("#findercontent").append("<div style='padding:5px;'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+$(this).parent().parent().attr("dn") + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='25%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
     });
-                               
 }
