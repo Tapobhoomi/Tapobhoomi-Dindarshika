@@ -6,10 +6,12 @@ var currentmonth = 1;
 var weekday = null;
 var monthcolorcode = null;
 var calerdarxml = null;
+var panchangxml = null;
 //var prevselmonth = 0;
 
-var calUIdata1 = {"currentday-class":"calerdar-currentdate","header-class":"calendar-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
-var calUIdata2 = {"currentday-class":"panchang-currentdate","header-class":"panchang-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
+var panchangdatatag= {};
+var calUIdata1 = {"id":"1","theme-color":"#f6883d","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata2 = {"id":"2","theme-color":"#db9c5d","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
 var calUIdata = calUIdata1;
 var calPrevUIdata = calUIdata1;
 
@@ -128,10 +130,11 @@ function updatecalendardata(){
     $("#caltb").find("td").click(function() {        
         var dateval = $(this).attr("id");
         selectdate(dateval); 
-        hideNav("#calnavleft",-30);hideNav("#calnavright",30);
+        //hideNav("#calnavleft",-30);hideNav("#calnavright",30);
         
     });
     
+    var panchangmonthdatelist = $(panchangxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date");
     var y=0;
     $(monthdatelist).each(function(){
         var wkday = $(this).attr("wd");
@@ -144,6 +147,7 @@ function updatecalendardata(){
             $(cell).addClass(calUIdata["currentday-class"]);
             $(cell).attr("style",'width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;');  
         }
+       // var ismncylce = false;
         if(!($(this).attr("mncycle") === undefined)){
                 if($(this).attr("mncycle") == 0){
                     $(cell).find('#datevalue').attr("style",'background:black;width:' + (caltddim/4) +'px; height:' + (caltddim/4)+'px;border-radius:50%;position: relative;');
@@ -151,6 +155,19 @@ function updatecalendardata(){
                     $(cell).find('#datevalue').attr("style",'background:white;border: 1px solid grey;width:' + (caltddim/4) +'px; height:' + (caltddim/4)+'px;border-radius:50%;position: relative;');
                 }
                 $(cell).find('#imgdiv').attr("style","position: relative;top:-"+ (caltddim/8) +"px");
+               // ismncylce = true;
+        }
+        if(calUIdata["id"] == 2){
+            var shubday = $(panchangxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date[id='"+$(this).attr("id")+"'] > shub-day");
+            var shubdaytypeval = $(shubday).attr("type");
+            if(!(shubdaytypeval === undefined)){
+                var shubdaybgcolor = "red";            
+                if(!(shubdaytypeval === undefined) && parseInt(shubdaytypeval) <= 3) {
+                    shubdaybgcolor = "green";
+                }
+                var subdaydivheight = 2;
+                $(cell).find('#imgdiv').append('<div style="background:'+shubdaybgcolor+';width:70%; height:'+subdaydivheight+'px;margin-left:15%;opacity: 0.2;"></div>');
+            }
         }
         if(wkday == 6){ y += 1;}
         if(y == 5){ y = 0;}        
@@ -174,37 +191,52 @@ function selectdate(id){
         });
         if(lastSelectedtd != null && !(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == $(lastSelectedtd).attr("id"))){  $(lastSelectedtd).removeAttr("style"); }
         if(!(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == id)){
-            $(datetd).attr("style",'border: 2px solid #f6883d;width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
+            $(datetd).attr("style",'border: 1px solid '+calUIdata["theme-color"]+';width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');
         }
         lastSelectedtd = $(datetd);
 
-        var datalist = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date[id='"+ id +"'] > d")
-        $(datalist).each(function(){
-            var tagstr = $(this).attr("tag");
-            var txtcolor = null;
-            var imgfile = $(this).attr("img");
-            var imgwidth = 40;
-            var defstyle = "style='padding-right:5px'";
-            var divstyle = "";
-            if(!(jQuery.type(tagstr) === "undefined")){
-                if(tagstr.indexOf("NAX") != -1){ divstyle=" style='color:green;padding:1px !important;'";defstyle="";imgfile = "img/mn/"+id+".png";imgwidth=30;}
-                else if(tagstr.indexOf("SMU") != -1){ divstyle=" style='color:#f04115;padding:1px !important;'"}
-                else if(tagstr.indexOf("0") != -1){ divstyle = " style='color:red;padding:1px !important;font-size:large;font-weight: bold;'";}
-                else if(tagstr.indexOf("2") != -1){ divstyle=" style='color:red;padding:1px !important;'";}
-                else if(tagstr.indexOf("4") != -1){ divstyle=" style='color:#fb60ae;padding:1px !important;'";}
-            }
-            //var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
-            var divstr = "<div"+ divstyle +">";
-            
-            
-            if(!(jQuery.type(imgfile) === "undefined")){
-                divstr += "<table width='100%'><tr><td>"+$(this).text()+"</td><td align='right'><img src='"+ imgfile +"' width='"+imgwidth+"px' height='auto' "+ defstyle +"/></td></tr></table>"
-            }else{
-                divstr += $(this).text();
-            }
-            divstr +="</div>" ;
-            $("#datedatacol").append(divstr);
-        });
+        if( "1" == calUIdata.id){
+            var datalist = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date[id='"+ id +"'] > d");
+            $(datalist).each(function(){
+                var tagstr = $(this).attr("tag");
+                var txtcolor = null;
+                var imgfile = $(this).attr("img");
+                var imgwidth = 40;
+                var defstyle = "style='padding-right:5px'";
+                var divstyle = "";
+                if(!(jQuery.type(tagstr) === "undefined")){
+                    if(tagstr.indexOf("NAX") != -1){ divstyle=" style='color:green;padding:1px !important;'";defstyle="";imgfile = "img/mn/"+id+".png";imgwidth=30;}
+                    else if(tagstr.indexOf("SMU") != -1){ divstyle=" style='color:#f04115;padding:1px !important;'"}
+                    else if(tagstr.indexOf("0") != -1){ divstyle = " style='color:red;padding:1px !important;font-size:large;font-weight: bold;'";}
+                    else if(tagstr.indexOf("2") != -1){ divstyle=" style='color:red;padding:1px !important;'";}
+                    else if(tagstr.indexOf("4") != -1){ divstyle=" style='color:#fb60ae;padding:1px !important;'";}
+                }
+                //var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
+                var divstr = "<div"+ divstyle +">";
+
+
+                if(!(jQuery.type(imgfile) === "undefined")){
+                    divstr += "<table width='100%'><tr><td>"+$(this).text()+"</td><td align='right'><img src='"+ imgfile +"' width='"+imgwidth+"px' height='auto' "+ defstyle +"/></td></tr></table>"
+                }else{
+                    divstr += $(this).text();
+                }
+                divstr +="</div>" ;
+                $("#datedatacol").append(divstr);
+            });
+        }else if("2" == calUIdata.id){
+            var datalist = $(panchangxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date[id='"+ id +"']").children();
+            $(datalist).each(function(){
+                var datatag = $(this).prop("tagName");
+                if(!(panchangdatatag[datatag] === undefined)){
+                    var pnchdata = "<b>" + panchangdatatag[datatag]  + "</b> : " + $(this).text();
+                    var divstr = "<div>"+ pnchdata + "</div>";
+                    if(datatag == "ti"){
+                        divstr = "<div><table width='100%'><tr><td>"+pnchdata+"</td><td align='right'><img src='img/mn/"+id+".png' width='30px' height='auto'/></td></tr></table></div>"
+                    }
+                    $("#datedatacol").append(divstr);
+                }
+            });            
+        }
     }
 }
 
@@ -261,13 +293,13 @@ function calculatedimensions(){
     $("#datedatacol").height(footerheight - 44);
     
     var navheight = (calcontentheight+20);
-    $("#calnavleft").css("height",navheight+"px");
+    /*$("#calnavleft").css("height",navheight+"px");
     $("#calnavright").css("height",navheight+"px");
     $("#calnavleft").css("margin-top","-"+(navheight-10)+"px");
     $("#calnavright").css("margin-top","-"+(navheight)+"px");
     $("#calnavright").css("margin-left",docwd-30+"px");
     $("#righnavimgid").css("margin-top",((navheight/2)-30)+"px");
-    $("#leftnavimgid").css("margin-top",((navheight/2)-30)+"px");
+    $("#leftnavimgid").css("margin-top",((navheight/2)-30)+"px");*/
     
     
 }
@@ -283,12 +315,12 @@ $( document ).on( "pageinit", "#maincalender", function() {
     
     $('#calheader').addClass("month"+ month +"-theme");
     
-    $("#calnavleft").find("img").click(function() {
+    /*8$("#calnavleft").find("img").click(function() {
         prevmonth();
     });
     $("#calnavright").find("img").click(function() {
         nextmonth();
-    });
+    });*/
     
 });
 
@@ -321,7 +353,9 @@ function showpanchang(){
 
 function updateHeaderClass(){
     $('#calheader').removeClass(calPrevUIdata["header-class"])
+    $('#calheader').removeClass(calPrevUIdata["header-bgimage"])
     $('#calheader').addClass(calUIdata["header-class"]);
+    $('#calheader').addClass(calUIdata["header-bgimage"]);
 }
 
 $( document ).on( "pageinit", "#finder-page", function() {
@@ -362,7 +396,7 @@ function oncalswiperight(){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
         prevmonth();
     }
-    showNav("#calnavleft",-30);showNav("#calnavright",30);
+    //showNav("#calnavleft",-30);showNav("#calnavright",30);
     return false;     
 }
 
@@ -372,7 +406,7 @@ function oncalswipeleft(){
        // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
         nextmonth();
     }    
-    showNav("#calnavleft",-30);showNav("#calnavright",30);
+    //showNav("#calnavleft",-30);showNav("#calnavright",30);
     return false;
 }
 
@@ -406,10 +440,25 @@ function loadCalendar(){
         })
         calerdarxml = xml;        
     },
-  error: function() {
-    alert("An error occurred while processing XML file.");
-  }
-  }); 
+    error: function() {
+        alert("An error occurred while processing calendar XML file.");
+    }
+    }); 
+    
+    $.ajax({
+    type: "GET",
+    url: "data/panchang-data.xml",
+    dataType: "xml",
+    success: function(xml){
+        $(xml).find("calendar > data-tag").children().each(function(){
+            panchangdatatag[$(this).prop("tagName")] = $(this).text();
+        });
+        panchangxml = xml;        
+    },
+    error: function() {
+        alert("An error occurred while processing panchang XML file.");
+    }
+    }); 
     
     /*$.ajax({
         type: "GET",
