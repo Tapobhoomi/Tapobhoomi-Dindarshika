@@ -190,13 +190,17 @@ body {
     background-size:100% 100%;
 }
     
-div.panchanglistitem table, td, th {
+div.mainhome table, td, th {
     border: 0px;
 }
     
 
-div.panchanglistitemtable table {
+div.mainhome table {
     border-collapse: collapse;
+}
+    
+div.mainhome td img { 
+  vertical-align: top;
 }
 
 .div-day{
@@ -279,6 +283,14 @@ div.panchanglistitemtable table {
 .date-div-outer{
     border-radius: 10px;
     border: 0.1em solid #73AD21;
+}
+.home-stamp-text {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    color: saddlebrown; 
+    font-weight: normal;
+    font-size: 1.5em;   
 }
 </style>
 <body>
@@ -371,7 +383,7 @@ div.panchanglistitemtable table {
          <!--<td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td>-->
         <div style="text-transform:none;font-size: 1em;background-color:#f2e9d9 !important;">
             <div style="font-weight:bold;background-color: #e7b149;padding-top:2px;padding-left:5px;" class="text-shadow-none" id="datahdr">Details :</div>
-            <div style="overflow:auto;padding-top:5px;padding-left:5px;font-weight:normal" class="text-shadow-none" id="datedatacol"></div>
+            <div style="overflow:auto;padding-top:5px;padding-left:5px;font-weight:normal;word-wrap: break-word;" class="text-shadow-none" id="datedatacol"></div>
             </div>
      </div>
 </div>
@@ -395,9 +407,11 @@ div.panchanglistitemtable table {
 </div>
     
 <div id="homepage" data-role="page" >
- <div data-role="content">
-     <table width="100%" height="100%" ><tr height="30%"><td width="200px"  align="center" style="vertical-align:middle;background-color:rgba(246, 136, 61, 0.3);" ><a href="#aboutswami"><div><img src="img/about_swamiji_sm.png" height="auto" width="100%"/></div></a></td><td width="200px" align="center" style="vertical-align:middle;background-color:rgba(246, 136, 61, 0.3);"><a href="#aboutsampraday"><div style="height:100%;width:100%;"><img src="img/about_sampradaya_sm.png" height="auto" width="100%"/></div></a></td></tr>
-         <tr><td colspan="2"><div style="height:200px"></div></td></tr></table>
+ <div data-role="content" style="padding:0em !important;" class="mainhome">
+     <table width="100%"><tr style="vertical-align:middle;"><td width="50%" style="text-align:center;background-color:rgba(246, 136, 61, 0.3);position:relative;" onclick="location.href='#aboutswami'"><img src="img/about_swamiji_sm.png" style="height:auto;width:90%;"/><div class="home-stamp-text text-shadow-none">Swamiji</div></td><td width="50%" style="text-align:center;background-color:rgba(246, 0, 61, 0.3);position:relative;" onclick="location.href='#aboutsampraday'"><img src="img/about_sampradaya_sm.png" style="height:auto;width:100%"/><div class="home-stamp-text text-shadow-none">Sampradaya</div></td></tr>
+     <tr><td colspan="2" style="position:relative;"><div style="background-color:rgba(209, 106, 236, 0.3);  width:100%; height:100%;" onclick="location.href='#aboutswami'"/><div class="home-stamp-text text-shadow-none">News</div></td></tr>
+         <tr><td colspan="2" style="position:relative;"><div style="background-color:rgba(106, 200, 236, 0.3);  width:100%; height:100%;" onclick="location.href='#aboutswami'"><div class="home-stamp-text text-shadow-none">Events</div></div></td></tr>
+     </table>
  </div>
  </div>
     

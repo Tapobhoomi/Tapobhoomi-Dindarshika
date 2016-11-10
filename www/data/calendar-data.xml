@@ -446,7 +446,7 @@
                 <d tag="SMU">Mahashivratri Utsav Haturlemat - Shaka, Amona</d> 
                 <d>Shivratra-Maharudhra Gopinath Mandir Majeri (Dodamarg)</d>
                 <d>Gomteshwar vardhapandin - Baina - Sasmode</d>
-                <d>Mahashivratra - Revana, Shiroda, Mahabaleshwar, Parra, Ramnathi,Sancoale, Tambdisurla,Thane,Malpe,Vargaon,Mangeshi,Kaoutombi,Kaisua,Harvale,Keri,Narve,Cortalim,Kakoda,Shelde,Murgaon,Candolim,Siolim,Thivim,Satardem,Gurdev</d>
+                <d>Mahashivratra - Revana, Shiroda, Mahabaleshwar, Parra, Ramnathi,Sancoale, Tambdisurla, Thane, Malpe, Vargaon, Mangeshi, Kaoutombi, Kaisua, Harvale, Keri, Narve, Cortalim, Kakoda, Shelde, Murgaon, Candolim, Siolim, Thivim, Satardem, Gurdev</d>
                 <d>Shri Shideshwar Madir - Uge, Sanguem</d>
                 <d>Maharudra, Chandreshwar Abhishek Mahapuja - Pali kaoutambi</d>
             </date>
@@ -875,18 +875,22 @@
                 <d>Shri Mallikarjun Pindikostov, Mollcornem Sanguem</d>
             </date>
             <date id="28" dn="२८" wd="5">
-                <d tag="NAX">हस्त</d>
-                <d>मार्गशीर्ष कु. ८</d>
+                <d tag="NAX">Krittika</d>
+                <d>Vaishak Shuk 2</d>
+                <d>Akshay Tritiya</d>
+                <d tag="4">Sant samaj Dogri Neura</d>
             </date>
             <date id="29" dn="२९" wd="6">
-                <d tag="NAX">हस्त</d>
-                <d>मार्गशीर्ष कु. ८</d>
+                <d tag="NAX">Rohini</d>
+                <d>Vaishak Shuk 3/4</d>
+                <d tag="8">Vinayak Chaturti</d>
+                <d>Bhadravasa after 17:15 upto 27:39</d>
             </date>
             <date id="30" dn="३०" wd="0">
-                <d tag="NAX">हस्त</d>
-                <d>मार्गशीर्ष कु. ८</d>
-                <d>कालाष्टमी अष्टक</d>
-                <d>श्री भूमिका पूजन, मोरजी</d>
+                <d tag="NAX">Mrigashirsha</d>
+                <d>Vaishak Shuk 5</d>
+                <d tag="5">Lairahi Jatra, Shirgaon</d>
+                <d>श्री Dev Vethobha Vardhapan Din ,Arwali </d>
             </date>
         </month>
     </calendar>

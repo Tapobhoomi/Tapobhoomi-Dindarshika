@@ -202,8 +202,8 @@ function selectdate(id){
                 var txtcolor = null;
                 var imgfile = $(this).attr("img");
                 var imgwidth = 40;
-                var defstyle = "style='padding-right:5px'";
-                var divstyle = "";
+                var defstyle = " style='padding-right:5px;'";
+                var divstyle = " style='padding-bottom:4px;'";
                 if(!(jQuery.type(tagstr) === "undefined")){
                     if(tagstr.indexOf("NAX") != -1){ divstyle=" style='color:green;padding:1px !important;'";defstyle="";imgfile = "img/mn/"+id+".png";imgwidth=30;}
                     else if(tagstr.indexOf("SMU") != -1){ divstyle=" style='color:#f04115;padding:1px !important;'"}
@@ -212,7 +212,7 @@ function selectdate(id){
                     else if(tagstr.indexOf("4") != -1){ divstyle=" style='color:#fb60ae;padding:1px !important;'";}
                 }
                 //var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
-                var divstr = "<div"+ divstyle +">";
+                var divstr = "<div "+ divstyle +">";
 
 
                 if(!(jQuery.type(imgfile) === "undefined")){
@@ -249,35 +249,36 @@ function calculatedimensions(){
     var selectedyearfontsz = "0.9em";
     var selectedmonthfontsz = "1.6em";
     var calweeknamesfontsz = "1.1em";
-    var diff= 80;
+    var diff = 10;
     if(docwd > 420 && docwd < 440){
         selectedmonthfontsz = "1.6em";
         selectedyearfontsz = "0.9em";
         calweeknamesfontsz = "1.1em";
+        diff += 2;
     }else if(docwd >= 440 && docwd < 460){
         calheaderht += 10
         selectedmonthfontsz = "1.7em";
         selectedyearfontsz = "0.95em";
         calweeknamesfontsz = "1.15em";
-        diff += 5;
+        diff += 2;
     }else if(docwd >= 460 && docwd < 480){
         calheaderht += 10
         selectedmonthfontsz = "1.8em";
         selectedyearfontsz = "1em";
         calweeknamesfontsz = "1.2em";
-        diff += 5;
+        diff += 3;
     }else if(docwd >= 480 && docwd < 500){
         calheaderht += 20
         selectedmonthfontsz = "1.9em";
          selectedyearfontsz = "1.1em";
         calweeknamesfontsz = "1.3em";
-        diff += 10;
+        diff += 4;
     }else if(docwd >= 500){
         calheaderht += 30
         selectedyearfontsz = "1.2em";
         selectedmonthfontsz = "2em";
         calweeknamesfontsz = "1.4em";
-        diff += 20;
+        diff += 6;
     }
     
     $("#calweeknames").css("font-size",calweeknamesfontsz);
@@ -286,13 +287,13 @@ function calculatedimensions(){
     $("#calheader").css("height",(calheaderht) + "px !important");
     //calheaderht = $("#calheader").height();
     caltddim = (docwd/7) - 5;
-    var calcontentheight = (caltddim * 5);
-    //$("#calcontent").height(calcontentheight);
-    var footerheight =  docht - (diff + calcontentheight + 20); //documentheight -(calendar header height + calendar content height - buffer)
+    var calcontentheight = (caltddim * 5) + (diff - 5);
+    $("#calcontent").height(calcontentheight);
+    var footerheight =  docht - (calheaderht + calcontentheight + diff); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
-    $("#datedatacol").height(footerheight - 44);
+    $("#datedatacol").height(footerheight - 47);
     
-    var navheight = (calcontentheight+20);
+    //var navheight = (calcontentheight+20);
     /*$("#calnavleft").css("height",navheight+"px");
     $("#calnavright").css("height",navheight+"px");
     $("#calnavleft").css("margin-top","-"+(navheight-10)+"px");
@@ -303,6 +304,16 @@ function calculatedimensions(){
     
     
 }
+
+$( document ).on( "pageinit", "#homepage", function() {
+    var docht = $(document).height();
+    $(".mainhome").find("td").each(function(){
+       $(this).css("height",docht/3); 
+        $(this).parent().css("height",docht/3);     
+    });
+});
+
+
 
 $( document ).on( "pageinit", "#landingpage", function() {
     loadCalendar();
