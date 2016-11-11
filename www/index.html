@@ -190,18 +190,21 @@ body {
     background-size:100% 100%;
 }
     
-div.mainhome table, td, th {
+div.aboutpagecl table, td, th {
     border: 0px;
-}
-    
+}    
 
-div.mainhome table {
+div.aboutpagecl table {
     border-collapse: collapse;
 }
     
-div.mainhome td img { 
+div.aboutpagecl td img { 
   vertical-align: top;
 }
+        
+div.text-shadow-none table, td, th {
+    border: 0px;
+}    
 
 .div-day{
     font-size:12px;
@@ -286,18 +289,29 @@ div.mainhome td img {
 }
 .home-stamp-text {
     position:absolute;
-    bottom: 0;
-    left: 0;
-    color: saddlebrown; 
+    bottom: 20%;
+    color: white; 
     font-weight: normal;
     font-size: 1.5em;   
+    width: 100%; 
+}
+div.landingpagerel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+div.splashabs {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 }
 </style>
 <body>
-    
 <div id="landingpage" data-role="page" class="landingpage-bg">
     <div data-role="content" class="text-shadow-none" style="padding:0px">
-        <div class="ui-center-div">        
+        <div class="ui-center-div landingpagerel">        
         <div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
         <div><img src="img/title.png" width="70%" height="auto"/></div>
         <div data-role="controlgroup" data-type="horizontal" >
@@ -307,11 +321,15 @@ div.mainhome td img {
             <a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a>
         </div>
         <div data-role="controlgroup" data-type="horizontal" >    
-            <!--<a href="#search-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>-->
+            <a href="#about-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>
             <a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a>
             <a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
         </div>
-        <h4><div style="margin:5px;text-align:left !important">दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h4>
+        <h4><div style="margin:5px;text-align:left !important">दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h4>  
+        </div>
+        <div id="splashscreen" style="padding:0em !important;" class="splashabs">
+            <table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/about_swamiji_sm.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
+            </table>
         </div>
     </div>
 </div>
@@ -340,7 +358,7 @@ div.mainhome td img {
                  <!--<div style="padding:5px;" class="panchanglistitem panchanglistitemtable"><table width='100%' style='background-color:#f2e9d9;'><tr><td width='20%' style='text-align:center;'><div style='background-color:red;color:white;padding: 3px;'>Wed</div><div style='background-color:#f2e9d9;padding: 3px;'><img src='img/mn/1.png' width='25%' height='auto'/></div></td><td width='75%'><table width="100%"><tr><td  width="30%" style='background-color:#ecb054;color:white;padding: 5px;'>Thiti</td><td style="padding: 5px;">Chaturthi upto 15:50</td></tr><tr><td  width="30%" style='background-color:#bf9351;color:white;padding: 5px;'>Nakshatra</td><td style="padding: 5px;">Punarvasu upto 15:50</td></tr></table></td><td width='5%' style="background-color:#ba8e4a">></td></tr><tr style='text-align:center;background-color:#75eab2'><td colspan="3">Unfavorable</td></tr></table></div>-->
   <!--      <div style="padding:5px;" class="panchanglistitem panchanglistitemtable"><table width='100%' style='background-color:#f2e9d9;'><tr><td width='20%' style='text-align:center;background-color:red;color:white;padding: 3px;'>Wed<td width='10%' style='background-color:#f2e9d9;padding: 3px;text-align:center;'><img src='img/mn/1.png' width='55%' height='auto'/></td><td width='75%'>Unfavorable</td><td width='5%' style="background-color:#ba8e4a">></td></tr><tr><td colspan="4"><table><tr><td  width="30%" style='background-color:#ecb054;color:white;padding: 5px;'>Thiti</td><td style="padding: 5px;">Chaturthi upto 15:50</td><td  width="30%" style='background-color:#bf9351;color:white;padding: 5px;'>Nakshatra</td><td style="padding: 5px;">Punarvasu upto 15:50</td></tr></table></td></tr></table></div>
     </div>
-</div>   --> 
+</div>    
 <div id="Read" data-role="page" style="background-color:#f6883d">
     <div data-role="content" class="text-shadow-none">
         <div class="ui-center-div">
@@ -352,7 +370,7 @@ div.mainhome td img {
         <h5><div style="color:blue;">सुविचार : </div><div>दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h5>
         </div>
     </div>
-</div>   
+</div>   -->
 
     
 <div id="maincalender" data-role="page" >
@@ -406,16 +424,14 @@ div.mainhome td img {
      </div> 
 </div>
     
-<div id="homepage" data-role="page" >
- <div data-role="content" style="padding:0em !important;" class="mainhome">
-     <table width="100%"><tr style="vertical-align:middle;"><td width="50%" style="text-align:center;background-color:rgba(246, 136, 61, 0.3);position:relative;" onclick="location.href='#aboutswami'"><img src="img/about_swamiji_sm.png" style="height:auto;width:90%;"/><div class="home-stamp-text text-shadow-none">Swamiji</div></td><td width="50%" style="text-align:center;background-color:rgba(246, 0, 61, 0.3);position:relative;" onclick="location.href='#aboutsampraday'"><img src="img/about_sampradaya_sm.png" style="height:auto;width:100%"/><div class="home-stamp-text text-shadow-none">Sampradaya</div></td></tr>
-     <tr><td colspan="2" style="position:relative;"><div style="background-color:rgba(209, 106, 236, 0.3);  width:100%; height:100%;" onclick="location.href='#aboutswami'"/><div class="home-stamp-text text-shadow-none">News</div></td></tr>
-         <tr><td colspan="2" style="position:relative;"><div style="background-color:rgba(106, 200, 236, 0.3);  width:100%; height:100%;" onclick="location.href='#aboutswami'"><div class="home-stamp-text text-shadow-none">Events</div></div></td></tr>
+<div id="about-page" data-role="page" >
+ <div data-role="content" style="padding:0em !important;" class="aboutpagecl">
+     <table width="100%" style="background-color:rgba(246, 136, 61, 0.3);"><tr style="vertical-align:middle;"><td style="text-align:center;position:relative;"><a href="#aboutswami"><img src="img/about_swamiji_sm.png" style="width:auto;height:70%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Swamiji</div></a></td></tr><tr style="vertical-align:middle;"><td style="text-align:center;position:relative;"><a href="#aboutsampraday"><img src="img/about_sampradaya_sm.png" style="width:auto;height:70%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Sampradaya</div></a></td></tr>
      </table>
  </div>
  </div>
-    
-<div id="about-page" data-role="page" >
+ <!--   
+<div id="homepage" data-role="page" >
  <div data-role="header" class="sriguru-ui-background">
  <div class="text-shadow-none page-header-text">About</div> 
  </div>
@@ -424,6 +440,7 @@ div.mainhome td img {
  <a href="#aboutsampraday" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">Sampraday</a>
  </div>
  </div>
+-->
 
 <div id="aboutswami" data-role="page" class="text-shadow-none">
  <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">

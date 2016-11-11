@@ -249,36 +249,36 @@ function calculatedimensions(){
     var selectedyearfontsz = "0.9em";
     var selectedmonthfontsz = "1.6em";
     var calweeknamesfontsz = "1.1em";
-    var diff = 10;
+    var diff = 20;
     if(docwd > 420 && docwd < 440){
         selectedmonthfontsz = "1.6em";
         selectedyearfontsz = "0.9em";
         calweeknamesfontsz = "1.1em";
-        diff += 2;
+        //diff += 2;
     }else if(docwd >= 440 && docwd < 460){
         calheaderht += 10
         selectedmonthfontsz = "1.7em";
         selectedyearfontsz = "0.95em";
         calweeknamesfontsz = "1.15em";
-        diff += 2;
+        //diff += 2;
     }else if(docwd >= 460 && docwd < 480){
         calheaderht += 10
         selectedmonthfontsz = "1.8em";
         selectedyearfontsz = "1em";
         calweeknamesfontsz = "1.2em";
-        diff += 3;
+        //diff += 3;
     }else if(docwd >= 480 && docwd < 500){
         calheaderht += 20
         selectedmonthfontsz = "1.9em";
          selectedyearfontsz = "1.1em";
         calweeknamesfontsz = "1.3em";
-        diff += 4;
+        //diff += 4;
     }else if(docwd >= 500){
         calheaderht += 30
         selectedyearfontsz = "1.2em";
         selectedmonthfontsz = "2em";
         calweeknamesfontsz = "1.4em";
-        diff += 6;
+        //diff += 6;
     }
     
     $("#calweeknames").css("font-size",calweeknamesfontsz);
@@ -287,9 +287,9 @@ function calculatedimensions(){
     $("#calheader").css("height",(calheaderht) + "px !important");
     //calheaderht = $("#calheader").height();
     caltddim = (docwd/7) - 5;
-    var calcontentheight = (caltddim * 5) + (diff - 5);
+    var calcontentheight = (caltddim * 5) + diff;
     $("#calcontent").height(calcontentheight);
-    var footerheight =  docht - (calheaderht + calcontentheight + diff); //documentheight -(calendar header height + calendar content height - buffer)
+    var footerheight =  docht - (calheaderht + calcontentheight + 10); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
     $("#datedatacol").height(footerheight - 47);
     
@@ -305,21 +305,39 @@ function calculatedimensions(){
     
 }
 
-$( document ).on( "pageinit", "#homepage", function() {
+$( document ).on( "pageinit", "#about-page", function() {
     var docht = $(document).height();
-    $(".mainhome").find("td").each(function(){
-       $(this).css("height",docht/3); 
-        $(this).parent().css("height",docht/3);     
+    $(".aboutpagecl").find("td").each(function(){
+        var height = (docht/2) - 2;
+       $(this).css("height",height); 
+        $(this).parent().css("height",height);     
     });
 });
 
+/*$( document ).on( "pageinit", "#splash", function() {
+    var docht = $(document).height();
+    $(".splashpagecl").find("td").each(function(){
+        var height = docht - 4;
+       $(this).css("height",height); 
+        $(this).parent().css("height",height);     
+    });
+});*/
 
-
+var splsrnhide = null;
 $( document ).on( "pageinit", "#landingpage", function() {
+    splsrnhide = setTimeout(hidesplashscreen, 5000);
     loadCalendar();
 });
 
+
+
+function hidesplashscreen() {
+    hideNav("#splashscreen","-"+$(document).width());
+    clearTimeout(splsrnhide);
+}
+
 $( document ).on( "pageinit", "#maincalender", function() {
+    
     calculatedimensions();    
     createFinderMenu("#findermenulist");    
     loadData(calerdarxml);
