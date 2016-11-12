@@ -307,8 +307,8 @@ function calculatedimensions(){
 
 $( document ).on( "pageinit", "#about-page", function() {
     var docht = $(document).height();
-    $(".aboutpagecl").find("td").each(function(){
-        var height = (docht/2) - 2;
+    $(".aboutpagecl").find("td.aboutcls").each(function(){
+        var height = (docht/2) - 20;
        $(this).css("height",height); 
         $(this).parent().css("height",height);     
     });
@@ -325,7 +325,7 @@ $( document ).on( "pageinit", "#about-page", function() {
 
 var splsrnhide = null;
 $( document ).on( "pageinit", "#landingpage", function() {
-    splsrnhide = setTimeout(hidesplashscreen, 5000);
+    splsrnhide = setTimeout(hidesplashscreen, 2000);
     loadCalendar();
 });
 
@@ -335,6 +335,12 @@ function hidesplashscreen() {
     hideNav("#splashscreen","-"+$(document).width());
     clearTimeout(splsrnhide);
 }
+
+$( document ).on( "pageinit", "#homepage", function() {
+    var homecontentht = $(document).height() - 55;
+    $("#home_feeds").css("height",homecontentht+"px");
+    $("#home_messages").css("height",homecontentht+"px");
+});
 
 $( document ).on( "pageinit", "#maincalender", function() {
     
@@ -467,7 +473,16 @@ function loadCalendar(){
             weekday[wdc] = $(this).text();
             wdc += 1;
         })
-        calerdarxml = xml;        
+        calerdarxml = xml;  
+        
+        
+        var qoutes = $(calerdarxml).find("calendar[id='"+ year + "'] > quotes");
+        var x = Math.floor((Math.random() * qoutes.children().size()) + 1);
+        qoutes.children().each(function(){
+            if($(this).attr("id") == x){
+                $("#quoteoftheday").text($(this).text());
+            }
+        });
     },
     error: function() {
         alert("An error occurred while processing calendar XML file.");

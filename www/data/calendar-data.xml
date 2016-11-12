@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <calendar>
     <calendar id="2017" dn="2017">
+        <quotes>
+            <qoute id="1">Holding onto anger is like driking poison and expecting the other person to die - Buddha</qoute>
+            <qoute id="2">Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship - Buddha</qoute>
+            <qoute id="3">Happiness does not depend on what you have or who you are. It solely relies on what you think - Buddha </qoute>
+        </quotes>
         <wd-data>
             <wd id="0">Sun</wd> <wd id="1">Mon</wd><wd id="2">Tue</wd>
             <wd id="3">Wed</wd><wd id="4">Thu</wd><wd id="5">Fri</wd><wd id="6">Sat</wd>

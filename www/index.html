@@ -92,6 +92,10 @@ body {
 	background-color: #f6883d !important;
 	border-color: #f6883d !important;
 }
+.sriguru-ui-background-2{
+	background-color: #f6883d !important;
+	border-color: chocolate !important;
+}
 
 .calerdar-currentdate{
     background:#f6883d;
@@ -205,6 +209,15 @@ div.aboutpagecl td img {
 div.text-shadow-none table, td, th {
     border: 0px;
 }    
+    
+div.feedscls table, td, th {
+    /*border: 1px solid;*/
+   border: 0px;
+}    
+div.feedscls table {
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.5);
+}
 
 .div-day{
     font-size:12px;
@@ -289,7 +302,7 @@ div.text-shadow-none table, td, th {
 }
 .home-stamp-text {
     position:absolute;
-    bottom: 20%;
+    bottom: 25%;
     color: white; 
     font-weight: normal;
     font-size: 1.5em;   
@@ -306,6 +319,10 @@ div.splashabs {
     left: 0px;
     width: 100%;
     height: 100%;
+}
+.navtabtext{
+    color:white !important;
+    font-size: 1em !important;
 }
 </style>
 <body>
@@ -325,7 +342,7 @@ div.splashabs {
             <a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a>
             <a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
         </div>
-        <h4><div style="margin:5px;text-align:left !important">दिवसात तुम्हाला एकही समस्या आली नसेल तर तुम्ही चुकीच्या रस्त्यावरून जात आहात असे समजावे  - स्वामी विवेकानंद </div></h4>  
+        <h4><div style="margin:5px;text-align:left !important;" id="quoteoftheday"></div></h4>  
         </div>
         <div id="splashscreen" style="padding:0em !important;" class="splashabs">
             <table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/about_swamiji_sm.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
@@ -426,7 +443,7 @@ div.splashabs {
     
 <div id="about-page" data-role="page" >
  <div data-role="content" style="padding:0em !important;" class="aboutpagecl">
-     <table width="100%" style="background-color:rgba(246, 136, 61, 0.3);"><tr style="vertical-align:middle;"><td style="text-align:center;position:relative;"><a href="#aboutswami"><img src="img/about_swamiji_sm.png" style="width:auto;height:70%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Swamiji</div></a></td></tr><tr style="vertical-align:middle;"><td style="text-align:center;position:relative;"><a href="#aboutsampraday"><img src="img/about_sampradaya_sm.png" style="width:auto;height:70%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Sampradaya</div></a></td></tr>
+     <table width="100%"><tr style="vertical-align:middle;"><td style="text-align:center;position:relative;"  class="aboutcls"><a href="#aboutswami"><img src="img/about_swamiji_sm.png" style="width:auto;height:55%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Swamiji</div></a></td></tr><tr style="width:100%;height:auto;"><td style="width:100%;height:auto;"><img src="img/divider.png" style="width:100%;height:auto;"/></td></tr><tr style="vertical-align:middle;"><td style="text-align:center;position:relative;"   class="aboutcls"><a href="#aboutsampraday"><img src="img/about_sampradaya_sm.png" style="width:auto;height:55%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Sampradaya</div></a></td></tr>
      </table>
  </div>
  </div>
@@ -441,6 +458,42 @@ div.splashabs {
  </div>
  </div>
 -->
+<div id="homepage" data-role="page" >
+ <div data-role="content" style="padding:0em !important;">
+ <div data-role="tabs" id="tabs">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home_feeds" data-ajax="false" class="sriguru-ui-background-2 text-shadow-none navtabtext">Feeds</a></li>
+      <li><a href="#home_messages" data-ajax="false" class="sriguru-ui-background-2 text-shadow-none navtabtext">Messages</a></li>
+    </ul>
+  </div>
+  <div id="home_feeds" class="ui-body-d ui-content" style="padding: 0em; !important;height:1px;width:100% ">
+    <div style="padding:5px;overflow:auto;" class="text-shadow-none">
+        <div style='padding:5px;' class="feedscls">
+        <table width="100%"><tr><td colspan="2" style="text-align:center;padding:3px;font-style: italic;">12th Nov</td></tr><tr><td width="20%" style="padding:5px;" ><img src="img/event.png" style="width:80%;height:auto;"/></td><td width="80%" style="padding:5px;"><div>Vande mataram</div><div><a href="#" onclick="window.open('http://srigurudev.org/contactus', '_system');">contact us</a></div></td></tr></table>
+        </div>
+        <div style='padding:5px;' class="feedscls">
+        <table width="100%"><tr><td colspan="2" style="text-align:center;padding:3px;font-style: italic;">9th Nov</td></tr><tr><td width="20%" style="padding:5px;vertical-align: top;" ><img src="img/news.png" style="width:80%;height:auto;"/></td><td width="80%" style="padding:5px;"><div style="font-weight: bold;">“Tapobhoomi”</div><div>Goa’s renowned spiritual hub located at Kundaim in Ponda Taluka.</div><div width="100%" style="text-align:center;"><img src="img/landingpg_main.jpg" style="width:70%;height:auto;"/></div>
+        <div><a href="#" onclick="window.open('http://srigurudev.org/edu-activities', '_system');" data-role="button" class="ui-btn text-shadow-none" style="color:black" data-theme="b">more</a></div></td></tr></table>
+        </div>
+        <div style='padding:5px;' class="feedscls">
+        <table width="100%"><tr><td colspan="2" style="text-align:center;padding:3px;font-style: italic;">7th Nov</td></tr><tr><td width="20%" style="padding:5px;" ><img src="img/event.png" style="width:80%;height:auto;"/></td><td width="80%" style="padding:5px;"><div>Upcoming events</div><div><a href="#" onclick="window.open('http://srigurudev.org/contactus', '_system');">link</a></div></td></tr></table>
+        </div>
+    </div>
+  </div>
+  <div id="home_messages" class="ui-body-d ui-content" style="padding: 0em; !important;height:1px;width:100% ">
+    <div style="padding:5px;overflow:auto;" class="text-shadow-none">
+        <div style='padding:5px;' class="feedscls">
+        <table width="100%"><tr><td colspan="2" style="text-align:center;padding:3px;font-style: italic;">12th Nov</td></tr><tr><td width="20%" style="padding:5px;" ><img src="img/about_swamiji_sm.png" style="width:80%;height:auto;"/></td><td width="80%" style="padding:5px;"><div style="font-style: italic;">Message from P. P. Sadguru:</div><div>“All are welcome to event 'Vande Mataram'”</div></td></tr></table>
+        </div>
+        <div style='padding:5px;' class="feedscls">
+        <table width="100%"><tr><td colspan="2" style="text-align:center;padding:3px;font-style: italic;">12th Nov</td></tr><tr><td width="20%" style="padding:5px;" ><img src="img/about_sampradaya_sm.png" style="width:80%;height:auto;"/></td><td width="80%" style="padding:5px;"><div style="font-style: italic;">Message from Tapobhumi:</div><div>“We are celebrating Tulsi vivah event on 19th Nov”</div></td></tr></table>
+        </div>
+    </div>
+  </div>
+</div>
+ </div>
+ </div>
 
 <div id="aboutswami" data-role="page" class="text-shadow-none">
  <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">
