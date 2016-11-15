@@ -558,7 +558,7 @@ $( document ).on( "pageinit", "#educationpage", function() {
     }
     });*/
     
-    /*var value = window.localStorage.getItem("today");
+    var value = window.localStorage.getItem("today");
     
     alert(value);
     
@@ -582,7 +582,7 @@ $( document ).on( "pageinit", "#educationpage", function() {
 
     today = mm+'/'+dd+'/'+yyyy;
     
-    window.localStorage.setItem("today", today);*/
+    window.localStorage.setItem("today", today);
 });
 
 function oncalswiperight(){
