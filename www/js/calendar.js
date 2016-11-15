@@ -139,7 +139,14 @@ function updatecalendardata(){
     $(monthdatelist).each(function(){
         var wkday = $(this).attr("wd");
         var cell = $("#td"+ wkday + y +"");
-        cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="img/mn/'+$(this).attr("id")+'.png" width="55%" height="auto"/></div>');
+        var dateimg = 'img/mn/'+$(this).attr("id")+'.png';
+        
+        var festivaldate = $(this).find("d[tag='0']");
+        if($(this).attr("wd") == 0 || (festivaldate.length > 0 && calUIdata["id"] == 1)){
+            dateimg = 'img/mn/red/'+$(this).attr("id")+'.png';
+        }
+        
+        cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="'+dateimg +'" width="55%" height="auto"/></div>');
         $(cell).attr("id",$(this).attr("id"));
         
         if(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == $(this).attr("id")){
@@ -336,11 +343,137 @@ function hidesplashscreen() {
     clearTimeout(splsrnhide);
 }
 
+
+(function() {
+    var supportTouch = $.support.touch,
+            scrollEvent = "touchmove scroll",
+            touchStartEvent = supportTouch ? "touchstart" : "mousedown",
+            touchStopEvent = supportTouch ? "touchend" : "mouseup",
+            touchMoveEvent = supportTouch ? "touchmove" : "mousemove";
+    $.event.special.swipeupdown = {
+        setup: function() {
+            var thisObject = this;
+            var $this = $(thisObject);
+            $this.bind(touchStartEvent, function(event) {
+                var data = event.originalEvent.touches ?
+                        event.originalEvent.touches[ 0 ] :
+                        event,
+                        start = {
+                            time: (new Date).getTime(),
+                            coords: [ data.pageX, data.pageY ],
+                            origin: $(event.target)
+                        },
+                        stop;
+
+                function moveHandler(event) {
+                    if (!start) {
+                        return;
+                    }
+                    var data = event.originalEvent.touches ?
+                            event.originalEvent.touches[ 0 ] :
+                            event;
+                    stop = {
+                        time: (new Date).getTime(),
+                        coords: [ data.pageX, data.pageY ]
+                    };
+
+                    // prevent scrolling
+                    if (Math.abs(start.coords[1] - stop.coords[1]) > 10) {
+                        event.preventDefault();
+                    }
+                }
+                $this
+                        .bind(touchMoveEvent, moveHandler)
+                        .one(touchStopEvent, function(event) {
+                    $this.unbind(touchMoveEvent, moveHandler);
+                    if (start && stop) {
+                        if (stop.time - start.time < 1000 &&
+                                Math.abs(start.coords[1] - stop.coords[1]) > 30 &&
+                                Math.abs(start.coords[0] - stop.coords[0]) < 75) {
+                            start.origin
+                                    .trigger("swipeupdown")
+                                    .trigger(start.coords[1] > stop.coords[1] ? "swipeup" : "swipedown");
+                        }
+                    }
+                    start = stop = undefined;
+                });
+            });
+        }
+    };
+    $.each({
+        swipedown: "swipeupdown",
+        swipeup: "swipeupdown"
+    }, function(event, sourceEvent){
+        $.event.special[event] = {
+            setup: function(){
+                $(this).bind(sourceEvent, $.noop);
+            }
+        };
+    });
+
+})();
+
 $( document ).on( "pageinit", "#homepage", function() {
     var homecontentht = $(document).height() - 55;
     $("#home_feeds").css("height",homecontentht+"px");
     $("#home_messages").css("height",homecontentht+"px");
+    
+    var feeddata = [{"id":1,"date":"7/11/2016","type":"event","data":"Upcoming events","link":{"name":"link","url":"http://srigurudev.org/contactus"}},{"id":3,"date":"12/11/2016","type":"event","data":"Vande Mataram","link":{"name":"contact us","url":"http://srigurudev.org/contactus"}},{"id":2,"date":"9/11/2016","type":"news","title":"“Tapobhoomi”","data":"Goa’s renowned spiritual hub located at Kundaim in Ponda Taluka.","moredata":{"name":"more","url":"http://srigurudev.org/edu-activities"},"img":"img/landingpg_main.jpg"},{"id":4,"date":"14/11/2016","type":"event","data":"check it out","link":{"name":"link","url":"http://srigurudev.org/contactus"}},{"id":5,"date":"14/11/2016","type":"event","data":"check it out","link":{"name":"link","url":"http://srigurudev.org/contactus"}}];
+    
+    var feedContainer = $("#feedscontainer");
+    populatefeedsandmessages(feedContainer,feeddata);
+    
+    $('#home_feeds').on('swipedown',function(event){
+        $(feedContainer).prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/refresh-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
+        refreshhide = setTimeout(hiderefresher, 2000);
+    } );
+
+    var msgdata = [{"id":4,"date":"12/11/2016","type":"msg-t","data":"We are celebrating Tulsi vivah event on 19th Nov"},{"id":5,"date":"12/11/2016","type":"msg-sg","data":"All are welcome to event 'Vande Mataram'"}];
+    
+    var messagesContainer = $("#messagescontainer");
+    populatefeedsandmessages(messagesContainer,msgdata);
+    
+    $('#home_messages').on('swipedown',function(event){alert("messagescontainer swipedown..");} );
+    
+    
 });
+
+function hiderefresher(){
+    $("#feedscontainer").find(".refreshImgcls").remove();
+}
+
+function populatefeedsandmessages(container,data){
+    data.sort(function(a, b){
+        if (a.id < b.id) return -1;
+        if (b.id < a.id) return 1;
+        return 0;
+    });
+    
+    for(var i in data){
+        populatesinglefeedOrMessage(container,data[i]);        
+    }
+}
+
+function populatesinglefeedOrMessage(container,data){
+    var type = data.type;
+    if(type == "event" || type == "news" || type == "msg-sg" || type == "msg-t"){
+            var datatodisplay = "";
+            var typeimg = type == "event"?"img/event.png":"img/news.png";
+            if(type == "msg-sg" || type == "msg-t"){
+                var msgfrom = type == "msg-sg" ? "Message from P. P. Sadguru:" : "Message from Tapobhumi:";
+                datatodisplay += "<div style='font-style: italic;padding-bottom:5px;'>"+msgfrom+"</div>";
+                
+                typeimg = type == "msg-sg"?"img/about_swamiji_sm.png":"img/about_sampradaya_sm.png";
+            }
+            datatodisplay += data.title != null ? "<div style='font-weight: bold;'>"+data.title+"</div>" : "";
+            datatodisplay += data.data != null ? "<div>"+data.data+"</div>" : "";
+            datatodisplay += data.link != null ? "<div><a href='#' onclick='window.open(\""+data.link.url+"\", \"_system\");'>"+data.link.name+"</a></div>" : "";
+            datatodisplay += data.img != null ? "<div width='100%' style='text-align:center;'><img src='"+data.img+"' style='width:70%;height:auto;'/></div>" : "";
+            datatodisplay += data.moredata != null ? "<div><a href='#' onclick='window.open(\""+data.moredata.url+"\", \"_system\");' data-role='button' class='ui-btn text-shadow-none' style='color:black' data-theme='b'>"+data.moredata.name+"</a></div>" : "";
+            
+            $(container).prepend("<div style='padding:3px;' class='feedscls'><table width='100%'><tr><td colspan='2' style='text-align:center;padding:3px;font-style: italic;'>"+data.date+"</td></tr><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
+        }
+}
 
 $( document ).on( "pageinit", "#maincalender", function() {
     
@@ -424,6 +557,32 @@ $( document ).on( "pageinit", "#educationpage", function() {
        window.open("http://srigurudev.org/edu-activities", '_self ', 'location=yes');
     }
     });*/
+    
+    var value = window.localStorage.getItem("today");
+    
+    alert(value);
+    
+    window.localStorage.clear();
+    
+    value = window.localStorage.getItem("today");
+    alert(value);
+    
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd='0'+dd
+    } 
+
+    if(mm<10) {
+        mm='0'+mm
+    } 
+
+    today = mm+'/'+dd+'/'+yyyy;
+    
+    window.localStorage.setItem("today", today);
 });
 
 function oncalswiperight(){

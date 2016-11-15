@@ -127,187 +127,247 @@
                 <shub-day type="3">Good day</shub-day>
             </date>
             <date id="13" dn="१३" wd="5">
-                <d tag="NAX">Pushya </d>
-                <d>Paush Krishna Paksha 1</d>
-                <d>Lohri</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="14" dn="१४" wd="6">
-                <d tag="NAX">Ashlesha</d>
-                <d>Paush Krishna Paksha 2</d>
-                <d tag="0">Makar Sankranti</d>
-                <d tag="0">Pongal</d>
-                <d>Makar 7:38</d>
-                <d>Bhadravasa after 20:09</d>
-                <d>Good Muhurta 7:38 to 14:38</d>
-                <d tag="5">Shri Chamundeshwari Jatra - Vargaon</d>
-                <d>Shri Bhumika Kalaotsav - Payre </d>
-                <d tag="6">Soldier Day</d>
-                <d>Makar Sankranti Utsav, Shri Hanuman Devsthan - Kharerwade Sukur</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="15" dn="१५" wd="0">
-                <d tag="NAX">Magha</d>
-                <d>Paush Krishna Paksha 3</d>
-                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise:21:16</d>
-                <d>Bhadravasa upto 11:40</d>
-                <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Sant Samaj Margoa</d>
-                <d tag="6">Indian Army Day</d>
-                <d tag="6">Ground Army Day</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="16" dn="१६" wd="1">
-                <d tag="NAX">Purva Phalguni</d>
-                <d>Paush Krishna Paksha 4</d>
-                <d tag="7">Shripadvallab Jayanti</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="17" dn="१७" wd="2">
-                <d tag="NAX">Uttara Phalguni</d>
-                <d>Paush Krishna Paksha 5</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="18" dn="१८" wd="3">
-                <d tag="NAX">Hasta</d>
-                <d>Paush Krishna Paksha 6</d>
-                <d>Bhadravasa after 14:49 upto 25:39</d>
-                <d tag="5">Shri Ghateshwar Jatra - Khorle, Mapusa</d>
-                <d tag="5">Shri Ratori Jatrotsav begins - Kankaband, Mapusa (18-20)</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="19" dn="१९" wd="4">
-                <d tag="NAX">Chitra</d>
-                <d>Paush Krishna Paksha 7</d>
-                <d>Kalashtami</d>
-                <d tag="7">Swami Vivekananda Jayanti</d>
-                <d tag="4">Sant Samaj Ganeshpuri, Khorli, Kanka</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="20" dn="२०" wd="5">
-                <d tag="NAX">Swati</d>
-                <d>Paush Krishna Paksha 8</d>
-                <d>Shri Rastori Dev Mahapuja - Kanka</d>
-                <d>Shri Rastori Jatrotsav ends - Kankaband, Mapusa</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="21" dn="२१" wd="6">
-                <d tag="NAX">Swati</d>
-                <d>Paush Krishna Paksha 9</d>
-                <d>Shri Sharvanidevi vaddiwas - Salgaon</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="22" dn="२२" wd="0">
-                <d tag="NAX">Vishakha</d>
-                <d>Paush Krishna Paksha 10</d>
-                <d>Bhadravasa after 8:44 upto 22:00</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="23" dn="२३" wd="1">
-                <d tag="NAX">Anuradha</d>
-                <d>Paush Krishna Paksha 11</d>
-                <d tag="3">Shattila Ekadashi</d>
-                <d tag="5">Shri Mahaganapati Bhavanishankar Jatrotsav - Madel, Tivim</d>
-                <d tag="7">Netaji Subhas Chandra Bose Jayanti</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="24" dn="२४" wd="2">
-                <d tag="NAX">Jyeshtha</d>
-                <d>Paush Krishna Paksha 12</d>
-                <d>Hemand dev kala - Uge, Sanguem</d>
-                <d tag="6">Rashtriya Balika Day</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="25" dn="२५" wd="3">
-                <d tag="NAX">Mula</d>
-                <d>Paush Krishna Paksha 13</d>
-                <d>Prodosh</d>
-                <d>Bhadravasa after 27:47</d>
-                <d tag="5">Shri Gadevansh Jatra - Pedne ( w.r.t. date)</d>
-                <d tag="6">Indian Tourist Day</d>
-                <d>Shri Hemand Dev Kala - Uge, Sanguem (25-27)</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="26" dn="२६" wd="4">
-                <d tag="NAX">Purva Ashadha</d>
-                <d>Paush Krishna Paksha 14</d>
-                <d>Bhadravasa upto 16:33</d>
-                <d tag="6">Republic Day ( Ganarajya Din )</d>
-                <d>Shivratri</d>
-                <d tag="4">Sant Samaj Dongri, Nevra</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="27" dn="२७" wd="5"  mncycle="0">
-                <d tag="NAX">Uttara Ashadha</d>
-                <d>Paush Krishna Paksha 30</d>
-                <d>Darsh Amavashya</d>
-                <d>Shri Gotan Jevni - Dhuler</d>
-                <d tag="5">Shri Rastori Narayan Jatra, Verle (27-28)</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="28" dn="२८" wd="6">
-                <d tag="NAX">Shravana</d>
-                <d>Magha Shukla Paksha 1</d>
-                <d>Shishir trutu begins</d>
-                <d>Devi Kalavati Punya tithi, Belgaum</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="29" dn="२९" wd="0">
-                <d tag="NAX">Dhanishtha</d>
-                <d>Magha Shukla Paksha 2</d>
-                <d>Shri Vittal Rakumai Vardhapan Day - Sirsai</d>
-                <d>Shri Hanuman Murtipratishtana Day - Dhave</d>
-                <d>Shri Ganapati Vyadreshwar Murtipratishtana Day - Sanguem</d>
-                <d>Shri Dev Khapreshwar Vardhapan Day - Baina, Murgao</d>
-                <d tag="6">Madak Travya Virodh Day</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="30" dn="३०" wd="1">
-                <d tag="NAX">Shatabhisha</d>
-                <d>Magha Shukla Paksha 3</d>
-                <d tag="6">World Leprosy Day</d>
-                <d tag="6">Hutatma Day</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
             <date id="31" dn="३१" wd="2">
-                <d tag="NAX">Purva Bhadrapada</d>
-                <d>Magha Shukla Paksha 4</d>
-                <d tag="7" img="img/shriganesh.png">Shri Ganesha Jayanti</d>
-                <d>Angarak yog</d>
-                <d tag="5">Shri Shantdurga Gotan Jatra</d>
-                <d>Vellus Kalotsav</d>
+                <ti>Astami</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Kanya</mnrashi>
+                <shub-day type="3">Good day</shub-day>
             </date>
         </month>
         <month id="2" dn="Febraury">
             <odata><d>1938, Shaka Samvat</d><d>Magha-Phalguna</d></odata>
             <date id="1" dn="१" wd="3">
-                <d tag="NAX">Uttara Bhadrapada</d>
-                <d>Magha Shukla Paksha 5</d>
-                <d>Vasant Panchami</d>
-                <d tag="5">Shri Shantadurg Jatra - Kavle</d>
-                <d>Vellus Kalotsav</d>
-                <d tag="5">Shri Shantadurg Gotan Jatra - Shelde, Quepem</d>
-                <d>Shri Kalnath kala Marangan - Sanguem</d>
-                <d>Shri Mauli Vardhapan Din, Nanoda</d>
-                <d>Shrikrishna Vardhapin Din, Mangorhill</d>
-                <d tag="5">Shri Bhumipurush Jatra, Tuvem, Sheld, Quepem</d>
+                <ti>Pachami</ti>
+                <ti-time>26:20</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>22:07</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:25</sunset>
+                <mnrashi>Pieces</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="2" dn="२" wd="4">
-                <d tag="NAX">Revati</d>
-                <d>Magha Shukla Paksha 6</d>
-                <d>Shri Siddheshwar Devsthan dwadsham vardhapan Din - Shel, Bastoda</d>
-                <d>Shri Ravalnath Dev Prathistan Din - Pirozona, Maydem</d>
-                <d tag="4">Sant Samaj Murgaon</d>
-                <d>Shri Nagesh panchayatan stapana din - Kudka</d>
-                <d>Shri Ravalnath Rastori panchayatan vardhapan din - Maydem</d>
-                <d>Shri Sateri Devi Jatraotsav - Assolda, Quepem</d>
-                <d>Gajant Laxmi utsav - Palli, Kautambi</d>
+                <ti>Pasti</ti>
+                <ti-time>24:43</ti-time>
+                <nx>Revati</nx>
+                <nx-time>21:11</nx-time>
+                <sunrise>7:08</sunrise>
+                <sunset>18:26</sunset>
+                <mnrashi>Aries after 21:12</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="3" dn="३" wd="5">
-                <d tag="NAX">Ashwini</d>
-                <d>Magha Shukla Paksha 7</d>
-                <d>Ratha Saptami</d>
-                <d tag="SMU">Shri Padmanabh swami 104th Punya tithi, Haturle Mut, Sant samaj Chodne, Karmali</d>
-                <d tag="IMP">Vishwashanti Mahayagya yajman - Sant samaj Girvade</d>
-                <d tag="6">World Suryanamaskar Day</d>
-                <d>Ratha Saptami - Kasarlpal, Panjim</d>
-                <d tag="5">Shri Mahamaya Jatra - Van, Bicholim</d>
-                <d>Shri Ravalnath Ratori Utsav - Maydem</d>
-                <d tag="5">Shri Mallikarjun Jatra, Cancona</d>
+                <ti>Saptami</ti>
+                <ti-time>22:50</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>20:02</nx-time>
+                <sunrise>7:08</sunrise>
+                <sunset>18:26</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
             </date>
             <date id="4" dn="४" wd="6">
-                <d tag="NAX">Bharani</d>
-                <d>Magha Shukla Paksha 8</d>
-                <d>Masik Durgashtami</d>
-                <d>Bhishma Ashtami</d>
-                <d>Aryadurga Varshikutsav - kankavli</d>
-                <d tag="5">Navdurga Jatra - Aai, Dodamarg</d>
+                <ti>Astami</ti>
+                <ti-time>20:43</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>18:40</nx-time>
+                <sunrise>7:08</sunrise>
+                <sunset>18:27</sunset>
+                <mnrashi>Taurus after 24:17</mnrashi>
+                <shub-day type="3">Good after 10:00</shub-day>
             </date>
             <date id="5" dn="५" wd="0">
-                <d tag="NAX">Krittika</d>
-                <d>Magha Shukla Paksha 9</d>
-                <d tag="6">Maukik Arogya Day</d>
+                <ti>Navami</ti>
+                <ti-time>18:30</ti-time>
+                <nx>Krittika</nx>
+                <nx-time>17:08</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:27</sunset>
+                <mnrashi>Taurus</mnrashi>
+                <shub-day type="3">Bad upto 17:00</shub-day>
             </date>
             <date id="6" dn="६" wd="1">
                 <d tag="NAX">Rohini</d>
