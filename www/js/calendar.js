@@ -343,7 +343,7 @@ function hidesplashscreen() {
     clearTimeout(splsrnhide);
 }
 
-
+/*
 (function() {
     var supportTouch = $.support.touch,
             scrollEvent = "touchmove scroll",
@@ -412,6 +412,7 @@ function hidesplashscreen() {
     });
 
 })();
+*/
 
 $( document ).on( "pageinit", "#homepage", function() {
     var homecontentht = $(document).height() - 55;
@@ -423,23 +424,64 @@ $( document ).on( "pageinit", "#homepage", function() {
     var feedContainer = $("#feedscontainer");
     populatefeedsandmessages(feedContainer,feeddata);
     
-    $('#home_feeds').on('swipedown',function(event){
+    /*$('#home_feeds').on('swipedown',function(event){
         $(feedContainer).prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/refresh-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
         refreshhide = setTimeout(hiderefresher, 2000);
-    } );
+    } );*/
+    
+    $( "#home_feeds" ).scroll(function() {
+       if ($(this).scrollTop() == 0){
+           // upscroll code
+           $(feedContainer).prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/refresh-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
+            refreshhide = setTimeout(hiderefresher, 2000);
+       }
+        
+    });
 
     var msgdata = [{"id":4,"date":"12/11/2016","type":"msg-t","data":"We are celebrating Tulsi vivah event on 19th Nov"},{"id":5,"date":"12/11/2016","type":"msg-sg","data":"All are welcome to event 'Vande Mataram'"}];
     
     var messagesContainer = $("#messagescontainer");
     populatefeedsandmessages(messagesContainer,msgdata);
     
-    $('#home_messages').on('swipedown',function(event){alert("messagescontainer swipedown..");} );
+   // $('#home_messages').on('swipedown',function(event){alert("messagescontainer swipedown..");} );
     
     
 });
 
+
+
+/*function handleHitTop(event) {
+    var currentScrollTopValue = $(this).scrollTop();
+
+    if (handleHitTop.lastTop === undefined) {
+        handleHitTop.lastTop = currentScrollTopValue ;
+
+        return;
+    }
+
+    if (handleHitTop.lastTop == 0 && currentScrollTopValue == 0) {
+        return;
+    }
+
+    handleHitTop.lastTop = currentScrollTopValue;
+
+    if (handleHitTop.lastTop == 0) {
+        //Call your event here
+        $("#feedscontainer").prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/refresh-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
+        refreshhide = setTimeout(hiderefresher, 2000);
+    }
+}*/
+var feedid= window.localStorage.getItem("feednextcount");
 function hiderefresher(){
-    $("#feedscontainer").find(".refreshImgcls").remove();
+    feedid = feedid == null ? 1 : parseInt(feedid);
+    var feedContainer = $("#feedscontainer");
+    $(feedContainer).find(".refreshImgcls").remove();
+    var feed = {"id":feedid,"date":"14/11/2016","type":"event","data":"check it out : feed " + feedid ,"link":{"name":"link" + feedid,"url":"http://srigurudev.org/contactus"}}
+    
+    populatesinglefeedOrMessage(feedContainer,feed);
+        
+    feedid += 1;
+    window.localStorage.setItem("feednextcount", feedid);
 }
 
 function populatefeedsandmessages(container,data){
@@ -472,6 +514,15 @@ function populatesinglefeedOrMessage(container,data){
             datatodisplay += data.moredata != null ? "<div><a href='#' onclick='window.open(\""+data.moredata.url+"\", \"_system\");' data-role='button' class='ui-btn text-shadow-none' style='color:black' data-theme='b'>"+data.moredata.name+"</a></div>" : "";
             
             $(container).prepend("<div style='padding:3px;' class='feedscls'><table width='100%'><tr><td colspan='2' style='text-align:center;padding:3px;font-style: italic;'>"+data.date+"</td></tr><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
+            
+            if($(container).children().length > 10){
+                $(container).find(".feedscls").last().remove();
+                if($(container).find(".moreImgcls").length == 0){
+                    $(container).append("<div class='moreImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/carat-d-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
+                }
+            }else{
+                $(container).find(".moreImgcls").remove();
+            }
         }
 }
 
@@ -558,7 +609,7 @@ $( document ).on( "pageinit", "#educationpage", function() {
     }
     });*/
     
-    var value = window.localStorage.getItem("today");
+    /*var value = window.localStorage.getItem("today");
     
     alert(value);
     
@@ -582,7 +633,7 @@ $( document ).on( "pageinit", "#educationpage", function() {
 
     today = mm+'/'+dd+'/'+yyyy;
     
-    window.localStorage.setItem("today", today);
+    window.localStorage.setItem("today", today);*/
 });
 
 function oncalswiperight(){
