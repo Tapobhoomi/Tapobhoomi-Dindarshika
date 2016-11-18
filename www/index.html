@@ -96,6 +96,16 @@ body {
 	background-color: #f6883d !important;
 	border-color: chocolate !important;
 }
+    
+.sriguru-ui-background-2{
+	background-color: #f6883d !important;
+	border-color: chocolate !important;
+}
+    
+.home-tab-background{
+	background-color: rgba(246, 136, 61,0.5) !important;
+	border-color: #f6883d !important;
+}
 
 .calerdar-currentdate{
     background:#f6883d;
@@ -216,7 +226,16 @@ div.feedscls table, td, th {
 }    
 div.feedscls table {
     border-collapse: collapse;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.6);
+}
+    
+div.newfeedscls table, td, th {
+    /*border: 1px solid;*/
+   border: 0px;
+}    
+div.newfeedscls table {
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.8);
 }
 
 .div-day{
@@ -463,8 +482,8 @@ div.splashabs {
  <div data-role="tabs" id="tabs">
   <div data-role="navbar">
     <ul>
-      <li><a href="#home_feeds" data-ajax="false" class="sriguru-ui-background-2 text-shadow-none navtabtext">Feeds</a></li>
-      <li><a href="#home_messages" data-ajax="false" class="sriguru-ui-background-2 text-shadow-none navtabtext">Messages</a></li>
+      <li><a href="#home_feeds" data-ajax="false" class="home-tab-background text-shadow-none navtabtext"><img src="img/noti.png" height="30px" width="auto"/></a></li>
+      <li><a href="#home_messages" data-ajax="false" class="home-tab-background text-shadow-none navtabtext"><img src="img/mesg.png" height="30px" width="auto"/></a></li>
     </ul>
   </div>
   <div id="home_feeds" class="ui-body-d ui-content" style="padding: 0em; !important;height:1px;width:100% ">

@@ -414,8 +414,14 @@ function hidesplashscreen() {
 })();
 */
 
+var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+
+$(document).on("pageshow", "#homepage", function() {
+    alert("homepage");
+});
+
 $( document ).on( "pageinit", "#homepage", function() {
-    var homecontentht = $(document).height() - 55;
+    var homecontentht = $(document).height() - 67;
     $("#home_feeds").css("height",homecontentht+"px");
     $("#home_messages").css("height",homecontentht+"px");
     
@@ -432,7 +438,7 @@ $( document ).on( "pageinit", "#homepage", function() {
     $( "#home_feeds" ).scroll(function() {
        if ($(this).scrollTop() == 0){
            // upscroll code
-           $(feedContainer).prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/refresh-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
+           $(feedContainer).prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='img/reload.gif' style='width:5%;height:auto;'/></div></td></tr></table></div>");
             refreshhide = setTimeout(hiderefresher, 2000);
        }
         
@@ -476,12 +482,16 @@ function hiderefresher(){
     feedid = feedid == null ? 1 : parseInt(feedid);
     var feedContainer = $("#feedscontainer");
     $(feedContainer).find(".refreshImgcls").remove();
-    var feed = {"id":feedid,"date":"14/11/2016","type":"event","data":"check it out : feed " + feedid ,"link":{"name":"link" + feedid,"url":"http://srigurudev.org/contactus"}}
+    var feed = {"id":feedid,"date":"18/11/2016","type":"event","data":"check it out : feed " + feedid ,"link":{"name":"link" + feedid,"url":"http://srigurudev.org/contactus"}}
     
-    populatesinglefeedOrMessage(feedContainer,feed);
-        
+    populatesinglefeedOrMessage(feedContainer,feed,true);
+    setTimeout(unreadtoreadfeed, 1000);
     feedid += 1;
     window.localStorage.setItem("feednextcount", feedid);
+}
+
+function unreadtoreadfeed(){
+    $("#feedscontainer").find(".newfeedscls").removeClass("newfeedscls").addClass("feedscls");
 }
 
 function populatefeedsandmessages(container,data){
@@ -492,11 +502,12 @@ function populatefeedsandmessages(container,data){
     });
     
     for(var i in data){
-        populatesinglefeedOrMessage(container,data[i]);        
+        populatesinglefeedOrMessage(container,data[i],false);        
     }
 }
 
-function populatesinglefeedOrMessage(container,data){
+var feedlastdatedisplay = null;
+function populatesinglefeedOrMessage(container,data,newfeed){
     var type = data.type;
     if(type == "event" || type == "news" || type == "msg-sg" || type == "msg-t"){
             var datatodisplay = "";
@@ -513,10 +524,36 @@ function populatesinglefeedOrMessage(container,data){
             datatodisplay += data.img != null ? "<div width='100%' style='text-align:center;'><img src='"+data.img+"' style='width:70%;height:auto;'/></div>" : "";
             datatodisplay += data.moredata != null ? "<div><a href='#' onclick='window.open(\""+data.moredata.url+"\", \"_system\");' data-role='button' class='ui-btn text-shadow-none' style='color:black' data-theme='b'>"+data.moredata.name+"</a></div>" : "";
             
-            $(container).prepend("<div style='padding:3px;' class='feedscls'><table width='100%'><tr><td colspan='2' style='text-align:center;padding:3px;font-style: italic;'>"+data.date+"</td></tr><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
+        
+            var today = new Date();
+            var todaymonth = today.getMonth()+1;
+            var todayyear = today.getFullYear();
+            var todaydisp = today.getDate()+'/'+ todaymonth + '/' + todayyear;
+        
+            var parts =data.date.split('/');
+            //please put attention to the month (parts[0]), Javascript counts months from 0:
+            // January - 0, February - 1, etc
+            var dt = new Date(parts[2],parts[1]-1,parts[0]); 
+            var displaydate = (todaydisp == data.date) ?"Today":dt.getDate() + " "+tabmonth[dt.getMonth()]
             
-            if($(container).children().length > 10){
-                $(container).find(".feedscls").last().remove();
+            if(feedlastdatedisplay == displaydate){
+                var obj = $(container).find("."+displaydate.replace(" ","_")+"cls");
+                $(obj).remove();                
+            }
+            feedlastdatedisplay = displaydate;
+        
+            var feedclass = newfeed ? "newfeedscls" : "feedscls";
+                        
+            $(container).prepend("<div style='padding:2px;' class='"+feedclass+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
+        
+            $(container).prepend("<div class='"+displaydate.replace(" ","_")+"cls feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>");
+            
+            if($(container).find(".feedscls").length > 10){
+                var oldlastfeed = $(container).find(".feedscls").last();
+                if($(oldlastfeed).prev().hasClass("feeddatecls")){
+                    $(oldlastfeed).prev().remove();
+                }
+                $(oldlastfeed).remove();
                 if($(container).find(".moreImgcls").length == 0){
                     $(container).append("<div class='moreImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/carat-d-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
                 }
