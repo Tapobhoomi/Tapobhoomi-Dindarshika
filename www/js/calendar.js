@@ -416,9 +416,9 @@ function hidesplashscreen() {
 
 var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 
-$(document).on("pageshow", "#homepage", function() {
+/*$(document).on("pageshow", "#homepage", function() {
     alert("homepage");
-});
+});*/
 
 $( document ).on( "pageinit", "#homepage", function() {
     var homecontentht = $(document).height() - 67;
