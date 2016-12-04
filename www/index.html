@@ -103,7 +103,7 @@ body {
 }
     
 .home-tab-background{
-	background-color: rgba(246, 136, 61,0.5) !important;
+	background-color: rgba(246, 136, 61,0.8) !important;
 	border-color: #f6883d !important;
 }
 
@@ -146,6 +146,27 @@ body {
 
 .date-brief-padding-top{
 	padding-top:5px
+}
+    
+.custom-btn{
+    width: 50px !important;
+    height:50px !important;
+    margin: 5px !important;
+    border: 0px !important;
+}
+    
+.medium-custom-btn{
+    width: 65px !important;
+    height:65px !important;
+    margin: 10px !important;
+    border: 0px !important;
+}
+    
+.large-custom-btn{
+    width: 80px !important;
+    height:80px !important;
+    margin: 15px !important;
+    border: 0px !important;
 }
     
 .custom-btn{
@@ -353,7 +374,6 @@ div.splashabs {
         <div data-role="controlgroup" data-type="horizontal" >
             <a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn"></a>
             <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn" onclick='showcalender()'></a>
-            <!--<a href="#testpage" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick="gotozoom();"></a>-->
             <a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a>
         </div>
         <div data-role="controlgroup" data-type="horizontal" >    
@@ -361,14 +381,15 @@ div.splashabs {
             <a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a>
             <a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
         </div>
-        <h4><div style="margin:5px;text-align:left !important;" id="quoteoftheday"></div></h4>  
+        <h4><div style="margin:5px;text-align:center !important;" id="quoteoftheday"></div></h4>  
         </div>
         <div id="splashscreen" style="padding:0em !important;" class="splashabs">
-            <table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/about_swamiji_sm.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
+            <table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/splashimg.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
             </table>
         </div>
     </div>
 </div>
+    <!--background-image: url('img/splash-bg.jpg');background-repeat:no-repeat;background-size:cover;-->
 <!--<div id="testpage" data-role="page" style="background-color:#f6883d">
     <div id="testcontent" data-role="content" class="text-shadow-none" style="width:100%;height:400px;padding:0px">-->
             <!--<div id="div1" style="background:#98bf21;height:100px;width:350px; position:relative;top: 35px;  z-index: 3; position: relative; margin-top: 0px;margin-left: -350px"></div>
@@ -478,8 +499,7 @@ div.splashabs {
  </div>
 -->
 <div id="homepage" data-role="page" >
- <div data-role="content" style="padding:0em !important;">
- <div data-role="tabs" id="tabs">
+ <div data-role="tabs" id="tabs" style="padding:0em !important;">
   <div data-role="navbar">
     <ul>
       <li><a href="#home_feeds" data-ajax="false" class="home-tab-background text-shadow-none navtabtext"><img src="img/noti.png" height="30px" width="auto"/></a></li>
@@ -495,7 +515,6 @@ div.splashabs {
     </div>
   </div>
 </div>
- </div>
  </div>
 
 <div id="aboutswami" data-role="page" class="text-shadow-none">

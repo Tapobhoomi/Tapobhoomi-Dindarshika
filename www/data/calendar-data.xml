@@ -5,6 +5,8 @@
             <qoute id="1">Holding onto anger is like driking poison and expecting the other person to die - Buddha</qoute>
             <qoute id="2">Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship - Buddha</qoute>
             <qoute id="3">Happiness does not depend on what you have or who you are. It solely relies on what you think - Buddha </qoute>
+            <quote id="4">स्वतःचे जीवन धर्माप्रमाणे जगतो  तो पुरुषोत्तम होय</quote>
+            <quote id="5">किमान एकतरी व्यक्ती निर्व्यसनी बनविण्याचे व्रत समाजात आमूलाग्र  बदल घडवू शकते</quote>
         </quotes>
         <wd-data>
             <wd id="0">Sun</wd> <wd id="1">Mon</wd><wd id="2">Tue</wd>
@@ -16,20 +18,20 @@
             <tag id="OTH">OTHERIMPORTANTDAY</tag>
         </tag-data>
         <month id="1" dn="January">
-            <odata><d>1938, Shaka Samvat</d><d>Paush-Magha</d></odata>
-            <date id="1" dn="१" wd="0">
+            <odata><d>1938, Shaka Samvat</d><d>Pausha-Magha</d></odata>
+            <date id="1" dn="1" wd="0">
                 <d tag="NAX">Shravana</d>
                 <d>Paush Shukla Paksha 3</d>
                 <d>2017 New Year</d>
                 <d>Bhadravasa after 27:45</d>
             </date>
-            <date id="2" dn="२" wd="1">
+            <date id="2" dn="2" wd="1">
                 <d tag="NAX">Dhanishtha</d>
                 <d>Paush Shukla Paksha 4</d>
                 <d tag="8">Vinayaka Chaturthi</d>
                 <d>Bhadravasa upto 15:51</d>
             </date>
-            <date id="3" dn="३" wd="2">
+            <date id="3" dn="3" wd="2">
                 <d tag="NAX">Shatabhisha</d>
                 <d>Paush Shukla Paksha 5</d>
                 <d>Shri Vettal Shetrapal, Chopde</d>
@@ -38,19 +40,19 @@
                 <d>Savitribai Phule Jayanti</d>
                 <d tag="6">Women freedom day</d>
             </date>
-            <date id="4" dn="४" wd="3">
+            <date id="4" dn="4" wd="3">
                 <d tag="NAX">Purva Bhadrapada</d>
                 <d>Paush Shukla Paksha 6</d>
                 <d tag="5">Shri Sateri Devi Jatra - Uskai Palye </d>
             </date>
-            <date id="5" dn="५" wd="4">
+            <date id="5" dn="5" wd="4">
                 <d tag="NAX">Uttara Bhadrapada</d>
                 <d>Paush Shukla Paksha 7</d>
                 <d>Guru Govind Birth day</d>
                 <d>Bhadravasa after 14:01 upto 25:17</d>
                 <d tag="4">Sant. Samaj Sukurwade</d>
             </date>
-            <date id="6" dn="६" wd="5">
+            <date id="6" dn="6" wd="5">
                 <d tag="NAX">Revati</d>
                 <d>Paush Shukla Paksha 8</d>
                 <d>Durgashtami</d>
@@ -58,12 +60,12 @@
                 <d>Fatarpa Jatra ends</d>
                 <d tag="6">Journalist Day</d>
             </date>
-            <date id="7" dn="७" wd="6">
+            <date id="7" dn="7" wd="6">
                 <d tag="NAX">Ashwini</d>
                 <d>Paush Shukla Paksha 9</d>
                 <d>Shri Mahalaxmi Narayan Kala - Navelim</d>
             </date>
-            <date id="8" dn="८" wd="0">
+            <date id="8" dn="8" wd="0">
                 <d tag="NAX">Bharani</d>
                 <d>Paush Shukla Paksha 10/11</d>
                 <d tag="3">Putrada Ekadashi</d>
@@ -71,7 +73,7 @@
                 <d tag="5">Shri Vettal Jatra - Salgaon</d>
                 <d>GhodeMukh Utsav - Ghodemukh</d>
             </date>
-            <date id="9" dn="९" wd="1">
+            <date id="9" dn="9" wd="1">
                 <d tag="NAX">Krittika</d>
                 <d>Paush Shukla Paksha 12</d>
                 <d tag="3">Bhagwath Ekadashi</d>
@@ -79,7 +81,7 @@
                 <d>Shri Navdurga Kala - Pali</d>
                 <d tag="5">Shri Shantadurga Chamundeshwari Jatra, Gudo - Avede</d>
             </date>
-            <date id="10" dn="१०" wd="2">
+            <date id="10" dn="10" wd="2">
                 <d tag="NAX">Rohini</d>
                 <d>Paush Shukla Paksha 13</d>
                 <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Bastoda Palye</d>
@@ -87,7 +89,7 @@
                 <d tag="6">World laughter Day</d>
                 <d>Shri Devi Kudneshwar Kala - Kudne</d>
             </date>
-            <date id="11" dn="११" wd="3">
+            <date id="11" dn="11" wd="3">
                 <d tag="NAX">Ardra</d>
                 <d>Paush Shukla Paksha 14</d>
                 <d>Bhadravasa after 19:52 upto 30:26</d>
@@ -96,7 +98,7 @@
                 <d>Shri Kamlavati Ravalnath Mandir Kalautsav - Sakle bhat, Karmali</d>
                 <d>Shri Vishnu Mandir Kalautsav, Parke bhat - Karmali</d>
             </date>
-            <date id="12" dn="१२" wd="4" mncycle="1">
+            <date id="12" dn="12" wd="4" mncycle="1">
                 <d tag="NAX">Punarvasu</d>
                 <d>Paush Shukla Paksha 15</d>
                 <d>Pournima</d>
@@ -107,16 +109,16 @@
                 <d tag="6">Swami Vivekanand birthday</d>
                 <d tag="4">Sant. Samaj Talegaon, Shaka - Sulbhat</d>
             </date>
-            <date id="13" dn="१३" wd="5">
+            <date id="13" dn="13" wd="5">
                 <d tag="NAX">Pushya </d>
                 <d>Paush Krishna Paksha 1</d>
                 <d>Lohri</d>
             </date>
-            <date id="14" dn="१४" wd="6">
+            <date id="14" dn="14" wd="6">
                 <d tag="NAX">Ashlesha</d>
+                <d>Paush Krishna Paksha 2</d>
                 <d tag="0">Makar Sankranti</d>
                 <d tag="0">Pongal</d>
-                <d>Paush Krishna Paksha 2</d>                
                 <d>Makar 7:38</d>
                 <d>Bhadravasa after 20:09</d>
                 <d>Good Muhurta 7:38 to 14:38</d>
@@ -125,68 +127,68 @@
                 <d tag="6">Soldier Day</d>
                 <d>Makar Sankranti Utsav, Shri Hanuman Devsthan - Kharerwade Sukur</d>
             </date>
-            <date id="15" dn="१५" wd="0">
+            <date id="15" dn="15" wd="0">
                 <d tag="NAX">Magha</d>
                 <d>Paush Krishna Paksha 3</d>
-                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise:21:16</d>
+                <d tag="2" img="img/shriganesh.png">  Sankashti Chaturthi, Moon rise:21:16</d>
                 <d>Bhadravasa upto 11:40</d>
                 <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Sant Samaj Margoa</d>
                 <d tag="6">Indian Army Day</d>
                 <d tag="6">Ground Army Day</d>
             </date>
-            <date id="16" dn="१६" wd="1">
+            <date id="16" dn="16" wd="1">
                 <d tag="NAX">Purva Phalguni</d>
                 <d>Paush Krishna Paksha 4</d>
                 <d tag="7">Shripadvallab Jayanti</d>
             </date>
-            <date id="17" dn="१७" wd="2">
+            <date id="17" dn="17" wd="2">
                 <d tag="NAX">Uttara Phalguni</d>
                 <d>Paush Krishna Paksha 5</d>
             </date>
-            <date id="18" dn="१८" wd="3">
+            <date id="18" dn="18" wd="3">
                 <d tag="NAX">Hasta</d>
                 <d>Paush Krishna Paksha 6</d>
                 <d>Bhadravasa after 14:49 upto 25:39</d>
                 <d tag="5">Shri Ghateshwar Jatra - Khorle, Mapusa</d>
                 <d tag="5">Shri Ratori Jatrotsav begins - Kankaband, Mapusa (18-20)</d>
             </date>
-            <date id="19" dn="१९" wd="4">
+            <date id="19" dn="19" wd="4">
                 <d tag="NAX">Chitra</d>
                 <d>Paush Krishna Paksha 7</d>
                 <d>Kalashtami</d>
                 <d tag="7">Swami Vivekananda Jayanti</d>
                 <d tag="4">Sant Samaj Ganeshpuri, Khorli, Kanka</d>
             </date>
-            <date id="20" dn="२०" wd="5">
+            <date id="20" dn="20" wd="5">
                 <d tag="NAX">Swati</d>
                 <d>Paush Krishna Paksha 8</d>
                 <d>Shri Rastori Dev Mahapuja - Kanka</d>
                 <d>Shri Rastori Jatrotsav ends - Kankaband, Mapusa</d>
             </date>
-            <date id="21" dn="२१" wd="6">
+            <date id="21" dn="21" wd="6">
                 <d tag="NAX">Swati</d>
                 <d>Paush Krishna Paksha 9</d>
                 <d>Shri Sharvanidevi vaddiwas - Salgaon</d>
             </date>
-            <date id="22" dn="२२" wd="0">
+            <date id="22" dn="22" wd="0">
                 <d tag="NAX">Vishakha</d>
                 <d>Paush Krishna Paksha 10</d>
                 <d>Bhadravasa after 8:44 upto 22:00</d>
             </date>
-            <date id="23" dn="२३" wd="1">
+            <date id="23" dn="23" wd="1">
                 <d tag="NAX">Anuradha</d>
                 <d>Paush Krishna Paksha 11</d>
                 <d tag="3">Shattila Ekadashi</d>
                 <d tag="5">Shri Mahaganapati Bhavanishankar Jatrotsav - Madel, Tivim</d>
                 <d tag="7">Netaji Subhas Chandra Bose Jayanti</d>
             </date>
-            <date id="24" dn="२४" wd="2">
+            <date id="24" dn="24" wd="2">
                 <d tag="NAX">Jyeshtha</d>
                 <d>Paush Krishna Paksha 12</d>
                 <d>Hemand dev kala - Uge, Sanguem</d>
                 <d tag="6">Rashtriya Balika Day</d>
             </date>
-            <date id="25" dn="२५" wd="3">
+            <date id="25" dn="25" wd="3">
                 <d tag="NAX">Mula</d>
                 <d>Paush Krishna Paksha 13</d>
                 <d>Prodosh</d>
@@ -195,7 +197,7 @@
                 <d tag="6">Indian Tourist Day</d>
                 <d>Shri Hemand Dev Kala - Uge, Sanguem (25-27)</d>
             </date>
-            <date id="26" dn="२६" wd="4">
+            <date id="26" dn="26" wd="4">
                 <d tag="NAX">Purva Ashadha</d>
                 <d>Paush Krishna Paksha 14</d>
                 <d>Bhadravasa upto 16:33</d>
@@ -203,20 +205,20 @@
                 <d>Shivratri</d>
                 <d tag="4">Sant Samaj Dongri, Nevra</d>
             </date>
-            <date id="27" dn="२७" wd="5"  mncycle="0">
+            <date id="27" dn="27" wd="5"  mncycle="0">
                 <d tag="NAX">Uttara Ashadha</d>
                 <d>Paush Krishna Paksha 30</d>
                 <d>Darsh Amavashya</d>
                 <d>Shri Gotan Jevni - Dhuler</d>
                 <d tag="5">Shri Rastori Narayan Jatra, Verle (27-28)</d>
             </date>
-            <date id="28" dn="२८" wd="6">
+            <date id="28" dn="28" wd="6">
                 <d tag="NAX">Shravana</d>
                 <d>Magha Shukla Paksha 1</d>
                 <d>Shishir trutu begins</d>
                 <d>Devi Kalavati Punya tithi, Belgaum</d>
             </date>
-            <date id="29" dn="२९" wd="0">
+            <date id="29" dn="29" wd="0">
                 <d tag="NAX">Dhanishtha</d>
                 <d>Magha Shukla Paksha 2</d>
                 <d>Shri Vittal Rakumai Vardhapan Day - Sirsai</d>
@@ -225,13 +227,13 @@
                 <d>Shri Dev Khapreshwar Vardhapan Day - Baina, Murgao</d>
                 <d tag="6">Madak Travya Virodh Day</d>
             </date>
-            <date id="30" dn="३०" wd="1">
+            <date id="30" dn="30" wd="1">
                 <d tag="NAX">Shatabhisha</d>
                 <d>Magha Shukla Paksha 3</d>
                 <d tag="6">World Leprosy Day</d>
                 <d tag="6">Hutatma Day</d>
             </date>
-            <date id="31" dn="३१" wd="2">
+            <date id="31" dn="31" wd="2">
                 <d tag="NAX">Purva Bhadrapada</d>
                 <d>Magha Shukla Paksha 4</d>
                 <d tag="7" img="img/shriganesh.png">Shri Ganesha Jayanti</d>
@@ -242,7 +244,7 @@
         </month>
         <month id="2" dn="Febraury">
             <odata><d>1938, Shaka Samvat</d><d>Magha-Phalguna</d></odata>
-            <date id="1" dn="१" wd="3">
+            <date id="1" dn="1" wd="3">
                 <d tag="NAX">Uttara Bhadrapada</d>
                 <d>Magha Shukla Paksha 5</d>
                 <d>Vasant Panchami</d>
@@ -254,7 +256,7 @@
                 <d>Shrikrishna Vardhapin Din, Mangorhill</d>
                 <d tag="5">Shri Bhumipurush Jatra, Tuvem, Sheld, Quepem</d>
             </date>
-            <date id="2" dn="२" wd="4">
+            <date id="2" dn="2" wd="4">
                 <d tag="NAX">Revati</d>
                 <d>Magha Shukla Paksha 6</d>
                 <d>Shri Siddheshwar Devsthan dwadsham vardhapan Din - Shel, Bastoda</d>
@@ -265,7 +267,7 @@
                 <d>Shri Sateri Devi Jatraotsav - Assolda, Quepem</d>
                 <d>Gajant Laxmi utsav - Palli, Kautambi</d>
             </date>
-            <date id="3" dn="३" wd="5">
+            <date id="3" dn="3" wd="5">
                 <d tag="NAX">Ashwini</d>
                 <d>Magha Shukla Paksha 7</d>
                 <d>Ratha Saptami</d>
@@ -277,7 +279,7 @@
                 <d>Shri Ravalnath Ratori Utsav - Maydem</d>
                 <d tag="5">Shri Mallikarjun Jatra, Cancona</d>
             </date>
-            <date id="4" dn="४" wd="6">
+            <date id="4" dn="4" wd="6">
                 <d tag="NAX">Bharani</d>
                 <d>Magha Shukla Paksha 8</d>
                 <d>Masik Durgashtami</d>
@@ -285,12 +287,12 @@
                 <d>Aryadurga Varshikutsav - kankavli</d>
                 <d tag="5">Navdurga Jatra - Aai, Dodamarg</d>
             </date>
-            <date id="5" dn="५" wd="0">
+            <date id="5" dn="5" wd="0">
                 <d tag="NAX">Krittika</d>
                 <d>Magha Shukla Paksha 9</d>
                 <d tag="6">Maukik Arogya Day</d>
             </date>
-            <date id="6" dn="६" wd="1">
+            <date id="6" dn="6" wd="1">
                 <d tag="NAX">Rohini</d>
                 <d>Magha Shukla Paksha 10</d>
                 <d>Bhadravasa after 26:49</d>
@@ -301,7 +303,7 @@
                 <d>Nagnath Pindiutsav - Markane</d>
                 <d>Surya Mandir utsav - Asgaon</d>
             </date>
-            <date id="7" dn="७" wd="2">
+            <date id="7" dn="7" wd="2">
                 <d tag="NAX">Mrigashirsha</d>
                 <d>Magha Shukla Paksha 11</d>
                 <d tag="3">Jaya Ekadashi</d>
@@ -309,7 +311,7 @@
                 <d>Maghi Yatra Pandarpur</d>
                 <d>Bhadravasa upto 13:48</d>
             </date>
-            <date id="8" dn="८" wd="3">
+            <date id="8" dn="8" wd="3">
                 <d tag="NAX">Ardra</d>
                 <d>Magha Shukla Paksha 12</d>
                 <d>Pradosh vrat</d>
@@ -319,7 +321,7 @@
                 <d tag="5">Ravalnath Jatra - Aaskawada, Mandre</d>
                 <d>Shri Shantadurga Utsav, Dhave</d>
             </date>
-            <date id="9" dn="९" wd="4">
+            <date id="9" dn="9" wd="4">
                 <d tag="NAX">Punarvasu</d>
                 <d>Magha Shukla Paksha 13</d>
                 <d tag="IMP">Gurupushyamruta Yog (after 10:48 upto Sunrise)</d>
@@ -329,14 +331,14 @@
                 <d>Palkhi Mahotsav Hanuman Mandir - Sankalwadi, Hadfade</d>
                 <d tag="5">Mahaparvani Jatra - Mangeshi (9-11)</d>
             </date>
-            <date id="10" dn="१०" wd="5" mncycle="1">
+            <date id="10" dn="10" wd="5" mncycle="1">
                 <d tag="NAX">Pushya</d>
                 <d>Magha Shukla Paksha 14/15</d>
                 <d>Pournima Bhadravasa 7:39 to 18:43</d>
                 <d>Mag snan samapthi</d>
                 <d tag="SMU">Shri Sushen smruti din, Seva - Sant Samaj Thane - Dave</d>
             </date>
-            <date id="11" dn="११" wd="6">
+            <date id="11" dn="11" wd="6">
                 <d tag="NAX">Ashlesha</d>
                 <d>Magha Krishna Paksha 1</d>
                 <d tag="IMP">Gurupratibda - Gangapur</d>
@@ -349,7 +351,7 @@
                 <d tag="5">Piorl Jatra </d>
                 <d tag="5">Gude Avade Jatra</d>
             </date>
-            <date id="12" dn="१२" wd="0">
+            <date id="12" dn="12" wd="0">
                 <d tag="NAX">Magha</d>
                 <d>Magha Krishna Paksha 2</d>
                 <d>Ravi Kumbh 20:38</d>
@@ -357,7 +359,7 @@
                 <d>Gurupratipda Dattamadir - Shirnewada, Karmali</d>
                 <d>Samarth Ratrori devstan vardhapadan din - Shiroda</d>
             </date>
-            <date id="13" dn="१३" wd="1">
+            <date id="13" dn="13" wd="1">
                 <d tag="NAX">Purva Phalguni</d>
                 <d>Magha Krishna Paksha 3</d>
                 <d>Bhadravasa after 16:45 upto 28:57</d>
@@ -365,14 +367,14 @@
                 <d>Shri Mauli vardhapan Din - Mandre</d>
                 <d>Shri Ganpati Dev Vardhapan Din - Navevade</d>
             </date>
-            <date id="14" dn="१४" wd="2">
+            <date id="14" dn="14" wd="2">
                 <d tag="NAX">Uttara Phalguni</d>
                 <d>Magha Krishna Paksha 4</d>
-                <d tag="2">Angarki Sankasti Chaturti (Moon rise - 21:41)</d>
+                <d tag="2" img="img/shriganesh.png">Angarki Sankasti Chaturti (Moon rise - 21:41)</d>
                 <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Sant Samaj Korgaon</d>
                 <d>Gajantlaxmi utsav - Pali, Kotambi</d>
             </date>
-            <date id="15" dn="१५" wd="3">
+            <date id="15" dn="15" wd="3">
                 <d tag="NAX">Hasta</d>
                 <d>Magha Krishna Paksha 5</d>
                 <d>Panchami vrudhi</d>
@@ -381,13 +383,13 @@
                 <d>Shri Mahalaxmi Utsav - Amona</d>
                 <d>Shri Shantadurga Talawlikarin devstan vardhapandin - Gujrabhat, Talawli, Santan-Tiswadi</d>
             </date>
-            <date id="16" dn="१६" wd="4">
+            <date id="16" dn="16" wd="4">
                 <d tag="NAX">Chitra</d>
                 <d>Magha Krishna Paksha 5</d>
                 <d tag="5">Shri Gawadebas Jatra - Tiroda</d>
                 <d tag="4">Sant Samaj Aldona</d>
             </date>
-            <date id="17" dn="१७" wd="5">
+            <date id="17" dn="17" wd="5">
                 <d tag="NAX">Swati</d>
                 <d>Magha Krishna Paksha 6</d>
                 <d>Dongri Sigmo utsav begins (17-21)</d>
@@ -397,14 +399,14 @@
                 <d tag="5">Shri Dev Godneshwar Jatra, Duler</d>
                 <d>Shri Ravalnath Utsav, Sale Kitla</d>
             </date>
-            <date id="18" dn="१८" wd="6">
+            <date id="18" dn="18" wd="6">
                 <d tag="NAX">Vishakha</d>
                 <d>Magha Krishna Paksha 7</d>
                 <d>Kalashtami</d>
                 <d>Shri lingeshwar vardhapandin - Shiroda</d>
                 <d>Shri Gajanan Maharaj Prakt din -  Malevad</d>
             </date>
-            <date id="19" dn="१९" wd="0">
+            <date id="19" dn="19" wd="0">
                 <d tag="NAX">Anuradha</d>
                 <d>Magha Krishna Paksha 8</d>
                 <d tag="5">Shri Bhumika Devi Jatra -  Girwade</d>
@@ -412,7 +414,7 @@
                 <d>Sattarka Ravi 11:08</d>
                 <d tag="7">Chatrapati Shivaji Maharaja Jayanti (w.r.t. Date)</d>
             </date>
-            <date id="20" dn="२०" wd="1">
+            <date id="20" dn="20" wd="1">
                 <d tag="NAX">Jyeshtha</d>
                 <d>Magha Krishna Paksha 9</d>
                 <d>Falguni Masarambh</d>
@@ -423,44 +425,44 @@
                 <d>Rampurush Jatraotsav - Tord, Pali</d>
                 <d>Vettal Vardhpandin - Kaoutambi</d>
             </date>
-            <date id="21" dn="२१" wd="2">
+            <date id="21" dn="21" wd="2">
                 <d tag="NAX">Mula</d>
                 <d>Magha Krishna Paksha 10</d>
                 <d>Bhadravasa upto 18:46</d>
                 <d>Dongri Sigmotsav ends</d>
                 <d tag="6">International Mother-language Day</d>
             </date>
-            <date id="22" dn="२२" wd="3">
+            <date id="22" dn="22" wd="3">
                 <d tag="NAX">Purva Ashadha</d>
                 <d>Magha Krishna Paksha 11</d>
                 <d tag="3">Vijaya Ekadashi</d>
                 <d>Shri Mahalsa Utsav ends - Mardol</d>
             </date>
-            <date id="23" dn="२३" wd="4">
+            <date id="23" dn="23" wd="4">
                 <d tag="NAX">Uttara Ashadha</d>
                 <d>Magha Krishna Paksha 12</d>
                 <d tag="4">Sant Samaj Haturle</d>
             </date>
-            <date id="24" dn="२४" wd="5">
+            <date id="24" dn="24" wd="5">
                 <d tag="NAX">Shravana</d>
-                <d tag="0">Mahashivratri</d>
                 <d>Magha Krishna Paksha 13</d>
                 <d>Pradosh</d>
-                <d>Bhadravasa after 21:39</d>                
+                <d>Bhadravasa after 21:39</d>
+                <d tag="0">Mahashivratri</d>
                 <d>Shiv pujan midnight 24:27 to 25:16</d>
                 <d tag="SMU">Mahashivratri Utsav Haturlemat - Shaka, Amona</d> 
                 <d>Shivratra-Maharudhra Gopinath Mandir Majeri (Dodamarg)</d>
                 <d>Gomteshwar vardhapandin - Baina - Sasmode</d>
-                <d>Mahashivratra - Revana, Shiroda, Mahabaleshwar, Parra, Ramnathi,Sancoale, Tambdisurla, Thane, Malpe, Vargaon, Mangeshi, Kaoutombi, Kaisua, Harvale, Keri, Narve, Cortalim, Kakoda, Shelde, Murgaon, Candolim, Siolim, Thivim, Satardem, Gurdev</d>
+                <d>Mahashivratra - Revana, Shiroda, Mahabaleshwar, Parra, Ramnathi,Sancoale, Tambdisurla,Thane,Malpe,Vargaon,Mangeshi,Kaoutombi,Kaisua,Harvale,Keri,Narve,Cortalim,Kakoda,Shelde,Murgaon,Candolim,Siolim,Thivim,Satardem,Gurdev</d>
                 <d>Shri Shideshwar Madir - Uge, Sanguem</d>
                 <d>Maharudra, Chandreshwar Abhishek Mahapuja - Pali kaoutambi</d>
             </date>
-            <date id="25" dn="२५" wd="6">
+            <date id="25" dn="25" wd="6">
                 <d tag="NAX">Shravana</d>
                 <d>Magha Krishna Paksha 14</d>
                 <d>Bhadravasa upto 9:34</d>                
             </date>
-            <date id="26" dn="२६" wd="0" mncycle="0">
+            <date id="26" dn="26" wd="0" mncycle="0">
                 <d tag="NAX">Dhanishtha</d>
                 <d>Magha Krishna Paksha 30</d>
                 <d>Darsh Amavasya</d>
@@ -468,14 +470,14 @@
                 <d tag="5">Kamaxi Jatra</d>
                 <d>Shri Vettal Devstan Vardhapandin - Kharewade,Sukur</d>
             </date>
-            <date id="27" dn="२७" wd="1">
+            <date id="27" dn="27" wd="1">
                 <d tag="NAX">Purva Bhadrapada</d>
                 <d>Phalguna Shukla Paksha 1</d>
                 <d tag="5">Godkor Mandir Devstan Jatra - Tiroda</d>
                 <d>Kavi Kusummargarj Janamdin</d>
                 <d tag="6">Maratha Rajyabhasha Day</d>
             </date>
-            <date id="28" dn="२८" wd="2">
+            <date id="28" dn="28" wd="2">
                 <d tag="NAX">Uttara Bhadrapada</d>
                 <d>Phalguna Shukla Paksha 2</d>
                 <d>Hanuman Devstan Vardhpandin - Kharewade, Sukur</d>
@@ -485,13 +487,13 @@
         </month>
         <month id="3" dn="March">
             <odata><d>1938-39, Shaka Samvat</d><d>Phalguna-Chaitra</d></odata>
-            <date id="1" dn="१" wd="3">
+            <date id="1" dn="1" wd="3">
                 <d tag="NAX">Revati</d>
                 <d>Phalguna Shukla Paksha 3</d>
                 <d>Bhadravasa after 26:12</d>
                 <d>Shri Hanuman Devstan Vardadin and Murti Pratistapana - Karewade, Sukur</d>
             </date>
-            <date id="2" dn="२" wd="4">
+            <date id="2" dn="2" wd="4">
                 <d tag="NAX">Ashwini</d>
                 <d>Phalguna Shukla Paksha 4</d>
                 <d tag="8">Vinayak Chaturti</d>
@@ -500,12 +502,12 @@
                 <d>Shri Shiddhivinayak Mandir Murti Pratistapana vardhapandin - Kangare, Barajan</d>
                 <d tag="4">Sant samaj Karmali</d>
             </date>
-            <date id="3" dn="३" wd="5">
+            <date id="3" dn="3" wd="5">
                 <d tag="NAX">Bharani</d>
                 <d>Phalguna Shukla Paksha 5</d>
                 <d>Kamlavati Vardhapandin - Gawasbhat, Karmali</d>
             </date>
-            <date id="4" dn="४" wd="6">
+            <date id="4" dn="4" wd="6">
                 <d tag="NAX">Krittika</d>
                 <d>Phalguna Shukla Paksha 6/7</d>
                 <d>Ravi P.B. 17:21</d>
@@ -513,24 +515,24 @@
                 <d>Shri Sateri Vaddiwas - Siolim</d>
                 <d tag="6">National Security Day</d>
             </date>
-            <date id="5" dn="५" wd="0">
+            <date id="5" dn="5" wd="0">
                 <d tag="NAX">Rohini</d>
                 <d>Phalguna Shukla Paksha 8</d>
                 <d>Durgashtami</d>
                 <d tag="1">Dharmabhushan Sadguru Brameshananadcharya Swami Janmastami</d>
                 <d tag="SMU">Sant samaj Kudka, Sakha Khorlim</d>
             </date>
-            <date id="6" dn="६" wd="1">
+            <date id="6" dn="6" wd="1">
                 <d tag="NAX">Mrigashirsha</d>
                 <d>Phalguna Shukla Paksha 9</d>
                 <d>Shri Sateri Devi Vaddiwas - Aarovli, Shiroda</d>
             </date>
-            <date id="7" dn="७" wd="2">
+            <date id="7" dn="7" wd="2">
                 <d tag="NAX">Ardra</d>
                 <d>Phalguna Shukla Paksha 10</d>
                 <d>Shri Shantadurga Panchayat Devastan Vardhapandin - Kalapur</d>
             </date>
-            <date id="8" dn="८" wd="3">
+            <date id="8" dn="8" wd="3">
                 <d tag="NAX">Punarvasu</d>
                 <d>Phalguna Shukla Paksha 11</d>
                 <d tag="3">Amalaki Ekadashi</d>
@@ -538,40 +540,40 @@
                 <d>Gadekar Mandir Vardhapandin - Tiroda</d>
                 <d tag="6">International Women Day</d>
             </date>
-            <date id="9" dn="९" wd="4">
+            <date id="9" dn="9" wd="4">
                 <d tag="NAX">Pushya</d>
                 <d>Phalguna Shukla Paksha 12</d>
                 <d tag="IMP">Gurupushyamurt (Sunrise till 17:12)</d>
                 <d>Shri Vireshwar Dev Vardhapandin - Gurdev</d>
                 <d tag="4">Sant samaj Cortalim</d>
             </date>
-            <date id="10" dn="१०" wd="5">
+            <date id="10" dn="10" wd="5">
                 <d tag="NAX">Ashlesha</d>
                 <d>Phalguna Shukla Paksha 13</d>
                 <d>Pradosh</d>
                 <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Rai Oxel</d>
                 <d>Gadeutsav (holi) - Kudne (10-12)</d>
             </date>
-            <date id="11" dn="११" wd="6">
+            <date id="11" dn="11" wd="6">
                 <d tag="NAX">Magha</d>
                 <d>Phalguna Shukla Paksha 14</d>
                 <d>Bhadravasa after 20:24</d>
             </date>
-            <date id="12" dn="१२" wd="0" mncycle="1">
+            <date id="12" dn="12" wd="0" mncycle="1">
                 <d tag="NAX">Purva Phalguni</d>
-                <d tag="0">Holi</d>
                 <d>Phalguna Shukla Paksha 15</d>
                 <d>Bhadravasa upto 8:20</d>
-                <d tag="IMP">Hutashni Pournima</d>                
+                <d tag="IMP">Hutashni Pournima</d>
+                <d tag="0">Holi</d>
                 <d tag="SMU">Shri Sushen smruti din, Seva - Sant. Samaj Sangolda</d>
                 <d tag="7">Dayanand Bausaheb Bandodkar Jayanti</d>
                 <d>Holi Sigmotsav - Panjim, Margoa, Mapusa, Fatorpa, Vasco, Jambaulim, Nageshi, Kasarpal</d>
             </date>
-            <date id="13" dn="१३" wd="1">
+            <date id="13" dn="13" wd="1">
                 <d tag="NAX">Uttara Phalguni</d>
-                <d tag="0">Dhulivandhan</d>
                 <d>Phalguna Krishna Paksha 1</d>
-                <d>Abhyangsnan Karidin</d>                
+                <d>Abhyangsnan Karidin</d>
+                <d tag="0">Dhulivandhan</d>
                 <d tag="IMP">Vasantotsvarabh</d>
                 <d tag="5">Vettal Jatra - Khol, Cancona</d>
                 <d tag="5">Shri Lakhaneshwar Jatra - Murkud, Cancona</d>
@@ -579,99 +581,99 @@
                 <d>Karmali Sigmotsav</d>
                 <d>Gade Utsav - Sal, Bicholim (13-15)</d>
             </date>
-            <date id="14" dn="१४" wd="2">
+            <date id="14" dn="14" wd="2">
                 <d tag="NAX">Hasta</d>
                 <d>Phalguna Krishna Paksha 2</d>
                 <d tag="OTH">Tukaram Beez</d>
             </date>
-            <date id="15" dn="१५" wd="3">
+            <date id="15" dn="15" wd="3">
                 <d tag="NAX">Chitra</d>
                 <d>Phalguna Krishna Paksha 3</d>
                 <d tag="7">Chatrapati Shivaji Maharaja Jayanti (w.r.t. Tithi)</d>
                 <d tag="6">World Customer Day</d>
                 <d>Dhulivandhan and Ghodemudni Shri Nayaki Devi Devsthan - Mugoli, Sanguem</d>
             </date>
-            <date id="16" dn="१६" wd="4">
+            <date id="16" dn="16" wd="4">
                 <d tag="NAX">Swati</d>
                 <d>Phalguna Krishna Paksha 4</d>
                 <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise:22:01</d>
                 <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Shaka - Mole, Kirlpal, valdav</d>
                 <d tag="4">Sant samaj Sirsai</d>
             </date>
-            <date id="17" dn="१७" wd="5">
+            <date id="17" dn="17" wd="5">
                 <d tag="NAX">Vishakha</d>
+                <d>Phalguna Krishna Paksha 5</d>
                 <d tag="0">Rangpanchami</d>
-                <d>Phalguna Krishna Paksha 5</d>                
                 <d tag="5">Shri Nayaki Devi Jatra - Mugoli, Sanguem</d>
                 <d tag="5">Shri Sateri Jatra Sisirotsav - Khorle, Mapusa</d>
                 <d tad="6">World Handicap Day</d>
             </date>
-            <date id="18" dn="१८" wd="6">
+            <date id="18" dn="18" wd="6">
                 <d tag="NAX">Anuradha</d>
                 <d>Phalguna Krishna Paksha 6</d>
                 <d>Shri Eknath Pasti</d>
                 <d>Shri Satyanarayan Pujanotsav - Tord Paitan</d>
                 <d>Datt Mandir Vardhapandin - Shirnewada, Karmali</d>
             </date>
-            <date id="19" dn="१९" wd="0">
+            <date id="19" dn="19" wd="0">
                 <d tag="NAX">Jyeshtha</d>
                 <d>Phalguna Krishna Paksha 7</d>
                 <d>Bhanusaptami</d>
                 <d>Saptami Vrudhi</d>
                 <d>Ghodemodni - Bicholim and Morjim</d>
             </date>
-            <date id="20" dn="२०" wd="1">
+            <date id="20" dn="20" wd="1">
                 <d tag="NAX">Jyeshtha</d>
                 <d>Phalguna Krishna Paksha 7</d>
                 <d>Kalashtami</d>
             </date>
-            <date id="21" dn="२१" wd="2">
+            <date id="21" dn="21" wd="2">
                 <d tag="NAX">Mula</d>
                 <d>Phalguna Krishna Paksha 8</d>
                 <d tag="IMP">Zambaulim gulal</d>
             </date>
-            <date id="22" dn="२२" wd="3">
+            <date id="22" dn="22" wd="3">
                 <d tag="NAX">Purva Ashadha</d>
                 <d>Phalguna Krishna Paksha 9</d>
                 <d>Achutanand Swami Punya Thiti - Kaisuva</d>
                 <d tag="6">World Polio Programme Day</d>
                 <d>Shri Shantaduga Sigmotsav - Dhargal (22 - 27)</d>
             </date>
-            <date id="23" dn="२३" wd="4">
+            <date id="23" dn="23" wd="4">
                 <d tag="NAX">Uttara Ashadha</d>
                 <d>Phalguna Krishna Paksha 10</d>
                 <d tag="6">World Weather Day</d>
                 <d tag="4">Sant samaj Karaswada, Pede</d>
                 <d>Sigmotsav Shri Shetrapal Damodar Sansta - Durgawadi, Taligao</d>
             </date>
-            <date id="24" dn="२४" wd="5">
+            <date id="24" dn="24" wd="5">
                 <d tag="NAX">Shravana</d>
                 <d>Phalguna Krishna Paksha 11</d>
                 <d tag="3">Papmochani Ekadashi</d>
                 <d>Shravopavas</d>
             </date>
-            <date id="25" dn="२५" wd="6">
+            <date id="25" dn="25" wd="6">
                 <d tag="NAX">Dhanishtha</d>
                 <d>Phalguna Krishna Paksha 12</d>
                 <d>Shanipradosh</d>
             </date>
-            <date id="26" dn="२६" wd="0">
+            <date id="26" dn="26" wd="0">
                 <d tag="NAX">Shatabhisha</d>
                 <d>Phalguna Krishna Paksha 13</d>
                 <d>Shivratri</d>
                 <d>Gondhal Utsav - Valvoi</d>
             </date>
-            <date id="27" dn="२७" wd="1" mncycle="0">
+            <date id="27" dn="27" wd="1" mncycle="0">
                 <d tag="NAX">Purva Bhadrapada</d>
                 <d>Phalguna Krishna Paksha 14</d>
                 <d>Darsh Amavashya</d>
                 <d>Somvathy Amavashya</d>
                 <d tag="6">World Theater Day</d>
             </date>
-            <date id="28" dn="२८" wd="2">   
+            <date id="28" dn="28" wd="2">
                 <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Phalguna Krishna Paksha 30/1</d>
                 <d tag="0">Gudi Padwa (Morning after 8:27)</d>
-                <d>Phalguna Krishna Paksha 30/1</d>                
                 <d>Pratipda</d>
                 <d tag="OTH">Hemlambinam Sanvatsar Shake 1939</d>
                 <d>Panchagast Ganpati Pujan</d>
@@ -684,7 +686,7 @@
                 <d>Giroba utsav - Mopa</d>
                 <d>Homkund - Gude,Siolim,Nasnoda</d>
             </date>
-            <date id="29" dn="२९" wd="3">
+            <date id="29" dn="29" wd="3">
                 <d tag="NAX">Revati</d>
                 <d>Chaitra Shukla Paksha 2</d>
                 <d>Chandradarshan upto 20:18</d>
@@ -692,13 +694,13 @@
                 <d tag="OTH">Akkalkot swami prakat Day</d>
                 <d tag="6">National Ferry Day</d>
             </date>
-            <date id="30" dn="३०" wd="4">
+            <date id="30" dn="30" wd="4">
                 <d tag="NAX">Ashwini</d>
                 <d>Chaitra Shukla Paksha 3</d>
                 <d>Gauri trutiya (Teez)</d>
                 <d tag="4">Sant samaj Mayde</d>
             </date>
-            <date id="31" dn="३१" wd="5">
+            <date id="31" dn="31" wd="5">
                 <d tag="NAX">Bharani-Krittika</d>
                 <d>Chaitra Shukla Paksha 4</d>
                 <d tag="8">Vinayak Chaturti</d>
@@ -706,43 +708,43 @@
         </month>
         <month id="4" dn="April">
             <odata><d>1939, Shaka Samvat</d><d>Chaitra-Vaishakha</d></odata>
-            <date id="1" dn="१" wd="6">
+            <date id="1" dn="1" wd="6">
                 <d tag="NAX">Rohini</d>
                 <d>Chaitra Shukla Paksha 5</d>
                 <d tag="6">April Fool Day</d>
             </date>
-            <date id="2" dn="२" wd="0">
+            <date id="2" dn="2" wd="0">
                 <d tag="NAX">Mrigashirsha</d>
                 <d>Chaitra Shukla Paksha 6</d>
                 <d>Shri Saibaba charitra Parayan Sohala (5 days) - Kadamb Pattar Raibandhar</d>
             </date>
-            <date id="3" dn="३" wd="1">
+            <date id="3" dn="3" wd="1">
                 <d tag="NAX">Ardra</d>
                 <d>Chaitra Shukla Paksha 7</d>
                 <d>Bhadravasa after 13:05 upto 24:09</d>
             </date>
-            <date id="4" dn="४" wd="2">
+            <date id="4" dn="4" wd="2">
                 <d tag="NAX">Punarvasu</d>
+                <d>Chaitra Shukla Paksha 8</d>
                 <d tag="0">Shriram Navami</d>
-                <d>Chaitra Shukla Paksha 8</d>                
                 <d tag="IMP">Shriram Navratra ends</d>
                 <d tag="5">Shri Mallikarjun Jatra - Cancona</d>
                 <d tag="5">Khetoba Jatra - Mayem</d>
                 <d tag="6">National Community Day</d>
             </date>
-            <date id="5" dn="५" wd="3">
+            <date id="5" dn="5" wd="3">
                 <d tag="NAX">Pushya</d>
                 <d>Chaitra Shukla Paksha 9</d>
                 <d tag="5">Chandreshwar Bhootnath Jatrotsav begins - Paroda</d>
                 <d>Brahmastal sansta vaddiwas - Pandurang wadi, Vasco</d>
             </date>
-            <date id="6" dn="६" wd="4">
+            <date id="6" dn="6" wd="4">
                 <d tag="NAX">Ashlesha</d>
                 <d>Chaitra Shukla Paksha 10</d>
                 <d>Bhadravasa after 6:01</d>
                 <d tag="4">Sant samaj Girwade</d>
             </date>
-            <date id="7" dn="७" wd="5">
+            <date id="7" dn="7" wd="5">
                 <d tag="NAX">Magha</d>
                 <d>Chaitra Shukla Paksha 11</d>
                 <d tag="3">Kamda Ekadashi</d>
@@ -750,7 +752,7 @@
                 <d>Ravalnath utsav - Karmali</d>
                 <d tag="6">World Health Day</d>
             </date>
-            <date id="8" dn="८" wd="6">
+            <date id="8" dn="8" wd="6">
                 <d tag="NAX">Purva Phalguni</d>
                 <d>Chaitra Shukla Paksha 12</d>
                 <d>Shani prodosh</d>
@@ -759,7 +761,7 @@
                 <d>Shri Siddeshwar Devta Vardhapandin - Kaisuva</d>
                 <d>Mahaganapathi Bhavani Shankar Mandir Vardhapandin - Thivim</d>
             </date>
-            <date id="9" dn="९" wd="0">
+            <date id="9" dn="9" wd="0">
                 <d tag="NAX">Uttara Bhadrapada</d>
                 <d>Chaitra Shukla Paksha 13</d>
                 <d tag="7">Mahavir Jayanti</d>
@@ -767,25 +769,25 @@
                 <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Murgaon</d>
                 <d tag="6">Konkani Language Day</d>
             </date>
-            <date id="10" dn="१०" wd="1">
+            <date id="10" dn="10" wd="1">
                 <d tag="NAX">Hasta</d>
                 <d>Chaitra Shukla Paksha 14</d>
                 <d>Bhadravasa after 10:12 upto 22:57</d>
                 <d tag="6">Water Resources Day</d>
             </date>
-            <date id="11" dn="११" wd="2" mncycle="1">
+            <date id="11" dn="11" wd="2" mncycle="1">
                 <d tag="NAX">Chitra</d>
                 <d>Chaitra Shukla Paksha 15</d>
                 <d>Pournima</d>
                 <d tag="7">Hanuman Jayanti</d>
                 <d tag="SMU">Shri Sushen smruti din, Seva - Sant. Samaj Kale, Sirgaon</d>
             </date>
-            <date id="12" dn="१२" wd="3">
+            <date id="12" dn="12" wd="3">
                 <d tag="NAX">Swati</d>
                 <d>Chaitra Krishna Paksha 1</d>
                 <d>Shri Devi Sateri Pun:Pratisttana din - Kudne</d>
             </date>
-            <date id="13" dn="१३" wd="4">
+            <date id="13" dn="13" wd="4">
                 <d tag="NAX">Swati</d>
                 <d>Chaitra Krishna Paksha 2</d>
                 <d>Bhadravasa after 28:15</d>
@@ -794,48 +796,48 @@
                 <d tag="6">Jaliyanwala Bhag Hatyakanad Day</d>
                 <d tag="4">Sant samaj Kaisuva</d>
             </date>
-            <date id="14" dn="१४" wd="5">
+            <date id="14" dn="14" wd="5">
                 <d tag="NAX">Vishakha</d>
-                <d tag="0">Good Friday</d>
                 <d>Chaitra Krishna Paksha 3</d>
                 <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise:21:33</d>
                 <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Sant Samaj Ghotali 2</d>
-                <d>Bhadravasa upto 27:23</d>                
+                <d>Bhadravasa upto 27:23</d>
+                <d tag="0">Good Friday</d>
                 <d tag="7">Dr. Ambedkar Jayanti</d>
             </date>
-            <date id="15" dn="१५" wd="6">
+            <date id="15" dn="15" wd="6">
                 <d tag="NAX">Anuradha</d>
                 <d>Chaitra Krishna Paksha 4</d>
                 <d tag="5">Shri Devi Mahalaxmi Jatra - Kudnem</d>
                 <d tag="5">Mahaparvani Jatrotsav - Gawasbhat, Karmali</d>
             </date>
-            <date id="16" dn="१६" wd="0">
+            <date id="16" dn="16" wd="0">
                 <d tag="NAX">Jyeshtha</d>
                 <d>Chaitra Krishna Paksha 5</d>
                 <d tag="6">Indian rail trasportation day</d>
             </date>
-            <date id="17" dn="१७" wd="1">
+            <date id="17" dn="17" wd="1">
                 <d tag="NAX">Mula</d>
                 <d>Chaitra Krishna Paksha 6</d>
                 <d>Bhadravasa after 24:36</d>
             </date>
-            <date id="18" dn="१८" wd="2">
+            <date id="18" dn="18" wd="2">
                 <d tag="NAX">Purva Ashadha</d>
                 <d>Chaitra Krishna Paksha 7</d>
                 <d>Bhadravasa upto 13:39</d>
             </date>
-            <date id="19" dn="१९" wd="3">
+            <date id="19" dn="19" wd="3">
                 <d tag="NAX">Uttara Ashadha</d>
                 <d>Chaitra Krishna Paksha 8</d>
                 <d>Shri Naguesh Maharudra Murti Pratistapana - Akri kudka Tiswadi</d>
             </date>
-            <date id="20" dn="२०" wd="4">
+            <date id="20" dn="20" wd="4">
                 <d tag="NAX">Shravana</d>
                 <d>Chaitra Krishna Paksha 9</d>
                 <d>Shri Sai Mandir vardhapan din -Piran</d>
                 <d tag="4">Sant samaj Salgaon</d>
             </date>
-            <date id="21" dn="२१" wd="5">
+            <date id="21" dn="21" wd="5">
                 <d tag="NAX">Dhanishtha</d>
                 <d>Chaitra Krishna Paksha 10</d>
                 <d>Bhramstal Vardhapan din- Pandurangwadi, Vasco</d>
@@ -867,7 +869,7 @@
                 <d>Bhadravasa upto 10:40</d>
                 <d>Panchak upto 21:54</d>
             </date>
-            <date id="26" dn="२६" wd="3">
+            <date id="26" dn="२६" wd="3" mncycle="0">
                 <d tag="NAX">Ashwini</d>
                 <d>Chaitra Krishna Paksha 30</d>
                 <d>Darsh Amavasha</d>
@@ -895,7 +897,1515 @@
                 <d tag="NAX">Mrigashirsha</d>
                 <d>Vaishak Shuk 5</d>
                 <d tag="5">Lairahi Jatra, Shirgaon</d>
-                <d>श्री Dev Vethobha Vardhapan Din ,Arwali </d>
+                <d>Shri Dev Vethobha Vardhapan Din ,Arwali </d>
+            </date>
+        </month>
+		<month id="5" dn="May">
+			<odata><d>1938-39, Shaka Samvat</d><d>Vaishakha-Jyeshtha</d></odata>
+            <date id="1" dn="1" wd="1">
+                <d tag="NAX">Aaradra-Punarvasu</d>
+                <d>Vaishakha Shukla Paksha 6</d>
+                <d tag="1">Om Siddha Brahmashram Vardhapandin, Keri-Sattari Seva,S.S. Dodamarg</d>
+                <d tag="6">Maharastra Day</d>
+                <d tag="6">Worker's Day</d>
+				<d>Shri Devi Kelbai Punah Pratistapana Din, Kudnem</d>
+				<d>Shri Naguesh Murti Sthapana Din, Malebhat- Kudka</d>
+				<d>Devi Sateri Vardhapan Din, Gulduvem</d>
+				<d>Shri Vetoba Vardhapan Din, Assagao</d>
+				<d>Shri Sateri Bhadrakali Utsav, Aaroda</d>
+            </date>
+            <date id="2" dn="2" wd="2">
+                <d tag="NAX">Pushya</d>
+                <d>Vaishakha Shukla Paksha 7</d>
+                <d>Bhadravasa after 20.51</d>
+                <d tag="5">Shri Mayurja Morjai Jatra, Morji</d>
+				<d tag="5">Shri Sateri Utsav,Tord-Pali</d>
+				<d tag="5">Shri Bhumika Devi Vardhapandin, Sawantwada-Mandrem</d>
+            </date>
+            <date id="3" dn="3" wd="3">
+                <d tag="NAX">Ashlesha</d>
+                <d>Vaishakha Shukla Paksha 8</d>
+				<d tag="7">Buddhashtami</d>
+				<d>Bhadravasa till 08.16</d>
+				<d tag="6">Press Independace Day</d>
+            </date>
+            <date id="4" dn="4" wd="4">
+                <d tag="NAX">Magha</d>
+                <d>Vaishakha Shukla Paksha 9</d>
+                <d tag="4">Sant Samaj Parsem</d>				
+            </date>
+            <date id="5" dn="5" wd="5">
+                <d tag="NAX">Purva</d>
+                <d>Vaishakha Shukla Paksha 10</d>
+				<d tag="7">Shri Shankaracharya Jayanti Karvir</d>
+            </date>
+            <date id="6" dn="6" wd="6">
+                <d tag="NAX">Uttara</d>
+                <d>Vaishakha Shukla Paksha 11</d>
+                <d tag="3">Mohini Ekadashi</d>
+                <d>Bhadravasa after 08.03 and till 20.30</d>
+            </date>
+            <date id="7" dn="7" wd="0">
+                <d tag="NAX">Uttara</d>
+                <d>Vaishakha Shukla Paksha 12</d>
+            </date>
+            <date id="8" dn="8" wd="1">
+                <d tag="NAX">Hasta</d>
+                <d>Vaishakha Shukla Paksha 13</d>
+				<d>Som Pradosh</d>
+				<d tag="1">Shri Bramhanand Swami (15th) Punya Tithi, Sant Samaj Savordem</d>
+				<d tag="6">International Red Cross Day</d>
+				<d>Shri Sateri Sainath Murti Pratistapana Din, Khuntiwada-Sanguem</d>
+				<d tag="5">Shri Narsimha Jatra, Veling</d>
+				<d>Shri Sapteshwar Bhagwati Vardhapan Din, Mopa</d>
+				<d>Shri Mauli Devi Vardhapan Din, Ugvem</d>
+				<d>Sai Mandir Vardhapan Din Utsav, Raibandhar</d>
+			</date>
+            <date id="9" dn="9" wd="2">
+                <d tag="NAX">Chitra</d>
+                <d>Vaishakha Shukla Paksha 14</d>
+                <d>Bhadravasa after 25.07</d>
+			</date>
+            <date id="10" dn="10" wd="3" mncycle="1">
+                <d tag="NAX">Swati</d>
+                <d>Vaishakha Shukla Paksha 15</d>
+				<d>Buddha Pournima</d>
+				<d>Bhadravasa till 14.08</d>
+				<d tag="SMU">Shri Sushen Smriti Din, Seva- Sant Samaj Pali, Velge, Bhamai</d>
+				<d>Shri Paikdev Pindiutsav, Malkarnem-Sanguem</d>
+            </date>
+            <date id="11" dn="11" wd="4">
+                <d tag="NAX">Vishakha</d>
+                <d>Vaishakha Krishna Paksha 1</d>
+                <d>Phalahari Mahabhakti Dham Vardapan Din- Anjuna</d>
+                <d tag="6">Science Technology Day</d>
+            </date>
+            <date id="12" dn="12" wd="5">
+                <d tag="NAX">Anuradha</d>
+                <d>Vaishakha Krishna Paksha 2</d>
+				<d tag="6">World Nurse Day</d>
+            </date>
+            <date id="13" dn="13" wd="6">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Vaishakha Krishna Paksha 2</d>
+                <d>Bhadravasa after 21.04</d>
+            </date>
+            <date id="14" dn="14" wd="0">
+                <d tag="NAX">Mula</d>
+                <d>Vaishakha Krishna Paksha 3</d>
+				<d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Chandradarshan 21.56</d>
+				<d>Bhadravasa till 10.17</d>
+				<d>Shri Sadanand Smriti Din- Sant Samaj Virdi-Keri</d>
+				<d>Shri Ganapati murti Pratistapana Vardhapan Din, Torda-Paithan, Salvador-Da-Mund</d>
+			</date>
+            <date id="15" dn="15" wd="1">
+                <d tag="NAX">Purva Ashadha</d>
+                <d>Vaishakha Krishna Paksha 4</d>
+				<d>Shri Sateri Utsav- Palyem, Uskai</d>
+				<d>Shri Mayurja Morjai Panchayatan Vardhapan Din- Morjim</d>
+				<d tag="6">International Family Day</d>
+            </date>
+            <date id="16" dn="16" wd="2">
+                <d tag="NAX">Uttara Ashadha</d>
+                <d>Vaishakha Krishna Paksha 5</d>
+				<d>Vetal Devasthan Vardhapan Din, Mopa</d>
+            </date>
+            <date id="17" dn="17" wd="3">
+                <d tag="NAX">Uttara Ashadha</d>
+                <d>Vaishakha Krishna 6</d>
+				<d>Bhadravasa after 16.31 and till 29.11</d>
+				<d tag="6">International Telephone Day</d>
+            </date>
+            <date id="18" dn="18" wd="4">
+                <d tag="NAX">Shravana</d>
+                <d>Vaishakha Krishna Paksha 7</d>
+                <d>Panchak after 22.06</d>
+                <d tag="6">Library Day</d>
+				<d tag="4">Sant Samaj Madrem</d>
+            </date>
+            <date id="19" dn="19" wd="5">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Vaishakha Krishna Paksha 8</d>
+            </date>
+            <date id="20" dn="20" wd="6">
+                <d tag="NAX">Shata Taraka</d>
+                <d>Vaishakha Krishna Paksha 9</d>
+                <d>Bhadravasa after 29.22</d>
+            </date>
+            <date id="21" dn="21" wd="0">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Vaishakha Krishna Paksha 10</d>
+				<d>Bhadravasa till 16.41</d>
+            </date>
+            <date id="22" dn="22" wd="1">
+                <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Vaishakha Krishna Paksha 11</d>
+				<d tag="3">Apara Ekadashi</d>
+            </date>
+            <date id="23" dn="23" wd="2">
+                <d tag="NAX">Revati/Ashwini</d>
+                <d>Vaishakha Krishna Paksha 12</d>
+                <d>Bhouma Prodosh</d>
+                <d>Panchak till 8.23</d>
+            </date>
+            <date id="24" dn="24" wd="3">
+                <d tag="NAX">Bharani</d>
+                <d>Vaishakha Krishna Paksha 13/14</d>
+				<d>Bhadravasa after 08.47 and till 19.00</d>
+            </date>
+            <date id="25" dn="25" wd="4" mncycle="0">
+                <d tag="NAX">Krittika</d>
+                <d>Vaishakha Krishna Paksha 30</d>
+                <d>Darsh Amavashya</d>
+                <d>Bhavuka Amavasya</d>
+				<d>Shanayshcchar Jayanti</d>
+				<d tag="5">Purmar Jatra, Shiroda</d>
+				<d tag="6">Rani Lakshmibai Balidan Day</d>
+				<d tag="4">Sant Samaj Bicholim, Shakha- Mayem, Kumbharwada</d>
+            </date>
+            <date id="26" dn="26" wd="5">
+                <d tag="NAX">Rohini</d>
+                <d>Jyeshtha Shukla Paksha 1</d>
+				<d>Dasseurarambh</d>
+				<d>Grishma Season Starts</d>
+            </date>
+            <date id="27" dn="27" wd="6">
+                <d tag="NAX">Mriga</d>
+                <d>Jyeshtha Shukla Paksha 2</d>
+                <d>Chandradarshan till 20.58</d>
+				<d tag="6">Guru Arjunsimha Shahid Day</d>
+            </date>
+            <date id="28" dn="28" wd="0">
+                <d tag="NAX">Aardara</d>
+                <d>Jyeshtha Shukla Paksha 3</d>
+				<d tag="8">Vinayak Chaturthi</d>
+				<d>Bhadravasa after 24.31</d>
+				<d tag="6">Freedom Fighter Birth Day</d>
+            </date>
+            <date id="29" dn="29" wd="1">
+                <d tag="NAX">Punarvasu</d>
+                <d>Jyeshtha Shukla Paksha 4</d>
+				<d>Bhadravasa till 11.07</d>
+            </date>
+			<date id="30" dn="30" wd="2">
+                <d tag="NAX">Pushya</d>
+                <d>Jyeshtha Shukla Paksha 5</d>
+                <d tag="6">Goa Statehood Day</d>
+            </date>
+			<date id="31" dn="31" wd="3">
+                <d tag="NAX">Ashlesha</d>
+                <d>Jyeshtha Shukla Paksha 6</d>
+            </date>
+        </month>
+		<month id="6" dn="June">
+			<odata><d>1939, Shaka Samvat</d><d>Jyeshtha-Aashadha</d></odata>
+            <date id="1" dn="1" wd="4">
+                <d tag="NAX">Magha</d>
+                <d>Jyeshtha Shukla Paksha 7</d>
+                <d>Bhadravasa after 06.20 and till 18.11</d>
+                <d tag="6">Chidren Safety Day</d>
+                <d tag="4">Sant Samaj Margao</d>
+            </date>
+            <date id="2" dn="2" wd="5">
+                <d tag="NAX">Purva</d>
+                <d>Jyeshtha Shukla Paksha 8</d>
+                <d>Shri Ravalnath Birth Day, Assagao</d>
+            </date>
+            <date id="3" dn="3" wd="6">
+                <d tag="NAX">Uttara</d>
+                <d>Jyeshtha Shukla Paksha 9</d>
+				<d>Mahesh Navami</d>
+            </date>
+            <date id="4" dn="4" wd="0">
+                <d tag="NAX">Hasta</d>
+                <d>Jyeshtha Shukla Paksha 10</d>
+                <d>Dasseura Saptami</d>
+                <d>Bhadravasa after 20.49</d>
+				<d tag="7">Yadnyavalkya Jayanti</d>
+            </date>
+            <date id="5" dn="5" wd="1">
+                <d tag="NAX">Chitra</d>
+                <d>Jyeshtha Shukla Paksha 11</d>
+				<d tag="3">Nirajala Ekadashi</d>
+				<d>Bhadravasa till 09.42</d>
+				<d tag="6">International Environment Day</d>
+            </date>
+            <date id="6" dn="6" wd="2">
+                <d tag="NAX">Swati</d>
+                <d>Jyeshtha Shukla Paksha 12</d>
+                <d>Bhouma Pradosh</d>
+            </date>
+            <date id="7" dn="7" wd="3">
+                <d tag="NAX">Vishakha</d>
+                <d>Jyeshtha Shukla Paksha 13</d>
+                <d>Shiv Shaka 343-344</d>
+                <d tag="6">Shiv Chatrapati Rajyabhishake Day (as per Thiti)</d>
+				<d tag="7">Shri Brahmanand Swami 99th Jayanti</d>
+				<d tag="SMU">Brahmanand Smriti Din- Sant Samaj Haturli</d>
+			</date>
+            <date id="8" dn="8" wd="4" mncycle="1">
+                <d tag="NAX">Anuradha</d>
+                <d>Jyeshtha Shukla Paksha 14</d>
+				<d tag="0">Vat Pournima</d>
+				<d>Bhadravasa after 16.00 and till 29.27</d>
+				<d tag="4">Sant Samaj Thivim</d>
+			</date>
+            <date id="9" dn="9" wd="5" mncycle="1">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Jyeshtha Shukla Paksha 15</d>
+                <d tag="SMU">Shri Sushen Smriti Din- Sant Samaj Mopa</d>
+            </date>
+            <date id="10" dn="10" wd="6">
+                <d tag="NAX">Mula</d>
+                <d>Jyeshtha Krishna Paksha 1</d>
+				<d tag="6">Eye Donation Day</d>
+            </date>
+            <date id="11" dn="11" wd="0">
+                <d tag="NAX">Mula</d>
+                <d>Jyeshtha Krishna Paksha 2</d>
+            </date>
+            <date id="12" dn="12" wd="1">
+                <d tag="NAX">Purva Ashadha</d>
+                <d>Jyeshtha Krishna Paksha 3</d>
+				<d>Bhadravasa after 12.18 and till 25.18</d>
+				<d tag="6">World Day Against Child Labour</d>
+            </date>
+            <date id="13" dn="13" wd="2">
+                <d tag="NAX">Uttara Ashadha</d>
+                <d>Jyeshtha Krishna Paksha 4</d>
+                <d tag="2" img="img/shriganesh.png">Angarki Sankashti Chaturthi- Chandra Uday 22.13</d>
+                <d tag="SMU">Shri Sadanand Smriti Din- Sant Samaj Taligao</d>
+            </date>
+            <date id="14" dn="14" wd="3">
+                <d tag="NAX">Shravana</d>
+                <d>Jyeshtha Krishna Paksha 5</d>
+				<d>Panchak after 28.51</d>
+            </date>
+            <date id="15" dn="15" wd="4">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Jyeshtha Krishna Paksha 6</d>
+				<d>Bhadravasa after 29.8</d>
+				<d tag="6">World Blood Donation Day</d>
+				<d tag="4">Sant Samaj Rai- Oxcel</d>
+            </date>
+            <date id="16" dn="16" wd="5">
+                <d tag="NAX">Shata Taraka</d>
+                <d>Jyeshtha Krishna Paksha 7</d>
+                <d>Bhadravasa till 17.17</d>
+            </date>
+            <date id="17" dn="17" wd="6">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Jyeshtha Krishna Paksha 8</d>
+            </date>
+            <date id="18" dn="18" wd="0">
+                <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Jyeshtha Krishna Paksha 9</d>
+            </date>
+			<date id="19" dn="19" wd="1">
+                <d tag="NAX">Revati</d>
+                <d>Jyeshtha Krishna Paksha 10</d>
+                <d>Panchak till 17.26</d>
+                <d>Bhadravasa after 14.16 and till 25.11</d>
+            </date>
+            <date id="20" dn="20" wd="2">
+                <d tag="NAX">Ashwini</d>
+                <d>Jyeshtha Krishna Paksha 11</d>
+				<d tag="3">Yogini Ekadashi</d>
+				<d tag="6">World Refugee Day</d>
+            </date>
+            <date id="21" dn="21" wd="3">
+                <d tag="NAX">Bharani</d>
+                <d>Jyeshtha Krishna Paksha 12</d>
+				<d>Dakshinayan Starts</d>
+				<d>Pradosh</d>
+				<d tag="6">World Yoga Day</d>
+            </date>
+            <date id="22" dn="22" wd="4">
+                <d tag="NAX">Krittika</d>
+                <d>Jyeshtha Krishna Paksha 13</d>
+				<d>Bhadravasa after 15.38 and till 25.44</d>
+				<d tag="6">Aatma Parikshan Day</d>
+				<d tag="4">Sant Samaj Kudka</d>
+            </date>
+            <date id="23" dn="23" wd="5" mncycle="0">
+                <d tag="NAX">Rohini/Mriga</d>
+                <d>Jyeshtha Krishna Paksha 14</d>
+                <d>Darsh Amavasya</d>
+            </date>
+            <date id="24" dn="24" wd="6">
+                <d tag="NAX">Aardara</d>
+                <d>Jyeshtha Krishna Paksha 30/1</d>
+				<d>Shri Vasudevanand Saraswati Punya Tithi (Aaradhana), Assagao</d>
+            </date>
+            <date id="25" dn="25" wd="0">
+                <d tag="NAX">Punarvasu</d>
+                <d>Aashadha Shukla Paksha 2</d>
+                <d>Chandradarshan (till 20.41)</d>
+            </date>
+            <date id="26" dn="26" wd="1">
+                <d tag="NAX">Pushya</d>
+                <d>Aashadha Shukla Paksha 3</d>
+            </date>
+            <date id="27" dn="27" wd="2">
+                <d tag="NAX">Aashlesha</d>
+                <d>Aashadha Shukla Paksha 4</d>
+                <d tag="8">Vinayaka Chaturthi (Angarak Yog)</d>
+                <d>Bhadravasa after 09.01 and till 20.00</d>
+            </date>
+            <date id="28" dn="28" wd="3">
+                <d tag="NAX">Magha</d>
+                <d>Aashadha Shukla Paksha 5</d>
+            </date>
+            <date id="29" dn="29" wd="4">
+                <d tag="NAX">Purva</d>
+                <d>Aashadha Shukla Paksha 6</d>
+				<d tag="4">Sant Samaj Hadfade- Anjuna</d>
+            </date>
+            <date id="30" dn="30" wd="5">
+                <d tag="NAX">Uttara</d>
+                <d>Aashadha Shukla Paksha 7</d>
+                <d>Bhadravasa after 18.00</d>
+            </date>
+        </month>
+		<month id="7" dn="July">
+			<odata><d>1939, Shaka Samvat</d><d>Aashadha-Shravana</d></odata>
+            <date id="1" dn="1" wd="6">
+                <d tag="NAX">Hasta</d>
+                <d>Aashadha Shukla Paksha 8</d>
+                <d>Bhadravasa till 06.20</d>   
+            </date>
+            <date id="2" dn="2" wd="0">
+                <d tag="NAX">Chitra</d>
+                <d>Aashadha Shukla Paksha 9</d>
+            </date>
+            <date id="3" dn="3" wd="1">
+                <d tag="NAX">Swati</d>
+                <d>Aashadha Shukla Paksha 10</d>
+            </date>
+            <date id="4" dn="4" wd="2">
+                <d tag="NAX">Vishakha</d>
+                <d>Aashadha Shukla Paksha 11</d>
+                <d tag="3">Devshayani Ekadashi</d>
+                <d>Bhadravasa after 11.20 and till 24.29</d>
+				<d>Chaturmas Starts</d>
+				<d tag="3">Aashadhi Ekadashi- Mapusa, Sakhali, Nagueshi, Bandiwade, Sanguem, Mardol Jatra</d>
+				<d tag="5">Pandurang Jatra, Sakhali</d>
+				<d></d>
+            </date>
+            <date id="5" dn="5" wd="3">
+                <d tag="NAX">Anuradha</d>
+                <d>Aashadha Shukla Paksha 12</d>
+				<d>Tithivasar till 07.05</d>
+				<d>Vaman Pooja</d>
+				<d>Shak-Go Padma Vrata Aarambh</d>
+            </date>
+            <date id="6" dn="6" wd="4">
+                <d tag="NAX">Anuradha</d>
+                <d>Aashadha Shukla Paksha 13</d>
+                <d>Pradosh</d>
+                <d>Shri Brahmanand Smriti Din, Seva- Sant Samaj Karaswada-Pedem</d>
+                <d>Shakha- Opa Khandepar, Usgao</d>
+            </date>
+            <date id="7" dn="7" wd="5">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Aashadha Shukla Paksha 14</d>
+            </date>
+            <date id="8" dn="8" wd="6">
+                <d tag="NAX">Mula</d>
+                <d>Aashadha Shukla Paksha 14</d>
+				<d>Bhadravasa after 07.31 and till 20.35</d>
+            </date>
+            <date id="9" dn="9" wd="0" mncycle="1">
+                <d tag="NAX">Purva Aashadha</d>
+				<d>Aashadha Shukla Paksha 15</d>
+                <d tag="OTH">Guru Pournima (Vyas Pooja)- Sant Samaj Taligao, Kalapur</d>
+                <d>Sanyasinam  Chaturmas Starts</d>
+                <d tag="SMU">Shri Sushen Smriti Din- Sant Samaj Pernem</d>
+				<d>Shri Guru Pournima Utsav, Shri Sai Temple, Pilerne</d>
+			</date>
+            <date id="10" dn="10" wd="1">
+                <d tag="NAX">Uttara Aashadha</d>
+                <d>Aashadha Krishna Paksha 1</d>
+				<d tag="6">Matru Suraksha Day</d>
+            </date>
+            <date id="11" dn="11" wd="2">
+                <d tag="NAX">Shravana</d>
+                <d>Aashadha Krishna Paksha 2</d>
+                <d>Bhadravasa after 25.33</d>
+                <d tag="6">World Population Day</d>
+            </date>
+            <date id="12" dn="12" wd="3">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Aashadha Krishna Paksha 3</d>
+				<d tag="2" img="img/shriganesh.png">Sankashti Chaturthi- Chandra Uday 21.40</d>
+				<d>Bhadravasa till 14.03</d>
+				<d>Panchak after 03.59</d>
+				<d tag="SMU">Shri Sadanand Smriti Din, Shakha- Sulabhat</d>
+            </date>
+            <date id="13" dn="13" wd="4">
+                <d tag="NAX">Shata Taraka</d>
+                <d>Aashadha Krishna Paksha 4</d>
+                <d tag="4">Sant Samaj Morjim, Korgaon</d>
+            </date>
+            <date id="14" dn="14" wd="5">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Aashadha Krishna Paksha 5</d>
+            </date>
+            <date id="15" dn="15" wd="6">
+                <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Aashadha Krishna Paksha 6</d>
+				<d>Bhadravasa after 14.33 and till 26.09</d>
+            </date>
+            <date id="16" dn="16" wd="0">
+                <d tag="NAX">Revati</d>
+                <d>Aashadha Krishna Paksha 7</d>
+                <d>Bhanusaptami</d>
+            </date>
+            <date id="17" dn="17" wd="1">
+                <d tag="NAX">Ashwini</d>
+                <d>Aashadha Krishna Paksha 8</d>
+            </date>
+            <date id="18" dn="18" wd="2">
+                <d tag="NAX">Bharani</d>
+                <d>Aashadha Krishna Paksha 9</d>
+                <d>Bhadravasa after 20.46</d>
+            </date>
+            <date id="19" dn="19" wd="3">
+                <d tag="NAX">Krittika</d>
+                <d>Aashadha Krishna Paksha 10/11</d>
+				<d tag="3">Kamika Ekadashi (Smart)</d>
+				<d>Bhadravasa till 07.25</d>
+            </date>
+            <date id="20" dn="2०" wd="4">
+                <d tag="NAX">Rohini</d>
+                <d>Aashadha Krishna Paksha 12</d>
+                <d tag="3">Bhagwat Ekadashi</d>
+                <d tag="4">Sant Samaj Sanguem</d>
+            </date>
+            <date id="21" dn="21" wd="5">
+                <d tag="NAX">Mriga</d>
+                <d>Aashadha Krishna Paksha 13</d>
+				<d>Pradosh</d>
+				<d>Bhadravasa after 21.49</d>
+            </date>
+            <date id="22" dn="22" wd="6">
+                <d tag="NAX">Aardara</d>
+                <d>Aashadha Krishna Paksha 14</d>
+				<d>Bhadravasa till 08.07</d>
+            </date>
+            <date id="23" dn="23" wd="0" mncycle="0">
+                <d tag="NAX">Punarvasu</d>
+                <d>Aashadha Krishna Paksha 30</d>
+                <d>Darsh Amavasya</d>
+                <d tag="7">Lokmanya Tilak Jayanti</d>
+            </date>
+            <date id="24" dn="24" wd="1">
+                <d tag="NAX">Pushya/Ashlesha</d>
+                <d>Shravana Shukla Paksha 1</d>
+				<d>Chandra Darshan till 20.14</d>
+				<d>Varsha Season Starts</d>
+				<d>Shri Vetoba Harinam Saptah- Assagao</d>
+            </date>
+            <date id="25" dn="25" wd="2">
+                <d tag="NAX">Magha</d>
+                <d>Shravana Shukla Paksha 2</d>
+            </date>
+            <date id="26" dn="26" wd="3">
+                <d tag="NAX">Purva</d>
+                <d tag="8">Vinayak Chaturthi</d>
+				<d>Bhadravasa after 19.29</d>
+				<d tag="6">Kargil Vijay Day</d>
+            </date>
+            <date id="27" dn="27" wd="4">
+                <d tag="NAX">Uttara</d>
+                <d>Shravana Shukla Paksha 4</d>
+                <d tag="0">Nag Panchami</d>
+                <d>Nag Yatra</d>
+				<d>Vattisha Shirala Hiranyakeshi Taitariya Shukla-Yaju Shravani Bhadravasa till 07.01</d>
+				<d tag="OTH">Abdul Kalam Punya Tithi</d>
+				<d tag="4">Sant Samaj Dodamarg</d>
+			</date>
+            <date id="28" dn="28" wd="5">
+                <d tag="NAX">Hasta</d>
+                <d>Shravana Shukla Paksha 5</d>
+				<d tag="5">Shri Damodar Saptah- Vasco</d>
+            </date>
+            <date id="29" dn="29" wd="6">
+                <d tag="NAX">Chitra</d>
+                <d>Shravana Shukla Paksha 6</d>
+				<d>Shri Mauli Harinam Saptah- Redi</d>
+            </date>
+			<date id="30" dn="3०" wd="0">
+                <d tag="NAX">Chitra</d>
+                <d>Shravana Shukla Paksha 7</d>
+                <d>Bhanu Saptami</d>
+                <d>Bhadravasa after 08.06 and till 20.52</d>
+				<d>Shitala Saptami</d>
+				<d>Mangala Gauri Pooja</d>
+            </date>
+			<date id="31" dn="31" wd="1">
+                <d tag="NAX">Swati</d>
+                <d>Shravana Shukla Paksha 8</d>
+            </date>
+        </month>
+		<month id="8" dn="August">
+            <odata><d>1939, Shaka Samvat</d><d>Shravana-Bhadrapada</d></odata>
+            <date id="1" dn="1" wd="2">
+                <d tag="NAX">Vishakha</d>
+                <d>Shravana Shukla Paksha 9</d>
+            </date>
+            <date id="2" dn="2" wd="3">
+                <d tag="NAX">Anuradha</d>
+                <d>Shravana Shukla Paksha 10</d>
+                <d>Bhadravasa after 27.25</d>
+                <d tag="6">Friendship Day</d>
+            </date>
+            <date id="3" dn="3" wd="4">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Shravana Shukla Paksha 11</d>
+				<d tag="3">Putrada Ekadashi</d>
+				<d>Bhadravasa till 16.36</d>
+				<d>Shri Mauli Harinam Saptah- Shiroda</d>
+				<d>Shakha- Amlai, Panchwadi</d>
+			</date>
+            <date id="4" dn="4" wd="5">
+                <d tag="NAX">Mula</d>
+                <d>Shravana Shukla Paksha 12</d>
+            </date>
+            <date id="5" dn="5" wd="6">
+                <d tag="NAX">Purva Aashadha</d>
+                <d>Shravana Shukla Paksha 13</d>
+				<d>Shani Pradosh</d>
+				<d tag="SMU">Shri Brahmanand Smriti Din, Seva- Sant Samaj Dongri, Nevra</d>
+            </date>
+            <date id="6" dn="6" wd="0">
+                <d tag="NAX">Uttara Aashadha</d>
+                <d>Shravana Shukla Paksha 14</d>
+                <d>Bhadravasa after 22.28</d>
+                <d tag="6">Peace Puraskar Day</d>
+            </date>
+            <date id="7" dn="7" wd="1" mncycle="1">
+                <d tag="NAX">Shravana</d>
+                <d>Shravana Shukla Paksha 15</d>
+                <d>Khangrass Lunar Eclipse - Sparsh at 22.52, Madhya at 23.51, and Moksha at 24.49</d>
+                <d>Bhadravasa after 11.07</d>
+				<d>Narali Pournima</d>
+				<d>Shravani Vidhi</d>
+				<d tag="0">Rakshabandhan</d>
+				<d tag="SMU">Shri Sushen Smriti Din, Shakha- Mardol</d>
+            </date>
+            <date id="8" dn="8" wd="2">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Shravana Krishna Paksha 1</d>
+				<d>Panchak after 10.22</d>
+				<d>Shri Krisna Navratri Starts</d>
+            </date>
+            <date id="9" dn="9" wd="3">
+                <d tag="NAX">Shata Taraka</d>
+                <d>Shravana Krisna Paksha 2</d>
+                <d>Shri Swami Sadanand Samadhi Din</d>
+            </date>
+            <date id="10" dn="10" wd="4">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Shravana Krishna Paksha 3</d>
+				<d>Bhadravasa after 12.41 and till 24.33</d>
+				<d>Shri Sadanand Swami Murti Pratishthapana Vardapan Din- Sant Samaj Dhargal, Shakha- Shiroda</d>
+            </date>
+            <date id="11" dn="11" wd="5">
+                <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Shravana Krishna Paksha 4</d>
+                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Chandra Uday-21.44</d>
+                <d>Shri Sadanand Sami 40th Punya Tithi, Gulduvem Math- Sant Samaj Kaisuva, Ganeshpuri-Kholi, Kanka</d>
+            </date>
+            <date id="12" dn="12" wd="6">
+                <d tag="NAX">Revati</d>
+                <d>Shravana Krishna Paksha 5</d>
+				<d>Panchak till 29.49</d>
+				<d tag="7">Vasudevanand Saraswati Jayanti (Tembe Swami)</d>
+            </date>
+            <date id="13" dn="13" wd="0">
+                <d tag="NAX">Ashwini</d>
+                <d>Shravana Krishna Paksha 6</d>
+                <d>Bhadravasa after 21.31</d>
+            </date>
+            <date id="14" dn="14" wd="1">
+                <d tag="NAX">Bharani</d>
+                <d>Shravana Krishna Paksha 7</d>
+				<d>Bhadravasa till 08.41</d>
+				<d tag="0">Shri Krishna Janmastami, Sant Samaj Haturli</d>
+            </date>
+            <date id="15" dn="15" wd="2">
+                <d tag="NAX">Krittika</d>
+                <d>Shravana Krishna Paksha 8</d>
+				<d>Shri Krishna Navratri Ends</d>
+				<d tag="0">Gopal Kala, Sant Samaj Maydem, Aldona</d>
+				<d tag="IMP">Independance Day (71st)</d>
+            </date>
+            <date id="16" dn="16" wd="3">
+                <d tag="NAX">Rohini</d>
+                <d>Shravana Krishna Paksha 9</d>
+                <d>Bhadravasa after 26.01</d>
+            </date>
+            <date id="17" dn="17" wd="4">
+                <d tag="NAX">Mriga</d>
+                <d>Shravana Krishna Paksha 10</d>
+				<d>Bhadravasa till 12.43</d>
+				<d tag="4">Sant Samaj Mopa</d>
+            </date>
+            <date id="18" dn="18" wd="5">
+                <d tag="NAX">Aardara</d>
+                <d>Shravana Krishna Paksha 11</d>
+                <d tag="3">Aja Ekadashi</d>
+            </date>
+            <date id="19" dn="19" wd="6">
+                <d tag="NAX">Punarvasu</d>
+                <d>Shravana Krishna Paksha 12/13</d>
+				<d>Shani Pradosh</d>
+				<d>Bhadravasa after 28.38</d>
+				<d>Swami Swarupanand Punya Tithi Pawas</d>
+				<d>S Sena Maha. Punya Din</d>
+            </date>
+            <date id="20" dn="2०" wd="0">
+                <d tag="NAX">Pushya</d>
+                <d>Shravana Krishna Paksha 14</d>
+                <d>Bhadravasa till 15.22</d>
+            </date>
+            <date id="21" dn="21" wd="1" mncycle="0">
+                <d tag="NAX">Ashlesha</d>
+                <d>Shravana Krishna Paksha 30</d>
+				<d>Darsh Pithori Amavasya (Pola)</d>
+            </date>
+            <date id="22" dn="22" wd="2">
+                <d tag="NAX">Magha</d>
+                <d>Bhadrapada Shukla Paksha 1</d>
+            </date>
+            <date id="23" dn="23" wd="3">
+                <d tag="NAX">Purva</d>
+                <d>Bhadrapada Shukla Paksha 2</d>
+                <d>Chandra Darshan till 20.23</d>
+                <d tag="7">Varah Jayanti</d>
+            </date>
+            <date id="24" dn="24" wd="4">
+                <d tag="NAX">Uttara</d>
+                <d>Bhadrapada Shukla Paksha 3</d>
+				<d>Haritalika Tritiya</d>
+				<d tag="4">Pradhan Mandal</d>
+            </date>
+            <date id="25" dn="25" wd="5">
+                <d tag="NAX">Hasta</d>
+                <d>Bhadrapada Shukla Paksha 4</d>
+                <d>Bhadravasa after 08.24 and till 20.21</d>
+                <d tag="0">Shri Ganesha Chaturthi</d>
+				<d>Sam Shravani</d>
+            </date>
+            <date id="26" dn="26" wd="6">
+                <d tag="NAX">Chitra</d>
+                <d>Bhadrapada Shukla Paksha 5</d>
+				<d>Rhishi Panchami</d>
+				<d>Jain Sanvatsara</d>
+				<d>Shri Gajanan Maha Punya Tithi, Shegao</d>
+				<d>Devi Kalawati Janamdin, Belgaum</d>
+            </date>
+            <date id="27" dn="27" wd="0">
+                <d tag="NAX">Swati</d>
+                <d>Bhadrapada Shukla Paksha 6</d>
+                <d>Skandha Shashthi</d>
+            </date>
+            <date id="28" dn="28" wd="1">
+                <d tag="NAX">Vishakha</d>
+                <d>Bhadravasa after 24.36</d>
+            </date>
+            <date id="29" dn="29" wd="2">
+                <d tag="NAX">Anuradha</d>
+                <d>Bhadrapada Shukla Paksha 8</d>
+				<d>Gauri Aavahan (Full Day)</d>
+				<d>Bhadravasa till 13.42</d>
+				<d tag="6">National Sports Day</d>
+            </date>
+            <date id="30" dn="3०" wd="3">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Bhadrapada Shukla Paksha 9</d>
+                <d>Gauri Pooja</d>
+            </date>
+			<date id="31" dn="31" wd="4">
+                <d tag="NAX">Mula</d>
+                <d>Bhadrapada Shukla Paksha 10</d>
+                <d>Gauri Visarjan (Full Day)</d>
+				<d>Bhagwat Saptah Starts</d>
+				<d>Ramkrishna Paramhansa Punya Tithi</d>
+				<d tag="4">Sant Samaj Ponda</d>
+            </date>
+        </month>
+		<month id="9" dn="September">
+			<odata><d>1939, Shaka Samvat</d><d>Bhadrapada-Ashwina</d></odata>
+            <date id="1" dn="1" wd="5">
+                <d tag="NAX">Purva Ashadha</d>
+                <d>Bhadrapada Shukla Paksha 10</d>
+                <d>Bhadravasa 13.42</d>
+                <d>tag="7"Shri Sidhpadh Swami Jayanti</d>
+           </date>
+            <date id="2" dn="2" wd="6">
+                <d tag="NAX">Purva Ashadha</d>
+                <d>Bhadrapada Shukla Paksha 11</d>
+                <d> tag="3" Parivartini Ekadashi</d>
+                <d>Bhadravasa till 9.38</d>
+            </date>
+            <date id="3" dn="3" wd="0">
+                <d tag="NAX"> Uttara Ashadha</d>
+                <d>Bhadrapada Shukla Paksha 12</d>
+                <d> Pradosh</d>
+            </date>
+            <date id="4" dn="4" wd="1">
+                <d tag="NAX">Shravana</d>
+                <d>Bhadrapada Shukla Paksha 13</d>
+                <d>Panchak after 23:53</d>
+                <d>Anant chaturdashi Adhinath pranvashram Dattmandir Shinrewada Karmali </d>
+                <d>Shree Bramhanand Smrutidin</d>
+                <d>tag="4">Sant Samaj Mayde</d>   
+            </date>
+            <date id="5" dn="5" wd="2">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Bhadrapada Shukla Paksha 14</d>
+                <d>Anant Chathurdashi</d>
+                <d>Bhadravasa after 12:41 till 24:41</d>
+                <d>Proshtapadi Poornima</d> 
+                <d>DR. Radhakrishna Birthday</d>
+                <d>tag="4"Teachers Day</d> 
+            </date>
+            <date id="6" dn="६" wd="3" mncycle="1">
+                <d tag="NAX">Shattarka</d>
+                <d>Bhadrapada Shukla Paksha 15</d>
+                <d>Bhagwat Saptah Samapti</d>
+                <d>Mahalayarambh</d>
+                <d>Sanyasinha Chaturmaas Samapti</d>
+                <d>tag="6"Shree Sushen Smruti Din Shaka Assolna</d>
+            </date>
+            <date id="7" dn="7" wd="4">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Bhadrapada Krishna Paksha 1</d>
+                <d>tag="4">Sant Samaj Sanvordem,Shakha -Kallem,Shigao,Kirlapal Valdav</d> 
+            </date>
+            <date id="8" dn="8" wd="5">
+                <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Bhadrapada Krishna Paksha 2</d>
+                <d>Bhadravasa after 22:00</d>
+                <d>tag="6"Sakshrata Din</d>
+            </date>
+            <date id="9" dn="9" wd="6">
+                <d tag="NAX">Revati</d>
+                <d>Bhadrapada Krishna Paksha 3</d>
+                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi- Chandra Uday 21.08</d>
+                <d>Narayanalayankar Puja Mardol</d>
+                <d>Bhadravasa till 9:12 Panchak till 11.42</d>
+                <d>Shree Sadanand Smrutidin</d>
+                <d>tag="4"> Seva Sant Samaj Sukurwada</d>  
+            </date>
+            <date id="10" dn="10" wd="0">
+                <d tag="NAX">Ashwini</d>
+                <d>Bhadrapada Krishna Paksha 4/5</d>
+                <d>Nakshtra 02 shradh</d>
+                <d>Shree Vithal Devasthan Shardiy</d>
+                <d>Navratraramb Sanguem,Navratraramb Kavle,Advalpal,Mardol,Borim,Shiroda,Dongri,Bandoda</d>
+            </date>
+            <date id="11" dn="11" wd="1">
+                <d tag="NAX">Bharani</d>
+                <d>Bhadrapada Krishna Paksha 6</d>
+                <d>Bhadravasa after 27:14</d>
+            </date>
+            <date id="12" dn="12" wd="2">
+                <d tag="NAX">Krittika</d>
+                <d>Bhadrapada Krishna Paksha 7</d>
+                <d>Bhadravasa 14:08</d>
+            </date>
+            <date id="13" dn="13" wd="3">
+                <d tag="NAX">Rohini</d>
+                <d>Bhadrapada Krishna Paksha 8</d>
+            </date>
+            <date id="14" dn="14" wd="4">
+                <d tag="NAX">Ardra</d>
+                <d>Bhadrapada Krishna Paksha 9</d>
+                <d>Avidhava Navami</d>
+                <d>tag="6">Hindi Din</d>
+                <d>tag="4">Sant Samaj Ghoteli No :2,Kelawade Mollre Colony</d>
+            </date>
+            <date id="15" dn="15" wd="5">
+                <d tag="NAX">Punarvasu</d>
+                <d>Bhadrapada Krishna Paksha 10</d>
+                <d>Bhadravasa after 07:32 till 18:29</d>
+                <d>tag="6">Rashtriya Ambhiyanta Din</d> 
+            </date>
+            <date id="16" dn="16" wd="6">
+                <d tag="NAX">Pushya</d>
+                <d>Bhadrapada Krishna Paksha 11</d>
+                <d>Indira Ekadashi</d>
+                <d>Shree Siddhapadh Swami Punyatiti</d>
+                <d>tag="6">Kamgar Shikshan Din</d>
+            </date>
+            <date id="17" dn="17" wd="0">
+                <d tag="NAX">Ashlesha</d>
+                <d>Bhadrapada Krishna Paksha 12</d>
+                <d>Pradosh</d>
+                <d>tag="7"Vishawkarma Jayanti</d>
+            </date>
+            <date id="18" dn="18" wd="1">
+                <d tag="NAX">Magha</d>
+                <d>Bhadrapada Krishna Paksha 13</d>
+                <d>Bhadravasa after 13:07 till 24:27</d>
+            </date>
+            <date id="19" dn="19" wd="2" mncycle="0">
+                <d tag="NAX">Purva </d>
+                <d>Bhadrapada Krishna Paksha 14</d>
+                <d>Sarvpitri Darsh Amavasha</d>
+                <d>(Bhadhavi Pola)</d>                
+            </date>
+            <date id="20" dn="20" wd="3">
+                <d tag="NAX">Uttara</d>
+                <d>Bhadrapada Krishna Paksha 30</d>
+                <d>Dongri Navratrostav</d>
+                <d>Shree Navdurga Tarangostav</d>
+                <d>Poinguinim Prarambh</d>
+            </date>
+            <date id="21" dn="21" wd="4">
+                <d tag="NAX"> Hasta</d>
+                <d>Chandradarshan 19:38</d>
+                <d>Ashwin Shukla Paksha 1</d>
+                <d>Ghatstapna Navratraramb</d>
+                <d>Ghatstapna (Navratrostav)-Shanrewada</d> 
+                <d>Karmali Dattmandir</d>
+                <d>Shree Sateri Mandir</d>
+                <d>Navratrostav Sanguem,Shakha -Guldev ,Melwada</d>
+            </date>
+            <date id="22" dn="22" wd="5">
+                <d tag="NAX">Chitra</d>
+                <d>Ashwin Shukla Paksha 2</d>
+                <d>tag="7"Dyaneshwari Granth Jayanti</d>
+            </date>
+            <date id="23" dn="23" wd="6">
+                <d tag="NAX">Swati</d>
+                <d>Ashwin Shukla Paksha 3</d>
+                <d tag="8">Vinayak Chaturthi</d>
+                <d>Bhadravasa  23:56</d>
+            </date>
+            <date id="24" dn="२4" wd="0">
+                <d tag="NAX"> Vishakha</d>
+                <d>Ashwin Shukla Paksha 4</d>
+                <d>Lalita Panchami</d>
+                <d>Bhadravasa till 12:39</d>
+                <d>tag="6">Vishw Hrudyai Diwas</d>
+            </date>
+            <date id="25" dn="25" wd="1">
+                <d tag="NAX">Anuradha</d>
+                <d>Ashwin Shukla Paksha 5</d>
+            </date>
+            <date id="26" dn="26" wd="2">
+                <d tag="NAX">Anuradha</d>
+                <d>Ashwin Shukla Paksha 6</d>
+            </date>
+            <date id="27" dn="27" wd="3">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Ashwin Shukla Paksha 7</d>
+                <d>Mahalaxmi Pujan</d>
+                <d>Bhadravasa after 19:08</d>
+                <d>(Ghagri Fukne)</d>
+                <d>Saraswati Ahawan after 09:57</d>
+                <d>tag="6">Jagatik Paryatan  Din</d>
+            </date>
+            <date id="28" dn="28" wd="4">
+                <d tag="NAX">Mula</d>
+                <d>Ashwin Shukla Paksha 8</d>
+                <d>Bhadravasa till 08.23</d>
+                <d>Shree Navdurga Tarangostav Ponguinim Samapti</d>
+                <d> Saraswati Pujan</d>
+                <d>tag="6">Karnbadhir Din</d>
+                <d>tag="4">Sant Samaj Juve AAkhada,Shakha -Khorli</d>
+            </date>
+            <date id="29" dn="29" wd="5">
+                <d tag="NAX">Purva Ashadha</d>
+                <d>Ashwin Shukla Paksha 9</d>
+                <d>Navratrothapan and paarna,Saraswati Balidaan</d>
+                <d>Shatrupuja</d>
+            </date>
+            <date id="30" dn="30" wd="6">
+                <d tag="NAX">Uttara Ashadha</d>
+                <d>Ashwin Shukla Paksha 10</d>
+                <d>Vijaya Dashmi( Dassera) </d>
+                <d>Saraswati Visarjan,Simollaghan</d>
+                <d>Shree brahmanand Swami Sanskrit Pathshala Vardhapan Din </d>
+                <d>Sadanand Swami Ayurved Dham Vardhapan Din-Tapobhumi</d>
+                <d>tag="7"Shree Sadanand Swami Jayanti</d>
+            </date>
+        </month>
+		<month id="10" dn="October">
+            <odata><d>1939, Shaka Samvat</d><d>Ashwina-Kaarthika</d></odata>
+            <date id="1" dn="1" wd="0">
+                <d tag="NAX">Shravana</d>
+                <d>Ashwin Shukla Paksha 11</d>
+                <d tag="3">Panshakusha Ekadashi</d>
+                <d>Bhadravasa after 14:15 till 26:44</d>
+                <d tag="6">Jeyst Nagrik Din</d>
+                <d tag="6">Rashtriya Raktdaan Din</d>   
+                <d tag="6">Vishv Sangeet Din </d>
+            </date>
+            <date id="2" dn="2" wd="1">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Ashwin Shukla Paksha 12</d>
+                <d>Titivasar till 8:15</d>
+                <d>Panchak after 8:36</d>
+                <d tag="7">Lal Bahadur Shastri Jayanti</d>
+                <d tag="7">Mahatma Gandhi Jayanti</d>
+            </date>
+            <date id="3" dn="3" wd="2">
+                <d tag="NAX">Shattarka</d>
+                <d>Ashwin Shukla Paksha 13</d>
+				<d>Shree Bhramanand Smruti Din</d>
+                <d tag="4">Sant Samaj Kaisuv</d>
+			</date>
+            <date id="4" dn="4" wd="3">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Ashwin Shukla Paksha 14</d>
+                <d>Bhadravasa after 25:47</d>
+                <d tag="6">Vishv Jantu Kalyan Din</d>
+            </date>
+            <date id="5" dn="5" wd="4" mncycle="1">
+                <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Ashwin Shukla Paksha 15</d>
+				<d>Khojagiri Poornima </d>
+				<d> Bhadravasa 13:02</d>
+                <d tag="6">Shree Sushen Smruti Din-Shakha Honda </d>
+            </date>
+            <date id="6" dn="6" wd="5">
+                <d tag="NAX">Revati</d>
+                <d>Ashwin Krishna Paksha 1</d>
+                <d>Panchak till 19:30</d>
+                <d tag="6">Vishv Vanya Prani Din</d>
+            </date>
+            <date id="7" dn="7" wd="6">
+                <d tag="NAX">Ashwini</d>
+                <d>Ashwin Krishna Paksha 2</d>
+                <d>Bhadravasa after 30:18 </d>
+                <d>Pant Balekundri Ustavaramb Belguam</d>
+            </date>
+            <date id="8" dn="8" wd="0">
+                <d tag="NAX">Bharani</d>
+                <d>Ashwin Krishna Paksha 3</d>
+				<d tag="2" img="img/shriganesh.png"> Sankashti Chaturthi, Chandra Uday:20.37</d>
+				<d>Bhadravasa till 16:58</d>
+                <d tag="6"> Shree Sadanand Smruti Din </d>
+                <d tag="4">Sant Samaj Pilai Dharbandoda </d>
+                <d>Bhartiy Vayu Sena Din</d>
+            </date>
+            <date id="9" dn="9" wd="1">
+                <d tag="NAX"> Krittika</d>
+                <d>Ashwin Krisna Paksha 4</d>
+                <d tag="OTH"> Pant Balekundri Punyatiti Ustav Samapt Belgaum</d>
+            </date>
+            <date id="10" dn="10" wd="2">
+                <d tag="NAX">Rohini</d>
+                <d>Ashwin Krishna Paksha 5</d>
+            </date>
+            <date id="11" dn="11" wd="3">
+                <d tag="NAX">Mrigashirsha</d>
+                <d>Ashwin Krishna Paksha 6</d>
+                <d>Bhadravasa after 09:09 till 20:00</d>
+            </date>
+            <date id="12" dn="12" wd="4">
+                <d tag="NAX">Ardra</d>
+                <d>Ashwin Krishna Paksha 7</d>
+				<d>Karashtami Kaalashtami</d>
+				<d>Shree Shetrapaal Damodar Sansathan Vardhapan Din Taalgao</d>
+                <d tag="4">Sant Samaj Virdi Keri,Pali Velge Bhamai</d>
+            </date>
+            <date id="13" dn="13" wd="5">
+                <d tag="NAX">Punarvasu</d>
+                <d>Ashwin Krishna Paksha 9</d>
+            </date>
+            <date id="14" dn="14" wd="6">
+                <d tag="NAX">Pushya/Ashlesha</d>
+                <d>Ashwin Krishna Paksha 10</d>
+				<d>Bhadravasa after 14:40 till 26.:03</d>
+            </date>
+            <date id="15" dn="15" wd="0">
+                <d tag="NAX">Magha</d>
+                <d>Ashwin Krishna Paksha 11</d>
+				<d tag="3">Rama Ekadashi</d>
+				<d tag="6">Jagtik Andh Din</d>
+            </date>
+            <date id="16" dn="16" wd="1">
+                <d tag="NAX">Purva</d>
+                <d>Ashwin Krishna Paksha 12</d>
+                <d>Gurudvadashi till 6:34, Basubaras </d>
+                <d>Gurudvadashi -Gulduve Math</d>
+                <d tag="4">Sant Samaj Salgao </d>
+                <d tag="6">Jagatik Ann Din</d>
+                <d tag="6">Jagatik Khadhya Din</d>
+            </date>
+            <date id="17" dn="17" wd="2">
+                <d tag="NAX">Uttara</d>
+                <d>Ashwin Krishna Paksha 13</d>
+				<d>Dhantrayodashi Bhompradosh</d>
+				<d>Bhadravasa after 24:08</d>
+            </date>
+            <date id="18" dn="18" wd="3">
+                <d tag="NAX">Uttara</d>
+                <d>Ashwin Krishna Paksha 14</d>
+                <d>Narak Chaturdashi Diwali</d>
+                <d>Bhadravasa till 12:07</d>
+                <d>Shree DeviBhumika Divyachi Puja Halarn,Pernem,Adwalpaal,Asnoda </d>
+            </date>
+            <date id="19" dn="19" wd="4" mncycle="0">
+                <d tag="NAX">Hasta</d>
+                <d>Ashwin Krishna Paksha 30</d>
+				<d>Darsh Amavasha</d>
+				<d>Laxmi Kuber Pujan</d>
+				<d tag="6"> anav adhikar Din</d>
+				<d>Pradhan Mandal</d>
+            </date>
+            <date id="20" dn="20" wd="5">
+                <d tag="NAX"> Chitra</d>
+                <d>Kartik Shukla Paksha 1</d>
+                <d>Balipratipadha</d>
+                <d>Diwali Padwa Gowardhan Puja</d>
+                <d>Vikram Sawant 2074</d>
+                <d>Mahavir Sawant 2544 Prarambh</d>
+            </date>
+            <date id="21" dn="21" wd="6">
+                <d tag="NAX">Swati</d>
+                <d>Kartik Shukla Paksha 2</d>
+				<d>Chandra Darshan(19:34) </d>
+                <d>Yamdvitiya</d>
+                <d>Bhaubhij</d>
+            </date>
+            <date id="22" dn="22" wd="0">
+                <d tag="NAX">Vishakha</d>
+                <d>Kartik Shukla Paksha 3</d>
+            </date>
+            <date id="23" dn="23" wd="1">
+                <d tag="NAX">Anuradha</d>
+                <d>Kartik Shukla Paksha 4</d>
+                <d tag="8">Vinayak Chaturti</d>
+                <d> Bhadravasa after 17:56</d>
+            </date>
+            <date id="24" dn="24" wd="2">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Kartik Shukla Paksha 4</d>
+				<d> Bhadravasa after</d>
+                <d tag="6"> Sayukt Rashtra Sang Diwas</d>
+            </date>
+            <date id="25" dn="25" wd="3">
+                <d tag="NAX">Mula</d>
+                <d>Kartik Shukla Paksha 5</d>
+                <d>Pandava Panchami</d>
+                <d>Shree Narayan Dev Vardhapan Din Mop</d>
+            </date>
+            <date id="26" dn="26" wd="4">
+                <d tag="NAX">Purva Ashadha</d>
+                <d>Kartik Shukla Paksha 6</d>
+				<d tag="4">Sant Samaj Kalapur</d>
+            </date>
+            <date id="27" dn="27" wd="5">
+                <d tag="NAX">Uttara Ashadha</d>
+                <d>Kartik Shukla Paksha 7</d>
+                <d>Bhadravasa after 14:44 till 27:51</d>
+            </date>
+            <date id="28" dn="28" wd="6">
+                <d tag="NAX">Shravana</d>
+                <d>Kartik Shukla Paksha 8</d>
+                <d>Gopashtami</d>
+            </date>
+            <date id="29" dn="29" wd="0">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Kartik Shukla Paksha 9</d>
+				<d>Shree Ramnaam Jap Mauli Mandir Mop</d>
+				<d>Panchak after 11:47</d>
+            </date>
+            <date id="30" dn="3०" wd="1">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Kartik Shukla Paksha 10</d>
+                <d>tag="6"> Jagtik Bachat Din</d>
+            </date>
+			<date id="31" dn="31" wd="2">
+                <d tag="NAX">Shattarka</d>
+                <d>Kartik Shukla Paksha 11</d>
+                <d>tag="3">Prabhodini Ekadashi</d>
+				<d>Shree pandurang Saptah Sakali</d>
+				<d>Bhadravasa after 07:06 till 18:55</d>
+				<d tag="6">Ekta Din</d>
+           </date>
+        </month>
+		<month id="11" dn="November">
+            <odata><d>1939, Shaka Samvat</d><d>Kaarthika-Maarghasira</d></odata>
+            <date id="1" dn="1" wd="3">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Kartik Shukla Paksha 12</d>
+                <d>Tulsi Vivahramb ,Pradosh,Shak Gopdhyavrath</d>
+                <d tag="6"> Karnataka Rajya Din </d>
+            </date>
+            <date id="2" dn="2" wd="4">
+                <d tag="NAX">Uttara Bhadrapada/Revati</d>
+                <d>Kartik Shukla Paksha 13</d>
+                <d>Jagat Janani tarfe Tulsi Vivah Sohla,Shree Shetra Tapobhumi Gurupith</d>
+                <d tag="SMU">Shree Bhramanand Smruti din -Sant Samaj Revoda </d>
+            </date>
+            <date id="3" dn="3" wd="5" mncycle="1">
+                <d tag="NAX">Ashwini</d>
+                <d>kartik Shukla Paksha 14</d>
+				<d>Tripurari Poornima</d>
+				<d>Vaikunth Chaturdashi</d>
+				<d>Bhadravasa after 13:46 till 24:22</d>
+            </date>
+            <date id="4" dn="4" wd="6" mncycle="1">
+                <d tag="NAX">Bharani</d>
+                <d>Kartik Shukla Paksha 15</d>
+                <d tag="7"> Gurunanak Jayanti</d>
+                <d>Tulsi Vivah Samapti</d>
+                <d tag="SMU">Shree Sushen Smruti Din -Sant Samaj Kelawade</d>
+            </date>
+            <date id="5" dn="5" wd="0">
+                <d tag="NAX">Krittika</d>
+                <d>Kartik Krishna Paksha 1</d>
+				<d>Naam Saptah -Parkebhat Karmali</d>
+				<d>Shree Sateri Mauli Devasthan Kalostav Mop</d>
+            </date>
+            <date id="6" dn="6" wd="1">
+                <d tag="NAX">Rohini</d>
+                <d>Kartik Krishna Paksha 3</d>
+                <d>Bhadravasa after 14:37 till 24:58</d>
+            </date>
+            <date id="7" dn="7" wd="2">
+                <d tag="NAX">Mrigashirsha</d>
+                <d>Kartik Krishna Paksha 4</d>
+                <d tag="2" img="img/shriganesh.png">  Sankashti Chaturthi, Moon rise:21:13</d>
+                <d tag="SMU"> Shree Sadanand Smruti Din Shaka -Mayem Kumbarwada </d>
+				<d tag="6">Shishu Suraksha Din</d>
+            </date>
+            <date id="8" dn="8" wd="3">
+                <d tag="NAX">Ardra</d>
+                <d>Kartik Krishna Paksha 5</d>
+				<d tag="5">Kamleshwar Jatra Korgaon</d>
+            </date>
+            <date id="9" dn="9" wd="4">
+                <d tag="NAX">Punarvasu</d>
+                <d>Kartik  Krisna Paksha 6</d>
+                <d>Bhadravasa after 16:41 till 27:41</d>
+                <d tag="4">Sant Samaj Dhargal ,Vajari</d>
+            </date>
+            <date id="10" dn="10" wd="5">
+                <d tag="NAX">Pushya</d>
+                <d>Kartik Krishna Paksha 7</d>
+				<d tag="6">Jagtik Bandhutav Din</d>	
+            </date>
+            <date id="11" dn="11" wd="6">
+                <d tag="NAX">Ashlesha</d>
+                <d>Kartik Krishna Paksha 8</d>
+            </date>
+            <date id="12" dn="12" wd="0">
+                <d tag="NAX">Magha</d>
+                <d>Kartik Krishna Paksha 9</d>
+				<d>Bhadravasa after 24:30</d>
+				<d tag="7">Kaalbhairav Jayanti Tale Dharghal </d>
+                <d>Navdurga Mandir Vardhapan Din Borim </d>
+                <d tag="5"> Navdurga Jatra-Madkai,Shree Vethoba Jatra Borim </d>
+                <d tag="6"> Rashtriy Pakshi Din </d>
+            </date>
+            <date id="13" dn="13" wd="1">
+                <d tag="NAX">Purva</d>
+                <d>Kartik Krishna Paksha 10</d>
+                <d>Bhadravasa till 12:25</d>
+                <d>Shree Kuldevta Ustav -Varachi Malevaad</d>
+            </date>
+            <date id="14" dn="14" wd="2">
+                <d tag="NAX">Uttara</d>
+                <d>Kartik Krishna Paksha 11</d>
+				<d tag="3">Uttapati Ekadashi</d>
+				<d tag="6">Baal Din (Javahar Lal Nehru Janm Din)</d>
+            </date>
+            <date id="15" dn="15" wd="3">
+                <d tag="NAX">Hasta</d>
+                <d>Kartik Krishna Paksha 12</d>
+				<d>Pradosh Mahalay Samapti</d>
+				<d tag="5"> Shree Devi Mauli Jatra Shiroda</d>
+            </date>
+            <date id="16" dn="16" wd="4">
+                <d tag="NAX">Chitra</d>
+                <d>Kartik Krishna Paksha 13</d>
+                <d>Bhadravasa after 14:09 till 26:46</d>
+                <d>Shree Devi Nitkari Ustav -Asoli</d>
+                <d tag="5">Saleshwar Jatra Korgaon,Shree Shatadurga Betal Jatra ,Navdurga Jatra Mulgaon</d>
+                <d>Shaka Mardol,Pilai Dharbandora</d>
+            </date>
+            <date id="17" dn="17" wd="5">
+                <d tag="NAX">Swati</d>
+                <d>Kartik Krishna Paksha 14</d>
+				<d>Shree Mallikarjun Kaalostav Molcornem</d>
+				<d tag="5">Shree Bhagwati Kamurlekarin Jatra Tuvem</d>
+                <d>Shree Dev Narayan Ustav AAsoli</d>
+                <d tag="6"> Jagtik Patrakarita Din</d>
+            </date>
+            <date id="18" dn="18" wd="6" mncycle="0">
+                <d tag="NAX">Vishakha</d>
+                <d>Kartik Krishna Paksha 30</d>
+                <d> Darsh Amavasha </d>
+                <d tag="5">Jagbai Devi Jatra -Arwali</d>
+                <d tag="5">Shree Ganjatlaxmi Jatra Valvai</d>
+                <d tag="5">Banastari Jatra,Savaivere Jatra</d>
+            </date>
+            <date id="19" dn="19" wd="0">
+                <d tag="NAX">Punarvasu</d>
+                <d>Shravana Krishna Paksha 12/13</d>
+				<d>Shani Pradosh</d>
+				<d>Bhadravasa after 28.38</d>
+				<d>Swami Swarupanand Punya Tithi Pawas</d>
+				<d>S Sena Maha. Punya Din</d>
+            </date>
+            <date id="20" dn="2०" wd="1">
+                <d tag="NAX">Pushya</d>
+                <d>Shravana Krishna Paksha 14</d>
+                <d>Bhadravasa till 15.22</d>
+            </date>
+            <date id="21" dn="21" wd="2">
+                <d tag="NAX">Ashlesha</d>
+                <d>Shravana Krishna Paksha 30</d>
+				<d>Darsh Pithori Amavasya (Pola)</d>
+            </date>
+            <date id="22" dn="22" wd="3">
+                <d tag="NAX">Magha</d>
+                <d>Bhadrapada Shukla Paksha 1</d>
+            </date>
+            <date id="23" dn="23" wd="4">
+                <d tag="NAX">Purva</d>
+                <d>Bhadrapada Shukla Paksha 2</d>
+                <d>Chandra Darshan till 20.23</d>
+                <d tag="7">Varah Jayanti</d>
+            </date>
+            <date id="24" dn="24" wd="5">
+                <d tag="NAX">Uttara</d>
+                <d>Bhadrapada Shukla Paksha 3</d>
+				<d>Haritalika Tritiya</d>
+				<d tag="4">Pradhan Mandal</d>
+            </date>
+            <date id="25" dn="25" wd="6">
+                <d tag="NAX">Hasta</d>
+                <d>Bhadrapada Shukla Paksha 4</d>
+                <d>Bhadravasa after 08.24 and till 20.21</d>
+                <d tag="0">Shri Ganesha Chaturthi</d>
+				<d>Sam Shravani</d>
+            </date>
+            <date id="26" dn="26" wd="0">
+                <d tag="NAX">Chitra</d>
+                <d>Bhadrapada Shukla Paksha 5</d>
+				<d>Rhishi Panchami</d>
+				<d>Jain Sanvatsara</d>
+				<d>Shri Gajanan Maha Punya Tithi, Shegao</d>
+				<d>Devi Kalawati Janamdin, Belgaum</d>
+            </date>
+            <date id="27" dn="27" wd="1">
+                <d tag="NAX">Swati</d>
+                <d>Bhadrapada Shukla Paksha 6</d>
+                <d>Skandha Shashthi</d>
+            </date>
+            <date id="28" dn="28" wd="2">
+                <d tag="NAX">Vishakha</d>
+                <d>Bhadravasa after 24.36</d>
+            </date>
+            <date id="29" dn="29" wd="3">
+                <d tag="NAX">Anuradha</d>
+                <d>Bhadrapada Shukla Paksha 8</d>
+				<d>Gauri Aavahan (Full Day)</d>
+				<d>Bhadravasa till 13.42</d>
+				<d tag="6">National Sports Day</d>
+            </date>
+            <date id="30" dn="3०" wd="4">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Bhadrapada Shukla Paksha 9</d>
+                <d>Gauri Pooja</d>
+            </date>
+        </month>
+		<month id="12" dn="December">
+            <odata><d>1939, Shaka Samvat</d><d>Maarghasira-Pausa</d></odata>
+            <date id="1" dn="1" wd="5">
+                <d tag="NAX">Vishakha</d>
+                <d>Shravana Shukla Paksha 9</d>
+            </date>
+            <date id="2" dn="2" wd="6">
+                <d tag="NAX">Anuradha</d>
+                <d>Shravana Shukla Paksha 10</d>
+                <d>Bhadravasa after 27.25</d>
+                <d tag="6">Friendship Day</d>
+            </date>
+            <date id="3" dn="3" wd="0" mncycle="1">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Shravana Shukla Paksha 11</d>
+				<d tag="3">Putrada Ekadashi</d>
+				<d>Bhadravasa till 16.36</d>
+				<d>Shri Mauli Harinam Saptah- Shiroda</d>
+				<d>Shakha- Amlai, Panchwadi</d>
+			</date>
+            <date id="4" dn="4" wd="1">
+                <d tag="NAX">Mula</d>
+                <d>Shravana Shukla Paksha 12</d>
+            </date>
+            <date id="5" dn="5" wd="2">
+                <d tag="NAX">Purva Aashadha</d>
+                <d>Shravana Shukla Paksha 13</d>
+				<d>Shani Pradosh</d>
+				<d tag="SMU">Shri Brahmanand Smriti Din, Seva- Sant Samaj Dongri, Nevra</d>
+            </date>
+            <date id="6" dn="6" wd="3">
+                <d tag="NAX">Uttara Aashadha</d>
+                <d>Shravana Shukla Paksha 14</d>
+                <d>Bhadravasa after 22.28</d>
+                <d tag="6">Peace Puraskar Day</d>
+            </date>
+            <date id="7" dn="7" wd="4">
+                <d tag="NAX">Shravana</d>
+                <d>Shravana Shukla Paksha 15</d>
+                <d>Khangrass Lunar Eclipse - Sparsh at 22.52, Madhya at 23.51, and Moksha at 24.49</d>
+                <d>Bhadravasa after 11.07</d>
+				<d>Narali Pournima</d>
+				<d>Shravani Vidhi</d>
+				<d tag="0">Rakshabandhan</d>
+				<d tag="SMU">Shri Sushen Smriti Din, Shakha- Mardol</d>
+            </date>
+            <date id="8" dn="8" wd="5">
+                <d tag="NAX">Dhanishtha</d>
+                <d>Shravana Krishna Paksha 1</d>
+				<d>Panchak after 10.22</d>
+				<d>Shri Krisna Navratri Starts</d>
+            </date>
+            <date id="9" dn="9" wd="6">
+                <d tag="NAX">Shata Taraka</d>
+                <d>Shravana Krisna Paksha 2</d>
+                <d>Shri Swami Sadanand Samadhi Din</d>
+            </date>
+            <date id="10" dn="10" wd="0">
+                <d tag="NAX">Purva Bhadrapada</d>
+                <d>Shravana Krishna Paksha 3</d>
+				<d>Bhadravasa after 12.41 and till 24.33</d>
+				<d>Shri Sadanand Swami Murti Pratishthapana Vardapan Din- Sant Samaj Dhargal, Shakha- Shiroda</d>
+            </date>
+            <date id="11" dn="11" wd="1">
+                <d tag="NAX">Uttara Bhadrapada</d>
+                <d>Shravana Krishna Paksha 4</d>
+                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Chandra Uday-21.44</d>
+                <d>Shri Sadanand Sami 40th Punya Tithi, Gulduvem Math- Sant Samaj Kaisuva, Ganeshpuri-Kholi, Kanka</d>
+            </date>
+            <date id="12" dn="12" wd="2">
+                <d tag="NAX">Revati</d>
+                <d>Shravana Krishna Paksha 5</d>
+				<d>Panchak till 29.49</d>
+				<d tag="7">Vasudevanand Saraswati Jayanti (Tembe Swami)</d>
+            </date>
+            <date id="13" dn="13" wd="3">
+                <d tag="NAX">Ashwini</d>
+                <d>Shravana Krishna Paksha 6</d>
+                <d>Bhadravasa after 21.31</d>
+            </date>
+            <date id="14" dn="14" wd="4">
+                <d tag="NAX">Bharani</d>
+                <d>Shravana Krishna Paksha 7</d>
+				<d>Bhadravasa till 08.41</d>
+				<d tag="0">Shri Krishna Janmastami, Sant Samaj Haturli</d>
+            </date>
+            <date id="15" dn="15" wd="5">
+                <d tag="NAX">Krittika</d>
+                <d>Shravana Krishna Paksha 8</d>
+				<d>Shri Krishna Navratri Ends</d>
+				<d tag="0">Gopal Kala, Sant Samaj Maydem, Aldona</d>
+				<d tag="IMP">Independance Day (71st)</d>
+            </date>
+            <date id="16" dn="16" wd="6" >
+                <d tag="NAX">Rohini</d>
+                <d>Shravana Krishna Paksha 9</d>
+                <d>Bhadravasa after 26.01</d>
+            </date>
+            <date id="17" dn="17" wd="0" mncycle="0">
+                <d tag="NAX">Mriga</d>
+                <d>Shravana Krishna Paksha 10</d>
+				<d>Bhadravasa till 12.43</d>
+				<d tag="4">Sant Samaj Mopa</d>
+            </date>
+            <date id="18" dn="18" wd="1" mncycle="0">
+                <d tag="NAX">Aardara</d>
+                <d>Shravana Krishna Paksha 11</d>
+                <d tag="3">Aja Ekadashi</d>
+            </date>
+            <date id="19" dn="19" wd="2">
+                <d tag="NAX">Punarvasu</d>
+                <d>Shravana Krishna Paksha 12/13</d>
+				<d>Shani Pradosh</d>
+				<d>Bhadravasa after 28.38</d>
+				<d>Swami Swarupanand Punya Tithi Pawas</d>
+				<d>S Sena Maha. Punya Din</d>
+            </date>
+            <date id="20" dn="20" wd="3">
+                <d tag="NAX">Pushya</d>
+                <d>Shravana Krishna Paksha 14</d>
+                <d>Bhadravasa till 15.22</d>
+            </date>
+            <date id="21" dn="21" wd="4">
+                <d tag="NAX">Ashlesha</d>
+                <d>Shravana Krishna Paksha 30</d>
+				<d>Darsh Pithori Amavasya (Pola)</d>
+            </date>
+            <date id="22" dn="22" wd="5">
+                <d tag="NAX">Magha</d>
+                <d>Bhadrapada Shukla Paksha 1</d>
+            </date>
+            <date id="23" dn="23" wd="6">
+                <d tag="NAX">Purva</d>
+                <d>Bhadrapada Shukla Paksha 2</d>
+                <d>Chandra Darshan till 20.23</d>
+                <d tag="7">Varah Jayanti</d>
+            </date>
+            <date id="24" dn="24" wd="0">
+                <d tag="NAX">Uttara</d>
+                <d>Bhadrapada Shukla Paksha 3</d>
+				<d>Haritalika Tritiya</d>
+				<d tag="4">Pradhan Mandal</d>
+            </date>
+            <date id="25" dn="25" wd="1">
+                <d tag="NAX">Hasta</d>
+                <d>Bhadrapada Shukla Paksha 4</d>
+                <d>Bhadravasa after 08.24 and till 20.21</d>
+                <d tag="0">Shri Ganesha Chaturthi</d>
+				<d>Sam Shravani</d>
+            </date>
+            <date id="26" dn="26" wd="2">
+                <d tag="NAX">Chitra</d>
+                <d>Bhadrapada Shukla Paksha 5</d>
+				<d>Rhishi Panchami</d>
+				<d>Jain Sanvatsara</d>
+				<d>Shri Gajanan Maha Punya Tithi, Shegao</d>
+				<d>Devi Kalawati Janamdin, Belgaum</d>
+            </date>
+            <date id="27" dn="27" wd="3">
+                <d tag="NAX">Swati</d>
+                <d>Bhadrapada Shukla Paksha 6</d>
+                <d>Skandha Shashthi</d>
+            </date>
+            <date id="28" dn="28" wd="4">
+                <d tag="NAX">Vishakha</d>
+                <d>Bhadravasa after 24.36</d>
+            </date>
+            <date id="29" dn="29" wd="5">
+                <d tag="NAX">Anuradha</d>
+                <d>Bhadrapada Shukla Paksha 8</d>
+				<d>Gauri Aavahan (Full Day)</d>
+				<d>Bhadravasa till 13.42</d>
+				<d tag="6">National Sports Day</d>
+            </date>
+            <date id="30" dn="3०" wd="6">
+                <d tag="NAX">Jyeshtha</d>
+                <d>Bhadrapada Shukla Paksha 9</d>
+                <d>Gauri Pooja</d>
+            </date>
+			<date id="31" dn="31" wd="0">
+                <d tag="NAX">Mula</d>
+                <d>Bhadrapada Shukla Paksha 10</d>
+                <d>Gauri Visarjan (Full Day)</d>
+				<d>Bhagwat Saptah Starts</d>
+				<d>Ramkrishna Paramhansa Punya Tithi</d>
+				<d tag="4">Sant Samaj Ponda</d>
             </date>
         </month>
     </calendar>

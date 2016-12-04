@@ -3,334 +3,334 @@
     <data-tag><ti>Tithi</ti><ti-name>Tithi time</ti-name><nx>Nakshatra</nx><nx-time>Nakshatra time</nx-time>
     <sunrise>Sunrise</sunrise><sunset>Sunset</sunset><mnrashi>Moon rashi</mnrashi><shub-day>How is the day</shub-day></data-tag>
     <calendar id="2017" dn="2017">
-        <shub-day-type><type name="uttam" id="0">excellent</type><type name="shubh" id="1">auspicious</type><type name="anandit" id="2">cheerful</type><type name="changla" id="3">good</type><type name="anishta" id="4">unwelcome</type><type name="ashubh" id="5">unfavorable</type><type name="pratikul" id="6">unfavorable</type><type name="vajr" id="7">bad</type>
+        <shub-day-type><type name="uttam" id="0">excellent</type><type name="shubh" id="1">auspicious</type><type name="anandit" id="2">cheerful</type><type name="changla" id="3">good</type><type name="anishta" id="4">unwelcome</type><type name="ashubh" id="5">unfavorable</type><type name="pratikul" id="6">unfavorable</type><type name="vajr" id="7">bad</type><type name="samanya" id="8">Normal</type>
         </shub-day-type>        
         <month id="1" dn="January">
             <date id="1" dn="१" wd="0">
-                <ti>Saptami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Uttara Ashadha</nx>
-                <nx-time>20:27</nx-time>
+                <ti>Trutiya</ti>
+                <ti-time>15:33</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>16:01</nx-time>
                 <sunrise>7:07</sunrise>
                 <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day after 8:00</shub-day>
+                <mnrashi>Aquarius after 28:29</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="2" dn="२" wd="1">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
+                <ti>Chaturthi</ti>
+                <ti-time>15:51</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>6:52</nx-time>
                 <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <sunset>18:07</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="8">Normal upto 16:00</shub-day>
             </date>
             <date id="3" dn="३" wd="2">
-                <ti>Navami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Chitra</nx>
-                <nx-time>20:27</nx-time>
+                <ti>Panchami</ti>
+                <ti-time>15:42</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>17:17</nx-time>
                 <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Libra after 13:08</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <sunset>18:08</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
             </date>
             <date id="4" dn="४" wd="3">
-                <ti>Dashmi</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Swati</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Libra</mnrashi>
-                <shub-day type="3">Good day till 13:00</shub-day>
+                <ti>Shashtti</ti>
+                <ti-time>15:07</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>17:16</nx-time>
+                <sunrise>7:08</sunrise>
+                <sunset>18:08</sunset>
+                <mnrashi>Pisces after 11:19</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="5" dn="५" wd="4">
-                <ti>Ekadashi</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Vishakha</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Libra</mnrashi>
-                <shub-day type="4">Unwelcomed</shub-day>
+                <ti>Saptami</ti>
+                <ti-time>14:01</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>16:45</nx-time>
+                <sunrise>7:08</sunrise>
+                <sunset>18:09</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>
             </date>
             <date id="6" dn="६" wd="5">
-                <ti>Dwadashi</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Vishakha</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Tauras after 24:58</mnrashi>
-                <shub-day type="4">Unwelcomed</shub-day>
+                <ti>Astami</ti>
+                <ti-time>12:23</ti-time>
+                <nx>Revati</nx>
+                <nx-time>17:16</nx-time>
+                <sunrise>7:08</sunrise>
+                <sunset>18:09</sunset>
+                <mnrashi>Aries after 14:43</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="7" dn="७" wd="6">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Navami</ti>
+                <ti-time>10:23</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>14:18</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:10</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="8" dn="८" wd="0">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Dashami</ti>
+                <ti-time>07:53 - 29:03</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>12:27</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:11</sunset>
+                <mnrashi>Tauras after 17:53</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="9" dn="९" wd="1">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Dwadashi</ti>
+                <ti-time>23:01</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>10:17</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:11</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="3">Good after 10:00</shub-day>
             </date>
             <date id="10" dn="१०" wd="2">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Trayodashi</ti>
+                <ti-time>22:55</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>07:53 - 29:33</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:12</sunset>
+                <mnrashi>Libra after 18:44</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="11" dn="११" wd="3">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Chaturdashi</ti>
+                <ti-time>19:53</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>27:12</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:12</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="3">Good upto 20:00</shub-day>
             </date>
             <date id="12" dn="१२" wd="4" mncycle="1">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Pournima</ti>
+                <ti-time>17:04</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>25:19</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:16</sunset>
+                <mnrashi>Cancer after 19:47</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
             </date>
             <date id="13" dn="१३" wd="5">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Pratipada</ti>
+                <ti-time>14:41</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>23:49</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:14</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="14" dn="१४" wd="6">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Dwitiya</ti>
+                <ti-time>12:49</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>22:53</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:14</sunset>
+                <mnrashi>Leo after 22:55</mnrashi>
+                <shub-day type="2">Cheerful</shub-day>
             </date>
             <date id="15" dn="१५" wd="0">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Trutiya</ti>
+                <ti-time>11:40</ti-time>
+                <nx>Magha</nx>
+                <nx-time>22:44</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:15</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
             <date id="16" dn="१६" wd="1">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Chaturthi</ti>
+                <ti-time>11:16</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>23:18</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:15</sunset>
+                <mnrashi>Virgo after 29:33</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="17" dn="१७" wd="2">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Panchami</ti>
+                <ti-time>11:40</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>24:38</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:16</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="18" dn="१८" wd="3">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
+                <ti>Shashtti</ti>
+                <ti-time>12:49</ti-time>
                 <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <nx-time>26:39</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:16</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="8">Normal after 13:00</shub-day>
             </date>
             <date id="19" dn="१९" wd="4">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Saptami</ti>
+                <ti-time>14:39</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>29:11</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:17</sunset>
+                <mnrashi>Libra after 15:51</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="20" dn="२०" wd="5">
                 <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti-time>16:55</ti-time>
+                <nx>Swati</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:17</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="21" dn="२१" wd="6">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Navami</ti>
+                <ti-time>19:27</ti-time>
+                <nx>Swati</nx>
+                <nx-time>08:04</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:18</sunset>
+                <mnrashi>Scorpio after 28:18</mnrashi>
+                <shub-day type="4">Unwelcome after 8:00</shub-day>
             </date>
             <date id="22" dn="२२" wd="0">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Dashami</ti>
+                <ti-time>22:00</ti-time>
+                <nx>Vaishakha</nx>
+                <nx-time>11:03</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:19</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
             </date>
             <date id="23" dn="२३" wd="1">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Ekadashi</ti>
+                <ti-time>24:22</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>13:57</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:20</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Good upto 14</shub-day>
             </date>
             <date id="24" dn="२४" wd="2">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Dwadashi</ti>
+                <ti-time>26:23</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>16:34</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:20</sunset>
+                <mnrashi>Sagittarius after 16:33</mnrashi>
+                <shub-day type="4">Unwelcome upto 17:00</shub-day>
             </date>
             <date id="25" dn="२५" wd="3">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Trayodashi</ti>
+                <ti-time>27:58</ti-time>
+                <nx>Mula</nx>
+                <nx-time>18:47</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:21</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="8">Normal</shub-day>
             </date>
             <date id="26" dn="२६" wd="4">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Chaturdashi</ti>
+                <ti-time>29:03</ti-time>
+                <nx>Purva Aashadha</nx>
+                <nx-time>20:33</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:21</sunset>
+                <mnrashi>Capricorn after 26:54</mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
             <date id="27" dn="२७" wd="5"  mncycle="0">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Amavasya</ti>
+                <ti-time>29:38</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>21:49</nx-time>
+                <sunrise>7:10</sunrise>
+                <sunset>18:22</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
             </date>
             <date id="28" dn="२८" wd="6">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Pratipada</ti>
+                <ti-time>29:44</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>22:40</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:22</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>
             </date>
             <date id="29" dn="२९" wd="0">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Dwitiya</ti>
+                <ti-time>29:23</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>23:03</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:23</sunset>
+                <mnrashi>Aquarius after 10:54</mnrashi>
+                <shub-day type="3">Good after 13:00</shub-day>
             </date>
             <date id="30" dn="३०" wd="1">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Trutiya</ti>
+                <ti-time>28:44</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>23:05</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:23</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
             </date>
             <date id="31" dn="३१" wd="2">
-                <ti>Astami</ti>
-                <ti-time>21:40</ti-time>
-                <nx>Hasta</nx>
-                <nx-time>20:27</nx-time>
-                <sunrise>7:07</sunrise>
-                <sunset>18:06</sunset>
-                <mnrashi>Kanya</mnrashi>
-                <shub-day type="3">Good day</shub-day>
+                <ti>Chaturthi</ti>
+                <ti-time>27:42</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>22:45</nx-time>
+                <sunrise>7:09</sunrise>
+                <sunset>18:24</sunset>
+                <mnrashi>Pisces after 16:52</mnrashi>
+                <shub-day type="3">Good upto 16:00</shub-day>
             </date>
         </month>
         <month id="2" dn="Febraury">
             <odata><d>1938, Shaka Samvat</d><d>Magha-Phalguna</d></odata>
             <date id="1" dn="१" wd="3">
-                <ti>Pachami</ti>
+                <ti>Panchami</ti>
                 <ti-time>26:20</ti-time>
                 <nx>Uttara Bhadrapada</nx>
                 <nx-time>22:07</nx-time>
                 <sunrise>7:09</sunrise>
                 <sunset>18:25</sunset>
-                <mnrashi>Pieces</mnrashi>
+                <mnrashi>Pisces</mnrashi>
                 <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="2" dn="२" wd="4">
-                <ti>Pasti</ti>
+                <ti>Shashtti</ti>
                 <ti-time>24:43</ti-time>
                 <nx>Revati</nx>
                 <nx-time>21:11</nx-time>
@@ -362,7 +362,7 @@
             <date id="5" dn="५" wd="0">
                 <ti>Navami</ti>
                 <ti-time>18:30</ti-time>
-                <nx>Krittika</nx>
+                <nx>Kruttika</nx>
                 <nx-time>17:08</nx-time>
                 <sunrise>7:07</sunrise>
                 <sunset>18:27</sunset>
@@ -370,607 +370,3323 @@
                 <shub-day type="3">Bad upto 17:00</shub-day>
             </date>
             <date id="6" dn="६" wd="1">
-                <d tag="NAX">Rohini</d>
-                <d>Magha Shukla Paksha 10</d>
-                <d>Bhadravasa after 26:49</d>
-                <d>Shri Mahalaxmi Utsav - Mhardol</d>
-                <d>Shri Dondeshwar Vardhman Din Palkhi Utsav - Nevra</d>
-                <d>Shri Sateri Devi Vardhman Din Mangado - Khorle, Tiswadi</d>
-                <d tag="5">Shri Hanuman Jatra - Mala, Panjim</d>
-                <d>Nagnath Pindiutsav - Markane</d>
-                <d>Surya Mandir utsav - Asgaon</d>
+                <ti>Dashmi</ti>
+                <ti-time>16:10</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>15:29</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:27</sunset>
+                <mnrashi>Gemini after 26:39</mnrashi>
+                <shub-day type="3">Good upto 15:00</shub-day>
             </date>
             <date id="7" dn="७" wd="2">
-                <d tag="NAX">Mrigashirsha</d>
-                <d>Magha Shukla Paksha 11</d>
-                <d tag="3">Jaya Ekadashi</d>
-                <d>Bhishma Dwadashi</d>
-                <d>Maghi Yatra Pandarpur</d>
-                <d>Bhadravasa upto 13:48</d>
+                <ti>Ekadashi</ti>
+                <ti-time>13:47</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>16:50</nx-time>
+                <sunrise>7:07</sunrise>
+                <sunset>18:28</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="7">Bad upto 14:00</shub-day>
             </date>
             <date id="8" dn="८" wd="3">
-                <d tag="NAX">Ardra</d>
-                <d>Magha Shukla Paksha 12</d>
-                <d>Pradosh vrat</d>
-                <d tag="7">Chatrapati Shivaji Maharaja Jayanti (w.r.t. Tithi)</d>
-                <d>Vatvruksh Vardhman Din - Dhakore,Asgaon</d>
-                <d>Shri Radhakrushna Murlidhar Sansta Kalotsav - Gokulwadi, Sakali</d>
-                <d tag="5">Ravalnath Jatra - Aaskawada, Mandre</d>
-                <d>Shri Shantadurga Utsav, Dhave</d>
+                <ti>Dradashi</ti>
+                <ti-time>11:30</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>12:13</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>18:28</sunset>
+                <mnrashi>Cancer after 29:08</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="9" dn="९" wd="4">
-                <d tag="NAX">Punarvasu</d>
-                <d>Magha Shukla Paksha 13</d>
-                <d tag="IMP">Gurupushyamruta Yog (after 10:48 upto Sunrise)</d>
-                <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Parse</d>
-                <d tag="4">Sant samaj Nerul, Pillen</d>
-                <d>Vandevi Jatra Vardhapandin - Old Goa</d>
-                <d>Palkhi Mahotsav Hanuman Mandir - Sankalwadi, Hadfade</d>
-                <d tag="5">Mahaparvani Jatra - Mangeshi (9-11)</d>
+                <ti>Trayodashi</ti>
+                <ti-time>9:22</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>10:48</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>18:29</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="10" dn="१०" wd="5" mncycle="1">
-                <d tag="NAX">Pushya</d>
-                <d>Magha Shukla Paksha 14/15</d>
-                <d>Pournima Bhadravasa 7:39 to 18:43</d>
-                <d>Mag snan samapthi</d>
-                <d tag="SMU">Shri Sushen smruti din, Seva - Sant Samaj Thane - Dave</d>
+                <ti>Chaturdashi</ti>
+                <ti-time>13:47</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>9:40</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>18:29</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
             <date id="11" dn="११" wd="6">
-                <d tag="NAX">Ashlesha</d>
-                <d>Magha Krishna Paksha 1</d>
-                <d tag="IMP">Gurupratibda - Gangapur</d>
-                <d>Shri Narsinghvadi yatra</d>
-                <d>Audumbhar yatra</d>
-                <d tag="IMP">Shri Narsinghsarawati punya tithi</d>
-                <d tag="5">Shri Dev Ajoba Jatra - Keri, Pednem</d>
-                <d>Shri Ram Mandir Vardhapandin - Mayde</d>
-                <d tag="5">Mangeshi Jatra - Mangeshi</d>
-                <d tag="5">Piorl Jatra </d>
-                <d tag="5">Gude Avade Jatra</d>
+                <ti>Pratipada</ti>
+                <ti-time>29:05</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>8:55</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>18:29</sunset>
+                <mnrashi>Leo after 8:55</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="12" dn="१२" wd="0">
-                <d tag="NAX">Magha</d>
-                <d>Magha Krishna Paksha 2</d>
-                <d>Ravi Kumbh 20:38</d>
-                <d tag="5">Shri Sateri Shantadurga Jatra Begins - Shelde, Quepem</d>
-                <d>Gurupratipda Dattamadir - Shirnewada, Karmali</d>
-                <d>Samarth Ratrori devstan vardhapadan din - Shiroda</d>
+                <ti>Dwitiya</ti>
+                <ti-time>28:42</ti-time>
+                <nx>Magha</nx>
+                <nx-time>8:40</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>18:29</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="13" dn="१३" wd="1">
-                <d tag="NAX">Purva Phalguni</d>
-                <d>Magha Krishna Paksha 3</d>
-                <d>Bhadravasa after 16:45 upto 28:57</d>
-                <d tag="5">Paikdev Jatra - Sanguem</d>
-                <d>Shri Mauli vardhapan Din - Mandre</d>
-                <d>Shri Ganpati Dev Vardhapan Din - Navevade</d>
+                <ti>Trutiya</ti>
+                <ti-time>28:57</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>8:59</nx-time>
+                <sunrise>7:04</sunrise>
+                <sunset>18:30</sunset>
+                <mnrashi>Virgo after 15:10</mnrashi>
+                <shub-day type="3">Good upto 17:00</shub-day>
             </date>
             <date id="14" dn="१४" wd="2">
-                <d tag="NAX">Uttara Phalguni</d>
-                <d>Magha Krishna Paksha 4</d>
-                <d tag="2">Angarki Sankasti Chaturti (Moon rise - 21:41)</d>
-                <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Sant Samaj Korgaon</d>
-                <d>Gajantlaxmi utsav - Pali, Kotambi</d>
+                <ti>Chaturti</ti>
+                <ti-time>29:56</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>9:57</nx-time>
+                <sunrise>7:04</sunrise>
+                <sunset>18:30</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="15" dn="१५" wd="3">
-                <d tag="NAX">Hasta</d>
-                <d>Magha Krishna Paksha 5</d>
-                <d>Panchami vrudhi</d>
-                <d>Shri Mahalsa utsav begins - Mardol</d>
-                <d>Shri Devi Bhumika Vardhapan din - Anjuna</d>
-                <d>Shri Mahalaxmi Utsav - Amona</d>
-                <d>Shri Shantadurga Talawlikarin devstan vardhapandin - Gujrabhat, Talawli, Santan-Tiswadi</d>
+                <ti>Panchami</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>11:33</nx-time>
+                <sunrise>7:03</sunrise>
+                <sunset>18:31</sunset>
+                <mnrashi>Libra after 24:33</mnrashi>
+                <shub-day type="8">Normal</shub-day>
             </date>
             <date id="16" dn="१६" wd="4">
-                <d tag="NAX">Chitra</d>
-                <d>Magha Krishna Paksha 5</d>
-                <d tag="5">Shri Gawadebas Jatra - Tiroda</d>
-                <d tag="4">Sant Samaj Aldona</d>
+                <ti>Panchami</ti>
+                <ti-time>7:24</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>13:42</nx-time>
+                <sunrise>7:03</sunrise>
+                <sunset>18:31</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="17" dn="१७" wd="5">
-                <d tag="NAX">Swati</d>
-                <d>Magha Krishna Paksha 6</d>
-                <d>Dongri Sigmo utsav begins (17-21)</d>
-                <d>Shri Mahadev sansta vaddivas - Porvorim</d>
-                <d>Shri Sateri Shantadurga Jatra ends - Shelde, Quepem</d>
-                <d tag="SMU">Shri Sushen Datt Mandir HaturleMut vardhapan din - Sant samaj Bicholim</d>
-                <d tag="5">Shri Dev Godneshwar Jatra, Duler</d>
-                <d>Shri Ravalnath Utsav, Sale Kitla</d>
+                <ti>Shashtti</ti>
+                <ti-time>9:26</ti-time>
+                <nx>Swati</nx>
+                <nx-time>16:18</nx-time>
+                <sunrise>7:02</sunrise>
+                <sunset>18:31</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="7">Bad after 9:00</shub-day>
             </date>
             <date id="18" dn="१८" wd="6">
-                <d tag="NAX">Vishakha</d>
-                <d>Magha Krishna Paksha 7</d>
-                <d>Kalashtami</d>
-                <d>Shri lingeshwar vardhapandin - Shiroda</d>
-                <d>Shri Gajanan Maharaj Prakt din -  Malevad</d>
+                <ti>Saptami</ti>
+                <ti-time>11:49</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>19:10</nx-time>
+                <sunrise>7:01</sunrise>
+                <sunset>18:32</sunset>
+                <mnrashi>Scorpio after 12:27</mnrashi>
+                <shub-day type="4">Unwelcome upto 19:00</shub-day>
             </date>
             <date id="19" dn="१९" wd="0">
-                <d tag="NAX">Anuradha</d>
-                <d>Magha Krishna Paksha 8</d>
-                <d tag="5">Shri Bhumika Devi Jatra -  Girwade</d>
-                <d tag="7">Janaki Jayanti</d>
-                <d>Sattarka Ravi 11:08</d>
-                <d tag="7">Chatrapati Shivaji Maharaja Jayanti (w.r.t. Date)</d>
+                <ti>Astami</ti>
+                <ti-time>14:18</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>22:07</nx-time>
+                <sunrise>7:01</sunrise>
+                <sunset>18:32</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="20" dn="२०" wd="1">
-                <d tag="NAX">Jyeshtha</d>
-                <d>Magha Krishna Paksha 9</d>
-                <d>Falguni Masarambh</d>
-                <d>Bhadravasa after 29:47</d>
-                <d tag="IMP">Shri Ramdas Navami</d>
-                <d>Dasnavmi Tinmad, Kuchelim</d>
-                <d>Shri Chamundeshwari vardhapandin - Surlabhat-Agassim-Cortalim</d>
-                <d>Rampurush Jatraotsav - Tord, Pali</d>
-                <d>Vettal Vardhpandin - Kaoutambi</d>
+                <ti>Navami</ti>
+                <ti-time>16:41</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>24:52</nx-time>
+                <sunrise>7:01</sunrise>
+                <sunset>18:33</sunset>
+                <mnrashi>Sagittarius after 24:54</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
             </date>
             <date id="21" dn="२१" wd="2">
-                <d tag="NAX">Mula</d>
-                <d>Magha Krishna Paksha 10</d>
-                <d>Bhadravasa upto 18:46</d>
-                <d>Dongri Sigmotsav ends</d>
-                <d tag="6">International Mother-language Day</d>
+                <ti>Dashami</ti>
+                <ti-time>18:46</ti-time>
+                <nx>Mula</nx>
+                <nx-time>27:18</nx-time>
+                <sunrise>7:00</sunrise>
+                <sunset>18:33</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="8">Normal</shub-day>
             </date>
             <date id="22" dn="२२" wd="3">
-                <d tag="NAX">Purva Ashadha</d>
-                <d>Magha Krishna Paksha 11</d>
-                <d tag="3">Vijaya Ekadashi</d>
-                <d>Shri Mahalsa Utsav ends - Mardol</d>
+                <ti>Ekadashi</ti>
+                <ti-time>20:20</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>29:11</nx-time>
+                <sunrise>6:59</sunrise>                
+                <sunset>18:34</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="23" dn="२३" wd="4">
-                <d tag="NAX">Uttara Ashadha</d>
-                <d>Magha Krishna Paksha 12</d>
-                <d tag="4">Sant Samaj Haturle</d>
+                <ti>Dradashi</ti>
+                <ti-time>21:19</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>30:30</nx-time>
+                <sunrise>6:59</sunrise>
+                <sunset>18:34</sunset>
+                <mnrashi>Capricorn after 19:35</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
             </date>
             <date id="24" dn="२४" wd="5">
-                <d tag="NAX">Shravana</d>
-                <d>Magha Krishna Paksha 13</d>
-                <d>Pradosh</d>
-                <d>Bhadravasa after 21:39</d>
-                <d tag="0">Mahashivratri</d>
-                <d>Shiv pujan midnight 24:27 to 25:16</d>
-                <d tag="SMU">Mahashivratri Utsav Haturlemat - Shaka, Amona</d> 
-                <d>Shivratra-Maharudhra Gopinath Mandir Majeri (Dodamarg)</d>
-                <d>Gomteshwar vardhapandin - Baina - Sasmode</d>
-                <d>Mahashivratra - Revana, Shiroda, Mahabaleshwar, Parra, Ramnathi,Sancoale, Tambdisurla,Thane,Malpe,Vargaon,Mangeshi,Kaoutombi,Kaisua,Harvale,Keri,Narve,Cortalim,Kakoda,Shelde,Murgaon,Candolim,Siolim,Thivim,Satardem,Gurdev</d>
-                <d>Shri Shideshwar Madir - Uge, Sanguem</d>
-                <d>Maharudra, Chandreshwar Abhishek Mahapuja - Pali kaoutambi</d>
+                <ti>Trayodashi</ti>
+                <ti-time>21:39</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:58</sunrise>
+                <sunset>18:34</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="8">Normal</shub-day>
             </date>
             <date id="25" dn="२५" wd="6">
-                <d tag="NAX">Shravana</d>
-                <d>Magha Krishna Paksha 14</d>
-                <d>Bhadravasa upto 9:34</d>                
+                <ti>Chaturdashi</ti>
+                <ti-time>21:21</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>7:11</nx-time>
+                <sunrise>6:57</sunrise>
+                <sunset>18:34</sunset>
+                <mnrashi>Aquarius after 19:18</mnrashi>
+                <shub-day type="7">Bad</shub-day>               
             </date>
             <date id="26" dn="२६" wd="0" mncycle="0">
-                <d tag="NAX">Dhanishtha</d>
-                <d>Magha Krishna Paksha 30</d>
-                <d>Darsh Amavasya</d>
-                <d>Sheni Ujotsav - Markarne, Sanguem</d>
-                <d tag="5">Kamaxi Jatra</d>
-                <d>Shri Vettal Devstan Vardhapandin - Kharewade,Sukur</d>
+                <ti>Amavasya</ti>
+                <ti-time>21:21</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time></nx-time>
+                <sunrise>6:57</sunrise>
+                <sunset>18:34</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
             </date>
             <date id="27" dn="२७" wd="1">
-                <d tag="NAX">Purva Bhadrapada</d>
-                <d>Phalguna Shukla Paksha 1</d>
-                <d tag="5">Godkor Mandir Devstan Jatra - Tiroda</d>
-                <d>Kavi Kusummargarj Janamdin</d>
-                <d tag="6">Maratha Rajyabhasha Day</d>
+                <ti>Pratipda</ti>
+                <ti-time>21:21</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>29:58</nx-time>
+                <sunrise>6:56</sunrise>
+                <sunset>18:34</sunset>
+                <mnrashi>Pisces after 24:12</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="28" dn="२८" wd="2">
-                <d tag="NAX">Uttara Bhadrapada</d>
-                <d>Phalguna Shukla Paksha 2</d>
-                <d>Hanuman Devstan Vardhpandin - Kharewade, Sukur</d>
-                <d>Lala lajpatrai Janam din</d>
-                <d tag="6">National Science Day</d>
+                <ti>Dwitiya</ti>
+                <ti-time>21:21</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>28:44</nx-time>
+                <sunrise>6:55</sunrise>
+                <sunset>18:34</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>           
         </month>
         <month id="3" dn="March">
             <odata><d>1938-39, Shaka Samvat</d><d>Phalguna-Chaitra</d></odata>
             <date id="1" dn="१" wd="3">
-                <d tag="NAX">Revati</d>
-                <d>Phalguna Shukla Paksha 3</d>
-                <d>Bhadravasa after 26:12</d>
-                <d>Shri Hanuman Devstan Vardadin and Murti Pratistapana - Karewade, Sukur</d>
+                <ti>Trutiya</ti>
+                <ti-time>15:18</ti-time>
+                <nx> Revati</nx>
+                <nx-time>27:17</nx-time>
+                <sunrise>6:55</sunrise>
+                <sunset>18:36</sunset>
+                <mnrashi>Aries after 7:13</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
             </date>
             <date id="2" dn="२" wd="4">
-                <d tag="NAX">Ashwini</d>
-                <d>Phalguna Shukla Paksha 4</d>
-                <d tag="8">Vinayak Chaturti</d>
-                <d>Shri Sateri yatra - Pale Shirdona</d>
-                <d>Bhadravasa upto 13:03</d>
-                <d>Shri Shiddhivinayak Mandir Murti Pratistapana vardhapandin - Kangare, Barajan</d>
-                <d tag="4">Sant samaj Karmali</d>
+                <ti>Chaturthi</ti>
+                <ti-time>13:03</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>25:42</nx-time>
+                <sunrise>6:54</sunrise>
+                <sunset>18:54</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good after 13</shub-day>
             </date>
             <date id="3" dn="३" wd="5">
-                <d tag="NAX">Bharani</d>
-                <d>Phalguna Shukla Paksha 5</d>
-                <d>Kamlavati Vardhapandin - Gawasbhat, Karmali</d>
+                <ti>Panchami</ti>
+                <ti-time>10:44</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>24:04</nx-time>
+                <sunrise>6:53</sunrise>
+                <sunset>18:36</sunset>
+                <mnrashi>Taurus after 29:40</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="4" dn="४" wd="6">
-                <d tag="NAX">Krittika</d>
-                <d>Phalguna Shukla Paksha 6/7</d>
-                <d>Ravi P.B. 17:21</d>
-                <d>Bhadravasa after 30:08</d>
-                <d>Shri Sateri Vaddiwas - Siolim</d>
-                <d tag="6">National Security Day</d>
+                <ti>Shashtti</ti>
+                <ti-time>8:24 - 30:08</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>22:29</nx-time>
+                <sunrise>6:53</sunrise>
+                <sunset>18:36</sunset>
+                <mnrashi>Taurus </mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
             <date id="5" dn="५" wd="0">
-                <d tag="NAX">Rohini</d>
-                <d>Phalguna Shukla Paksha 8</d>
-                <d>Durgashtami</d>
-                <d tag="1">Dharmabhushan Sadguru Brameshananadcharya Swami Janmastami</d>
-                <d tag="SMU">Sant samaj Kudka, Sakha Khorlim</d>
+                <ti>Astami</ti>
+                <ti-time>27:59</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>21:01</nx-time>
+                <sunrise>6:52</sunrise>
+                <sunset>18:37</sunset>
+                <mnrashi>Taurus</mnrashi>
+                <shub-day type="8">Normal upto 17:00</shub-day>
             </date>
             <date id="6" dn="६" wd="1">
-                <d tag="NAX">Mrigashirsha</d>
-                <d>Phalguna Shukla Paksha 9</d>
-                <d>Shri Sateri Devi Vaddiwas - Aarovli, Shiroda</d>
+                <ti>Navami</ti>
+                <ti-time>26:02</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>19:42</nx-time>
+                <sunrise>6:51</sunrise>
+                <sunset>18:37</sunset>
+                <mnrashi>Gemini after 8:20</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="7" dn="७" wd="2">
-                <d tag="NAX">Ardra</d>
-                <d>Phalguna Shukla Paksha 10</d>
-                <d>Shri Shantadurga Panchayat Devastan Vardhapandin - Kalapur</d>
+                <ti>Dashami</ti>
+                <ti-time>24:17</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>18:37</nx-time>
+                <sunrise>6:50</sunrise>
+                <sunset>18:37</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="8" dn="८" wd="3">
-                <d tag="NAX">Punarvasu</d>
-                <d>Phalguna Shukla Paksha 11</d>
-                <d tag="3">Amalaki Ekadashi</d>
-                <d>Bhadravasa after 11:32 upto 22:50</d>
-                <d>Gadekar Mandir Vardhapandin - Tiroda</d>
-                <d tag="6">International Women Day</d>
+                <ti>Ekadashi</ti>
+                <ti-time>22:50</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>17:43</nx-time>
+                <sunrise>6:50</sunrise>
+                <sunset>18:37</sunset>
+                <mnrashi>Cancer after 11:57</mnrashi>
+                <shub-day type="8">Normal after 12</shub-day>
             </date>
             <date id="9" dn="९" wd="4">
-                <d tag="NAX">Pushya</d>
-                <d>Phalguna Shukla Paksha 12</d>
-                <d tag="IMP">Gurupushyamurt (Sunrise till 17:12)</d>
-                <d>Shri Vireshwar Dev Vardhapandin - Gurdev</d>
-                <d tag="4">Sant samaj Cortalim</d>
+                <ti>Dwadashi</ti>
+                <ti-time>21:40</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>17:12</nx-time>
+                <sunrise>6:49</sunrise>
+                <sunset>18:38</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
-            <date id="10" dn="१०" wd="5">
-                <d tag="NAX">Ashlesha</d>
-                <d>Phalguna Shukla Paksha 13</d>
-                <d>Pradosh</d>
-                <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Rai Oxel</d>
-                <d>Gadeutsav (holi) - Kudne (10-12)</d>
+            <date id="10" dn="१०" wd="5" mncycle="1">
+                <ti>Trayodashi</ti>
+                <ti-time>20:51</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>16:58</nx-time>
+                <sunrise>6:48</sunrise>
+                <sunset>18:38</sunset>
+                <mnrashi>Leo after 16:59</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="11" dn="११" wd="6">
-                <d tag="NAX">Magha</d>
-                <d>Phalguna Shukla Paksha 14</d>
-                <d>Bhadravasa after 20:24</d>
+                <ti>Chaturdashi</ti>
+                <ti-time>20:24</ti-time>
+                <nx>Magha</nx>
+                <nx-time>17:08</nx-time>
+                <sunrise>7:47</sunrise>
+                <sunset>18:38</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="12" dn="१२" wd="0" mncycle="1">
-                <d tag="NAX">Purva Phalguni</d>
-                <d>Phalguna Shukla Paksha 15</d>
-                <d>Bhadravasa upto 8:20</d>
-                <d tag="IMP">Hutashni Pournima</d>
-                <d tag="0">Holi</d>
-                <d tag="SMU">Shri Sushen smruti din, Seva - Sant. Samaj Sangolda</d>
-                <d tag="7">Dayanand Bausaheb Bandodkar Jayanti</d>
-                <d>Holi Sigmotsav - Panjim, Margoa, Mapusa, Fatorpa, Vasco, Jambaulim, Nageshi, Kasarpal</d>
+            <date id="12" dn="१२" wd="0">
+                <ti>Pournima</ti>
+                <ti-time>20:24</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>17:41</nx-time>
+                <sunrise>6:47</sunrise>
+                <sunset>18:39</sunset>
+                <mnrashi>Virgo after 23:54</mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
             <date id="13" dn="१३" wd="1">
-                <d tag="NAX">Uttara Phalguni</d>
-                <d>Phalguna Krishna Paksha 1</d>
-                <d>Abhyangsnan Karidin</d>
-                <d tag="0">Dhulivandhan</d>
-                <d tag="IMP">Vasantotsvarabh</d>
-                <d tag="5">Vettal Jatra - Khol, Cancona</d>
-                <d tag="5">Shri Lakhaneshwar Jatra - Murkud, Cancona</d>
-                <d tag="5">Parshuram Jatra - Paigan and Fatorpa</d>
-                <d>Karmali Sigmotsav</d>
-                <d>Gade Utsav - Sal, Bicholim (13-15)</d>
+                <ti>Pratipda</ti>
+                <ti-time>20:52</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>18:42</nx-time>
+                <sunrise>6:43</sunrise>
+                <sunset>18:39</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
             <date id="14" dn="१४" wd="2">
-                <d tag="NAX">Hasta</d>
-                <d>Phalguna Krishna Paksha 2</d>
-                <d tag="OTH">Tukaram Beez</d>
+                <ti>Dwitiya</ti>
+                <ti-time>21:51</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>20:12</nx-time>
+                <sunrise>7:45</sunrise>
+                <sunset>18:39</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="15" dn="१५" wd="3">
-                <d tag="NAX">Chitra</d>
-                <d>Phalguna Krishna Paksha 3</d>
-                <d tag="7">Chatrapati Shivaji Maharaja Jayanti (w.r.t. Tithi)</d>
-                <d tag="6">World Customer Day</d>
-                <d>Dhulivandhan and Ghodemudni Shri Nayaki Devi Devsthan - Mugoli, Sanguem</d>
+                <ti>Trutiya</ti>
+                <ti-time>23:18</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>22:10</nx-time>
+                <sunrise>6:44</sunrise>
+                <sunset>18:39</sunset>
+                <mnrashi>Libra after 9:08</mnrashi>
+                <shub-day type="8">Normal after 10</shub-day>
             </date>
             <date id="16" dn="१६" wd="4">
-                <d tag="NAX">Swati</d>
-                <d>Phalguna Krishna Paksha 4</d>
-                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise:22:01</d>
-                <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Shaka - Mole, Kirlpal, valdav</d>
-                <d tag="4">Sant samaj Sirsai</d>
+                <ti>Chaturthi</ti>
+                <ti-time>25:12</ti-time>
+                <nx>Swati</nx>
+                <nx-time>24:35</nx-time>
+                <sunrise>6:44</sunrise>
+                <sunset>18:39</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
             </date>
             <date id="17" dn="१७" wd="5">
-                <d tag="NAX">Vishakha</d>
-                <d>Phalguna Krishna Paksha 5</d>
-                <d tag="0">Rangpanchami</d>
-                <d tag="5">Shri Nayaki Devi Jatra - Mugoli, Sanguem</d>
-                <d tag="5">Shri Sateri Jatra Sisirotsav - Khorle, Mapusa</d>
-                <d tad="6">World Handicap Day</d>
+                <ti>Panchami</ti>
+                <ti-time>27:28</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>27:19</nx-time>
+                <sunrise>6:43</sunrise>
+                <sunset>18:40</sunset>
+                <mnrashi>Scorpio after 20:36</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
             </date>
             <date id="18" dn="१८" wd="6">
-                <d tag="NAX">Anuradha</d>
-                <d>Phalguna Krishna Paksha 6</d>
-                <d>Shri Eknath Pasti</d>
-                <d>Shri Satyanarayan Pujanotsav - Tord Paitan</d>
-                <d>Datt Mandir Vardhapandin - Shirnewada, Karmali</d>
+                <ti>Shashtti</ti>
+                <ti-time>29:53</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>30:15</nx-time>
+                <sunrise>6:42</sunrise>
+                <sunset>18:40</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="19" dn="१९" wd="0">
-                <d tag="NAX">Jyeshtha</d>
-                <d>Phalguna Krishna Paksha 7</d>
-                <d>Bhanusaptami</d>
-                <d>Saptami Vrudhi</d>
-                <d>Ghodemodni - Bicholim and Morjim</d>
+                <ti>Saptami</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:41</sunrise>
+                <sunset>18:40</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
             </date>
             <date id="20" dn="२०" wd="1">
-                <d tag="NAX">Jyeshtha</d>
-                <d>Phalguna Krishna Paksha 7</d>
-                <d>Kalashtami</d>
+                <ti>Saptami</ti>
+                <ti-time>8:20</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>9:10</nx-time>
+                <sunrise>6:41</sunrise>
+                <sunset>18:40</sunset>
+                <mnrashi>Sagittarius after 9:09</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
             </date>
             <date id="21" dn="२१" wd="2">
-                <d tag="NAX">Mula</d>
-                <d>Phalguna Krishna Paksha 8</d>
-                <d tag="IMP">Zambaulim gulal</d>
+                <ti>Astami</ti>
+                <ti-time>10:32</ti-time>
+                <nx>Mula</nx>
+                <nx-time>11:51</nx-time>
+                <sunrise>6:40</sunrise>
+                <sunset>18:40</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="22" dn="२२" wd="3">
-                <d tag="NAX">Purva Ashadha</d>
-                <d>Phalguna Krishna Paksha 9</d>
-                <d>Achutanand Swami Punya Thiti - Kaisuva</d>
-                <d tag="6">World Polio Programme Day</d>
-                <d>Shri Shantaduga Sigmotsav - Dhargal (22 - 27)</d>
+                <ti>Navami</ti>
+                <ti-time>12:18</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>14:08</nx-time>
+                <sunrise>6:39</sunrise>                
+                <sunset>18:40</sunset>
+                <mnrashi>Capricorn after 20:36</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="23" dn="२३" wd="4">
-                <d tag="NAX">Uttara Ashadha</d>
-                <d>Phalguna Krishna Paksha 10</d>
-                <d tag="6">World Weather Day</d>
-                <d tag="4">Sant samaj Karaswada, Pede</d>
-                <d>Sigmotsav Shri Shetrapal Damodar Sansta - Durgawadi, Taligao</d>
+                <ti>Dashami</ti>
+                <ti-time>13:29</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>15:47</nx-time>
+                <sunrise>6:38</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="8">Normal upto 13:00</shub-day>
             </date>
             <date id="24" dn="२४" wd="5">
-                <d tag="NAX">Shravana</d>
-                <d>Phalguna Krishna Paksha 11</d>
-                <d tag="3">Papmochani Ekadashi</d>
-                <d>Shravopavas</d>
+                <ti>Ekadashi</ti>
+                <ti-time>13:54</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>16:46</nx-time>
+                <sunrise>6:38</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Aquarius after 28:57</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
             <date id="25" dn="२५" wd="6">
-                <d tag="NAX">Dhanishtha</d>
-                <d>Phalguna Krishna Paksha 12</d>
-                <d>Shanipradosh</d>
+                <ti>Dwadashi</ti>
+                <ti-time>13:34</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>16:59</nx-time>
+                <sunrise>6:37</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>               
             </date>
-            <date id="26" dn="२६" wd="0">
-                <d tag="NAX">Shatabhisha</d>
-                <d>Phalguna Krishna Paksha 13</d>
-                <d>Shivratri</d>
-                <d>Gondhal Utsav - Valvoi</d>
+            <date id="26" dn="२६" wd="0" mncycle="0">
+                <ti>Trayodashi</ti>
+                <ti-time>12:29</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>16:28</nx-time>
+                <sunrise>6:36</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
-            <date id="27" dn="२७" wd="1" mncycle="0">
-                <d tag="NAX">Purva Bhadrapada</d>
-                <d>Phalguna Krishna Paksha 14</d>
-                <d>Darsh Amavashya</d>
-                <d>Somvathy Amavashya</d>
-                <d tag="6">World Theater Day</d>
+            <date id="27" dn="२७" wd="1">
+                <ti>Chaturdashi</ti>
+                <ti-time>10:45</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>15:21</nx-time>
+                <sunrise>6:35</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Pisces after 9:41</mnrashi>
+                <shub-day type="7">Bad</shub-day>
             </date>
             <date id="28" dn="२८" wd="2">
-                <d tag="NAX">Uttara Bhadrapada</d>
-                <d>Phalguna Krishna Paksha 30/1</d>
-                <d tag="0">Gudi Padwa (Morning after 8:27)</d>
-                <d>Pratipda</d>
-                <d tag="OTH">Hemlambinam Sanvatsar Shake 1939</d>
-                <d>Panchagast Ganpati Pujan</d>
-                <d tag="OTH">Dwajarohan</d>
-                <d>Shriram Navratrambh</d>
-                <d tag="7">Dr. Hedgewar Jayanti</d>
-                <d>Spring season begins</d>
-                <d tag="SMU">Gudipadwa. Shri Shetra Haturli mutt, Gurduve mutt, Satoshya mutt, Keri and Khanapur Ashram, Seva mutt samitte, Tapobhumi seva karyakari samitte - Gudi Ubharne, Bhaktodhar grantalay Vardhpandin - Shri Shetra Tapobhumi</d>
-                <d tag="5">Kasarpal Jatra</d>
-                <d>Giroba utsav - Mopa</d>
-                <d>Homkund - Gude,Siolim,Nasnoda</d>
+                <ti>Amavasya</ti>
+                <ti-time>8:27 - 29:44</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>16:41</nx-time>
+                <sunrise>6:34</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>             
             </date>
             <date id="29" dn="२९" wd="3">
-                <d tag="NAX">Revati</d>
-                <d>Chaitra Shukla Paksha 2</d>
-                <d>Chandradarshan upto 20:18</d>
-                <d>Balchandrama vrath</d>
-                <d tag="OTH">Akkalkot swami prakat Day</d>
-                <d tag="6">National Ferry Day</d>
+                <ti>Dwitiya</ti>
+                <ti-time>26:48</ti-time>
+                <nx>Revati</nx>
+                <nx-time>11:39</nx-time>
+                <sunrise>6:34</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Aries after 11:39</mnrashi>
+                <shub-day type="3">Good upto 15</shub-day>
             </date>
             <date id="30" dn="३०" wd="4">
-                <d tag="NAX">Ashwini</d>
-                <d>Chaitra Shukla Paksha 3</d>
-                <d>Gauri trutiya (Teez)</d>
-                <d tag="4">Sant samaj Mayde</d>
+                <ti>Trutiya</ti>
+                <ti-time>23:43</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>9:24</nx-time>
+                <sunrise>6:33</sunrise>
+                <sunset>18:42</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good after 11</shub-day>
             </date>
             <date id="31" dn="३१" wd="5">
-                <d tag="NAX">Bharani-Krittika</d>
-                <d>Chaitra Shukla Paksha 4</d>
-                <d tag="8">Vinayak Chaturti</d>
+                <ti>Chaturthi</ti>
+                <ti-time>20:42</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>7:03 - 28:53</nx-time>
+                <sunrise>6:32</sunrise>
+                <sunset>18:42</sunset>
+                <mnrashi>Taurus</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
             </date>
         </month>
         <month id="4" dn="April">
             <odata><d>1939, Shaka Samvat</d><d>Chaitra-Vaishakha</d></odata>
-            <date id="1" dn="१" wd="6">
-                <d tag="NAX">Rohini</d>
-                <d>Chaitra Shukla Paksha 5</d>
-                <d tag="6">April Fool Day</d>
+            <date id="1" dn="1" wd="6">
+                <ti>Shashtti</ti>
+                <ti-time>22:32</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>6:37 - 29:16</nx-time>
+                <sunrise>6:11</sunrise>
+                <sunset>18:49</sunset>
+                <mnrashi>Cancer after 23:33</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="2" dn="२" wd="0">
-                <d tag="NAX">Mrigashirsha</d>
-                <d>Chaitra Shukla Paksha 6</d>
-                <d>Shri Saibaba charitra Parayan Sohala (5 days) - Kadamb Pattar Raibandhar</d>
+            <date id="2" dn="2" wd="0">
+                <ti>Saptami</ti>
+                <ti-time>20:52</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>28:32</nx-time>
+                <sunrise>6:10</sunrise>
+                <sunset>18:49</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
-            <date id="3" dn="३" wd="1">
-                <d tag="NAX">Ardra</d>
-                <d>Chaitra Shukla Paksha 7</d>
-                <d>Bhadravasa after 13:05 upto 24:09</d>
+            <date id="3" dn="3" wd="1">
+                <ti>Saptami</ti>
+                <ti-time>13:06</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>24:00</nx-time>
+                <sunrise>6:30</sunrise>
+                <sunset>18:42</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="8">Normal after 13:00</shub-day>
             </date>
-            <date id="4" dn="४" wd="2">
-                <d tag="NAX">Punarvasu</d>
-                <d>Chaitra Shukla Paksha 8</d>
-                <d tag="0">Shriram Navami</d>
-                <d tag="IMP">Shriram Navratra ends</d>
-                <d tag="5">Shri Mallikarjun Jatra - Cancona</d>
-                <d tag="5">Khetoba Jatra - Mayem</d>
-                <d tag="6">National Community Day</d>
+            <date id="4" dn="4" wd="2">
+                <ti>Astami</ti>
+                <ti-time>11:21</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>23:13</nx-time>
+                <sunrise>6:29</sunrise>
+                <sunset>18:43</sunset>
+                <mnrashi>Cancer after 17:21</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="5" dn="५" wd="3">
-                <d tag="NAX">Pushya</d>
-                <d>Chaitra Shukla Paksha 9</d>
-                <d tag="5">Chandreshwar Bhootnath Jatrotsav begins - Paroda</d>
-                <d>Brahmastal sansta vaddiwas - Pandurang wadi, Vasco</d>
+            <date id="5" dn="5" wd="3">
+                <ti>Navami</ti>
+                <ti-time>10:04</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>22:52</nx-time>
+                <sunrise>6:28</sunrise>
+                <sunset>18:43</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
-            <date id="6" dn="६" wd="4">
-                <d tag="NAX">Ashlesha</d>
-                <d>Chaitra Shukla Paksha 10</d>
-                <d>Bhadravasa after 6:01</d>
-                <d tag="4">Sant samaj Girwade</d>
+            <date id="6" dn="6" wd="4">
+                <ti>Dashami</ti>
+                <ti-time>09:17</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>23:01</nx-time>
+                <sunrise>6:27</sunrise>
+                <sunset>18:43</sunset>
+                <mnrashi>Leo after 23:00</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="7" dn="७" wd="5">
-                <d tag="NAX">Magha</d>
-                <d>Chaitra Shukla Paksha 11</d>
-                <d tag="3">Kamda Ekadashi</d>
-                <d>Bhadravasa upto 7:54</d>
-                <d>Ravalnath utsav - Karmali</d>
-                <d tag="6">World Health Day</d>
+            <date id="7" dn="7" wd="5">
+                <ti>Ekadashi</ti>
+                <ti-time>8:56</ti-time>
+                <nx>Magha</nx>
+                <nx-time>23:35</nx-time>
+                <sunrise>6:27</sunrise>
+                <sunset>18:43</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good after 9:00</shub-day>
             </date>
-            <date id="8" dn="८" wd="6">
-                <d tag="NAX">Purva Phalguni</d>
-                <d>Chaitra Shukla Paksha 12</d>
-                <d>Shani prodosh</d>
-                <d>Shri Hanuman mandir Vardhapandin - Sankwadi, Hadfade</d>
-                <d tag="5">Veling Jatra</d>
-                <d>Shri Siddeshwar Devta Vardhapandin - Kaisuva</d>
-                <d>Mahaganapathi Bhavani Shankar Mandir Vardhapandin - Thivim</d>
+            <date id="8" dn="8" wd="6">
+                <ti>Dwadashi</ti>
+                <ti-time>9:01</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>24:33</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="9" dn="९" wd="0">
-                <d tag="NAX">Uttara Bhadrapada</d>
-                <d>Chaitra Shukla Paksha 13</d>
-                <d tag="7">Mahavir Jayanti</d>
-                <d>Chandreshwar Bhootnath Jatrotsav ends - Paroda</d>
-                <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Murgaon</d>
-                <d tag="6">Konkani Language Day</d>
+            <date id="9" dn="9" wd="0">
+                <ti>Trayodashi</ti>
+                <ti-time>9:30</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>25:55</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Virgo after 6:51</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="10" dn="१०" wd="1">
-                <d tag="NAX">Hasta</d>
-                <d>Chaitra Shukla Paksha 14</d>
-                <d>Bhadravasa after 10:12 upto 22:57</d>
-                <d tag="6">Water Resources Day</d>
+            <date id="10" dn="10" wd="1">
+                <ti>Chaturdashi</ti>
+                <ti-time>10:24</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>27:38</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="8">Normal after 10:00</shub-day>
             </date>
-            <date id="11" dn="११" wd="2" mncycle="1">
-                <d tag="NAX">Chitra</d>
-                <d>Chaitra Shukla Paksha 15</d>
-                <d>Pournima</d>
-                <d tag="7">Hanuman Jayanti</d>
-                <d tag="SMU">Shri Sushen smruti din, Seva - Sant. Samaj Kale, Sirgaon</d>
+            <date id="11" dn="11" wd="2" mncycle="1">
+                <ti>Pournima</ti>
+                <ti-time>11:39</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>29:42</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Libra after 16:37</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="12" dn="१२" wd="3">
-                <d tag="NAX">Swati</d>
-                <d>Chaitra Krishna Paksha 1</d>
-                <d>Shri Devi Sateri Pun:Pratisttana din - Kudne</d>
+            <date id="12" dn="12" wd="3">
+                <ti>Pratipda</ti>
+                <ti-time>13:15</ti-time>
+                <nx>Swati</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:23</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
-            <date id="13" dn="१३" wd="4">
-                <d tag="NAX">Swati</d>
-                <d>Chaitra Krishna Paksha 2</d>
-                <d>Bhadravasa after 28:15</d>
-                <d>Parshuram Murti Pratisttan din - Paigin</d>
-                <d>Shrivishnu mandir utsav ends - Parkebhat Karmali</d>
-                <d tag="6">Jaliyanwala Bhag Hatyakanad Day</d>
-                <d tag="4">Sant samaj Kaisuva</d>
+            <date id="13" dn="13" wd="4">
+                <ti>Dwitiya</ti>
+                <ti-time>15:11</ti-time>
+                <nx>Swati</nx>
+                <nx-time>8:06</nx-time>
+                <sunrise>6:22</sunrise>
+                <sunset>18:45</sunset>
+                <mnrashi>Scorpio after 28:50</mnrashi>
+                <shub-day type="4">Unwelcome after 8:00</shub-day>
             </date>
-            <date id="14" dn="१४" wd="5">
-                <d tag="NAX">Vishakha</d>
-                <d>Chaitra Krishna Paksha 3</d>
-                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise:21:33</d>
-                <d tag="SMU" img="img/swamisadanad.png">Shri Sadanand smruti din, seva - Sant Samaj Ghotali 2</d>
-                <d>Bhadravasa upto 27:23</d>
-                <d tag="0">Good Friday</d>
-                <d tag="7">Dr. Ambedkar Jayanti</d>
+            <date id="14" dn="14" wd="5">
+                <ti>Trutiya</ti>
+                <ti-time>17:25</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>10:46</nx-time>
+                <sunrise>6:21</sunrise>
+                <sunset>18:45</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
             </date>
-            <date id="15" dn="१५" wd="6">
-                <d tag="NAX">Anuradha</d>
-                <d>Chaitra Krishna Paksha 4</d>
-                <d tag="5">Shri Devi Mahalaxmi Jatra - Kudnem</d>
-                <d tag="5">Mahaparvani Jatrotsav - Gawasbhat, Karmali</d>
+            <date id="15" dn="15" wd="6">
+                <ti>Chaturthi</ti>
+                <ti-time>19:49</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>16:40</nx-time>
+                <sunrise>6:21</sunrise>
+                <sunset>18:45</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="8">Normal</shub-day>
             </date>
-            <date id="16" dn="१६" wd="0">
-                <d tag="NAX">Jyeshtha</d>
-                <d>Chaitra Krishna Paksha 5</d>
-                <d tag="6">Indian rail trasportation day</d>
+            <date id="16" dn="16" wd="0">
+                <ti>Panchami</ti>
+                <ti-time>22:16</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>16:39</nx-time>
+                <sunrise>6:20</sunrise>
+                <sunset>18:45</sunset>
+                <mnrashi>Sagittarius after 16:39</mnrashi>
+                <shub-day type="4">Unwelcome upto 17:00</shub-day>
             </date>
-            <date id="17" dn="१७" wd="1">
-                <d tag="NAX">Mula</d>
-                <d>Chaitra Krishna Paksha 6</d>
-                <d>Bhadravasa after 24:36</d>
+            <date id="17" dn="17" wd="1">
+                <ti>Shashtti</ti>
+                <ti-time>24:37</ti-time>
+                <nx>Mula</nx>
+                <nx-time>19:33</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:46</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
-            <date id="18" dn="१८" wd="2">
-                <d tag="NAX">Purva Ashadha</d>
-                <d>Chaitra Krishna Paksha 7</d>
-                <d>Bhadravasa upto 13:39</d>
+            <date id="18" dn="18" wd="2">
+                <ti>Saptami</ti>
+                <ti-time>26:38</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>22:11</nx-time>
+                <sunrise>6:18</sunrise>
+                <sunset>18:46</sunset>
+                <mnrashi>Capricorn after 28:46</mnrashi>
+                <shub-day type="8">Normal upto 14:00</shub-day>
             </date>
-            <date id="19" dn="१९" wd="3">
-                <d tag="NAX">Uttara Ashadha</d>
-                <d>Chaitra Krishna Paksha 8</d>
-                <d>Shri Naguesh Maharudra Murti Pratistapana - Akri kudka Tiswadi</d>
+            <date id="19" dn="19" wd="3">
+                <ti>Astami</ti>
+                <ti-time>28:07</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>24:20</nx-time>
+                <sunrise>6:18</sunrise>
+                <sunset>18:46</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
-            <date id="20" dn="२०" wd="4">
-                <d tag="NAX">Shravana</d>
-                <d>Chaitra Krishna Paksha 9</d>
-                <d>Shri Sai Mandir vardhapan din -Piran</d>
-                <d tag="4">Sant samaj Salgaon</d>
+            <date id="20" dn="20" wd="4">
+                <ti>Navami</ti>
+                <ti-time>28:55</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>25:52</nx-time>
+                <sunrise>6:17</sunrise>
+                <sunset>18:46</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
             </date>
-            <date id="21" dn="२१" wd="5">
-                <d tag="NAX">Dhanishtha</d>
-                <d>Chaitra Krishna Paksha 10</d>
-                <d>Bhramstal Vardhapan din- Pandurangwadi, Vasco</d>
-                <d>Shri Ajoba Devasthan prathisthapna - Kudne, Harwale</d>
-                <d>Bhadravasa after 17:00 upto 24:54</d>
+            <date id="21" dn="21" wd="5">
+                <ti>Dashami</ti>
+                <ti-time>28:56</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>26:37</nx-time>
+                <sunrise>6:16</sunrise>
+                <sunset>18:47</sunset>
+                <mnrashi>Aquarius after 14:20</mnrashi>
+                <shub-day type="3">Good upto 17</shub-day>
             </date>
             <date id="22" dn="२२" wd="6">
-                <d tag="NAX">Shathtarka </d>
-                <d>Chaitra Krishna Paksha 11</d>
-                <d>Varuthini Ekadashi</d>
-                <d tag="6">World Samta Day</d>
+                <ti>Ekadashi</ti>
+                <ti-time>28:05</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>26:32</nx-time>
+                <sunrise>6:16</sunrise>
+                <sunset>18:47</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="23" dn="२३" wd="0">
-                <d tag="NAX">Purva Bhadrapada</d>
-                <d>Chaitra Krishna Paksha 12</d>
-                <d>Bhagvat Ekadashi</d>
-                <d tag="6">Jagtik Granth Din</d>
+                <ti>Dwadashi</ti>
+                <ti-time>26:26</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>24:40</nx-time>
+                <sunrise>6:15</sunrise>
+                <sunset>18:47</sunset>
+                <mnrashi>Pisces after 19:58</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
             <date id="24" dn="२४" wd="1">
-                <d tag="NAX">Uttara Bhadrapada</d>
-                <d>Chaitra Krishna Paksha 13</d>
-                <d> Som Pradosh</d>
-                <d> Bhadravasa after 24:04 </d>
-                <d tag="OTH">Akalkoth Swami Punyatiti</d>
+                <ti>Trayodashi</ti>
+                <ti-time>24:05</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>24:05</nx-time>
+                <sunrise>6:14</sunrise>
+                <sunset>18:47</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="8">Normal</shub-day>
             </date>
             <date id="25" dn="२५" wd="2">
-                <d tag="NAX">Revati</d>
-                <d>Chaitra Krishna Paksha 14</d>
-                <d>Bhadravasa upto 10:40</d>
-                <d>Panchak upto 21:54</d>
+                <ti>Chaturdashi</ti>
+                <ti-time>21:08</ti-time>
+                <nx>Revati</nx>
+                <nx-time>21:55</nx-time>
+                <sunrise>6:14</sunrise>
+                <sunset>18:48</sunset>
+                <mnrashi>Aries after 21:55</mnrashi>
+                <shub-day type="7">bad</shub-day>
             </date>
             <date id="26" dn="२६" wd="3">
-                <d tag="NAX">Ashwini</d>
-                <d>Chaitra Krishna Paksha 30</d>
-                <d>Darsh Amavasha</d>
-                <d>Shri Ganpati Vardhapan Din Reddi</d>   
+                <ti>Amavasya</ti>
+                <ti-time>17:47</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>19:20</nx-time>
+                <sunrise>6:13</sunrise>
+                <sunset>18:48</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>  
             </date>
             <date id="27" dn="२७" wd="4">
-                <d tag="NAX">Bharani</d>
-                <d>Vaishak Shuk 1</d>
-                <d>Moon 20:05 upto </d>
-                <d>Shri Mallikarjun Pindikostov, Mollcornem Sanguem</d>
+                <ti>Pratipda</ti>
+                <ti-time>14:10</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>16:31</nx-time>
+                <sunrise>6:13</sunrise>
+                <sunset>18:48</sunset>
+                <mnrashi>Taurus after 21:48</mnrashi>
+                <shub-day type="3">Good upto 13</shub-day>  
             </date>
             <date id="28" dn="२८" wd="5">
-                <d tag="NAX">हस्त</d>
-                <d>मार्गशीर्ष कु. ८</d>
+                <ti>Dwitiya</ti>
+                <ti-time>10:30</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>13:39</nx-time>
+                <sunrise>6:12</sunrise>
+                <sunset>18:48</sunset>
+                <mnrashi>Taurus</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>  
             </date>
             <date id="29" dn="२९" wd="6">
-                <d tag="NAX">हस्त</d>
-                <d>मार्गशीर्ष कु. ८</d>
+                <ti>Trutiya</ti>
+                <ti-time>6:56 - 29:03</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>10:57</nx-time>
+                <sunrise>6:12</sunrise>
+                <sunset>18:49</sunset>
+                <mnrashi>Gemini after 21:42</mnrashi>
+                <shub-day type="7">Bad</shub-day>  
             </date>
             <date id="30" dn="३०" wd="0">
-                <d tag="NAX">हस्त</d>
-                <d>मार्गशीर्ष कु. ८</d>
-                <d>कालाष्टमी अष्टक</d>
-                <d>श्री भूमिका पूजन, मोरजी</d>
+                <ti>Panchami</ti>
+                <ti-time>24:49</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>8:33</nx-time>
+                <sunrise>6:11</sunrise>
+                <sunset>18:49</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="3">Good</shub-day>  
+            </date>
+        </month>
+        <month id="5" dn="May">
+			<odata><d>1938-39, Shaka Samvat</d><d>Vaishakha-Jyeshtha</d></odata>
+            <date id="1" dn="1" wd="1">
+                <ti>Shashtti</ti>
+                <ti-time>22:32</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>6:37 - 29:16</nx-time>
+                <sunrise>6:11</sunrise>
+                <sunset>18:49</sunset>
+                <mnrashi>Cancer after 23:33</mnrashi>
+                <shub-day type="3">Good</shub-day> 
+            </date>
+            <date id="2" dn="2" wd="2">
+                <ti>Saptami</ti>
+                <ti-time>20:52</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>28:32</nx-time>
+                <sunrise>6:10</sunrise>
+                <sunset>18:49</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="0">Excellent</shub-day> 
+            </date>
+            <date id="3" dn="3" wd="3">
+                <ti>Astami</ti>
+                <ti-time>19:49</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>28:29</nx-time>
+                <sunrise>6:10</sunrise>
+                <sunset>18:50</sunset>
+                <mnrashi>Leo after 28:29</mnrashi>
+                <shub-day type="3">Good after 8:00</shub-day> 
+            </date>
+            <date id="4" dn="4" wd="4">
+                <ti>Navami</ti>
+                <ti-time>19:30</ti-time>
+                <nx>Magha</nx>
+                <nx-time>29:02</nx-time>
+                <sunrise>6:09</sunrise>
+                <sunset>18:50</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day> 				
+            </date>
+            <date id="5" dn="5" wd="5">
+                <ti>Dashami</ti>
+                <ti-time>19:45</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:09</sunrise>
+                <sunset>18:50</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day> 
+            </date>
+            <date id="6" dn="6" wd="6">
+                <ti>Ekadashi</ti>
+                <ti-time>20:30</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>6:10</nx-time>
+                <sunrise>6:08</sunrise>
+                <sunset>18:50</sunset>
+                <mnrashi>Virgo after 12:31</mnrashi>
+                <shub-day type="8">Normal after 8:00</shub-day> 
+            </date>
+            <date id="7" dn="7" wd="0">
+                <ti>Dwadashi</ti>
+                <ti-time>21:43</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>7:45</nx-time>
+                <sunrise>6:08</sunrise>
+                <sunset>18:51</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="0">Excellent</shub-day> 
+            </date>
+            <date id="8" dn="8" wd="1">
+                <ti>Trayodashi</ti>
+                <ti-time>23:16</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>9:43</nx-time>
+                <sunrise>6:07</sunrise>
+                <sunset>18:51</sunset>
+                <mnrashi>Libra after 22:51</mnrashi>
+                <shub-day type="1">Auspicious</shub-day> 
+			</date>
+            <date id="9" dn="9" wd="2">
+                <ti>Chaturdashi</ti>
+                <ti-time>25:08</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>12:02</nx-time>
+                <sunrise>6:07</sunrise>
+                <sunset>18:51</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="8">Normal upto 16</shub-day> 
+			</date>
+            <date id="10" dn="10" wd="3">
+                <ti>Pournima</ti>
+                <ti-time>27:13</ti-time>
+                <nx>Swati</nx>
+                <nx-time>14:35</nx-time>
+                <sunrise>6:07</sunrise>
+                <sunset>18:52</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day> 
+            </date>
+            <date id="11" dn="11" wd="4">
+                <ti>Pratipda</ti>
+                <ti-time>29:28</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>17:20</nx-time>
+                <sunrise>6:06</sunrise>
+                <sunset>18:52</sunset>
+                <mnrashi>Scorpio after 10:38</mnrashi>
+                <shub-day type="5">Unfavorable upto 17:00</shub-day> 
+            </date>
+            <date id="12" dn="12" wd="5">
+                <ti>Dwitiya</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>20:13</nx-time>
+                <sunrise>6:06</sunrise>
+                <sunset>18:52</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="8">Normal</shub-day> 
+            </date>
+            <date id="13" dn="13" wd="6">
+                <ti>Dwitiya</ti>
+                <ti-time>07:53</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>23:11</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>18:53</sunset>
+                <mnrashi>Sagittarius after 23:11</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day> 
+            </date>
+            <date id="14" dn="14" wd="0">
+                <ti>Trutiya</ti>
+                <ti-time>10:19</ti-time>
+                <nx>Mula</nx>
+                <nx-time>26:08</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>18:53</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good upto 10:00</shub-day> 
+			</date>
+            <date id="15" dn="15" wd="1">
+                <ti>Chaturthi</ti>
+                <ti-time>12:39</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>28:57</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>18:53</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day> 
+            </date>
+            <date id="16" dn="16" wd="2">
+                <ti>Panchami</ti>
+                <ti-time>14:48</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>18:54</sunset>
+                <mnrashi>Capricorn after 11:36</mnrashi>
+                <shub-day type="3">Good</shub-day> 
+            </date>
+            <date id="17" dn="17" wd="3">
+                <ti>Shashtti</ti>
+                <ti-time>16:33</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>7:26</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>18:54</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="3">Good upto 17:00</shub-day> 
+            </date>
+            <date id="18" dn="18" wd="4">
+                <ti>Saptami</ti>
+                <ti-time>17:43</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>9:26</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>18:54</sunset>
+                <mnrashi>Aquarius after 12:13</mnrashi>
+                <shub-day type="0">Excellent</shub-day> 
+            </date>
+            <date id="19" dn="19" wd="5">
+                <ti>Astami</ti>
+                <ti-time>18:11</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>10:49</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>18:55</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="0">Excellent</shub-day> 
+            </date>
+            <date id="20" dn="20" wd="6">
+                <ti>Navami</ti>
+                <ti-time>17:52</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>11:24</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>18:55</sunset>
+                <mnrashi>Pisces after 29:11</mnrashi>
+                <shub-day type="5">Unfavorable upto 19:00</shub-day> 
+            </date>
+            <date id="21" dn="21" wd="0">
+                <ti>Dashami</ti>
+                <ti-time>16:42 - 29:08</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>11:11</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>18:55</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="5">Unfavorable upto 17:00</shub-day> 
+            </date>
+            <date id="22" dn="22" wd="1">
+                <ti>Ekadashi</ti>
+                <ti-time>14:44</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>10:10</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>18:56</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="0">Excellent</shub-day> 
+            </date>
+            <date id="23" dn="23" wd="2">
+                <ti>Dwadashi</ti>
+                <ti-time>12:04</ti-time>
+                <nx>Revati</nx>
+                <nx-time>08:25</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>18:56</sunset>
+                <mnrashi>Aries after 8:24</mnrashi>
+                <shub-day type="8">Normal after 12:00</shub-day>
+            </date>
+            <date id="24" dn="24" wd="3">
+                <ti>Trayodashi</ti>
+                <ti-time>29:08</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>6:03 - 27:15</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>18:56</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="25" dn="25" wd="4">
+                <ti>Amavasya</ti>
+                <ti-time>25:14</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>24:10</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:57</sunset>
+                <mnrashi>Taurus after 8:29</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="26" dn="26" wd="5">
+                <ti>Pratipda</ti>
+                <ti-time>21:19</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>21:04</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:58</sunset>
+                <mnrashi>Taurus</mnrashi>
+                <shub-day type="8">Bad</shub-day>
+            </date>
+            <date id="27" dn="27" wd="6">
+                <ti>Dwitiya</ti>
+                <ti-time>17:32</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>18:07</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:58</sunset>
+                <mnrashi>Gemini after 7:34</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="28" dn="28" wd="0">
+                <ti>Trutiya</ti>
+                <ti-time>14:05</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>15:31</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:58</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="29" dn="29" wd="1">
+                <ti>Chaturthi</ti>
+                <ti-time>11:08</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>13:25</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:58</sunset>
+                <mnrashi>Cancer after 7:53</mnrashi>
+                <shub-day type="8">Good</shub-day>
+            </date>
+			<date id="30" dn="30" wd="2">
+                <ti>Panchami</ti>
+                <ti-time>08:48</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>11:57</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:59</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+			<date id="31" dn="31" wd="3">
+                <ti>Shashtti</ti>
+                <ti-time>07:10</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>11:13</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:59</sunset>
+                <mnrashi>Leo after 11:13</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+        </month>
+		<month id="6" dn="June">
+			<odata><d>1939, Shaka Samvat</d><d>Jyeshtha-Aashadha</d></odata>
+            <date id="1" dn="1" wd="4">
+                <ti>Saptami</ti>
+                <ti-time>06:21</ti-time>
+                <nx>Magha</nx>
+                <nx-time>11:16</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:59</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good after 18:00</shub-day>
+            </date>
+            <date id="2" dn="2" wd="5">
+                <ti>Astami</ti>
+                <ti-time>06:16</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>12:02</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>18:59</sunset>
+                <mnrashi>Virgo after 18:19</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="3" dn="3" wd="6">
+                <ti>Navami</ti>
+                <ti-time>06:52</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>13:26</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:00</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="4" dn="4" wd="0">
+                <ti>Dashami</ti>
+                <ti-time>08:04</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>15:54</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:00</sunset>
+                <mnrashi>Libra after 28:33</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="5" dn="5" wd="1">
+                <ti>Ekadashi</ti>
+                <ti-time>09:43</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>17:48</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:01</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="8">Normal after 10:00</shub-day>
+            </date>
+            <date id="6" dn="6" wd="2">
+                <ti>Dwadashi</ti>
+                <ti-time>11:4307:10</ti-time>
+                <nx>Swati</nx>
+                <nx-time>20:27</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:01</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="7" dn="7" wd="3">
+                <ti>Trayodashi</ti>
+                <ti-time>13:56</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>23:19</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:01</sunset>
+                <mnrashi>Scorpio after 16:35</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+			</date>
+            <date id="8" dn="8" wd="4">
+                <ti>Chaturdashi</ti>
+                <ti-time>16:17</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>26:15</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:02</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Normal upto 16:00</shub-day>
+			</date>
+            <date id="9" dn="9" wd="5">
+                <ti>Pournima</ti>
+                <ti-time>18:40</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>29:11</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Sagittarius after 29:12</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+            <date id="10" dn="10" wd="6">
+                <ti>Pratipda</ti>
+                <ti-time>21:01</ti-time>
+                <nx>Mula</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="11" dn="11" wd="0">
+                <ti>Dwitiya</ti>
+                <ti-time>23:16</ti-time>
+                <nx>Mula</nx>
+                <nx-time>08:05</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="12" dn="12" wd="1">
+                <ti>Trutiya</ti>
+                <ti-time>25:19</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>10:51</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Capricorn after 17:30</mnrashi>
+                <shub-day type="7">Bad upto 12:00</shub-day>
+            </date>
+            <date id="13" dn="13" wd="2">
+                <ti>Chaturthi</ti>
+                <ti-time>27:03</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>13:22</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="14" dn="14" wd="3">
+                <ti>Panchami</ti>
+                <ti-time>28:22</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>15:33</nx-time>
+                <sunrise>6:02</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Aquarius after 28:28</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="15" dn="15" wd="4">
+                <ti>Shashtti</ti>
+                <ti-time>29:09</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>17:16</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>19:04</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="16" dn="16" wd="5">
+                <ti>Saptami</ti>
+                <ti-time>29:16</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>18:23</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>19:04</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="7">Bad upto 17:00</shub-day>
+            </date>
+            <date id="17" dn="17" wd="6">
+                <ti>Astami</ti>
+                <ti-time>28:39</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>18:48</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>19:04</sunset>
+                <mnrashi>Pisces after 12:45</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="18" dn="18" wd="0">
+                <ti>Navami</ti>
+                <ti-time>27:17</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>18:29</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+			<date id="19" dn="19" wd="1">
+                <ti>Dashami</ti>
+                <ti-time>25:12</ti-time>
+                <nx>Revati</nx>
+                <nx-time>17:27</nx-time>
+                <sunrise>6:03</sunrise>
+                <sunset>17:05</sunset>
+                <mnrashi>Aries after 17:27</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>
+            </date>
+            <date id="20" dn="20" wd="2">
+                <ti>Ekadashi</ti>
+                <ti-time>22:29</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>15:44</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="21" dn="21" wd="3">
+                <ti>Dwadashi</ti>
+                <ti-time>19:14</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>13:27</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Taurus after 18:49</mnrashi>
+                <shub-day type="03">Good upto 13:00</shub-day>
+            </date>
+            <date id="22" dn="22" wd="4">
+                <ti>Trayodashi</ti>
+                <ti-time>15:39</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>10:45</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Taurus</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="23" dn="23" wd="5">
+                <ti>Chaturdashi</ti>
+                <ti-time>11:50</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>07:49 - 28:21</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Gemini after 18:19</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="24" dn="24" wd="6">
+                <ti>Amavasya</ti>
+                <ti-time>08:01 - 28:49</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>25:58</nx-time>
+                <sunrise>6:04</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="25" dn="25" wd="0">
+                <ti>Dwitiya</ti>
+                <ti-time>25:06</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>23:25</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Cancer after 18:01</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="26" dn="26" wd="1">
+                <ti>Trutiya</ti>
+                <ti-time>22:13</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>21:23</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="27" dn="27" wd="2">
+                <ti>Chaturthi</ti>
+                <ti-time>20:01</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>19:58</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Leo after 19:58</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="28" dn="28" wd="3">
+                <ti>Panchami</ti>
+                <ti-time>18:34</ti-time>
+                <nx>Magha</nx>
+                <nx-time>19:17</nx-time>
+                <sunrise>6:05</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="29" dn="29" wd="4">
+                <ti>Shashtti</ti>
+                <ti-time>17:54</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>19:24</nx-time>
+                <sunrise>6:06</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Virgo after 25:32</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="30" dn="30" wd="5">
+                <ti>Saptami</ti>
+                <ti-time>18:00</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>20:15</nx-time>
+                <sunrise>6:06</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="3">Good upto 18:00</shub-day>
+            </date>
+        </month>
+		<month id="7" dn="July">
+			<odata><d>1939, Shaka Samvat</d><d>Aashadha-Shravana</d></odata>
+            <date id="1" dn="1" wd="6">
+                <ti>Astami</ti>
+                <ti-time>18:52</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>21:51</nx-time>
+                <sunrise>6:06</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="3">Good</shub-day>   
+            </date>
+            <date id="2" dn="2" wd="0">
+                <ti>Navami</ti>
+                <ti-time>20:21</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>24:00</nx-time>
+                <sunrise>6:06</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Libra after 10:52</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="3" dn="3" wd="1">
+                <ti>Dashami</ti>
+                <ti-time>22:15</ti-time>
+                <nx>Swati</nx>
+                <nx-time>26:36</nx-time>
+                <sunrise>6:07</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="4" dn="4" wd="2">
+                <ti>Ekadashi</ti>
+                <ti-time>24:30</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>29:27</nx-time>
+                <sunrise>6:07</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Scorpio after 22:43</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+            <date id="5" dn="5" wd="3">
+                <ti>Dwadashi</ti>
+                <ti-time>26:53</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:07</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="6" dn="6" wd="4">
+                <ti>Trayodashi</ti>
+                <ti-time>29:15</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>08:25</nx-time>
+                <sunrise>6:07</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="4">Unwelcome after 8:00</shub-day>
+            </date>
+            <date id="7" dn="7" wd="5">
+                <ti>Chaturdashi</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>11:21</nx-time>
+                <sunrise>6:08</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Sagittarius after 11:21</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="8" dn="8" wd="6">
+                <ti>Chaturdashi</ti>
+                <ti-time>07:31</ti-time>
+                <nx>Mula</nx>
+                <nx-time>14:10</nx-time>
+                <sunrise>6:08</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="9" dn="9" wd="0">
+                <ti>Pournima</ti>
+                <ti-time>09:37</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>16:47</nx-time>
+                <sunrise>6:08</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Capricorn after 23:25</mnrashi>
+                <shub-day type="5">Unfavorable after 11:00</shub-day>
+			</date>
+            <date id="10" dn="10" wd="1">
+                <ti>Pratipda</ti>
+                <ti-time>11:27</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>19z;09</nx-time>
+                <sunrise>6:09</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="3">Good after 11:00</shub-day>
+            </date>
+            <date id="11" dn="11" wd="2">
+                <ti>Dwitiya</ti>
+                <ti-time>12:57</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>21:11</nx-time>
+                <sunrise>6:09</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="12" dn="12" wd="3">
+                <ti>Trutiya</ti>
+                <ti-time>14:04</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>22:49</nx-time>
+                <sunrise>6:09</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Aquarius after 10:03</mnrashi>
+                <shub-day type="8">Normal upto 14:00</shub-day>
+            </date>
+            <date id="13" dn="13" wd="4">
+                <ti>Chaturthi</ti>
+                <ti-time>14:46</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>24:01</nx-time>
+                <sunrise>6:10</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="14" dn="14" wd="5">
+                <ti>Panchami</ti>
+                <ti-time>14:57</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>24:42</nx-time>
+                <sunrise>6:10</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Pisces after 18:34</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="15" dn="15" wd="6">
+                <ti>Shashtti</ti>
+                <ti-time>14:44</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>24:48</nx-time>
+                <sunrise>6:10</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="3">Good upto 15:00</shub-day>
+            </date>
+            <date id="16" dn="16" wd="0">
+                <ti>Saptami</ti>
+                <ti-time>13:37</ti-time>
+                <nx>Revati</nx>
+                <nx-time>24:21</nx-time>
+                <sunrise>6:11</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Aries after 24:20</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="17" dn="17" wd="1">
+                <ti>Astami</ti>
+                <ti-time>12:05</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>23:18</nx-time>
+                <sunrise>6:11</sunrise>
+                <sunset>19:07</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="18" dn="18" wd="2">
+                <ti>Navami</ti>
+                <ti-time>10:01</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>21:46</nx-time>
+                <sunrise>6:11</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Taurus after 27:17</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="19" dn="19" wd="3">
+                <ti>Dashami</ti>
+                <ti-time>08:26 - 28:28</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>19:45</nx-time>
+                <sunrise>6:11</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Taurus</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="20" dn="2०" wd="4">
+                <ti>Dwadashi</ti>
+                <ti-time>25:14</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>17:26</nx-time>
+                <sunrise>6:12</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Gemini after 28:10</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="21" dn="21" wd="5">
+                <ti>Trayodashi</ti>
+                <ti-time>21:50</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>14:56</nx-time>
+                <sunrise>6:12</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="22" dn="22" wd="6">
+                <ti>Chaturdashi</ti>
+                <ti-time>18:28</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>12:20</nx-time>
+                <sunrise>6:12</sunrise>
+                <sunset>19:06</sunset>
+                <mnrashi>Cancer after 28:29</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="23" dn="23" wd="0">
+                <ti>Amavasya</ti>
+                <ti-time>15:16</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>09:53</nx-time>
+                <sunrise>6:13</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="24" dn="24" wd="1">
+                <ti>Pratipda</ti>
+                <ti-time>12:22</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>07:44 - 30:01</nx-time>
+                <sunrise>6:13</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Leo after 30:00</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="25" dn="25" wd="2">
+                <ti>Dwitiya</ti>
+                <ti-time>09:58</ti-time>
+                <nx>Magha</nx>
+                <nx-time>28:52</nx-time>
+                <sunrise>6:13</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="5">Unfavorable upto 20:00</shub-day>
+            </date>
+            <date id="26" dn="26" wd="3">
+                <ti>Trutiya</ti>
+                <ti-time>08:09</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>28:23</nx-time>
+                <sunrise>6:14</sunrise>
+                <sunset>19:05</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good upto 19:00</shub-day>
+            </date>
+            <date id="27" dn="27" wd="4">
+                <ti>Chaturthi</ti>
+                <ti-time>07:02</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>28:39</nx-time>
+                <sunrise>6:14</sunrise>
+                <sunset>19:04</sunset>
+                <mnrashi>Virgo after 10:23</mnrashi>
+                <shub-day type="3">Good</shub-day>
+			</date>
+            <date id="28" dn="28" wd="5">
+                <ti>Panchami</ti>
+                <ti-time>06:39</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>29:41</nx-time>
+                <sunrise>6:14</sunrise>
+                <sunset>19:04</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="29" dn="29" wd="6">
+                <ti>Shashtti</ti>
+                <ti-time>07:02</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:15</sunrise>
+                <sunset>19:04</sunset>
+                <mnrashi>Libra after 18:27</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+			<date id="30" dn="3०" wd="0">
+                <ti>Saptami</ti>
+                <ti-time>08:03</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>07:22</nx-time>
+                <sunrise>6:15</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="8">Normal after 8:00</shub-day>
+            </date>
+			<date id="31" dn="31" wd="1">
+                <ti>Astami</ti>
+                <ti-time>09:48</ti-time>
+                <nx>Swati</nx>
+                <nx-time>09:40</nx-time>
+                <sunrise>6:15</sunrise>
+                <sunset>19:03</sunset>
+                <mnrashi>Scorpio after 29:39</mnrashi>
+                <shub-day type="4">Unwelcome after 10:00</shub-day>
+            </date>
+        </month>
+        <month id="8" dn="August">
+            <odata><d>1939, Shaka Samvat</d><d>Shravana/Bhadrapada</d></odata>
+            <date id="1" dn="1" wd="2">
+                <ti>Navami</ti>
+                <ti-time>11:54</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>12:21</nx-time>
+                <sunrise>6:16</sunrise>
+                <sunset>19:02</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Good after 12:00</shub-day>
+            </date>
+            <date id="2" dn="2" wd="3">
+                <ti>Dashami</ti>
+                <ti-time>14:15</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>15:17</nx-time>
+                <sunrise>6:16</sunrise>
+                <sunset>19:02</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Good after 15:00</shub-day>
+            </date>
+            <date id="3" dn="3" wd="4">
+                <ti>Ekadashi</ti>
+                <ti-time>16:38</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>18:13</nx-time>
+                <sunrise>6:16</sunrise>
+                <sunset>19:01</sunset>
+                <mnrashi>Sagittarius after 18:13</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+			</date>
+            <date id="4" dn="4" wd="5">
+                <ti>Dwadashi</ti>
+                <ti-time>18:53</ti-time>
+                <nx>Mula</nx>
+                <nx-time>21:02</nx-time>
+                <sunrise>6:17</sunrise>
+                <sunset>19:01</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="7">Bad after 18:00</shub-day>
+            </date>
+            <date id="5" dn="5" wd="6">
+                <ti>Trayodashi</ti>
+                <ti-time>20:52</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>23:35</nx-time>
+                <sunrise>6:17</sunrise>
+                <sunset>19:01</sunset>
+                <mnrashi>Capricorn after 30:10</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="6" dn="6" wd="0">
+                <ti>Chaturdashi</ti>
+                <ti-time>22:29</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>25:47</nx-time>
+                <sunrise>6:17</sunrise>
+                <sunset>19:00</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="7" dn="7" wd="1">
+                <ti>Pournima</ti>
+                <ti-time>23:41</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>27:33</nx-time>
+                <sunrise>6:17</sunrise>
+                <sunset>19:00</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="8" dn="8" wd="2">
+                <ti>Pratipada</ti>
+                <ti-time>24:26</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>28:53</nx-time>
+                <sunrise>6:18</sunrise>
+                <sunset>19:00</sunset>
+                <mnrashi>Aquarius after 16:16</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="9" dn="9" wd="3">
+                <ti>Dwitiya</ti>
+                <ti-time>24:43</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>29:47</nx-time>
+                <sunrise>6:18</sunrise>
+                <sunset>18:59</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="10" dn="10" wd="4">
+                <ti>Trutiya</ti>
+                <ti-time>24:34</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>30:12</nx-time>
+                <sunrise>6:18</sunrise>
+                <sunset>18:58</sunset>
+                <mnrashi>Pisces after 24:09</mnrashi>
+                <shub-day type="8">Normal after 13:00</shub-day>
+            </date>
+            <date id="11" dn="11" wd="5">
+                <ti>Chaturthi</ti>
+                <ti-time>23:58</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>30:13</nx-time>
+                <sunrise>6:18</sunrise>
+                <sunset>18:58</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="12" dn="12" wd="6">
+                <ti>Panchami</ti>
+                <ti-time>22:57</ti-time>
+                <nx>Revati</nx>
+                <nx-time>29:59</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:57</sunset>
+                <mnrashi>Aries after 29:51</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="13" dn="13" wd="0">
+                <ti>Shashtti</ti>
+                <ti-time>21:33</ti-time>
+                <nx>Ashwin</nx>
+                <nx-time>29:05</nx-time>
+                <sunrise>6:18</sunrise>
+                <sunset>18:56</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="14" dn="14" wd="1">
+                <ti>Saptami</ti>
+                <ti-time>19:43</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>27:57</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:56</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good after 9:00</shub-day>
+            </date>
+            <date id="15" dn="15" wd="2">
+                <ti>Astami</ti>
+                <ti-time>17:40</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>26:30</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:55</sunset>
+                <mnrashi>Tauras after 9:37</mnrashi>
+                <shub-day type="2">Cheerful</shub-day>
+            </date>
+            <date id="16" dn="16" wd="3">
+                <ti>Navami</ti>
+                <ti-time>15:18</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>24:51</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:54</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="17" dn="17" wd="4">
+                <ti>Dashami</ti>
+                <ti-time>12:44</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>22:59</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:54</sunset>
+                <mnrashi>Gemini after 11:56</mnrashi>
+                <shub-day type="3">Good after 13:00</shub-day>
+            </date>
+            <date id="18" dn="18" wd="5">
+                <ti>Ekadashi</ti>
+                <ti-time>10:01</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>21:04</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:53</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="19" dn="19" wd="6">
+                <ti>Dwadashi</ti>
+                <ti-time>8:01 - 28:38</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>19:10</nx-time>
+                <sunrise>6:19</sunrise>
+                <sunset>18:52</sunset>
+                <mnrashi>Cancer after 13:37</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="20" dn="2०" wd="0">
+                <ti>Chaturdashi</ti>
+                <ti-time>26:11</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>17:23</nx-time>
+                <sunrise>6:20</sunrise>
+                <sunset>18:52</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="21" dn="21" wd="1">
+                <ti>Amavasya</ti>
+                <ti-time>24:01</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>15:52</nx-time>
+                <sunrise>6:20</sunrise>
+                <sunset>18:51</sunset>
+                <mnrashi>Leo after 15:51</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="22" dn="22" wd="2">
+                <ti>Pratipada</ti>
+                <ti-time>22:16</ti-time>
+                <nx>Magha</nx>
+                <nx-time>14:43</nx-time>
+                <sunrise>6:120</sunrise>
+                <sunset>18:51</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="23" dn="23" wd="3">
+                <ti>Dwitiya</ti>
+                <ti-time>21:03</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>14:05</nx-time>
+                <sunrise>6:21</sunrise>
+                <sunset>18:50</sunset>
+                <mnrashi>Virgo after 20:00</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="24" dn="24" wd="4">
+                <ti>Trutiya</ti>
+                <ti-time>20:27</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>14:00</nx-time>
+                <sunrise>6:21</sunrise>
+                <sunset>18:49</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="25" dn="25" wd="5">
+                <ti>Chaturthi</ti>
+                <ti-time>20:31</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>14:36</nx-time>
+                <sunrise>6:21</sunrise>
+                <sunset>18:48</sunset>
+                <mnrashi>Libra after 27:00</mnrashi>
+                <shub-day type="2">Cheerful</shub-day>
+            </date>
+            <date id="26" dn="26" wd="6">
+                <ti>Panchami</ti>
+                <ti-time>21:18</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>15:52</nx-time>
+                <sunrise>6:21</sunrise>
+                <sunset>18:47</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="27" dn="27" wd="0">
+                <ti>Shashtti</ti>
+                <ti-time>22:42</ti-time>
+                <nx>Swati</nx>
+                <nx-time>17:45</nx-time>
+                <sunrise>6:21</sunrise>
+                <sunset>18:47</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="3">Good after 18:00</shub-day>
+            </date>
+            <date id="28" dn="28" wd="1">
+                <ti>Saptami</ti>
+                <ti-time>24:38</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>20:10</nx-time>
+                <sunrise>6:22</sunrise>
+                <sunset>18:46</sunset>
+                <mnrashi>Scorpio after 13:31</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+            <date id="29" dn="29" wd="2">
+                <ti>Astami</ti>
+                <ti-time>26:54</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>22:57</nx-time>
+                <sunrise>6:22</sunrise>
+                <sunset>18:45</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="30" dn="3०" wd="3">
+                <ti>Navami</ti>
+                <ti-time>29:17</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>25:54</nx-time>
+                <sunrise>6:22</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Sagittarius after 25:54</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+			<date id="31" dn="31" wd="4">
+                <ti>Dashami</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Mula</nx>
+                <nx-time>28:53</nx-time>
+                <sunrise>6:22</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+        </month>
+		<month id="9" dn="September">
+            <date id="1" dn="1" wd="5">
+                <ti>Dashami</ti>
+                <ti-time>07:37</ti-time>
+                <nx>Purva Aashadha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:22</sunrise>
+                <sunset>18:44</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+           </date>
+            <date id="2" dn="2" wd="6">
+                <ti>Ekadashi</ti>
+                <ti-time>9:38</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>7:25</nx-time>
+                <sunrise>6:22</sunrise>
+                <sunset>18:42</sunset>
+                <mnrashi>Capricorn after 14:00</mnrashi>
+                <shub-day type="3">Good after 10:00</shub-day>
+            </date>
+            <date id="3" dn="3" wd="0">
+                <ti>Dwadashi</ti>
+                <ti-time>11:13</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>8:38</nx-time>
+                <sunrise>6:23</sunrise>
+                <sunset>18:42</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="4" dn="4" wd="1">
+                <ti>Trayodashi</ti>
+                <ti-time>12:15</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>11:18</nx-time>
+                <sunrise>6:23</sunrise>
+                <sunset>18:41</sunset>
+                <mnrashi>Aquarius after 23:55</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="5" dn="5" wd="2">
+                <ti>Chaturdashi</ti>
+                <ti-time>12:42</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>12:25</nx-time>
+                <sunrise>6:23</sunrise>
+                <sunset>18:40</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="8">Normal after 13:00</shub-day>
+            </date>
+            <date id="6" dn="६" wd="3">
+                <ti>Pournima</ti>
+                <ti-time>12:33</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>12:57</nx-time>
+                <sunrise>6:23</sunrise>
+                <sunset>18:39</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="7" dn="7" wd="4">
+                <ti>Pratipada</ti>
+                <ti-time>11:53</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>12:58</nx-time>
+                <sunrise>6:23</sunrise>
+                <sunset>18:38</sunset>
+                <mnrashi>Pisces after 7:00</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="8" dn="8" wd="5">
+                <ti>Dwitiya</ti>
+                <ti-time>10:45</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>12:32</nx-time>
+                <sunrise>6:23</sunrise>
+                <sunset>18:37</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="9" dn="9" wd="6">
+                <ti>Trutiya</ti>
+                <ti-time>9:14</ti-time>
+                <nx>Revati</nx>
+                <nx-time>11:43</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:37</sunset>
+                <mnrashi>Aries after 11:43</mnrashi>
+                <shub-day type="3">Good after 9:00</shub-day>
+            </date>
+            <date id="10" dn="10" wd="0">
+                <ti>Chaturthi</ti>
+                <ti-time>07:25 - 29:24</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>10:38</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:36</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="11" dn="11" wd="1">
+                <ti>Shashtti</ti>
+                <ti-time>27:15</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>9:20</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:35</sunset>
+                <mnrashi>Tauras after 15:00</mnrashi>
+                <shub-day type="4">Unwelcome after 9:00</shub-day>
+            </date>
+            <date id="12" dn="12" wd="2">
+                <ti>Saptami</ti>
+                <ti-time>25:02</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>07:57</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:34</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="13" dn="13" wd="3">
+                <ti>Astami</ti>
+                <ti-time>22:48</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>6:29 - 29:01</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:33</sunset>
+                <mnrashi>Gemini after 17:44</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="14" dn="14" wd="4">
+                <ti>Navami</ti>
+                <ti-time>20:36</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>27:35</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:33</sunset>
+                <mnrashi>Gemini</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="15" dn="15" wd="5">
+                <ti>Dashami</ti>
+                <ti-time>18:31</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>26:17</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:32</sunset>
+                <mnrashi>Cancer after 20:36</mnrashi>
+                <shub-day type="7">Bad after 8:00</shub-day>
+            </date>
+            <date id="16" dn="16" wd="6">
+                <ti>Ekadashi</ti>
+                <ti-time>16:31</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>25:05</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:31</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="17" dn="17" wd="0">
+                <ti>Dwadashi</ti>
+                <ti-time>14:43</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>24:07</nx-time>
+                <sunrise>6:20</sunrise>
+                <sunset>18:31</sunset>
+                <mnrashi>Leo after 24:07</mnrashi>
+                <shub-day type="3">Good upto 15</shub-day>
+            </date>
+            <date id="18" dn="18" wd="1">
+                <ti>Trayodashi</ti>
+                <ti-time>13:09</ti-time>
+                <nx>Magha</nx>
+                <nx-time>23:24</nx-time>
+                <sunrise>6:24</sunrise>
+                <sunset>18:29</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="19" dn="19" wd="2">
+                <ti>Chaturdashi</ti>
+                <ti-time>11:14</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>23:01</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:28</sunset>
+                <mnrashi>Virgo after 28:51</mnrashi>
+                <shub-day type="7">Bad</shub-day>               
+            </date>
+            <date id="20" dn="20" wd="3">
+                <ti>Amavasya</ti>
+                <ti-time>11:00</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>2:02</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:28</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="21" dn="21" wd="4">
+                <ti>Pratipada</ti>
+                <ti-time>10:35</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>23:34</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:28</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="22" dn="22" wd="5">
+                <ti>Dwitiya</ti>
+                <ti-time>10:42</ti-time>
+                <nx>Chaitra</nx>
+                <nx-time>24:37</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:26</sunset>
+                <mnrashi>Libra after 12:02</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="23" dn="23" wd="6">
+                <ti>Trutiya</ti>
+                <ti-time>11:24</ti-time>
+                <nx>Swati</nx>
+                <nx-time>26:16</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:25</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="24" dn="२4" wd="0">
+                <ti>Chaturthi</ti>
+                <ti-time>12:40</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>28:26</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:24</sunset>
+                <mnrashi>Scorpio after 21:55</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+            <date id="25" dn="25" wd="1">
+                <ti>Panchami</ti>
+                <ti-time>14:28</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:25</sunrise>
+                <sunset>18:23</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="26" dn="26" wd="2">
+                <ti>Shashtti</ti>
+                <ti-time>16:41</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>07:03</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:23</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+            <date id="27" dn="27" wd="3">
+                <ti>Saptami</ti>
+                <ti-time>19:10</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>09:58</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:22</sunset>
+                <mnrashi>Sagittarius after 09:58</mnrashi>
+                <shub-day type="3">Good after 10:00</shub-day>
+            </date>
+            <date id="28" dn="28" wd="4">
+                <ti>Astami</ti>
+                <ti-time>21:36</ti-time>
+                <nx>Mula</nx>
+                <nx-time>12:58</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:21</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good after 8:00</shub-day>
+            </date>
+            <date id="29" dn="29" wd="5">
+                <ti>Navami</ti>
+                <ti-time>23:50</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>15:48</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:20</sunset>
+                <mnrashi>Capricorn after 22:27</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="30" dn="30" wd="6">
+                <ti>Dashami</ti>
+                <ti-time>25:36</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>18:16</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:20</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+        </month>
+		<month id="10" dn="October">
+            <odata><d>1939, Shaka Samvat</d><d>Shravana/Bhadrapada</d></odata>
+            <date id="1" dn="1" wd="0">
+                <ti>Ekadashi</ti>
+                <ti-time>26:45</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>20:10</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:19</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>
+            </date>
+            <date id="2" dn="2" wd="1">
+                <ti>Dwadashi</ti>
+                <ti-time>27:09</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>21:23</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:18</sunset>
+                <mnrashi>Aquarius after 8:51</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="3" dn="3" wd="2">
+                <ti>Trayodashi</ti>
+                <ti-time>26:49</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>21:52</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:17</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+			</date>
+            <date id="4" dn="4" wd="3">
+                <ti>Chaturdashi</ti>
+                <ti-time>25:48</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>21:39</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:16</sunset>
+                <mnrashi>Pisces after 15:46</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="5" dn="5" wd="4">
+                <ti>Pournima</ti>
+                <ti-time>24:11</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>20:50</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:16</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="3">Good after 13:00</shub-day>
+            </date>
+            <date id="6" dn="6" wd="5">
+                <ti>Pratipada</ti>
+                <ti-time>22:04</ti-time>
+                <nx>Revati</nx>
+                <nx-time>19:32</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:15</sunset>
+                <mnrashi>Aries after 19:31</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="7" dn="7" wd="6">
+                <ti>Dwitiya</ti>
+                <ti-time>19:37</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>19:51</nx-time>
+                <sunrise>6:26</sunrise>
+                <sunset>18:14</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="8" dn="8" wd="0">
+                <ti>Trutiya</ti>
+                <ti-time>16:59</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>15:58</nx-time>
+                <sunrise>6:27</sunrise>
+                <sunset>18:13</sunset>
+                <mnrashi>Tauras after 21:29</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+            <date id="9" dn="9" wd="1">
+                <ti>Chaturthi</ti>
+                <ti-time>14:16</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>14:02</nx-time>
+                <sunrise>6:28</sunrise>
+                <sunset>18:12</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="10" dn="10" wd="2">
+                <ti>Panchami</ti>
+                <ti-time>11:38</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>12:08</nx-time>
+                <sunrise>6:28</sunrise>
+                <sunset>18:12</sunset>
+                <mnrashi>Libra after 23:16</mnrashi>
+                <shub-day type="3">Good after 13:00</shub-day>
+            </date>
+            <date id="11" dn="11" wd="3">
+                <ti>Shashtti</ti>
+                <ti-time>09:09</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>10:25</nx-time>
+                <sunrise>6:28</sunrise>
+                <sunset>18:12</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="3">Good after 9:00</shub-day>
+            </date>
+            <date id="12" dn="12" wd="4">
+                <ti>Saptami</ti>
+                <ti-time>06:56 - 28:58</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>08:57</nx-time>
+                <sunrise>6:29</sunrise>
+                <sunset>18:11</sunset>
+                <mnrashi>Cancer after 26:02</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="13" dn="13" wd="5">
+                <ti>Navami</ti>
+                <ti-time>27:22</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>07:46</nx-time>
+                <sunrise>6:29</sunrise>
+                <sunset>18:10</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="14" dn="14" wd="6">
+                <ti>Dashami</ti>
+                <ti-time>26:04</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>06:53 - 30:20</nx-time>
+                <sunrise>6:29</sunrise>
+                <sunset>18:09</sunset>
+                <mnrashi>Leo after 30:21</mnrashi>
+                <shub-day type="3">Good upto 15:00</shub-day>
+            </date>
+            <date id="15" dn="15" wd="0">
+                <ti>Ekadashi</ti>
+                <ti-time>25:06</ti-time>
+                <nx>Magha</nx>
+                <nx-time>30:07</nx-time>
+                <sunrise>6:29</sunrise>
+                <sunset>18:09</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="16" dn="16" wd="1">
+                <ti>Dwadashi</ti>
+                <ti-time>24:27</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>30:13</nx-time>
+                <sunrise>6:29</sunrise>
+                <sunset>18:08</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="17" dn="17" wd="2">
+                <ti>Trayodashi</ti>
+                <ti-time>24:09</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:30</sunrise>
+                <sunset>18:07</sunset>
+                <mnrashi>Virgo after 12:17</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="18" dn="18" wd="3">
+                <ti>Chaturdashi</ti>
+                <ti-time>24:14</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>06:38</nx-time>
+                <sunrise>6:30</sunrise>
+                <sunset>18:06</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="2">Cheerful</shub-day>
+            </date>
+            <date id="19" dn="19" wd="4">
+                <ti>Amavasya</ti>
+                <ti-time>24:42</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>07:26</nx-time>
+                <sunrise>6:30</sunrise>
+                <sunset>18:05</sunset>
+                <mnrashi>Libra after 20:00</mnrashi>
+                <shub-day type="2">Cheerful</shub-day>
+            </date>
+            <date id="20" dn="20" wd="5">
+                <ti>Pratipada</ti>
+                <ti-time>25:38</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>08:39</nx-time>
+                <sunrise>6:30</sunrise>
+                <sunset>18:05</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="21" dn="21" wd="6">
+                <ti>Dwitiya</ti>
+                <ti-time>27:02</ti-time>
+                <nx>Swati</nx>
+                <nx-time>10:28</nx-time>
+                <sunrise>6:31</sunrise>
+                <sunset>18:04</sunset>
+                <mnrashi>Scorpio after 29:49</mnrashi>
+                <shub-day type="2">Cheerful</shub-day>
+            </date>
+            <date id="22" dn="22" wd="0">
+                <ti>Trutiya</ti>
+                <ti-time>28:52</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>12:23</nx-time>
+                <sunrise>6:31</sunrise>
+                <sunset>18:03</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Good after 12:00</shub-day>
+            </date>
+            <date id="23" dn="23" wd="1">
+                <ti>Chaturthi</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>14:54</nx-time>
+                <sunrise>6:31</sunrise>
+                <sunset>18:03</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="24" dn="24" wd="2">
+                <ti>Chaturthi</ti>
+                <ti-time>07:07</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>17:46</nx-time>
+                <sunrise>6:32</sunrise>
+                <sunset>18:02</sunset>
+                <mnrashi>Sagittarius after 17:45</mnrashi>
+                <shub-day type="4">Unwelcome upto 18:00</shub-day>
+            </date>
+            <date id="25" dn="25" wd="3">
+                <ti>Panchami</ti>
+                <ti-time>09:38</ti-time>
+                <nx>Mula</nx>
+                <nx-time>20:49</nx-time>
+                <sunrise>6:32</sunrise>
+                <sunset>18:01</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="26" dn="26" wd="4">
+                <ti>Shashtti</ti>
+                <ti-time>12:13</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>23:52</nx-time>
+                <sunrise>6:33</sunrise>
+                <sunset>18:01</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="27" dn="27" wd="5">
+                <ti>Saptami</ti>
+                <ti-time>14:45</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>26:42</nx-time>
+                <sunrise>6:33</sunrise>
+                <sunset>18:00</sunset>
+                <mnrashi>Capricorn after 06:37</mnrashi>
+                <shub-day type="3">Good upto 18:00</shub-day>
+            </date>
+            <date id="28" dn="28" wd="6">
+                <ti>Astami</ti>
+                <ti-time>16:52</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>29:04</nx-time>
+                <sunrise>6:33</sunrise>
+                <sunset>18:00</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="29" dn="29" wd="0">
+                <ti>Navami</ti>
+                <ti-time>18:21</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:34</sunrise>
+                <sunset>17:59</sunset>
+                <mnrashi>Aquarius after 17:59</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="30" dn="3०" wd="1">
+                <ti>Dashami</ti>
+                <ti-time>19:05</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>06:44</nx-time>
+                <sunrise>6:34</sunrise>
+                <sunset>17:59</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+			<date id="31" dn="31" wd="2">
+                <ti>Ekadashi</ti>
+                <ti-time>18:57</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>07:38</nx-time>
+                <sunrise>6:34</sunrise>
+                <sunset>17:58</sunset>
+                <mnrashi>Pisces after 25:45</mnrashi>
+                <shub-day type="7">Bad after 7:00</shub-day>
+           </date>
+        </month>
+		<month id="11" dn="November">
+            <odata><d>1939, Shaka Samvat</d><d>Shravana/Bhadrapada</d></odata>
+            <date id="1" dn="1" wd="3">
+                <ti>Dwadashi</ti>
+                <ti-time>17:58</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>07:41</nx-time>
+                <sunrise>6:35</sunrise>
+                <sunset>17:58</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="2" dn="2" wd="4">
+                <ti>Trayodashi</ti>
+                <ti-time>16:12</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>06:56 - 29:29</nx-time>
+                <sunrise>6:35</sunrise>
+                <sunset>17:58</sunset>
+                <mnrashi>Aries after 29:29</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="3" dn="3" wd="5">
+                <ti>Chaturdashi</ti>
+                <ti-time>13:47</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>27:29</nx-time>
+                <sunrise>6:36</sunrise>
+                <sunset>17:57</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>
+            </date>
+            <date id="4" dn="4" wd="6">
+                <ti>Pournima</ti>
+                <ti-time>10:53</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>24:07</nx-time>
+                <sunrise>6:36</sunrise>
+                <sunset>17:57</sunset>
+                <mnrashi>Tauras after 30:28</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="5" dn="5" wd="0">
+                <ti>Pratipada</ti>
+                <ti-time>07:40 - 28:19</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>22:31</nx-time>
+                <sunrise>6:36</sunrise>
+                <sunset>17:57</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="6" dn="6" wd="1">
+                <ti>Trutiya</ti>
+                <ti-time>24:59</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>19:56</nx-time>
+                <sunrise>6:37</sunrise>
+                <sunset>17:56</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="3">Good upto 15:00</shub-day>
+            </date>
+            <date id="7" dn="7" wd="2">
+                <ti>Trutiya</ti>
+                <ti-time>21:52</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>17:29</nx-time>
+                <sunrise>6:37</sunrise>
+                <sunset>17:56</sunset>
+                <mnrashi>Libra after 06:41</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="8" dn="8" wd="3">
+                <ti>Panchami</ti>
+                <ti-time>19:04</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>15:22</nx-time>
+                <sunrise>6:38</sunrise>
+                <sunset>17:56</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="9" dn="9" wd="4">
+                <ti>Shashtti</ti>
+                <ti-time>16:43</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>13:40</nx-time>
+                <sunrise>6:38</sunrise>
+                <sunset>17:55</sunset>
+                <mnrashi>Cancer after 08:02</mnrashi>
+                <shub-day type="3">Good upto 17:00</shub-day>
+            </date>
+            <date id="10" dn="10" wd="5">
+                <ti>Saptami</ti>
+                <ti-time>14:51</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>12:26</nx-time>
+                <sunrise>6:39</sunrise>
+                <sunset>17:55</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="11" dn="11" wd="6">
+                <ti>Astami</ti>
+                <ti-time>13:30</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>11:44</nx-time>
+                <sunrise>6:39</sunrise>
+                <sunset>17:55</sunset>
+                <mnrashi>Leo after 11:43</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="12" dn="12" wd="0">
+                <ti>Navami</ti>
+                <ti-time>12:43</ti-time>
+                <nx>Magha</nx>
+                <nx-time>11:33</nx-time>
+                <sunrise>6:40</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="13" dn="13" wd="1">
+                <ti>Dashami</ti>
+                <ti-time>12:26</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>11:41</nx-time>
+                <sunrise>6:40</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Virgo after 18:00</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="14" dn="14" wd="2">
+                <ti>Ekadashi</ti>
+                <ti-time>12:36</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>12:27</nx-time>
+                <sunrise>6:41</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="15" dn="15" wd="3">
+                <ti>Dwadashi</ti>
+                <ti-time>13:12</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>13:46</nx-time>
+                <sunrise>6:41</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Libra after 26:29</mnrashi>
+                <shub-day type="8">Normal after 13:00</shub-day>
+            </date>
+            <date id="16" dn="16" wd="4">
+                <ti>Trayodashi</ti>
+                <ti-time>14:10</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>15:18</nx-time>
+                <sunrise>6:42</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="17" dn="17" wd="5">
+                <ti>Chaturdashi</ti>
+                <ti-time>15:31</ti-time>
+                <nx>Swati</nx>
+                <nx-time>17:12</nx-time>
+                <sunrise>6:42</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="18" dn="18" wd="6">
+                <ti>Amavasya</ti>
+                <ti-time>17:12</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>19:24</nx-time>
+                <sunrise>6:43</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Scorpio after 12:29</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="19" dn="19" wd="0">
+                <ti>Pratipada</ti>
+                <ti-time>19:16</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>21:58</nx-time>
+                <sunrise>6:43</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="20" dn="2०" wd="1">
+                <ti>Dwitiya</ti>
+                <ti-time>21:37</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>24:48</nx-time>
+                <sunrise>6:44</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Sagittarius after 24:48</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+            <date id="21" dn="21" wd="2">
+                <ti>Trutiya</ti>
+                <ti-time>24:13</ti-time>
+                <nx>Mula</nx>
+                <nx-time>27:51</nx-time>
+                <sunrise>6:45</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="22" dn="22" wd="3">
+                <ti>Chaturthi</ti>
+                <ti-time>23:55</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>6:45</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>
+            </date>
+            <date id="23" dn="23" wd="4">
+                <ti>Panchami</ti>
+                <ti-time>29:35</ti-time>
+                <nx>Purva Ashadha</nx>
+                <nx-time>07:00</nx-time>
+                <sunrise>6:46</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Capricorn after 13:46</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="24" dn="24" wd="5">
+                <ti>Shashtti</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Uttara Ashadha</nx>
+                <nx-time>10:04</nx-time>
+                <sunrise>6:46</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="25" dn="25" wd="6">
+                <ti>Shashtti</ti>
+                <ti-time>07:58</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>12:49</nx-time>
+                <sunrise>6:47</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Aquarius after 26:01</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="26" dn="26" wd="0">
+                <ti>Saptami</ti>
+                <ti-time>09:52</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>15:05</nx-time>
+                <sunrise>6:47</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="8">Normal after 10:00</shub-day>
+            </date>
+            <date id="27" dn="27" wd="1">
+                <ti>Astami</ti>
+                <ti-time>11:03</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>16:37</nx-time>
+                <sunrise>6:48</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="28" dn="28" wd="2">
+                <ti>Navami</ti>
+                <ti-time>11:25</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>17:22</nx-time>
+                <sunrise>6:49</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Pisces after 11:15</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="29" dn="29" wd="3">
+                <ti>Dashami</ti>
+                <ti-time>10:52</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>17:12</nx-time>
+                <sunrise>6:49</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="30" dn="3०" wd="4">
+                <ti>Ekadashi</ti>
+                <ti-time>09:27</ti-time>
+                <nx>Revati</nx>
+                <nx-time>16:13</nx-time>
+                <sunrise>6:50</sunrise>
+                <sunset>17:53</sunset>
+                <mnrashi>Aries after 16:13</mnrashi>
+                <shub-day type="5">Unfavorable upto 20:00</shub-day>
+            </date>
+        </month>
+		<month id="12" dn="December">
+            <odata><d>1939, Shaka Samvat</d><d>Shravana/Bhadrapada</d></odata>
+            <date id="1" dn="1" wd="5">
+                <ti>Dwadashi</ti>
+                <ti-time>07:13 - 28:20</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>14:28</nx-time>
+                <sunrise>6:50</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="2" dn="2" wd="6">
+                <ti>Chaturdashi</ti>
+                <ti-time>24:58</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>12:07</nx-time>
+                <sunrise>6:51</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Tauras after 17:28</mnrashi>
+                <shub-day type="4">Unwelcome after 12:00</shub-day>
+            </date>
+            <date id="3" dn="3" wd="0">
+                <ti>Pournima</ti>
+                <ti-time>21:17</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>09:22 - 30:22</nx-time>
+                <sunrise>6:52</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="3">Good after 11:00</shub-day>
+			</date>
+            <date id="4" dn="4" wd="1">
+                <ti>Pratipada</ti>
+                <ti-time>17:30</ti-time>
+                <nx>Mrigashirsha</nx>
+                <nx-time>27:21</nx-time>
+                <sunrise>6:53</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Libra after 16:50</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="5" dn="5" wd="2">
+                <ti>Dwitiya</ti>
+                <ti-time>13:47</ti-time>
+                <nx>Ardra</nx>
+                <nx-time>24:28</nx-time>
+                <sunrise>6:53</sunrise>
+                <sunset>17:54</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="6" dn="6" wd="3">
+                <ti>Trutiya</ti>
+                <ti-time>10:11</ti-time>
+                <nx>Punarvasu</nx>
+                <nx-time>21:57</nx-time>
+                <sunrise>6:54</sunrise>
+                <sunset>17:55</sunset>
+                <mnrashi>Cancer after 16:32</mnrashi>
+                <shub-day type="3">Good upto 10:00</shub-day>
+            </date>
+            <date id="7" dn="7" wd="4">
+                <ti>Chaturthi</ti>
+                <ti-time>07:16 - 28:45</ti-time>
+                <nx>Pushya</nx>
+                <nx-time>19:54</nx-time>
+                <sunrise>6:55</sunrise>
+                <sunset>17:55</sunset>
+                <mnrashi>Cancer</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="8" dn="8" wd="5">
+                <ti>Shashtti</ti>
+                <ti-time>26:53</ti-time>
+                <nx>Ashlesha</nx>
+                <nx-time>18:28</nx-time>
+                <sunrise>6:55</sunrise>
+                <sunset>17:55</sunset>
+                <mnrashi>Leo after 18:28</mnrashi>
+                <shub-day type="5">Unfavorable after 9:00</shub-day>
+            </date>
+            <date id="9" dn="9" wd="6">
+                <ti>Saptami</ti>
+                <ti-time>25:41</ti-time>
+                <nx>Magha</nx>
+                <nx-time>17:41</nx-time>
+                <sunrise>6:56</sunrise>
+                <sunset>17:55</sunset>
+                <mnrashi>Leo</mnrashi>
+                <shub-day type="8">Normal upto 14:00</shub-day>
+            </date>
+            <date id="10" dn="10" wd="0">
+                <ti>Astami</ti>
+                <ti-time>25:12</ti-time>
+                <nx>Purva Phalguni</nx>
+                <nx-time>17:35</nx-time>
+                <sunrise>6:56</sunrise>
+                <sunset>17:56</sunset>
+                <mnrashi>Virgo after 23:40</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="11" dn="11" wd="1">
+                <ti>Navami</ti>
+                <ti-time>25:22</ti-time>
+                <nx>Uttara Phalguni</nx>
+                <nx-time>18:10</nx-time>
+                <sunrise>6:57</sunrise>
+                <sunset>17:56</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="12" dn="12" wd="2">
+                <ti>Dashami</ti>
+                <ti-time>26:09</ti-time>
+                <nx>Hasta</nx>
+                <nx-time>19:18</nx-time>
+                <sunrise>6:58</sunrise>
+                <sunset>17:56</sunset>
+                <mnrashi>Virgo</mnrashi>
+                <shub-day type="3">Good upto 14:00</shub-day>
+            </date>
+            <date id="13" dn="13" wd="3">
+                <ti>Ekadashi</ti>
+                <ti-time>27:26</ti-time>
+                <nx>Chitra</nx>
+                <nx-time>20:59</nx-time>
+                <sunrise>6:58</sunrise>
+                <sunset>17:57</sunset>
+                <mnrashi>Libra after 08:05</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="14" dn="14" wd="4">
+                <ti>Dwadashi</ti>
+                <ti-time>29:08</ti-time>
+                <nx>Swati</nx>
+                <nx-time>23:04</nx-time>
+                <sunrise>6:59</sunrise>
+                <sunset>17:57</sunset>
+                <mnrashi>Libra</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="15" dn="15" wd="5">
+                <ti>Trayodashi</ti>
+                <ti-time>Midnight</ti-time>
+                <nx>Vishakha</nx>
+                <nx-time>25:31</nx-time>
+                <sunrise>6:59</sunrise>
+                <sunset>17:58</sunset>
+                <mnrashi>Scorpio after 18:52</mnrashi>
+                <shub-day type="8">Normal</shub-day>
+            </date>
+            <date id="16" dn="16" wd="6">
+                <ti>Trayodashi</ti>
+                <ti-time>07:11</ti-time>
+                <nx>Anuradha</nx>
+                <nx-time>28:14</nx-time>
+                <sunrise>6:59</sunrise>
+                <sunset>17:58</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="17" dn="17" wd="0">
+                <ti>Chaturdashi</ti>
+                <ti-time>09:30</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>Midnight</nx-time>
+                <sunrise>7:00</sunrise>
+                <sunset>17:58</sunset>
+                <mnrashi>Scorpio</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="18" dn="18" wd="1">
+                <ti>Amavasya</ti>
+                <ti-time>12:01</ti-time>
+                <nx>Jyeshtha</nx>
+                <nx-time>7:07</nx-time>
+                <sunrise>7:01</sunrise>
+                <sunset>17:59</sunset>
+                <mnrashi>Sagittarius after 07:07</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="19" dn="19" wd="2">
+                <ti>Pratipada</ti>
+                <ti-time>14:04</ti-time>
+                <nx>Mula</nx>
+                <nx-time>10:10</nx-time>
+                <sunrise>7:01</sunrise>
+                <sunset>17:59</sunset>
+                <mnrashi>Sagittarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="20" dn="20" wd="3">
+                <ti>Dwitiya</ti>
+                <ti-time>17:21</ti-time>
+                <nx>Purva Aashadha</nx>
+                <nx-time>13:16</nx-time>
+                <sunrise>7:02</sunrise>
+                <sunset>16:00</sunset>
+                <mnrashi>Capricorn after 20:02</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="21" dn="21" wd="4">
+                <ti>Trutiya</ti>
+                <ti-time>19:58</ti-time>
+                <nx>Uttara Aashadha</nx>
+                <nx-time>16:11</nx-time>
+                <sunrise>7:02</sunrise>
+                <sunset>16:00</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="22" dn="22" wd="5">
+                <ti>Chaturthi</ti>
+                <ti-time>22:23</ti-time>
+                <nx>Shravana</nx>
+                <nx-time>19:11</nx-time>
+                <sunrise>7:03</sunrise>
+                <sunset>16:01</sunset>
+                <mnrashi>Capricorn</mnrashi>
+                <shub-day type="8">Normal after 9:00</shub-day>
+            </date>
+            <date id="23" dn="23" wd="6">
+                <ti>Panchami</ti>
+                <ti-time>14:23</ti-time>
+                <nx>Dhanishtha</nx>
+                <nx-time>21:43</nx-time>
+                <sunrise>7:03</sunrise>
+                <sunset>16:01</sunset>
+                <mnrashi>Aquarius after 8:30</mnrashi>
+                <shub-day type="7">Bad</shub-day>
+            </date>
+            <date id="24" dn="24" wd="0">
+                <ti>Shashtti</ti>
+                <ti-time>25:55</ti-time>
+                <nx>Shattarka</nx>
+                <nx-time>23:47</nx-time>
+                <sunrise>7:04</sunrise>
+                <sunset>16:01</sunset>
+                <mnrashi>Aquarius</mnrashi>
+                <shub-day type="3">Good</shub-day>
+            </date>
+            <date id="25" dn="25" wd="1">
+                <ti>Saptami</ti>
+                <ti-time>26:44</ti-time>
+                <nx>Purva Bhadrapada</nx>
+                <nx-time>25:10</nx-time>
+                <sunrise>7:04</sunrise>
+                <sunset>16:02</sunset>
+                <mnrashi>Pisces after 18:53</mnrashi>
+                <shub-day type="5">Unfavorable</shub-day>
+            </date>
+            <date id="26" dn="26" wd="2">
+                <ti>Astami</ti>
+                <ti-time>26:44</ti-time>
+                <nx>Uttara Bhadrapada</nx>
+                <nx-time>25:48</nx-time>
+                <sunrise>7:05</sunrise>
+                <sunset>16:02</sunset>
+                <mnrashi>Pisces</mnrashi>
+                <shub-day type="8">Normal after 15:00</shub-day>
+            </date>
+            <date id="27" dn="27" wd="3">
+                <ti>Navami</ti>
+                <ti-time>25:56</ti-time>
+                <nx>Revati</nx>
+                <nx-time>25:37</nx-time>
+                <sunrise>7:05</sunrise>
+                <sunset>16:03</sunset>
+                <mnrashi>Aries after 25:37</mnrashi>
+                <shub-day type="0">Excellent</shub-day>
+            </date>
+            <date id="28" dn="28" wd="4">
+                <ti>Dashami</ti>
+                <ti-time>24:17</ti-time>
+                <nx>Ashwini</nx>
+                <nx-time>24:38</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>16:04</sunset>
+                <mnrashi>Aries</mnrashi>
+                <shub-day type="1">Auspicious</shub-day>
+            </date>
+            <date id="29" dn="29" wd="5">
+                <ti>Ekadashi</ti>
+                <ti-time>21:55</ti-time>
+                <nx>Bharani</nx>
+                <nx-time>22:56</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>16:04</sunset>
+                <mnrashi>Tauras after 28:25</mnrashi>
+                <shub-day type="8">Normal after 11:00</shub-day>
+            </date>
+            <date id="30" dn="3०" wd="6">
+                <ti>Dwadashi</ti>
+                <ti-time>18:56</ti-time>
+                <nx>Kruttika</nx>
+                <nx-time>20:39</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>16:05</sunset>
+                <mnrashi>Tauras</mnrashi>
+                <shub-day type="4">Unwelcome</shub-day>
+            </date>
+			<date id="31" dn="31" wd="0">
+                <ti>Trayodashi</ti>
+                <ti-time>15:29</ti-time>
+                <nx>Rohini</nx>
+                <nx-time>17:54</nx-time>
+                <sunrise>7:06</sunrise>
+                <sunset>16:06</sunset>
+                <mnrashi>Libra after 28:25</mnrashi>
+                <shub-day type="3">Good</shub-day>
             </date>
         </month>
     </calendar>

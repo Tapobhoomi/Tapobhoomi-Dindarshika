@@ -31,7 +31,7 @@ $(document).on('swiperight', '[id="calcontent"]', function(event){
     return false;            
 });*/
 
-var panchangimgtopimg = 0;
+/*var panchangimgtopimg = 0;
 function pospanchangimg(){
     if(panchangimgtopimg == 0){
         var panheight = $(".panzoom-elements").height();
@@ -42,7 +42,7 @@ function pospanchangimg(){
         panchangimgtopimg = (panheight - height) / 2
     }
     $(".panzoom-elements > img").css("margin-top",panchangimgtopimg+"px");
-}
+}*/
 
 /*
 $( document ).on( "pageshow", "#panchangpage", function() {
@@ -169,8 +169,9 @@ function updatecalendardata(){
             var shubdaytypeval = $(shubday).attr("type");
             if(!(shubdaytypeval === undefined)){
                 var shubdaybgcolor = "red";            
-                if(!(shubdaytypeval === undefined) && parseInt(shubdaytypeval) <= 3) {
-                    shubdaybgcolor = "green";
+                if(!(shubdaytypeval === undefined)){
+                    if(parseInt(shubdaytypeval) <= 3) {  shubdaybgcolor = "green";}
+                    else if(parseInt(shubdaytypeval) == 8){  shubdaybgcolor = "blue";  }
                 }
                 var subdaydivheight = 2;
                 $(cell).find('#imgdiv').append('<div style="background:'+shubdaybgcolor+';width:70%; height:'+subdaydivheight+'px;margin-left:15%;opacity: 0.2;"></div>');
@@ -321,20 +322,57 @@ $( document ).on( "pageinit", "#about-page", function() {
     });
 });
 
-/*$( document ).on( "pageinit", "#splash", function() {
-    var docht = $(document).height();
-    $(".splashpagecl").find("td").each(function(){
-        var height = docht - 4;
-       $(this).css("height",height); 
-        $(this).parent().css("height",height);     
-    });
-});*/
-
+var feednotificationdata = [];
+var feedmessagedata = [];
 var splsrnhide = null;
-$( document ).on( "pageinit", "#landingpage", function() {
+$( document ).on( "pageinit", "#landingpage", function() {    
     splsrnhide = setTimeout(hidesplashscreen, 2000);
+    landingElementsDimensions();
     loadCalendar();
+    /*Enable later after getting APIs
+    var i = setInterval(function(){
+        loadlatestfeeds();
+
+    }, 60000);*/
+    //window.localStorage.clear();
+    readstorefeedsdata(feednotificationdata,'notifyfeedsstore');
+    readstorefeedsdata(feedmessagedata,'messagefeedsstore');
+    
+    //loadlatestfeeds();
+        
 });
+
+function landingElementsDimensions(){
+    var docwd = $(document).width();
+    $(".custom-btn").each(function(){
+        if(docwd >= 460 && docwd < 500){
+            $(this).removeClass("custom-btn");
+            $(this).addClass("medium-custom-btn");
+        }else if(docwd >= 500){
+            $(this).removeClass("custom-btn");
+            $(this).addClass("large-custom-btn");
+        }
+    });
+}
+
+function readstorefeedsdata(feeddata,feedstorename){
+    var notifyfeedstorestr = window.localStorage.getItem(feedstorename);
+    if(notifyfeedstorestr != null){
+        var objArr = jQuery.parseJSON( notifyfeedstorestr );
+        for(var i in objArr){
+            feeddata.push(objArr[i]);
+        }
+        
+    }
+}
+
+function retrievelinkjsonobject(str){
+    var linkdata = {};
+    try { linkdata = JSON.parse(str);}catch(err) {
+        linkdata.name = str;linkdata.url = str;
+    }
+    return linkdata;
+}
 
 
 
@@ -343,76 +381,6 @@ function hidesplashscreen() {
     clearTimeout(splsrnhide);
 }
 
-/*
-(function() {
-    var supportTouch = $.support.touch,
-            scrollEvent = "touchmove scroll",
-            touchStartEvent = supportTouch ? "touchstart" : "mousedown",
-            touchStopEvent = supportTouch ? "touchend" : "mouseup",
-            touchMoveEvent = supportTouch ? "touchmove" : "mousemove";
-    $.event.special.swipeupdown = {
-        setup: function() {
-            var thisObject = this;
-            var $this = $(thisObject);
-            $this.bind(touchStartEvent, function(event) {
-                var data = event.originalEvent.touches ?
-                        event.originalEvent.touches[ 0 ] :
-                        event,
-                        start = {
-                            time: (new Date).getTime(),
-                            coords: [ data.pageX, data.pageY ],
-                            origin: $(event.target)
-                        },
-                        stop;
-
-                function moveHandler(event) {
-                    if (!start) {
-                        return;
-                    }
-                    var data = event.originalEvent.touches ?
-                            event.originalEvent.touches[ 0 ] :
-                            event;
-                    stop = {
-                        time: (new Date).getTime(),
-                        coords: [ data.pageX, data.pageY ]
-                    };
-
-                    // prevent scrolling
-                    if (Math.abs(start.coords[1] - stop.coords[1]) > 10) {
-                        event.preventDefault();
-                    }
-                }
-                $this
-                        .bind(touchMoveEvent, moveHandler)
-                        .one(touchStopEvent, function(event) {
-                    $this.unbind(touchMoveEvent, moveHandler);
-                    if (start && stop) {
-                        if (stop.time - start.time < 1000 &&
-                                Math.abs(start.coords[1] - stop.coords[1]) > 30 &&
-                                Math.abs(start.coords[0] - stop.coords[0]) < 75) {
-                            start.origin
-                                    .trigger("swipeupdown")
-                                    .trigger(start.coords[1] > stop.coords[1] ? "swipeup" : "swipedown");
-                        }
-                    }
-                    start = stop = undefined;
-                });
-            });
-        }
-    };
-    $.each({
-        swipedown: "swipeupdown",
-        swipeup: "swipeupdown"
-    }, function(event, sourceEvent){
-        $.event.special[event] = {
-            setup: function(){
-                $(this).bind(sourceEvent, $.noop);
-            }
-        };
-    });
-
-})();
-*/
 
 var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 
@@ -420,95 +388,127 @@ var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
     alert("homepage");
 });*/
 
+var totalfeedcount = 5;
+var allowhistoryview = false;
+function loadhistorynotificationfeeds(){
+    var id = (feednotificationdata.length > 0)? feednotificationdata[0].id : 0;
+    loadhistoryfeeds(feednotificationdata,"http://localhost/rest/feeds/notifications/older?fromid="+id+"&count="+totalfeedcount,$("#feedscontainer"));
+}
+
+function loadhistorymessagefeeds(){
+    var id = (feedmessagedata.length > 0)? feedmessagedata[0].id : 0;
+    loadhistoryfeeds(feedmessagedata,"http://localhost/rest/feeds/messages/older?fromid="+id+"&count="+totalfeedcount,$("#messagescontainer"));
+}
+
+function loadhistoryfeeds(feeddata,url,container){
+    var id = (feeddata.length > 0)? feeddata[0].id : 0;
+    retrievejsondatafromsrv(url,feeddata,function(dataarr){
+        allowhistoryview = true;
+        for(var i in dataarr){
+            feeddata.push(dataarr[i]);
+            populatesinglefeedOrMessage($(container),dataarr[i],0);
+        }
+        sortarr(feednotificationdata);
+    });
+}
+
+function loadlatestfeeds(){
+    var id = (feednotificationdata.length > 0)? feednotificationdata[feednotificationdata.length -1].id : 0;
+    loadlatestfeedsProcess(feednotificationdata,"http://localhost/rest/feeds/notifications/latest?fromid="+id+"&count="+totalfeedcount,$("#feedscontainer"));
+    
+    id = (feedmessagedata.length > 0)? feedmessagedata[feedmessagedata.length -1].id : 0;
+    loadlatestfeedsProcess(feedmessagedata,"http://localhost/rest/feeds/messages/latest?fromid="+id+"&count="+totalfeedcount,$("#messagescontainer"));
+}
+
+function loadlatestfeedsProcess(feeddata,url,container){
+    var id = (feeddata.length > 0)? feeddata[feeddata.length -1].id : 0;
+    retrievejsondatafromsrv(url,feeddata,function(dataarr){
+        sortarr(dataarr);
+        for(var i in dataarr){
+            feeddata.push(dataarr[i]);
+            if(homepageinit){
+                updatefeedui($(container),dataarr[i],feeddata);
+            }
+            
+            var feedstorename = $(container).attr('id') == 'feedscontainer' ? 'notifyfeedsstore' : 'messagefeedsstore';
+            var feedstorestr = window.localStorage.getItem(feedstorename);
+            var feedstore =[];
+            if(feedstorestr != null){
+                feedstore = jQuery.parseJSON( feedstorestr);
+            }
+            feedstore.push(dataarr[i]);
+            while(feedstore.length > totalfeedcount){
+                feedstore.shift();
+            }
+            var myJsonString = JSON.stringify(feedstore);
+            window.localStorage.setItem(feedstorename, myJsonString);
+        }
+    });   
+}
+
+function updatefeedui(container,data,feeddata){
+    populatesinglefeedOrMessage(container,data,1);
+    setTimeout(function(){
+        $(container).find(".newfeedscls").removeClass("newfeedscls").addClass("feedscls");
+    }, 1000);
+    
+    
+    /*if((feeddata.length - totalfeedcount) > 0){
+        feeddata.splice(0, feeddata.length - totalfeedcount);
+    }*/
+}
+
+function retrievejsondatafromsrv(url,feeddata,callbackfunc){
+    $.ajax({
+        type: "GET",
+        url : url,
+        dataType : 'json',
+        success : function(data){
+            if(callbackfunc != null){  callbackfunc(data);}     
+        },
+        error : function(XMLHttpRequest,textStatus, errorThrown) {   
+            //alert("Something wrong happended on the server. Try again..");  
+ 
+        }
+    });
+}
+
+function sortarr(arrdata){
+    arrdata.sort(function(a, b){
+        var aint = parseInt(a.id);
+        var bint = parseInt(b.id);
+        if (aint < bint) return -1;
+        if (bint < aint) return 1;
+        return 0;
+    });
+}
+
+var homepageinit = false;
 $( document ).on( "pageinit", "#homepage", function() {
     var homecontentht = $(document).height() - 67;
     $("#home_feeds").css("height",homecontentht+"px");
     $("#home_messages").css("height",homecontentht+"px");
     
-    var feeddata = [{"id":1,"date":"7/11/2016","type":"event","data":"Upcoming events","link":{"name":"link","url":"http://srigurudev.org/contactus"}},{"id":3,"date":"12/11/2016","type":"event","data":"Vande Mataram","link":{"name":"contact us","url":"http://srigurudev.org/contactus"}},{"id":2,"date":"9/11/2016","type":"news","title":"“Tapobhoomi”","data":"Goa’s renowned spiritual hub located at Kundaim in Ponda Taluka.","moredata":{"name":"more","url":"http://srigurudev.org/edu-activities"},"img":"img/landingpg_main.jpg"},{"id":4,"date":"14/11/2016","type":"event","data":"check it out","link":{"name":"link","url":"http://srigurudev.org/contactus"}},{"id":5,"date":"14/11/2016","type":"event","data":"check it out","link":{"name":"link","url":"http://srigurudev.org/contactus"}}];
-    
     var feedContainer = $("#feedscontainer");
-    populatefeedsandmessages(feedContainer,feeddata);
-    
-    /*$('#home_feeds').on('swipedown',function(event){
-        $(feedContainer).prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/refresh-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
-        refreshhide = setTimeout(hiderefresher, 2000);
-    } );*/
-    
-    $( "#home_feeds" ).scroll(function() {
-       if ($(this).scrollTop() == 0){
-           // upscroll code
-           $(feedContainer).prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='img/reload.gif' style='width:5%;height:auto;'/></div></td></tr></table></div>");
-            refreshhide = setTimeout(hiderefresher, 2000);
-       }
-        
-    });
-
-    var msgdata = [{"id":4,"date":"12/11/2016","type":"msg-t","data":"We are celebrating Tulsi vivah event on 19th Nov"},{"id":5,"date":"12/11/2016","type":"msg-sg","data":"All are welcome to event 'Vande Mataram'"}];
+    populatefeedsandmessages(feedContainer,feednotificationdata);
     
     var messagesContainer = $("#messagescontainer");
-    populatefeedsandmessages(messagesContainer,msgdata);
+    populatefeedsandmessages(messagesContainer,feedmessagedata);
     
-   // $('#home_messages').on('swipedown',function(event){alert("messagescontainer swipedown..");} );
-    
+    homepageinit = true;
     
 });
 
-
-
-/*function handleHitTop(event) {
-    var currentScrollTopValue = $(this).scrollTop();
-
-    if (handleHitTop.lastTop === undefined) {
-        handleHitTop.lastTop = currentScrollTopValue ;
-
-        return;
-    }
-
-    if (handleHitTop.lastTop == 0 && currentScrollTopValue == 0) {
-        return;
-    }
-
-    handleHitTop.lastTop = currentScrollTopValue;
-
-    if (handleHitTop.lastTop == 0) {
-        //Call your event here
-        $("#feedscontainer").prepend("<div class='refreshImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/refresh-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
-        refreshhide = setTimeout(hiderefresher, 2000);
-    }
-}*/
-var feedid= window.localStorage.getItem("feednextcount");
-function hiderefresher(){
-    feedid = feedid == null ? 1 : parseInt(feedid);
-    var feedContainer = $("#feedscontainer");
-    $(feedContainer).find(".refreshImgcls").remove();
-    var feed = {"id":feedid,"date":"18/11/2016","type":"event","data":"check it out : feed " + feedid ,"link":{"name":"link" + feedid,"url":"http://srigurudev.org/contactus"}}
-    
-    populatesinglefeedOrMessage(feedContainer,feed,true);
-    setTimeout(unreadtoreadfeed, 1000);
-    feedid += 1;
-    window.localStorage.setItem("feednextcount", feedid);
-}
-
-function unreadtoreadfeed(){
-    $("#feedscontainer").find(".newfeedscls").removeClass("newfeedscls").addClass("feedscls");
-}
-
 function populatefeedsandmessages(container,data){
-    data.sort(function(a, b){
-        if (a.id < b.id) return -1;
-        if (b.id < a.id) return 1;
-        return 0;
-    });
-    
     for(var i in data){
-        populatesinglefeedOrMessage(container,data[i],false);        
+        populatesinglefeedOrMessage(container,data[i],2);        
     }
 }
 
 var feedlastdatedisplay = null;
+var feedstypes = {"10":"news","11":"event","20":"msg-sg","21":"msg-t"};
 function populatesinglefeedOrMessage(container,data,newfeed){
-    var type = data.type;
+    var type = feedstypes[data.type];
     if(type == "event" || type == "news" || type == "msg-sg" || type == "msg-t"){
             var datatodisplay = "";
             var typeimg = type == "event"?"img/event.png":"img/news.png";
@@ -520,48 +520,95 @@ function populatesinglefeedOrMessage(container,data,newfeed){
             }
             datatodisplay += data.title != null ? "<div style='font-weight: bold;'>"+data.title+"</div>" : "";
             datatodisplay += data.data != null ? "<div>"+data.data+"</div>" : "";
-            datatodisplay += data.link != null ? "<div><a href='#' onclick='window.open(\""+data.link.url+"\", \"_system\");'>"+data.link.name+"</a></div>" : "";
+        
+            if(data.link != null){
+                var linkdata = retrievelinkjsonobject(data.link);
+                datatodisplay +=  "<div><a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");'>"+linkdata.name+"</a></div>";
+            }
             datatodisplay += data.img != null ? "<div width='100%' style='text-align:center;'><img src='"+data.img+"' style='width:70%;height:auto;'/></div>" : "";
-            datatodisplay += data.moredata != null ? "<div><a href='#' onclick='window.open(\""+data.moredata.url+"\", \"_system\");' data-role='button' class='ui-btn text-shadow-none' style='color:black' data-theme='b'>"+data.moredata.name+"</a></div>" : "";
+            if(data.moredata != null){
+                var linkdata = retrievelinkjsonobject(data.moredata);
+                datatodisplay += "<div width='100%' style='text-align:center;'><a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");' data-role='button' class='ui-btn text-shadow-none' style='color:black' data-theme='b'>"+linkdata.name+"</a></div>";
+            }
             
         
             var today = new Date();
             var todaymonth = today.getMonth()+1;
             var todayyear = today.getFullYear();
-            var todaydisp = today.getDate()+'/'+ todaymonth + '/' + todayyear;
+            var todaydisp = todayyear +'-'+ todaymonth +'-'+today.getDate();
         
-            var parts =data.date.split('/');
+            //var parts =data.date.split[' '][0].split('-');
             //please put attention to the month (parts[0]), Javascript counts months from 0:
             // January - 0, February - 1, etc
-            var dt = new Date(parts[2],parts[1]-1,parts[0]); 
-            var displaydate = (todaydisp == data.date) ?"Today":dt.getDate() + " "+tabmonth[dt.getMonth()]
-            
-            if(feedlastdatedisplay == displaydate){
-                var obj = $(container).find("."+displaydate.replace(" ","_")+"cls");
+            //var dt = new Date(parts[2],parts[1]-1,parts[0]); 
+            var feeddata = data.date.split(' ')[0];
+            var dt = new Date(feeddata);
+            var displaydate = (todaydisp == feeddata) ?"Today":dt.getDate() + " "+tabmonth[dt.getMonth()];
+            var datedisplayclass = displaydate.replace(" ","_")+"cls";
+        
+            /*if(feedlastdatedisplay == displaydate){
+                var obj = $(container).find("."+datedisplayclass);
                 $(obj).remove();                
-            }
+            }*/
             feedlastdatedisplay = displaydate;
         
-            var feedclass = newfeed ? "newfeedscls" : "feedscls";
-                        
-            $(container).prepend("<div style='padding:2px;' class='"+feedclass+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
+            var feedclass = newfeed == 1 ? "newfeedscls" : "feedscls";
+            var feedtypecls = $(container).attr('id')+datedisplayclass;
         
-            $(container).prepend("<div class='"+displaydate.replace(" ","_")+"cls feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>");
+            var feeddatahtml = "<div style='padding:1px;' class='"+feedclass+" "+feedtypecls+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>";
+        
             
-            if($(container).find(".feedscls").length > 10){
+                        
+            if($("."+feedtypecls).size() > 0){
+                if(newfeed == 0){
+                    $("."+feedtypecls).last().after(feeddatahtml);
+                }else if(newfeed == 1 || newfeed == 2){
+                    $("."+feedtypecls).first().before(feeddatahtml);
+                }
+            }else{         
+                var feeddatehtml = "<div class='"+datedisplayclass+" feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>";
+                
+                if(newfeed == 1 || newfeed == 2){
+                    $(container).prepend(feeddatahtml);
+                    $(container).prepend(feeddatehtml);
+                }else{                    
+                    $(container).find(".moreImgcls").before(feeddatehtml);
+                    $(container).find(".moreImgcls").before(feeddatahtml);
+                }
+            }
+        
+            /*var feedclass = newfeed ? "newfeedscls" : "feedscls";
+                        
+            $(container).prepend("<div style='padding:1px;' class='"+feedclass+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
+        
+            $(container).prepend("<div class='"+displaydate.replace(" ","_")+"cls feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>");*/
+            
+            if($(container).find(".feedscls").length > totalfeedcount && !allowhistoryview){
                 var oldlastfeed = $(container).find(".feedscls").last();
                 if($(oldlastfeed).prev().hasClass("feeddatecls")){
                     $(oldlastfeed).prev().remove();
                 }
                 $(oldlastfeed).remove();
-                if($(container).find(".moreImgcls").length == 0){
+                /*if($(container).find(".moreImgcls").length == 0){
                     $(container).append("<div class='moreImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/carat-d-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
-                }
-            }else{
+                }*/
+            }/*else{
                 $(container).find(".moreImgcls").remove();
+            }*/
+            var historyfunc = $(container).attr('id') == 'feedscontainer' ? 'loadhistorynotificationfeeds' : 'loadhistorymessagefeeds';
+            if($(container).find(".moreImgcls").length == 0){
+                $(container).append("<div class='moreImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><a href='#' onclick='return "+historyfunc+"()'><img src='jquery/images/icons-png/carat-d-black.png' style='width:5%;height:auto;'/></a></div></td></tr></table></div>");
             }
         }
 }
+
+/*function historyfeedsnotification(){
+    alert("hello1");
+}
+
+function historyfeedsmessages(){
+    alert("hello2");
+}*/
 
 $( document ).on( "pageinit", "#maincalender", function() {
     
@@ -571,7 +618,7 @@ $( document ).on( "pageinit", "#maincalender", function() {
     
     $('#calheader').addClass("month"+ month +"-theme");
     
-    /*8$("#calnavleft").find("img").click(function() {
+    /*$("#calnavleft").find("img").click(function() {
         prevmonth();
     });
     $("#calnavright").find("img").click(function() {
@@ -669,7 +716,7 @@ $( document ).on( "pageinit", "#educationpage", function() {
     } 
 
     today = mm+'/'+dd+'/'+yyyy;
-    
+    value = window.localStorage.getItem("today");
     window.localStorage.setItem("today", today);*/
 });
 
@@ -705,9 +752,9 @@ function loadCalendar(){
     if(calerdarxml != null && weekday != null){ return;  }
     
     monthcolorcode = new Array(12);
-    monthcolorcode[0]="#fb60ae";monthcolorcode[1]="#fb6068";monthcolorcode[2]="#df88f0";monthcolorcode[3]="#37ddd0";
-    monthcolorcode[4]="#f68c3d";monthcolorcode[5]="#f6c83d";monthcolorcode[6]="#f6183d";monthcolorcode[7]="#f6683d";
-    monthcolorcode[8]="#16883d";monthcolorcode[9]="#46883d";monthcolorcode[10]="#86883d";monthcolorcode[11]="#d6883d";
+    monthcolorcode[0]="#fb60ae";monthcolorcode[1]="#fb6068";monthcolorcode[2]="#d4493a";monthcolorcode[3]="#90a32a";
+    monthcolorcode[4]="#69d416";monthcolorcode[5]="#2aa33e";monthcolorcode[6]="#2aa37b";monthcolorcode[7]="#1f6769";
+    monthcolorcode[8]="#4985a3";monthcolorcode[9]="#233881";monthcolorcode[10]="#4b308d";monthcolorcode[11]="#683d8d";
     
     $.ajax({
     type: "GET",
@@ -804,7 +851,7 @@ function findermenuonclick(){
            if(!(jQuery.type(imgfile) === "undefined")){
             divstr = "<table width='100%'><tr><td>"+$(this).text()+"</td><td><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
            }
-           $("#findercontent").append("<div style='padding:5px;'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+$(this).parent().parent().attr("dn") + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='25%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
+           $("#findercontent").append("<div style='padding:5px;'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+$(this).parent().parent().attr("dn") + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
     });
 }
