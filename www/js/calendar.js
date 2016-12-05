@@ -295,7 +295,7 @@ function calculatedimensions(){
     $("#calheader").css("height",(calheaderht) + "px !important");
     //calheaderht = $("#calheader").height();
     caltddim = (docwd/7) + 2;
-    var calcontentheight = (caltddim * 5) + 5;
+    var calcontentheight = (caltddim * 5) + 10;
     $("#calcontent").height(calcontentheight);
     var footerheight =  docht - (calheaderht + calcontentheight + 10); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
@@ -841,6 +841,10 @@ function loadData(xml){
 }
 
 function findermenuonclick(){
+    monthshortname = new Array(12);
+    monthshortname[0]="Jan";monthshortname[1]="Feb";monthshortname[2]="Mar";monthshortname[3]="Apr";
+    monthshortname[4]="May";monthshortname[5]="Jun";monthshortname[6]="Jul";monthshortname[7]="Aug";
+    monthshortname[8]="Sep";monthshortname[9]="Oct";monthshortname[10]="Nov";monthshortname[11]="Dec";
     $(".find-menu-item").click(function(){
        $("#finderhdrtxt").text($(this).text());
        $("#findercontent").children().remove();
@@ -851,7 +855,7 @@ function findermenuonclick(){
            if(!(jQuery.type(imgfile) === "undefined")){
             divstr = "<table width='100%'><tr><td>"+$(this).text()+"</td><td><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
            }
-           $("#findercontent").append("<div style='padding:5px;'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+$(this).parent().parent().attr("dn") + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
+           $("#findercontent").append("<div style='padding:5px;' class='finddatacls'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+monthshortname[$(this).parent().parent().attr("id") - 1] + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
     });
 }

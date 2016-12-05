@@ -236,6 +236,14 @@ div.aboutpagecl table {
 div.aboutpagecl td img { 
   vertical-align: top;
 }
+    
+div.finddatacls table {
+    border-collapse: collapse;
+}
+    
+div.finddatacls td img { 
+  vertical-align: top;
+}
         
 div.text-shadow-none table, td, th {
     border: 0px;
@@ -342,7 +350,7 @@ div.newfeedscls table {
 }
 .home-stamp-text {
     position:absolute;
-    bottom: 25%;
+    bottom: 10%;
     color: white; 
     font-weight: normal;
     font-size: 1.5em;   
@@ -432,14 +440,14 @@ div.splashabs {
     
 <div id="maincalender" data-role="page" >
      <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:12em">
-         <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="15%"><a href="#menuPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td></tr></table>
+         <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="20px"  style="text-align:center;"><a href="#menuPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" width="20px" height="auto"/></a></td></tr></table>
     </div>
      <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em;padding:0em !important;">
-         <table width="100%"><tr><td width="15%"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
+         <table width="100%"><tr><td width="20px" style="text-align:center;"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" width="20px" height="auto"/></a></td><td>
         <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
      <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none">
-         <table width="100%"><tr><td width="7%"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="70%" height="50%"/></a></td><td width="15%"><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year">2017</div></td><td width="7%"><a href="#finderPanel" id="calfinderpanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="70%" height="auto"/></a></td></tr></table>
+         <table width="100%"><tr><td width="20px"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="20px" height="auto"/></a></td><td><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year" style="text-align:right;padding-right:40px">2017</div></td><td width="20px"><a href="#finderPanel" id="calfinderpanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="20px" height="auto"/></a></td></tr></table>  
           <div style="padding-top:5px;color:white;font-weight: normal;">
          <table id="calweeknames" style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">Sun</td>
              <td width="13%">Mon</td><td width="13%">Tue</td><td width="13%">Wed</td><td width="13%">Thu</td><td width="13%">Fri</td>
@@ -464,14 +472,14 @@ div.splashabs {
 </div>
 <div id="finder-page" data-role="page">
     <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
-          <table width="100%"><tr><td width="15%"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" style="padding-right:5px;padding-top:15px" width="100%" height="auto"/></a></td><td>
+          <table width="100%"><tr><td width="20px" style="text-align:center;"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" width="20px" height="auto"/></a></td><td>
         <div id="findermenulist2" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
     <div data-role="header" class="sriguru-ui-background text-shadow-none finder-header-text" data-id="persistheader" data-position="fixed" >
         <table width="100%" ><tr>
         <td style="font-weight: normal;font-size: 1.5em;text-align:center;color:white;" class="text-shadow-none" id="finderhdrtxt">finder</td>
-        <td width="7%">
-        <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="70%" height="auto"/></a>
+        <td width="20px">
+        <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="20px" height="auto"/></a>
         </td>
         </tr>
         </table>

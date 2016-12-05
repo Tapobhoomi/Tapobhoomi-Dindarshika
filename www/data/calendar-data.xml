@@ -689,7 +689,7 @@
             <date id="29" dn="29" wd="3">
                 <d tag="NAX">Revati</d>
                 <d>Chaitra Shukla Paksha 2</d>
-                <d>Chandradarshan upto 20:18</d>
+                <d>Moon rise  upto 20:18</d>
                 <d>Balchandrama vrath</d>
                 <d tag="OTH">Akkalkot swami prakat Day</d>
                 <d tag="6">National Ferry Day</d>
@@ -993,7 +993,7 @@
             <date id="14" dn="14" wd="0">
                 <d tag="NAX">Mula</d>
                 <d>Vaishakha Krishna Paksha 3</d>
-				<d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Chandradarshan 21.56</d>
+				<d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise  21.56</d>
 				<d>Bhadravasa till 10.17</d>
 				<d>Shri Sadanand Smriti Din- Sant Samaj Virdi-Keri</d>
 				<d>Shri Ganapati murti Pratistapana Vardhapan Din, Torda-Paithan, Salvador-Da-Mund</d>
@@ -1072,7 +1072,7 @@
             <date id="27" dn="27" wd="6">
                 <d tag="NAX">Mriga</d>
                 <d>Jyeshtha Shukla Paksha 2</d>
-                <d>Chandradarshan till 20.58</d>
+                <d>Moon rise  till 20.58</d>
 				<d tag="6">Guru Arjunsimha Shahid Day</d>
             </date>
             <date id="28" dn="28" wd="0">
@@ -1173,7 +1173,7 @@
             <date id="13" dn="13" wd="2">
                 <d tag="NAX">Uttara Ashadha</d>
                 <d>Jyeshtha Krishna Paksha 4</d>
-                <d tag="2" img="img/shriganesh.png">Angarki Sankashti Chaturthi- Chandra Uday 22.13</d>
+                <d tag="2" img="img/shriganesh.png">Angarki Sankashti Chaturthi- Moon rise  22.13</d>
                 <d tag="SMU">Shri Sadanand Smriti Din- Sant Samaj Taligao</d>
             </date>
             <date id="14" dn="14" wd="3">
@@ -1240,7 +1240,7 @@
             <date id="25" dn="25" wd="0">
                 <d tag="NAX">Punarvasu</d>
                 <d>Aashadha Shukla Paksha 2</d>
-                <d>Chandradarshan (till 20.41)</d>
+                <d>Moon rise  (till 20.41)</d>
             </date>
             <date id="26" dn="26" wd="1">
                 <d tag="NAX">Pushya</d>
@@ -1337,7 +1337,7 @@
             <date id="12" dn="12" wd="3">
                 <d tag="NAX">Dhanishtha</d>
                 <d>Aashadha Krishna Paksha 3</d>
-				<d tag="2" img="img/shriganesh.png">Sankashti Chaturthi- Chandra Uday 21.40</d>
+				<d tag="2" img="img/shriganesh.png">Sankashti Chaturthi- Moon rise  21.40</d>
 				<d>Bhadravasa till 14.03</d>
 				<d>Panchak after 03.59</d>
 				<d tag="SMU">Shri Sadanand Smriti Din, Shakha- Sulabhat</d>
@@ -1514,7 +1514,7 @@
             <date id="11" dn="11" wd="5">
                 <d tag="NAX">Uttara Bhadrapada</d>
                 <d>Shravana Krishna Paksha 4</d>
-                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Chandra Uday-21.44</d>
+                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi, Moon rise -21.44</d>
                 <d>Shri Sadanand Sami 40th Punya Tithi, Gulduvem Math- Sant Samaj Kaisuva, Ganeshpuri-Kholi, Kanka</d>
             </date>
             <date id="12" dn="12" wd="6">
@@ -1694,7 +1694,7 @@
             <date id="9" dn="9" wd="6">
                 <d tag="NAX">Revati</d>
                 <d>Bhadrapada Krishna Paksha 3</d>
-                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi- Chandra Uday 21.08</d>
+                <d tag="2" img="img/shriganesh.png">Sankashti Chaturthi- Moon rise  21.08</d>
                 <d>Narayanalayankar Puja Mardol</d>
                 <d>Bhadravasa till 9:12 Panchak till 11.42</d>
                 <d>Shree Sadanand Smrutidin</d>
@@ -1767,7 +1767,7 @@
             </date>
             <date id="21" dn="21" wd="4">
                 <d tag="NAX"> Hasta</d>
-                <d>Chandradarshan 19:38</d>
+                <d>Moon rise  19:38</d>
                 <d>Ashwin Shukla Paksha 1</d>
                 <d>Ghatstapna Navratraramb</d>
                 <d>Ghatstapna (Navratrostav)-Shanrewada</d> 
@@ -1888,7 +1888,7 @@
             <date id="8" dn="8" wd="0">
                 <d tag="NAX">Bharani</d>
                 <d>Ashwin Krishna Paksha 3</d>
-				<d tag="2" img="img/shriganesh.png"> Sankashti Chaturthi, Chandra Uday:20.37</d>
+				<d tag="2" img="img/shriganesh.png"> Sankashti Chaturthi, Moon rise :20.37</d>
 				<d>Bhadravasa till 16:58</d>
                 <d tag="6"> Shree Sadanand Smruti Din </d>
                 <d tag="4">Sant Samaj Pilai Dharbandoda </d>
@@ -2152,7 +2152,7 @@
             <date id="19" dn="19" wd="0">
                 <d tag="NAX">Anuradha</d>
                 <d>Margshish Shukla Paksha 1</d>
-				<d>Chandradarshan 18:55</d>
+				<d>Moon rise  18:55</d>
 				<d>tag="5">Martand Bhairav (Mallari                Khandoba)Vethoba  JATRA Arwali</d>
 				<d>tag="6"> Nagrik Din</d>
 		    </date>
