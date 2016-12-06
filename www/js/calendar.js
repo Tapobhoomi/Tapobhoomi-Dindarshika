@@ -294,8 +294,8 @@ function calculatedimensions(){
     $("#selectedmonth").css("font-size",selectedmonthfontsz)
     $("#calheader").css("height",(calheaderht) + "px !important");
     //calheaderht = $("#calheader").height();
-    caltddim = (docwd/7) + 2;
-    var calcontentheight = (caltddim * 5) + 10;
+    caltddim = (docwd/7);
+    var calcontentheight = (caltddim * 5) + (5 * 5);
     $("#calcontent").height(calcontentheight);
     var footerheight =  docht - (calheaderht + calcontentheight + 10); //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);

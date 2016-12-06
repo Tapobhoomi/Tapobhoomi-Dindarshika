@@ -28,7 +28,7 @@
             <date id="2" dn="2" wd="1">
                 <d tag="NAX">Dhanishtha</d>
                 <d>Paush Shukla Paksha 4</d>
-                <d tag="8">Vinayaka Chaturthi</d>
+                <d tag="8" img="img/shriganesh.png">Vinayaka Chaturthi</d>
                 <d>Bhadravasa upto 15:51</d>
             </date>
             <date id="3" dn="3" wd="2">
@@ -68,7 +68,7 @@
             <date id="8" dn="8" wd="0">
                 <d tag="NAX">Bharani</d>
                 <d>Paush Shukla Paksha 10/11</d>
-                <d tag="3">Putrada Ekadashi</d>
+                <d tag="3" img="img/ekadashi.png">Putrada Ekadashi</d>
                 <d>Bhadravasa after 18:30 upto 29:03</d>
                 <d tag="5">Shri Vettal Jatra - Salgaon</d>
                 <d>GhodeMukh Utsav - Ghodemukh</d>
@@ -76,7 +76,7 @@
             <date id="9" dn="9" wd="1">
                 <d tag="NAX">Krittika</d>
                 <d>Paush Shukla Paksha 12</d>
-                <d tag="3">Bhagwath Ekadashi</d>
+                <d tag="3" img="img/ekadashi.png">Bhagwath Ekadashi</d>
                 <d>Khandoba yatra - Pali</d>
                 <d>Shri Navdurga Kala - Pali</d>
                 <d tag="5">Shri Shantadurga Chamundeshwari Jatra, Gudo - Avede</d>
@@ -84,7 +84,7 @@
             <date id="10" dn="10" wd="2">
                 <d tag="NAX">Rohini</d>
                 <d>Paush Shukla Paksha 13</d>
-                <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Bastoda Palye</d>
+                <d tag="SMU" img="img/Swami_1.png">Shri Bramhanand smruti din - Sant Samaj Bastoda Palye</d>
                 <d tag="5">Shri Devi Bodgeshwar Jatra - Mapusa</d>
                 <d tag="6">World laughter Day</d>
                 <d>Shri Devi Kudneshwar Kala - Kudne</d>
@@ -103,7 +103,7 @@
                 <d>Paush Shukla Paksha 15</d>
                 <d>Pournima</d>
                 <d>Gurupushyamrut Yog</d>
-                <d tag="SMU">Shri Sushen smruti din, Seva - Sant. Samaj Vajri</d>
+                <d tag="SMU" img="img/Swami_2.png">Shri Sushen smruti din, Seva - Sant. Samaj Vajri</d>
                 <d>Dhalo ustsav - Shri Vishnu Mandir, Parke bhat, Karmali</d>
                 <d tag="6">National Youth Day</d>
                 <d tag="6">Swami Vivekanand birthday</d>
@@ -116,10 +116,10 @@
             </date>
             <date id="14" dn="14" wd="6">
                 <d tag="NAX">Ashlesha</d>
-                <d>Paush Krishna Paksha 2</d>
-                <d tag="0">Makar Sankranti</d>
-                <d tag="0">Pongal</d>
+                <d tag="0" img="img/MakarSankranti.png">Makar Sankranti</d>
                 <d>Makar 7:38</d>
+                <d tag="0">Pongal</d>
+                <d>Paush Krishna Paksha 2</d>                                
                 <d>Bhadravasa after 20:09</d>
                 <d>Good Muhurta 7:38 to 14:38</d>
                 <d tag="5">Shri Chamundeshwari Jatra - Vargaon</d>
@@ -178,7 +178,7 @@
             <date id="23" dn="23" wd="1">
                 <d tag="NAX">Anuradha</d>
                 <d>Paush Krishna Paksha 11</d>
-                <d tag="3">Shattila Ekadashi</d>
+                <d tag="3" img="img/ekadashi.png">Shattila Ekadashi</d>
                 <d tag="5">Shri Mahaganapati Bhavanishankar Jatrotsav - Madel, Tivim</d>
                 <d tag="7">Netaji Subhas Chandra Bose Jayanti</d>
             </date>
@@ -306,7 +306,7 @@
             <date id="7" dn="7" wd="2">
                 <d tag="NAX">Mrigashirsha</d>
                 <d>Magha Shukla Paksha 11</d>
-                <d tag="3">Jaya Ekadashi</d>
+                <d tag="3" img="img/ekadashi.png">Jaya Ekadashi</d>
                 <d>Bhishma Dwadashi</d>
                 <d>Maghi Yatra Pandarpur</d>
                 <d>Bhadravasa upto 13:48</d>
@@ -325,7 +325,7 @@
                 <d tag="NAX">Punarvasu</d>
                 <d>Magha Shukla Paksha 13</d>
                 <d tag="IMP">Gurupushyamruta Yog (after 10:48 upto Sunrise)</d>
-                <d tag="SMU">Shri Bramhanand smruti din - Sant Samaj Parse</d>
+                <d tag="SMU" img="img/Swami_1.png">Shri Bramhanand smruti din - Sant Samaj Parse</d>
                 <d tag="4">Sant samaj Nerul, Pillen</d>
                 <d>Vandevi Jatra Vardhapandin - Old Goa</d>
                 <d>Palkhi Mahotsav Hanuman Mandir - Sankalwadi, Hadfade</d>
@@ -435,7 +435,7 @@
             <date id="22" dn="22" wd="3">
                 <d tag="NAX">Purva Ashadha</d>
                 <d>Magha Krishna Paksha 11</d>
-                <d tag="3">Vijaya Ekadashi</d>
+                <d tag="3" img="img/ekadashi.png">Vijaya Ekadashi</d>
                 <d>Shri Mahalsa Utsav ends - Mardol</d>
             </date>
             <date id="23" dn="23" wd="4">
