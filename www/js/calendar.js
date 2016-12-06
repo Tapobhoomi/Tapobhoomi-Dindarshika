@@ -296,7 +296,7 @@ function calculatedimensions(){
     $("#calheader").css("height",(calheaderht) + "px !important");
     //calheaderht = $("#calheader").height();
     caltddim = (docwd/7);
-    var calcontentheight = (caltddim * 5) + (5 * 5);
+    var calcontentheight = (caltddim * 5) + (2 * 5);
     $("#calcontent").height(calcontentheight);
     var footerheight =  docht - (calheaderht + calcontentheight + 10);  //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
@@ -345,8 +345,7 @@ $( document ).on( "pageinit", "#landingpage", function() {
 
 function landingElementsDimensions(){
     var docwd = $(document).width();
-    alert(docwd);
-    if(docwd < 375){
+    if(docwd < 350){
         $("#quoteoftheday").hide();
     }
     $(".custom-btn").each(function(){
