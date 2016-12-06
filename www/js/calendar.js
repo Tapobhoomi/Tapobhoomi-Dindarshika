@@ -258,6 +258,7 @@ function calculatedimensions(){
     var selectedmonthfontsz = "1.6em";
     var calweeknamesfontsz = "1.1em";
     var diff = 20;
+    
     /*if(docwd > 420 && docwd < 440){
         selectedmonthfontsz = "1.6em";
         selectedyearfontsz = "0.9em";
@@ -297,7 +298,7 @@ function calculatedimensions(){
     caltddim = (docwd/7);
     var calcontentheight = (caltddim * 5) + (5 * 5);
     $("#calcontent").height(calcontentheight);
-    var footerheight =  docht - (calheaderht + calcontentheight + 10); //documentheight -(calendar header height + calendar content height - buffer)
+    var footerheight =  docht - (calheaderht + calcontentheight + 10);  //documentheight -(calendar header height + calendar content height - buffer)
     $("#calfooter").height(footerheight);
     $("#datedatacol").height(footerheight - 47);
     
@@ -344,6 +345,10 @@ $( document ).on( "pageinit", "#landingpage", function() {
 
 function landingElementsDimensions(){
     var docwd = $(document).width();
+    alert(docwd);
+    if(docwd < 375){
+        $("#quoteoftheday").hide();
+    }
     $(".custom-btn").each(function(){
         if(docwd >= 460 && docwd < 500){
             $(this).removeClass("custom-btn");
