@@ -41,23 +41,62 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.4.5.min.css">
     
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--<script type="text/javascript">  app.initialize(); </script>-->
     <script type="text/javascript" src="jquery/1.12.1/jquery-1.12.4.min.js"></script>
     <!--<script type="text/javascript" src="jquery/1.12.1/jquery-ui.js"></script>-->
     <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="js/calendar.js"></script>
     <!--<script type="text/javascript" src="js/zoom.js"></script>
     <script type="text/javascript" src="js/img-touch-canvas.js"></script>-->
-    <script type="text/javascript" src="js/jquery.panzoom.min.js"></script>
-    <!--<script type="text/javascript" src="jquery/jquery.touchSwipe.min.js"></script>-->
-
-    <title>Tapobhoomi Dindarshika</title>
-</head>
-<style type="text/css">
+    <!--<script type="text/javascript" src="js/jquery.panzoom.min.js"></script>-->
+    <!--<script type="text/javascript" src="jquery/jquery.touchSwipe.min.js"></script>
 body {
     background: url(img/bg2.jpg) !important;
     background-repeat:no-repeat;
     background-size:100% 100%;
-}
+}-->
+    
+    <title>Tapobhoomi Dindarshika</title>
+</head>
+<style type="text/css">
+    .body-initstyle{
+        background-image: url(img/splashpageimg.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;                                    
+        background-position: center center;
+        background-color: #273554;
+    }
+    .body-fixstyle{
+        background: url(img/bg2.jpg) !important;
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+    }
+    .body-maincalenderbg{        
+       background-color: lightgoldenrodyellow;
+    }
+    .body-mainpanchangbg{        
+       background-color: cornsilk;
+    }
+    .cal-bgimage{
+         background: url(img/Tapo_Cal.png);
+    }
+    .panchang-bgimage{
+         background: url(img/Pan.png);
+    }
+    
+    .common-cal-bgimage{
+        position: absolute; 
+        z-index: -1;  
+        background-repeat: no-repeat;  
+        background-size: contain; 
+        background-position: center center; 
+        opacity: 0.1;
+        width: 100%; 
+        height: 100%;
+    }
+
 .ui-page {
     background: transparent;
 }
@@ -373,7 +412,7 @@ div.splashabs {
     font-size: 1em !important;
 }
 </style>
-<body>
+<body onload="onLoad()" class="body-initstyle">
 <div id="landingpage" data-role="page" class="landingpage-bg">
     <div data-role="content" class="text-shadow-none" style="padding:0px">
         <div class="ui-center-div landingpagerel">        
@@ -391,9 +430,13 @@ div.splashabs {
         </div>
         <h4><div style="margin:5px;text-align:center !important;" id="quoteoftheday"></div></h4>  
         </div>
-        <div id="splashscreen" style="padding:0em !important;" class="splashabs">
-            <table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/splashimg.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
-            </table>
+        <div id="splashscreen" style="padding:0em !important;background-image: url(img/splashpageimg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;                                    
+  background-position: center center;
+  background-color: #273554;dispaly:none" width="100%" height="100%" class="splashabs">
+            <!--<table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/splashimg.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
+            </table>-->
         </div>
     </div>
 </div>
@@ -454,7 +497,8 @@ div.splashabs {
              <td width="13%">Sat</td></tr></table>
          </div>         
      </div>
-     <div id="calcontent" data-role="content" class="text-shadow-none" style="padding:0px !important">
+     <div id="calcontent" data-role="content" class="text-shadow-none " style="padding:0px !important;position: relative;-index: 5;">
+         <div id="maincalbgimage" class="common-cal-bgimage"></div>
         <div>
         <table id="caltb" style="width:100%;height:100%;text-align:center;"> </table>
         </div>
@@ -602,15 +646,6 @@ It is this devotion, Principles and philanthropic approach of each individual of
       <div style="padding-top:15px;padding-bottom:3px"><b>PRESENT PRESIDENT OF SAMPRADAYA :</b></div><div style="padding-bottom:3px">SHRI AMAR N PARSEKAR.</div><div style="padding-bottom:3px">MOBILE NO.7507771730</div>
  </div>
 </div>
-    
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript">  app.initialize(); </script>
-
-    
-
-
-  
 </body>
 
 </html>

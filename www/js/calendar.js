@@ -1,17 +1,17 @@
 var year = 2017;
 var month = 1;
-var panchmonth = 1;
-var currentday = 20;
-var currentmonth = 1;
 var weekday = null;
 var monthcolorcode = null;
 var calerdarxml = null;
 var panchangxml = null;
 //var prevselmonth = 0;
+var todayDate = new Date();
+var todaymonth = todayDate.getMonth()+1;
+
 
 var panchangdatatag= {};
-var calUIdata1 = {"id":"1","theme-color":"#f6883d","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
-var calUIdata2 = {"id":"2","theme-color":"#db9c5d","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month":1,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata1 = {"id":"1","theme-color":"#f6883d","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month":todaymonth,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata2 = {"id":"2","theme-color":"#db9c5d","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month":todaymonth,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
 var calUIdata = calUIdata1;
 var calPrevUIdata = calUIdata1;
 
@@ -147,7 +147,7 @@ function updatecalendardata(){
         }
         
         cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="'+dateimg +'" width="55%" height="auto"/></div>');
-        $(cell).attr("id",$(this).attr("id"));
+        $(cell).attr("id",$(this).attr("id"));        
         
         if(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == $(this).attr("id")){
             $(cell).removeClass(calPrevUIdata["currentday-class"]);
@@ -209,15 +209,15 @@ function selectdate(id){
                 var tagstr = $(this).attr("tag");
                 var txtcolor = null;
                 var imgfile = $(this).attr("img");
-                var imgwidth = 40;
+                var imgwidth = 30;
                 var defstyle = " style='padding-right:5px;'";
                 var divstyle = " style='padding-bottom:4px;'";
                 if(!(jQuery.type(tagstr) === "undefined")){
                     if(tagstr.indexOf("NAX") != -1){ divstyle=" style='color:green;padding:1px !important;'";defstyle="";imgfile = "img/mn/"+id+".png";imgwidth=30;}
-                    else if(tagstr.indexOf("SMU") != -1){ divstyle=" style='color:#f04115;padding:1px !important;'"}
-                    else if(tagstr.indexOf("0") != -1){ divstyle = " style='color:red;padding:1px !important;font-size:large;font-weight: bold;'";}
-                    else if(tagstr.indexOf("2") != -1){ divstyle=" style='color:red;padding:1px !important;'";}
-                    else if(tagstr.indexOf("4") != -1){ divstyle=" style='color:#fb60ae;padding:1px !important;'";}
+                    else if(tagstr.indexOf("SMU") != -1){ divstyle=" style='color:#f04115;padding:0.5px !important;'"}
+                    else if(tagstr.indexOf("0") != -1){ divstyle = " style='color:red;padding:0.5px !important;'";}
+                    else if(tagstr.indexOf("2") != -1){ divstyle=" style='color:purple;padding:0.5px !important;'";}
+                    else if(tagstr.indexOf("4") != -1){ divstyle=" style='color:#fb60ae;padding:0.5px !important;'";}
                 }
                 //var divstyle = (txtcolor != null) ? " style='color:"+txtcolor+";padding:1px !important'" : "";
                 var divstr = "<div "+ divstyle +">";
@@ -326,22 +326,31 @@ $( document ).on( "pageinit", "#about-page", function() {
 var feednotificationdata = [];
 var feedmessagedata = [];
 var splsrnhide = null;
+//var intervalcount = 0;
+
 $( document ).on( "pageinit", "#landingpage", function() {    
-    splsrnhide = setTimeout(hidesplashscreen, 2000);
+    splsrnhide = setTimeout(hidesplashscreen, 3000);
     landingElementsDimensions();
     loadCalendar();
-    /*Enable later after getting APIs
-    var i = setInterval(function(){
-        loadlatestfeeds();
-
-    }, 60000);*/
     //window.localStorage.clear();
     readstorefeedsdata(feednotificationdata,'notifyfeedsstore');
     readstorefeedsdata(feedmessagedata,'messagefeedsstore');
-    
-    //loadlatestfeeds();
         
+    //funcLoadLatestFeedsInterval();
 });
+
+var loadlatestfeedsInterval = null;
+function funcLoadLatestFeedsInterval(){
+    //alert("Loading latest feeds");
+    loadlatestfeeds();
+    if(loadlatestfeedsInterval != null){
+        clearInterval(loadlatestfeedsInterval);
+    }
+    loadlatestfeedsInterval = setInterval(function(){        
+        //alert("Interval call")
+        loadlatestfeeds();
+    }, 5 * 60 * 1000); //5mins
+}
 
 function landingElementsDimensions(){
     var docwd = $(document).width();
@@ -372,7 +381,9 @@ function readstorefeedsdata(feeddata,feedstorename){
 
 function retrievelinkjsonobject(str){
     var linkdata = {};
-    try { linkdata = JSON.parse(str);}catch(err) {
+    var linkdecoded = $('<div/>').html(str).text();
+                
+    try { linkdata = JSON.parse(linkdecoded);}catch(err) {
         linkdata.name = str;linkdata.url = str;
     }
     return linkdata;
@@ -395,13 +406,13 @@ var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
 var totalfeedcount = 5;
 var allowhistoryview = false;
 function loadhistorynotificationfeeds(){
-    var id = (feednotificationdata.length > 0)? feednotificationdata[0].id : 0;
-    loadhistoryfeeds(feednotificationdata,"http://localhost/rest/feeds/notifications/older?fromid="+id+"&count="+totalfeedcount,$("#feedscontainer"));
+    var id = (feednotificationdata.length > 0)? +(feednotificationdata[0].id) - 1: 0;
+    loadhistoryfeeds(feednotificationdata,"http://srigurudev.org/app/v1/views/older?fromid="+id+"&limit="+totalfeedcount+"&type=1",$("#feedscontainer"));
 }
 
 function loadhistorymessagefeeds(){
-    var id = (feedmessagedata.length > 0)? feedmessagedata[0].id : 0;
-    loadhistoryfeeds(feedmessagedata,"http://localhost/rest/feeds/messages/older?fromid="+id+"&count="+totalfeedcount,$("#messagescontainer"));
+    var id = (feedmessagedata.length > 0)? +(feedmessagedata[0].id)  - 1 : 0;
+    loadhistoryfeeds(feedmessagedata,"http://srigurudev.org/app/v1/views/older?fromid="+id+"&limit="+totalfeedcount+"&type=2",$("#messagescontainer"));
 }
 
 function loadhistoryfeeds(feeddata,url,container){
@@ -416,17 +427,33 @@ function loadhistoryfeeds(feeddata,url,container){
     });
 }
 
+var dataProcessStatus = {"type-1":false,"type-2":false};
 function loadlatestfeeds(){
-    var id = (feednotificationdata.length > 0)? feednotificationdata[feednotificationdata.length -1].id : 0;
-    loadlatestfeedsProcess(feednotificationdata,"http://localhost/rest/feeds/notifications/latest?fromid="+id+"&count="+totalfeedcount,$("#feedscontainer"));
     
-    id = (feedmessagedata.length > 0)? feedmessagedata[feedmessagedata.length -1].id : 0;
-    loadlatestfeedsProcess(feedmessagedata,"http://localhost/rest/feeds/messages/latest?fromid="+id+"&count="+totalfeedcount,$("#messagescontainer"));
+    var todayDate = new Date();
+    var todaymonth = todayDate.getMonth()+1;
+    var todayyear = todayDate.getFullYear();
+    var todaydate = todayDate.getDate();
+    
+    calUIdata2["current-year"] = calUIdata1["current-year"]=2017;
+    calUIdata2["current-month"] = calUIdata1["current-month"]=todaymonth;
+    calUIdata2["current-date"] = calUIdata1["current-date"]=todaydate;
+        
+    var id = 0;
+    if(dataProcessStatus["type-1"] == false){
+        id = (feednotificationdata.length > 0)? +(feednotificationdata[feednotificationdata.length -1].id) + 1: 0;
+        loadlatestfeedsProcess(feednotificationdata,"http://srigurudev.org/app/v1/views/latest?fromid="+id+"&limit="+totalfeedcount+"&type=1",$("#feedscontainer"),1);
+    }
+        
+    if(dataProcessStatus["type-2"] == false){
+        id = (feedmessagedata.length > 0)? +(feedmessagedata[feedmessagedata.length -1].id) + 1: 0;
+        loadlatestfeedsProcess(feedmessagedata,"http://srigurudev.org/app/v1/views/latest?fromid="+id+"&limit="+totalfeedcount+"&type=2",$("#messagescontainer"),2);
+    }
 }
 
-function loadlatestfeedsProcess(feeddata,url,container){
+function loadlatestfeedsProcess(feeddata,url,container,type){
     var id = (feeddata.length > 0)? feeddata[feeddata.length -1].id : 0;
-    retrievejsondatafromsrv(url,feeddata,function(dataarr){
+    retrievejsondatafromsrv(url,type,function(dataarr){
         sortarr(dataarr);
         for(var i in dataarr){
             feeddata.push(dataarr[i]);
@@ -462,17 +489,19 @@ function updatefeedui(container,data,feeddata){
     }*/
 }
 
-function retrievejsondatafromsrv(url,feeddata,callbackfunc){
+function retrievejsondatafromsrv(url,type,callbackfunc){
+    dataProcessStatus["type-"+type] = true;
     $.ajax({
         type: "GET",
         url : url,
         dataType : 'json',
         success : function(data){
-            if(callbackfunc != null){  callbackfunc(data);}     
+            if(callbackfunc != null){  callbackfunc(data);} 
+            dataProcessStatus["type-"+type] = false;
         },
         error : function(XMLHttpRequest,textStatus, errorThrown) {   
-            //alert("Something wrong happended on the server. Try again..");  
- 
+            //alert("Something wrong happended on the server. Try again.."); 
+            dataProcessStatus["type-"+type] = false;
         }
     });
 }
@@ -525,12 +554,12 @@ function populatesinglefeedOrMessage(container,data,newfeed){
             datatodisplay += data.title != null ? "<div style='font-weight: bold;'>"+data.title+"</div>" : "";
             datatodisplay += data.data != null ? "<div>"+data.data+"</div>" : "";
         
-            if(data.link != null){
+            if(data.link != null && data.link !== ""){
                 var linkdata = retrievelinkjsonobject(data.link);
                 datatodisplay +=  "<div><a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");'>"+linkdata.name+"</a></div>";
             }
             datatodisplay += data.img != null ? "<div width='100%' style='text-align:center;'><img src='"+data.img+"' style='width:70%;height:auto;'/></div>" : "";
-            if(data.moredata != null){
+            if(data.moredata != null && data.moredata !== ""){
                 var linkdata = retrievelinkjsonobject(data.moredata);
                 datatodisplay += "<div width='100%' style='text-align:center;'><a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");' data-role='button' class='ui-btn text-shadow-none' style='color:black' data-theme='b'>"+linkdata.name+"</a></div>";
             }
@@ -783,7 +812,7 @@ function loadCalendar(){
         });
     },
     error: function() {
-        alert("An error occurred while processing calendar XML file.");
+        alert("An error occurred while processing calendar data file.");
     }
     }); 
     
@@ -798,22 +827,10 @@ function loadCalendar(){
         panchangxml = xml;        
     },
     error: function() {
-        alert("An error occurred while processing panchang XML file.");
+        alert("An error occurred while processing panchang data file.");
     }
     }); 
     
-    /*$.ajax({
-        type: "GET",
-        url : "http://www.thomas-bayer.com/sqlrest/CUSTOMER/3/",
-        dataType : 'xml',
-        success : function(data){
-            alert(data);
-        },
-        error : function(XMLHttpRequest,textStatus, errorThrown) {   
-            alert("Something wrong happended on the server. Try again..");  
- 
-        }
-    });*/
 }
 
 function loadData(xml){
@@ -862,4 +879,61 @@ function findermenuonclick(){
            $("#findercontent").append("<div style='padding:5px;' class='finddatacls'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+monthshortname[$(this).parent().parent().attr("id") - 1] + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
     });
+}
+
+$(document).on("pagebeforeshow","#maincalender",function(){ // When entering mainclander
+  $('body').removeClass("body-fixstyle");
+  $('body').removeClass("body-mainpanchangbg");
+  $('body').removeClass("body-maincalenderbg");
+  $("#maincalbgimage").removeClass("cal-bgimage");
+  $("#maincalbgimage").removeClass("panchang-bgimage");
+  if(calUIdata["id"] == "1"){ 
+      $('body').addClass("body-maincalenderbg");
+      $("#maincalbgimage").addClass("cal-bgimage");
+  }else{
+      $('body').addClass("body-mainpanchangbg");
+      $("#maincalbgimage").addClass("panchang-bgimage");
+  }
+});
+
+$(document).on("pagebeforehide","#maincalender",function(){ // When leaving mainclander
+    $('body').removeClass("body-mainpanchangbg");
+    $('body').removeClass("body-maincalenderbg");
+    $('body').addClass("body-fixstyle");
+});
+
+
+// Call onDeviceReady when Cordova is loaded.
+//
+// At this point, the document has loaded but cordova.js has not.
+// When Cordova is loaded and talking with the native device,
+// it will call the event `deviceready`.
+//
+//
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+// Cordova is loaded and it is now safe to make calls Cordova methods
+//
+function onDeviceReady() {
+    $('body').removeClass("body-initstyle");
+    $('body').addClass("body-fixstyle");
+    $('#splashscreen').show();
+    document.addEventListener("resume", onResume, false);
+    funcLoadLatestFeedsInterval();
+    var todayDate = new Date();
+    var todaymonth = todayDate.getMonth()+1;
+    var todayyear = todayDate.getFullYear();
+    var todaydate = todayDate.getDate();
+    
+    calUIdata2["selected-year"] = calUIdata1["selected-year"]=2017;
+    calUIdata2["selected-month"] = calUIdata1["selected-month"]=todaymonth;
+    calUIdata2["selected-date"] = calUIdata1["selected-date"]=todaydate;
+}
+
+// Handle the resume event
+//
+function onResume() {
+    funcLoadLatestFeedsInterval();
 }
