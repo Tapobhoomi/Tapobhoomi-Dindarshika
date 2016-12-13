@@ -644,7 +644,7 @@ function historyfeedsmessages(){
 }*/
 
 $( document ).on( "pageinit", "#maincalender", function() {
-    
+    deviceReadyBgchange();
     calculatedimensions();    
     createFinderMenu("#findermenulist");    
     loadData(calerdarxml);
@@ -883,6 +883,7 @@ function findermenuonclick(){
 
 $(document).on("pagebeforeshow","#maincalender",function(){ // When entering mainclander
   $('body').removeClass("body-fixstyle");
+  $('body').removeClass("body-initstyle");
   $('body').removeClass("body-mainpanchangbg");
   $('body').removeClass("body-maincalenderbg");
   $("#maincalbgimage").removeClass("cal-bgimage");
@@ -897,6 +898,7 @@ $(document).on("pagebeforeshow","#maincalender",function(){ // When entering mai
 });
 
 $(document).on("pagebeforehide","#maincalender",function(){ // When leaving mainclander
+    $('body').removeClass("body-initstyle");
     $('body').removeClass("body-mainpanchangbg");
     $('body').removeClass("body-maincalenderbg");
     $('body').addClass("body-fixstyle");
@@ -917,8 +919,7 @@ function onLoad() {
 // Cordova is loaded and it is now safe to make calls Cordova methods
 //
 function onDeviceReady() {
-    $('body').removeClass("body-initstyle");
-    $('body').addClass("body-fixstyle");
+    deviceReadyBgchange();    
     $('#splashscreen').show();
     document.addEventListener("resume", onResume, false);
     funcLoadLatestFeedsInterval();
@@ -936,4 +937,9 @@ function onDeviceReady() {
 //
 function onResume() {
     funcLoadLatestFeedsInterval();
+}
+
+function deviceReadyBgchange(){
+    $('body').removeClass("body-initstyle");
+    $('body').addClass("body-fixstyle");
 }

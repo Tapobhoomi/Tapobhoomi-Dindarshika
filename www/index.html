@@ -63,8 +63,8 @@ body {
 <style type="text/css">
     .body-initstyle{
         background-image: url(img/splashpageimg.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;                                    
+        background-repeat:no-repeat;
+        background-size:cover;
         background-position: center center;
         background-color: #273554;
     }
@@ -414,7 +414,9 @@ div.splashabs {
 </style>
 <body onload="onLoad()" class="body-initstyle">
 <div id="landingpage" data-role="page" class="landingpage-bg">
-    <div data-role="content" class="text-shadow-none" style="padding:0px">
+    <div data-role="content" class="text-shadow-none" style="padding:0px;overflow: hidden;
+    position: relative;
+    width: 100%;">
         <div class="ui-center-div landingpagerel">        
         <div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
         <div><img src="img/title.png" width="70%" height="auto"/></div>
@@ -429,15 +431,17 @@ div.splashabs {
             <a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
         </div>
         <h4><div style="margin:5px;text-align:center !important;" id="quoteoftheday"></div></h4>  
-        </div>
-        <div id="splashscreen" style="padding:0em !important;background-image: url(img/splashpageimg.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;                                    
-  background-position: center center;
-  background-color: #273554;dispaly:none" width="100%" height="100%" class="splashabs">
-            <!--<table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/splashimg.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
+        </div>        
+    </div>
+    <div id="splashscreen" style="padding:0em !important;dispaly:none;height: 100%;width: 100%;position: absolute;right: 0;top: 0;"  class="splashabs body-initstyle">
+   <!-- <div style="padding:0em !important;background:green;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;">
+            <table width="100%" height="100%" style="background-color:rgba(246, 136, 61, 1);"><tr style="vertical-align:middle;height:100%"><td style="text-align:center;position:relative;height:100%"><img src="img/splashimg.png" style="width:auto;height:30%;border-radius: 50% !important;  "/></td></tr>
             </table>-->
-        </div>
     </div>
 </div>
     <!--background-image: url('img/splash-bg.jpg');background-repeat:no-repeat;background-size:cover;-->
@@ -623,27 +627,51 @@ It is this devotion, Principles and philanthropic approach of each individual of
  <div class="text-shadow-none page-header-text">Education</div> 
  </div>
   <div data-role="content">
-    <h3>Our Various Educational Activities</h3>
-      <p><b>Diploma in Sanskrit Language and Philosophy, Purva Madhama, Uttar Madhama.</b> B.A, M.A and other degree courses</p>
-      <p><b>Diploma in yoga Shastra,</b> B.A, M.A and other degree courses.</p>
-      <p><b>Diploma in Sangeet Shastra (Classical Indian Music, Harmonium, Tabla, Pakhvad)</b> B.A, M.A and other degree courses.</p>
-      <p><b>Diploma in Kirtan Shastra,</b> B.A, M.A and other degree courses.</p>
-      <p><b>Diploma in Jyotish Shastra,</b> B.A, M.A and other degree courses.</p>
+      <div style="padding:5px"> <b>Our Various Educational Activities</b></div>
+      <div style="padding:5px;padding-bottom:10px;width=100%">
+          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Sanskrit Language and Philosophy</font></div>
+          <div style="background:rgba(255,255,255,0.5);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
+      </div>
+      <div style="padding:5px;padding-bottom:10px;width=100%">
+          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Sanskrit Language and Philosophy</font></div>
+          <div style="background:rgba(255,255,255,0.5);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
+      </div>
+      <div style="padding:5px;padding-bottom:10px;width=100%">
+          <div style="background:indianred;padding:5px;"><font color="white">Diploma in yoga Shastra</font></div>
+          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+      </div>
+      <div style="padding:5px;padding-bottom:10px;width=100%">
+          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Sangeet Shastra (Classical Indian Music, Harmonium, Tabla, Pakhvad)</font></div>
+          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+      </div>
+      <div style="padding:5px;padding-bottom:10px;width=100%">
+          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Kirtan Shastra</font></div>
+          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+      </div>
+      <div style="padding:5px;padding-bottom:10px;width=100%">
+          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Jyotish Shastra</font></div>
+          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+      </div>
       <!--<a href="http://srigurudev.org/edu-activities" target="_blank">more..</a>
       <a id="btnedumore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">More</a>
       <a id="btneduandmore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">And more</a>-->
-      <a href="#" onclick="window.open('http://srigurudev.org/edu-activities', '_system');" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">more</a>
+      <div style="padding:5px;padding-left:10px;padding-right:10px;width=100%">
+        <a href="#" onclick="window.open('http://srigurudev.org/edu-activities', '_system');" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">more</a>
+    </div>
       <!--<a href="#" onclick="window.open('http://www.kidzout.com', '_system');">www.kidzout.com</a>-->
  </div>
-</div>
+</div>  
     
 <div id="contactpage" data-role="page" class="text-shadow-none">
  <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">
  <div class="text-shadow-none page-header-text">Contact</div> 
  </div>
   <div data-role="content">
-      <div style="padding-bottom:3px">P.P.PADMANABH SHISHYA SAMPRADAYA</div><div style="padding-bottom:3px">H.O.SHREE KSHTRA TAPOBHOOMI GURUPITH</div><div style="padding-bottom:3px"> KUNDAIM -PONDA –GOA.(INDIA) 403115</div><div style="padding-bottom:3px">PH.NO.(OFFICE) 0832-2985019.</div>
-      <div style="padding-top:15px;padding-bottom:3px"><b>PRESENT PRESIDENT OF SAMPRADAYA :</b></div><div style="padding-bottom:3px">SHRI AMAR N PARSEKAR.</div><div style="padding-bottom:3px">MOBILE NO.7507771730</div>
+      <div style="background:rgba(255,255,255,0.5);padding:5px">P.P.PADMANABH SHISHYA SAMPRADAYA<br/>H.O.SHREE KSHTRA TAPOBHOOMI GURUPITH<br/> KUNDAIM -PONDA –GOA.(INDIA) 403115<br/>PH.NO.(OFFICE) 0832-2985019.</div>
+      <div style="padding-top:10px;width=100%">
+          <div style="background:indianred;padding:5px;"><font color="white">PRESENT PRESIDENT OF SAMPRADAYA :</font></div>
+          <div style="background:rgba(255,255,255,0.5);padding:5px">SHRI AMAR N PARSEKAR.<br/>MOBILE NO.7507771730</div>
+      </div>
  </div>
 </div>
 </body>
