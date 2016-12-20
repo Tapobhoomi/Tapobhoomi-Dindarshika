@@ -339,7 +339,7 @@ $( document ).on( "pageinit", "#landingpage", function() {
     //funcLoadLatestFeedsInterval();
 });
 
-var loadlatestfeedsInterval = null;
+var loadlatestfeedsInterval = null; 
 function funcLoadLatestFeedsInterval(){
     //alert("Loading latest feeds");
     loadlatestfeeds();
@@ -357,14 +357,17 @@ function landingElementsDimensions(){
     if(docwd < 350){
         $("#quoteoftheday").hide();
     }
-    $(".custom-btn").each(function(){
-        if(docwd >= 460 && docwd < 500){
+    buttonht = docwd * 25/100;
+    $(".custom-btn").each(function(){        
+        $(this).css("height",buttonht+"px");
+        $(this).css("width",buttonht+"px");
+       /* if(docwd >= 460 && docwd < 500){
             $(this).removeClass("custom-btn");
             $(this).addClass("medium-custom-btn");
         }else if(docwd >= 500){
             $(this).removeClass("custom-btn");
             $(this).addClass("large-custom-btn");
-        }
+        }*/
     });
 }
 

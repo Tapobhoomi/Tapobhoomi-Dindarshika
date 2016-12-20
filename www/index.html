@@ -69,9 +69,6 @@ body {
         background-color: #273554;
     }
     .body-fixstyle{
-        background: url(img/bg2.jpg) !important;
-        background-repeat:no-repeat;
-        background-size:100% 100%;
     }
     .body-maincalenderbg{        
        background-color: lightgoldenrodyellow;
@@ -142,8 +139,16 @@ body {
 }
     
 .home-tab-background{
-	background-color: rgba(246, 136, 61,0.8) !important;
-	border-color: #f6883d !important;
+	background-color: navajowhite !important;
+}
+    
+li.ui-tabs-active > a {
+    background-color: navajowhite !important;
+    border-color: transparent !important;
+    border-bottom-color: orange !important;
+    border-width: 2px !important;
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 0 1px 0 rgb(0, 85, 153) !important;
 }
 
 .calerdar-currentdate{
@@ -187,32 +192,25 @@ body {
 	padding-top:5px
 }
     
-.custom-btn{
-    width: 50px !important;
-    height:50px !important;
-    margin: 5px !important;
-    border: 0px !important;
-}
-    
 .medium-custom-btn{
-    width: 65px !important;
-    height:65px !important;
+    width: 95px !important;
+    height:85px !important;
     margin: 10px !important;
     border: 0px !important;
 }
     
 .large-custom-btn{
-    width: 80px !important;
-    height:80px !important;
+    width: 120px !important;
+    height:120px !important;
     margin: 15px !important;
     border: 0px !important;
 }
     
 .custom-btn{
-    width: 50px !important;
-    height:50px !important;
-    margin: 5px !important;
-    border: 0px !important;
+    border-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: 0;
 }
 
 .round-custom-btn{
@@ -223,24 +221,24 @@ body {
 }
     
 .small-custom-btn{
-    width: 20px !important;
-    height:20px !important;
+    width: 40px !important;
+    height:40px !important;
     border-radius: 50% !important;    
     margin: 5px !important;
 }
     
 #home-custom-btn {
-    background:url(img/Abt_us.png) center center no-repeat;    
+    background:url(img/Home.png) center center no-repeat;    
     background-size:100% 100%;
 }
 
 #calender-custom-btn {
-    background:url(img/Tapo_Cal.png) center center no-repeat;
+    background:url(img/dindar.png) center center no-repeat;
     background-size:100% 100%;
 }
     
 #panchang-custom-btn {
-    background:url(img/Pan.png) center center no-repeat;
+    background:url(img/pan.png) center center no-repeat;
     background-size:100% 100%;
 }
     
@@ -250,12 +248,12 @@ body {
 }
 
 #edu-custom-btn {
-    background:url(img/Edu.png) center center no-repeat;
+    background:url(img/edu.png) center center no-repeat;
     background-size:100% 100%;
 }
     
 #contact-custom-btn {
-    background:url(img/Contact_us.png) center center no-repeat;
+    background:url(img/call.png) center center no-repeat;
     background-size:100% 100%;
 }
     
@@ -294,7 +292,7 @@ div.feedscls table, td, th {
 }    
 div.feedscls table {
     border-collapse: collapse;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(240,240,240,0.7);
 }
     
 div.newfeedscls table, td, th {
@@ -303,7 +301,7 @@ div.newfeedscls table, td, th {
 }    
 div.newfeedscls table {
     border-collapse: collapse;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(240,240,240,0.7);
 }
 
 .div-day{
@@ -390,7 +388,7 @@ div.newfeedscls table {
 .home-stamp-text {
     position:absolute;
     bottom: 10%;
-    color: white; 
+    color: orange; 
     font-weight: normal;
     font-size: 1.5em;   
     width: 100%; 
@@ -418,10 +416,10 @@ div.splashabs {
     position: relative;
     width: 100%;">
         <div class="ui-center-div landingpagerel">        
-        <div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
+        <!--<div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
         <div><img src="img/title.png" width="70%" height="auto"/></div>
         <div data-role="controlgroup" data-type="horizontal" >
-            <a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn"></a>
+            <a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn" style="position: relative;"></a>
             <a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn" onclick='showcalender()'></a>
             <a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a>
         </div>
@@ -429,7 +427,17 @@ div.splashabs {
             <a href="#about-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>
             <a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a>
             <a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
-        </div>
+        </div>-->
+        <table style="width: 100%;height:auto;margin-top:20px;">
+            <tr><td align="center"><a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn"></a></td>
+                <td align="center"><a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn" onclick='showcalender()'></a></td>
+            </tr>
+            <tr><td align="center"><a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a></td>
+                <td align="center"><a href="#about-page" data-role="button" id="search-custom-btn" class="custom-btn"></a></td>
+            </tr>
+            <tr><td align="center"><a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a></td>
+                <td align="center"><a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a></td>
+            </tr></table>
         <h4><div style="margin:5px;text-align:center !important;" id="quoteoftheday"></div></h4>  
         </div>        
     </div>
@@ -558,7 +566,7 @@ div.splashabs {
  <div data-role="tabs" id="tabs" style="padding:0em !important;">
   <div data-role="navbar">
     <ul>
-      <li><a href="#home_feeds" data-ajax="false" class="home-tab-background text-shadow-none navtabtext"><img src="img/noti.png" height="30px" width="auto"/></a></li>
+      <li><a href="#home_feeds" data-ajax="false" class="home-tab-background text-shadow-none navtabtext ui-tabs-active"><img src="img/noti.png" height="30px" width="auto"/></a></li>
       <li><a href="#home_messages" data-ajax="false" class="home-tab-background text-shadow-none navtabtext"><img src="img/mesg.png" height="30px" width="auto"/></a></li>
     </ul>
   </div>
@@ -629,28 +637,28 @@ It is this devotion, Principles and philanthropic approach of each individual of
   <div data-role="content">
       <div style="padding:5px"> <b>Our Various Educational Activities</b></div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Sanskrit Language and Philosophy</font></div>
-          <div style="background:rgba(255,255,255,0.5);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
+          <div style="background:navajowhite;padding:5px;">Diploma in Sanskrit Language and Philosophy</div>
+          <div style="background:rgba(240,240,240,0.7);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Sanskrit Language and Philosophy</font></div>
-          <div style="background:rgba(255,255,255,0.5);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
+          <div style="background:navajowhite;padding:5px;">Diploma in Sanskrit Language and Philosophy</div>
+          <div style="background:rgba(240,240,240,0.7);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:indianred;padding:5px;"><font color="white">Diploma in yoga Shastra</font></div>
-          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+          <div style="background:navajowhite;padding:5px;">Diploma in yoga Shastra</div>
+          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Sangeet Shastra (Classical Indian Music, Harmonium, Tabla, Pakhvad)</font></div>
-          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+          <div style="background:navajowhite;padding:5px;">Diploma in Sangeet Shastra (Classical Indian Music, Harmonium, Tabla, Pakhvad)</div>
+          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Kirtan Shastra</font></div>
-          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+          <div style="background:navajowhite;padding:5px;">Diploma in Kirtan Shastra</div>
+          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:indianred;padding:5px;"><font color="white">Diploma in Jyotish Shastra</font></div>
-          <div style="background:rgba(255,255,255,0.5);padding:5px">B.A, M.A and other degree courses.</div>
+          <div style="background:navajowhite;padding:5px;">Diploma in Jyotish Shastra</div>
+          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
       </div>
       <!--<a href="http://srigurudev.org/edu-activities" target="_blank">more..</a>
       <a id="btnedumore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">More</a>
@@ -667,10 +675,10 @@ It is this devotion, Principles and philanthropic approach of each individual of
  <div class="text-shadow-none page-header-text">Contact</div> 
  </div>
   <div data-role="content">
-      <div style="background:rgba(255,255,255,0.5);padding:5px">P.P.PADMANABH SHISHYA SAMPRADAYA<br/>H.O.SHREE KSHTRA TAPOBHOOMI GURUPITH<br/> KUNDAIM -PONDA –GOA.(INDIA) 403115<br/>PH.NO.(OFFICE) 0832-2985019.</div>
+      <div style="background:rgba(240,240,240,0.7);padding:5px">P.P.PADMANABH SHISHYA SAMPRADAYA<br/>H.O.SHREE KSHTRA TAPOBHOOMI GURUPITH<br/> KUNDAIM -PONDA –GOA.(INDIA) 403115<br/>PH.NO.(OFFICE) 0832-2985019.</div>
       <div style="padding-top:10px;width=100%">
-          <div style="background:indianred;padding:5px;"><font color="white">PRESENT PRESIDENT OF SAMPRADAYA :</font></div>
-          <div style="background:rgba(255,255,255,0.5);padding:5px">SHRI AMAR N PARSEKAR.<br/>MOBILE NO.7507771730</div>
+          <div style="background:navajowhite;padding:5px;">PRESENT PRESIDENT OF SAMPRADAYA :</div>
+          <div style="background:rgba(240,240,240,0.7);padding:5px">SHRI AMAR N PARSEKAR.<br/>MOBILE NO.7507771730</div>
       </div>
  </div>
 </div>
