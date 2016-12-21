@@ -406,7 +406,7 @@ var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
     alert("homepage");
 });*/
 
-var totalfeedcount = 5;
+var totalfeedcount = 10;
 var allowhistoryview = false;
 function loadhistorynotificationfeeds(){
     var id = (feednotificationdata.length > 0)? +(feednotificationdata[0].id) - 1: 0;
@@ -877,7 +877,7 @@ function findermenuonclick(){
            divstr = $(this).text();
            var imgfile = $(this).attr("img");
            if(!(jQuery.type(imgfile) === "undefined")){
-            divstr = "<table width='100%'><tr><td>"+$(this).text()+"</td><td><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
+            divstr = "<table width='100%'><tr><td>"+$(this).text()+"</td><td width='20%'><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
            }
            $("#findercontent").append("<div style='padding:5px;' class='finddatacls'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+monthshortname[$(this).parent().parent().attr("id") - 1] + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
