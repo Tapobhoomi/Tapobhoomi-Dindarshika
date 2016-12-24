@@ -7,11 +7,12 @@ var panchangxml = null;
 //var prevselmonth = 0;
 var todayDate = new Date();
 var todaymonth = todayDate.getMonth()+1;
+var todaydate = todayDate.getDate();
 
 
 var panchangdatatag= {};
-var calUIdata1 = {"id":"1","theme-color":"#f6883d","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month":todaymonth,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
-var calUIdata2 = {"id":"2","theme-color":"#db9c5d","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month":todaymonth,"selected-date":1,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata1 = {"id":"1","theme-color":"#f6883d","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata2 = {"id":"2","theme-color":"#db9c5d","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1};
 var calUIdata = calUIdata1;
 var calPrevUIdata = calUIdata1;
 
@@ -91,6 +92,7 @@ function nextmonth(){
     var months = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month");
     if(months.length > calUIdata["selected-month"]){
         calUIdata["selected-month"] += 1;
+        calUIdata["selected-month-changed"] = true;
         updatecalendardata();
     }
 }
@@ -98,6 +100,7 @@ function nextmonth(){
 function prevmonth(){
     if(calUIdata["selected-month"] > 1){
         calUIdata["selected-month"] -= 1;
+        calUIdata["selected-month-changed"] = true;
         updatecalendardata();
     }
 }
@@ -130,6 +133,7 @@ function updatecalendardata(){
     $("#caltb").find("td").click(function() {        
         var dateval = $(this).attr("id");
         selectdate(dateval); 
+        calUIdata["selected-month-changed"] = true;
         //hideNav("#calnavleft",-30);hideNav("#calnavright",30);
         
     });
@@ -179,15 +183,19 @@ function updatecalendardata(){
         }
         if(wkday == 6){ y += 1;}
         if(y == 5){ y = 0;}        
-    });   
-    selectdate("1"); 
+    });       
+    
+    if (calUIdata["selected-month-changed"]  == true){
+        calUIdata["selected-date"] = 1;
+    }
+    selectdate(calUIdata["selected-date"]); 
     $("#caltb").find("td").on('swiperight', function(event){ 
         return oncalswiperight();
     });
     $("#caltb").find("td").on('swipeleft', function(event){  
         return oncalswipeleft();
     });
-    $('#calcontent').focus();
+    $('#calcontent').focus();  
 }
 
  var lastSelectedtd = null;
@@ -354,21 +362,30 @@ function funcLoadLatestFeedsInterval(){
 
 function landingElementsDimensions(){
     var docwd = $(document).width();
+    var docht = $(document).height();
     if(docwd < 350){
         $("#quoteoftheday").hide();
     }
-    buttonht = docwd * 25/100;
+    btim = docwd * 25/100;
+    tdwd = docwd/2;
+    tdht = docht/3 - 3;
+    
+    $("#landingbuttontb").find("td").each(function(){
+        $(this).css("height",tdht+"px");
+        $(this).css("width",tdwd+"px");
+    })
     $(".custom-btn").each(function(){        
-        $(this).css("height",buttonht+"px");
-        $(this).css("width",buttonht+"px");
-       /* if(docwd >= 460 && docwd < 500){
+        $(this).css("height",btim+"px");
+        $(this).css("width",btim+"px");
+       
+    });
+    /* if(docwd >= 460 && docwd < 500){
             $(this).removeClass("custom-btn");
             $(this).addClass("medium-custom-btn");
         }else if(docwd >= 500){
             $(this).removeClass("custom-btn");
             $(this).addClass("large-custom-btn");
         }*/
-    });
 }
 
 function readstorefeedsdata(feeddata,feedstorename){
@@ -646,6 +663,7 @@ function historyfeedsmessages(){
     alert("hello2");
 }*/
 
+var maincalloaded = false;
 $( document ).on( "pageinit", "#maincalender", function() {
     deviceReadyBgchange();
     calculatedimensions();    
@@ -653,7 +671,7 @@ $( document ).on( "pageinit", "#maincalender", function() {
     loadData(calerdarxml);
     
     $('#calheader').addClass("month"+ month +"-theme");
-    
+    maincalloaded = true;
     /*$("#calnavleft").find("img").click(function() {
         prevmonth();
     });
@@ -679,7 +697,7 @@ function showcalender(){
     calUIdata = calUIdata1;
     updateHeaderClass();
     $('#calfinderpanel').show();
-    updatecalendardata();
+    if(maincalloaded){ updatecalendardata();}
 }
 
 function showpanchang(){
@@ -687,7 +705,7 @@ function showpanchang(){
     calUIdata = calUIdata2;
     updateHeaderClass();
     $('#calfinderpanel').hide();
-    updatecalendardata();
+    if(maincalloaded){ updatecalendardata();}
 }
 
 function updateHeaderClass(){
@@ -806,13 +824,13 @@ function loadCalendar(){
         calerdarxml = xml;  
         
         
-        var qoutes = $(calerdarxml).find("calendar[id='"+ year + "'] > quotes");
+        /*var qoutes = $(calerdarxml).find("calendar[id='"+ year + "'] > quotes");
         var x = Math.floor((Math.random() * qoutes.children().size()) + 1);
         qoutes.children().each(function(){
             if($(this).attr("id") == x){
                 $("#quoteoftheday").text($(this).text());
             }
-        });
+        });*/
     },
     error: function() {
         alert("An error occurred while processing calendar data file.");
@@ -854,6 +872,7 @@ function loadData(xml){
             if(calUIdata["selected-month"] != selectedmn){
                 //prevselmonth = month;
                 calUIdata["selected-month"] = selectedmn;
+                calUIdata["selected-month-changed"] = true;
                 updatecalendardata();
             }
             
