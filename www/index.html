@@ -56,7 +56,21 @@ body {
     background: url(img/bg2.jpg) !important;
     background-repeat:no-repeat;
     background-size:100% 100%;
-}-->
+background-color: floralwhite;
+.calerdar-currentdate{
+    background:#f6883d;
+    border-radius:50%;
+}
+}
+.panchang-header-bgimage{
+    background: url('img/panchang_bg.png');
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+    background-position: right;
+}
+border: 1px solid #ED3237;
+        font-weight:bold;
+-->
     
     <title>Tapobhoomi Dindarshika</title>
 </head>
@@ -69,6 +83,13 @@ body {
         background-color: #273554;
     }
     .body-fixstyle{
+        background-color: white;
+    }
+    .body-landingpgbg{
+        background-image: url(img/landpgbg.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: center center;
     }
     .body-maincalenderbg{        
        background-color: lightgoldenrodyellow;
@@ -92,6 +113,15 @@ body {
         opacity: 0.1;
         width: 100%; 
         height: 100%;
+    }
+    
+    .td-selection{
+        text-decoration: underline;
+        font-weight:bold;
+        background-color: rgba(237,50,55,0.2);
+    }
+    .td-currentdate{
+        color: #ED3237;
     }
 
 .ui-page {
@@ -151,31 +181,25 @@ li.ui-tabs-active > a {
     text-shadow: 0 1px 0 rgb(0, 85, 153) !important;
 }
 
-.calerdar-currentdate{
-    background:#f6883d;
-    border-radius:50%;
-}
+
     
 .panchang-currentdate{
     background:#db9c5d;
     border-radius:50%;
 }
     
-.panchang-header-bgimage{
-    background: url('img/panchang_bg.png');
-    background-repeat:no-repeat;
-    background-size:auto 100%;
-    background-position: right;
-}
+
     
 .calendar-theme{
-	background-color: #f6883d !important;
-	border-color: #f6883d !important;
+	background-color: white !important;
+    border-color: white !important;
+	border-bottom-color: #ED3237 !important;
 }
 
 .panchang-theme{
-	background-color: #db9c5d !important;
-	border-color: #db9c5d !important;
+	background-color: white !important;
+    border-color: white !important;
+	border-bottom-color: #ED3237 !important;
 }
 
 .menu-icon-color{
@@ -229,37 +253,37 @@ li.ui-tabs-active > a {
     
 #home-custom-btn {
     background:url(img/Home.png) center center no-repeat;    
-    background-size:100% 100%;
+    background-size:80% 80%;
 }
 
 #calender-custom-btn {
-    background:url(img/dindar.png) center center no-repeat;
-    background-size:100% 100%;
+    background:url(img/cal.png) center center no-repeat;
+    background-size:80% 80%;
 }
     
 #panchang-custom-btn {
     background:url(img/pan_btn.png) center center no-repeat;
-    background-size:100% 100%;
+    background-size:80% 80%;
 }
     
 #search-custom-btn {
     background:url(img/Search.png) center center no-repeat;    
-    background-size:100% 100%;
+    background-size:80% 80%;
 }
 
 #edu-custom-btn {
-    background:url(img/edu_btn.png) center center no-repeat;
-    background-size:100% 100%;
+    background:url(img/edu.png) center center no-repeat;
+    background-size:80% 80%;
 }
     
 #contact-custom-btn {
     background:url(img/call.png) center center no-repeat;
-    background-size:100% 100%;
+    background-size:80% 80%;
 }
     
 #close-custom-btn {
     background:url(img/close.png) center center no-repeat;
-    background-size:100% 100%;
+    background-size:80% 80%;
 }
     
 div.aboutpagecl table, td, th {
@@ -295,6 +319,22 @@ div.feedscls table {
     background-color: rgba(240,240,240,0.7);
 }
     
+div.landingpagerel table, td,th{
+    border: :0px;
+}
+    
+div.landingpagerel table{
+    border-collapse: collapse;
+}
+  
+div.renderlandingpagediv table, td,th{
+    border: :0px;
+}
+    
+div.renderlandingpagediv table{
+    border-collapse: collapse;
+}
+    
 div.newfeedscls table, td, th {
     /*border: 1px solid;*/
    border: 0px;
@@ -304,6 +344,13 @@ div.newfeedscls table {
     background-color: rgba(240,240,240,0.7);
 }
 
+div.divmainbtnview table, td, th{
+    border: 0px;
+}
+div.divmainbtnview table{
+    border-collapse: collapse;
+}
+    
 .div-day{
     font-size:12px;
     float: left;
@@ -332,7 +379,7 @@ div.newfeedscls table {
     text-align:center;
 }
 .div-selected-month{
-    color:white;
+    color:#ED3237;
     text-align: left;
     padding-top:15px;    
     font-weight: normal;
@@ -344,8 +391,8 @@ div.newfeedscls table {
     font-size: 1em;    
 }
 .div-selected-year{
-    font-size: 0.9em;
-    color:white;       
+    font-size: 1em;
+    color:#ED3237;       
     padding-top:15px;
     font-weight: normal;
 }
@@ -415,8 +462,8 @@ div.splashabs {
     <div data-role="content" class="text-shadow-none" style="padding:0px;overflow: hidden;
     position: relative;
     width: 100%;">
-        <div class="ui-center-div landingpagerel">        
-        <!--<div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
+        <div class="ui-center-div landingpagerel" id="renderlandingpagediv">        
+        <div><img src="img/landingpg_main.jpg" width="100%" height="auto"/></div>
         <div><img src="img/title.png" width="70%" height="auto"/></div>
         <div data-role="controlgroup" data-type="horizontal" >
             <a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn" style="position: relative;"></a>
@@ -427,19 +474,32 @@ div.splashabs {
             <a href="#about-page" data-role="button" id="search-custom-btn" class="custom-btn"></a>
             <a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a>
             <a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a>
-        </div>-->
-        <table id="landingbuttontb" style="width: 100%;height:auto;">
-            <tr><td align="center" style="background-color:#f49724;"><a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn"></a></td>
-                <td align="center" style="background-color:#c39863;"><a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn" onclick='showcalender()'></a></td>
-            </tr>
-            <tr><td align="center" style="background-color:#d3e187;"><a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a></td>
+        </div>
+            <!--
+                <td align="center" style="background-color:#d3e187;"><a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a></td>
                 <td align="center" style="background-color:#f4b1a9;"><a href="#about-page" data-role="button" id="search-custom-btn" class="custom-btn"></a></td>
             </tr>
             <tr><td align="center" style="background-color:#e5fffa;"><a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a></td>
                 <td align="center" style="background-color:#97bcce;"><a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a></td>
-            </tr></table>
-        <!--<h4><div style="margin:5px;text-align:center !important;" id="quoteoftheday"></div></h4>  -->
-        </div>        
+--><!--
+        <table id="landingbuttontb" style="width: 100%;background-color:#a3d0ec;">
+            <tr id="landpgbannertop" style="background-color:#273554;"><td></td></tr>
+            <tr id="landpgbanner"><td style="background-color:white;"><img src="img/titleimg.png" width="100%"/></td></tr>
+            <tr id="landpgmainbtnview">
+                <td style="background-color:#273554;">
+                    <div class="divmainbtnview">
+                    <table width="100%" id="tblmainbtnview">
+                        <tr><td align="center"><a href="#homepage" data-role="button" id="home-custom-btn" class="custom-btn" style="position: relative;"></a></td><td align="center"><a href="#maincalender" data-role="button" id="calender-custom-btn" class="custom-btn" onclick='showcalender()'></a></td><td align="center"><a href="#maincalender" data-role="button" id="panchang-custom-btn" class="custom-btn" onclick='showpanchang()'></a></td></tr>
+                        <tr><td align="center"><a href="#about-page" data-role="button" id="search-custom-btn" class="custom-btn"></a></td><td align="center"><a href="#educationpage" data-role="button" id="edu-custom-btn" class="custom-btn"></a></td><td align="center"><a href="#contactpage" data-role="button" id="contact-custom-btn" class="custom-btn"></a></td></tr>
+                        <tr><td align="center" colspan="3"><img src="img/title.png" width="80%" height="auto"/></td></tr>
+                    </table>
+                    </div>
+                </td>
+            </tr>
+            <tr id="landpgfooter"><td></td></tr>
+        </table>-->
+        <h4><div style="margin:5px;text-align:center !important;" id="quoteoftheday"></div></h4>  
+        </div> 
     </div>
     <div id="splashscreen" style="padding:0em !important;dispaly:none;height: 100%;width: 100%;position: absolute;right: 0;top: 0;"  class="splashabs body-initstyle">
    <!-- <div style="padding:0em !important;background:green;
@@ -492,8 +552,39 @@ div.splashabs {
     </div>
 </div>   -->
 
-    
 <div id="maincalender" data-role="page" >
+     <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:12em">
+         <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="20px"  style="text-align:center;"><a href="#menuPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" width="20px" height="auto"/></a></td></tr></table>
+    </div>
+     <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em;padding:0em !important;">
+         <table width="100%"><tr><td width="20px" style="text-align:center;"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" width="20px" height="auto"/></a></td><td>
+        <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
+    </div>
+     <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none">
+         <table width="100%"><tr><td width="20px"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="20px" height="auto"/></a></td><td><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year" style="text-align:right;padding-right:40px">2017</div></td><td width="20px"><a href="#finderPanel" id="calfinderpanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="20px" height="auto"/></a></td></tr></table>  
+          <div style="padding-top:5px;color:black;font-weight: normal;">
+         <table id="calweeknames" style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">Sun</td>
+             <td width="13%">Mon</td><td width="13%">Tue</td><td width="13%">Wed</td><td width="13%">Thu</td><td width="13%">Fri</td>
+             <td width="13%">Sat</td></tr></table>
+         </div>         
+     </div>
+     <div id="calcontent" data-role="content" class="text-shadow-none " style="padding:0px !important;position: relative;-index: 5;">
+         <div id="maincalbgimage" class="common-cal-bgimage"></div> 
+        <div>
+        <table id="caltb" style="width:100%;height:100%;text-align:center;font-size: 1.3em;"> </table>
+        </div>
+     </div>               
+       
+     <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
+         <div id="caldivider" style="height:20px;background-color:#dddddd;padding-left:5px;" class="text-shadow-none"></div>
+        <div style="text-transform:none;font-size: 1em;">
+            <div style="padding-top:2px;padding-left:5px;" class="text-shadow-none" id="datahdr">Details :</div>
+            <div style="overflow:auto;padding-top:5px;padding-left:5px;font-weight:normal;word-wrap: break-word;" class="text-shadow-none" id="datedatacol"></div>
+            </div>
+     </div>
+</div>
+    
+<!--<div id="maincalender" data-role="page" >
      <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:12em">
          <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="20px"  style="text-align:center;"><a href="#menuPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" width="20px" height="auto"/></a></td></tr></table>
     </div>
@@ -515,17 +606,15 @@ div.splashabs {
         <table id="caltb" style="width:100%;height:100%;text-align:center;"> </table>
         </div>
      </div>               
-       <!-- <div id="calnavleft" style="width:30px !important;height:300px !important;background-color:white !important;position: relative; z-index: 3;opacity: 0.5;margin-top: -290px;"><img id="leftnavimgid" width="100%" height="auto" src="img/control/left-arrow.jpg" style="margin-top:120px;"/></div>
-        <div id="calnavright" style="width:30px !important;height:300px !important;background-color:white !important;position: relative; z-index: 4;opacity: 0.5;margin-top: -300px;margin-left: 396px;"><img id="righnavimgid" width="100%" height="auto" src="img/control/right-arrow.jpg" style="margin-top:120px;"/></div>-->
+       
      <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
          <div id="caldivider" style="height:20px;background-color:#dddddd;color:white;padding-left:5px;" class="text-shadow-none"></div>
-         <!--<td width='15%' id='prevcalmonth'>prev</td><td width='15%' id='nextcalmonth'>next</td><td></td>-->
         <div style="text-transform:none;font-size: 1em;background-color:#f2e9d9 !important;">
             <div style="font-weight:bold;background-color: #e7b149;padding-top:2px;padding-left:5px;" class="text-shadow-none" id="datahdr">Details :</div>
             <div style="overflow:auto;padding-top:5px;padding-left:5px;font-weight:normal;word-wrap: break-word;" class="text-shadow-none" id="datedatacol"></div>
             </div>
      </div>
-</div>
+</div>-->
 <div id="finder-page" data-role="page">
     <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
           <table width="100%"><tr><td width="20px" style="text-align:center;"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" width="20px" height="auto"/></a></td><td>
