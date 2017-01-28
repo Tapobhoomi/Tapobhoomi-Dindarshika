@@ -155,30 +155,29 @@ border: 1px solid #ED3237;
     height: 80px !important; 
 }
 .sriguru-ui-background{
-	background-color: #f6883d !important;
-	border-color: #f6883d !important;
+	background-color: white !important;
+    border-color: white !important;
+	border-bottom-color: #ED3237 !important;
+    color: #ED3237;
 }
 .sriguru-ui-background-2{
-	background-color: #f6883d !important;
-	border-color: chocolate !important;
-}
-    
-.sriguru-ui-background-2{
-	background-color: #f6883d !important;
-	border-color: chocolate !important;
+	background-color: white !important;
+    border-color: white !important;
+	border-bottom-color: #ED3237 !important;
+    color: #ED3237;
 }
     
 .home-tab-background{
-	background-color: navajowhite !important;
+	background-color: white !important;
 }
     
 li.ui-tabs-active > a {
-    background-color: navajowhite !important;
+    background-color: white !important;
     border-color: transparent !important;
-    border-bottom-color: orange !important;
+    border-bottom-color: #ED3237 !important;
     border-width: 2px !important;
-    color: rgb(255, 255, 255) !important;
-    text-shadow: 0 1px 0 rgb(0, 85, 153) !important;
+    color: white !important;
+    text-shadow: 0 1px 0 white !important;
 }
 
 
@@ -364,20 +363,35 @@ div.divmainbtnview table{
     text-align: right;
     padding-right:10px;
 }
-.page-header-text{
-    color:white;    
-    padding-top:5px;
+.page-header-text{    
+    font-size: 1.3em !important;
     font-weight: normal;
-    font-size: 1.2em;  
-    text-align:center;
+    text-align: center;
 }
+.page-header{
+    background:rgba(237,50,55,0.8) !important;
+    color:white !important; 
+    padding:1px;    
+}
+
 .page-header-text-devn{
-    color:white;    
+    color:#ED3237 !important;    
     padding-top:5px;
     font-weight: normal;
     font-size: 1.5em;  
     text-align:center;
 }
+.display-content-header{
+    background:rgb(200, 200, 200) !important;
+    padding:5px;    
+    font-weight: normal;
+}
+.display-content-body{
+    background:rgba(240,240,240,0.5);
+    padding:5px;
+    border: solid 1px rgb(200, 200, 200);
+}
+
 .div-selected-month{
     color:#ED3237;
     text-align: left;
@@ -561,7 +575,8 @@ div.splashabs {
         <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
      <div id="calheader" data-role="header" data-id="persistheader" data-position="fixed" class="text-shadow-none">
-         <table width="100%"><tr><td width="20px"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-top:15px" width="20px" height="auto"/></a></td><td><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year" style="text-align:right;padding-right:40px">2017</div></td><td width="20px"><a href="#finderPanel" id="calfinderpanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="20px" height="auto"/></a></td></tr></table>  
+         <table width="100%" class="page-header"><tr><td width="20px"><a href="#landingpage"><img id="menu" src="jquery/images/icons-png/home-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td width="auto" class="page-header-text" id="cal-header-text">Calendar</td></tr></table>
+         <table width="100%"><tr><td width="20px"><a href="#menuPanel"><img id="menu" src="jquery/images/icons-png/bars-black.png" style="padding-right:5px;padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td><div id="selectedmonth" class="div-selected-month"></div></td><td><div class="div-selected-year" style="text-align:right;padding-right:40px">2017</div></td><td width="20px"><a href="#finderPanel" id="calfinderpanel"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="20px" height="auto"/></a></td></tr></table>  
           <div style="padding-top:5px;color:black;font-weight: normal;">
          <table id="calweeknames" style="width:100%;text-align:center;font-size: 1.1em;"><tr><td width="13%">Sun</td>
              <td width="13%">Mon</td><td width="13%">Tue</td><td width="13%">Wed</td><td width="13%">Thu</td><td width="13%">Fri</td>
@@ -575,7 +590,7 @@ div.splashabs {
         </div>
      </div>               
        
-     <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background-color:white !important;">
+     <div id="calfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background:rgba(240,240,240,0.7) !important;">
          <div id="caldivider" style="height:20px;background-color:#dddddd;padding-left:5px;" class="text-shadow-none"></div>
         <div style="text-transform:none;font-size: 1em;">
             <div style="padding-top:2px;padding-left:5px;" class="text-shadow-none" id="datahdr">Details :</div>
@@ -620,14 +635,11 @@ div.splashabs {
           <table width="100%"><tr><td width="20px" style="text-align:center;"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" width="20px" height="auto"/></a></td><td>
         <div id="findermenulist2" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
-    <div data-role="header" class="sriguru-ui-background text-shadow-none finder-header-text" data-id="persistheader" data-position="fixed" >
-        <table width="100%" ><tr>
-        <td style="font-weight: normal;font-size: 1.5em;text-align:center;color:white;" class="text-shadow-none" id="finderhdrtxt">finder</td>
-        <td width="20px">
+    <div data-role="header" class="text-shadow-none finder-header-text" data-id="persistheader" data-position="fixed" >
+        <table width="100%" class="page-header"><tr><td width="20px"><a href="#landingpage"><img id="menu" src="jquery/images/icons-png/home-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td width="auto" class="page-header-text text-shadow-none" id="finderhdrtxt">finder</td><td width="20px">
         <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="20px" height="auto"/></a>
-        </td>
-        </tr>
-        </table>
+        </td></tr></table>
+        
     </div>
     <div id="findercontent" data-role="content" class="text-shadow-none" style="padding:0px !important">
         
@@ -653,10 +665,11 @@ div.splashabs {
 -->
 <div id="homepage" data-role="page" >
  <div data-role="tabs" id="tabs" style="padding:0em !important;">
+     <table width="100%" class="page-header"><tr><td width="20px"><a href="#landingpage"><img id="menu" src="jquery/images/icons-png/home-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td width="auto" class="text-shadow-none page-header-text">Feeds</td></tr></table>
   <div data-role="navbar">
     <ul>
-      <li><a href="#home_feeds" data-ajax="false" class="home-tab-background text-shadow-none navtabtext ui-tabs-active"><img src="img/noti.png" height="30px" width="auto"/></a></li>
-      <li><a href="#home_messages" data-ajax="false" class="home-tab-background text-shadow-none navtabtext"><img src="img/mesg.png" height="30px" width="auto"/></a></li>
+      <li><a href="#home_feeds" data-ajax="false" class="home-tab-background text-shadow-none navtabtext ui-tabs-active"><img src="img/noti.png" height="25px" width="auto"/></a></li>
+      <li><a href="#home_messages" data-ajax="false" class="home-tab-background text-shadow-none navtabtext"><img src="img/mesg.png" height="25px" width="auto"/></a></li>
     </ul>
   </div>
   <div id="home_feeds" class="ui-body-d ui-content" style="padding: 0em; !important;height:1px;width:100% ">
@@ -671,8 +684,8 @@ div.splashabs {
  </div>
 
 <div id="aboutswami" data-role="page" class="text-shadow-none">
- <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">
- <div class="text-shadow-none page-header-text">About Swami</div> 
+ <div data-role="header" data-id="persistheader" data-position="fixed">
+ <table width="100%" class="page-header"><tr><td width="20px"><a href="#landingpage"><img id="menu" src="jquery/images/icons-png/home-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td width="auto" class="text-shadow-none page-header-text">About Swamiji</td></tr></table>
  </div>
   <div data-role="content">
  <div style="background-color:rgba(255, 255, 255, 0.2);">
@@ -697,8 +710,8 @@ His relentless efforts for a decade and half has put Goa on the global map in fi
 
 
 <div id="aboutsampraday" data-role="page" class="text-shadow-none">
- <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">
- <div class="text-shadow-none page-header-text">About Sampraday</div> 
+ <div data-role="header" data-id="persistheader" data-position="fixed">
+ <table width="100%" class="page-header"><tr><td width="20px"><a href="#landingpage"><img id="menu" src="jquery/images/icons-png/home-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td width="auto" class="text-shadow-none page-header-text">About Sampraday</td></tr></table>
  </div>
   <div data-role="content" style="font-weight: normal;font-size: 1em;">
  <div style="padding:5px;background-color:rgba(255, 255, 255, 0.2);">
@@ -720,34 +733,34 @@ It is this devotion, Principles and philanthropic approach of each individual of
 </div>
     
 <div id="educationpage" data-role="page" class="text-shadow-none">
- <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">
- <div class="text-shadow-none page-header-text">Education</div> 
+ <div data-role="header" data-id="persistheader" data-position="fixed">
+ <table width="100%" class="page-header"><tr><td width="20px"><a href="#landingpage"><img id="menu" src="jquery/images/icons-png/home-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td width="auto" class="text-shadow-none page-header-text">Education</td></tr></table>
  </div>
   <div data-role="content">
       <div style="padding:5px"> <b>Our Various Educational Activities</b></div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:navajowhite;padding:5px;">Diploma in Sanskrit Language and Philosophy</div>
-          <div style="background:rgba(240,240,240,0.7);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
+          <div class="display-content-header">Diploma in Sanskrit Language and Philosophy</div>
+          <div class="display-content-body">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:navajowhite;padding:5px;">Diploma in Sanskrit Language and Philosophy</div>
-          <div style="background:rgba(240,240,240,0.7);padding:5px">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
+          <div class="display-content-header">Diploma in Sanskrit Language and Philosophy</div>
+          <div class="display-content-body">Purva Madhama, Uttar Madhama.<br/>B.A, M.A and other degree courses</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:navajowhite;padding:5px;">Diploma in yoga Shastra</div>
-          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
+          <div class="display-content-header">Diploma in yoga Shastra</div>
+          <div class="display-content-body">B.A, M.A and other degree courses.</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:navajowhite;padding:5px;">Diploma in Sangeet Shastra (Classical Indian Music, Harmonium, Tabla, Pakhvad)</div>
-          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
+          <div class="display-content-header">Diploma in Sangeet Shastra (Classical Indian Music, Harmonium, Tabla, Pakhvad)</div>
+          <div class="display-content-body">B.A, M.A and other degree courses.</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:navajowhite;padding:5px;">Diploma in Kirtan Shastra</div>
-          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
+          <div class="display-content-header">Diploma in Kirtan Shastra</div>
+          <div class="display-content-body">B.A, M.A and other degree courses.</div>
       </div>
       <div style="padding:5px;padding-bottom:10px;width=100%">
-          <div style="background:navajowhite;padding:5px;">Diploma in Jyotish Shastra</div>
-          <div style="background:rgba(240,240,240,0.7);padding:5px">B.A, M.A and other degree courses.</div>
+          <div class="display-content-header">Diploma in Jyotish Shastra</div>
+          <div class="display-content-body">B.A, M.A and other degree courses.</div>
       </div>
       <!--<a href="http://srigurudev.org/edu-activities" target="_blank">more..</a>
       <a id="btnedumore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">More</a>
@@ -760,14 +773,14 @@ It is this devotion, Principles and philanthropic approach of each individual of
 </div>  
     
 <div id="contactpage" data-role="page" class="text-shadow-none">
- <div data-role="header" data-id="persistheader" data-position="fixed" class="sriguru-ui-background">
- <div class="text-shadow-none page-header-text">Contact</div> 
+ <div data-role="header" data-id="persistheader" data-position="fixed">
+ <table width="100%" class="page-header"><tr><td width="20px"><a href="#landingpage"><img id="menu" src="jquery/images/icons-png/home-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto"/></a></td><td width="auto" class="text-shadow-none page-header-text">Contact</td></tr></table>
  </div>
   <div data-role="content">
-      <div style="background:rgba(240,240,240,0.7);padding:5px">P.P.PADMANABH SHISHYA SAMPRADAYA<br/>H.O.SHREE KSHTRA TAPOBHOOMI GURUPITH<br/> KUNDAIM -PONDA –GOA.(INDIA) 403115<br/>PH.NO.(OFFICE) 0832-2985019.</div>
+      <div class="display-content-body">P.P.PADMANABH SHISHYA SAMPRADAYA<br/>H.O.SHREE KSHTRA TAPOBHOOMI GURUPITH<br/> KUNDAIM -PONDA –GOA.(INDIA) 403115<br/>PH.NO.(OFFICE) 0832-2985019.</div>
       <div style="padding-top:10px;width=100%">
-          <div style="background:navajowhite;padding:5px;">PRESENT PRESIDENT OF SAMPRADAYA :</div>
-          <div style="background:rgba(240,240,240,0.7);padding:5px">SHRI AMAR N PARSEKAR.<br/>MOBILE NO.7507771730</div>
+          <div class="display-content-header">PRESENT PRESIDENT OF SAMPRADAYA :</div>
+          <div class="display-content-body">SHRI AMAR N PARSEKAR.<br/>MOBILE NO.7507771730</div>
       </div>
  </div>
 </div>

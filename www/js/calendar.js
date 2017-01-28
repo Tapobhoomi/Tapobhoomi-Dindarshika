@@ -11,8 +11,8 @@ var todaydate = todayDate.getDate();
 
 
 var panchangdatatag= {};
-var calUIdata1 = {"id":"1","theme-color":"#ED3237","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1};
-var calUIdata2 = {"id":"2","theme-color":"#ED3237","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1};
+var calUIdata1 = {"id":"1","theme-color":"#ED3237","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1,"disp-name":"Calendar"};
+var calUIdata2 = {"id":"2","theme-color":"#ED3237","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1,"disp-name":"Panchang"};
 var calUIdata = calUIdata1;
 var calPrevUIdata = calUIdata1;
 
@@ -112,11 +112,13 @@ function updatecalendardata(){
     //$('#calheader').addClass("month"+ month +"-theme");
    // $('#caldivider').css("background",monthcolorcode[calUIdata["selected-month"]-1]);
     //$('#datahdr').css("background","#e7b149");
+    
+    $("#cal-header-text").text(calUIdata["disp-name"]);
     $('#calheader').addClass("calendar-theme");
     $('#caltb').find('tr').remove();
     var monthdatelist = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month[id='"+calUIdata["selected-month"]+"'] > date")
     var monthobj = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] >  month[id='"+calUIdata["selected-month"]+"']");
-    $('.div-selected-month').text(function(i, oldText) {
+    $('#selectedmonth').text(function(i, oldText) {
         return monthobj.attr("dn");
     });
     
@@ -313,7 +315,7 @@ var caltddim = 0;
 function calculatedimensions(){
     var docht = $(document).height();
     var docwd = $(document).width();
-    var calheaderht = 80;
+    var calheaderht = 130;
     
     var selectedyearfontsz = "0.9em";
     var selectedmonthfontsz = "1.6em";
@@ -435,15 +437,15 @@ function landingElementsDimensions(){
     })*/
     
     
-    var mainviewht = Math.round(docht * 60/100);
+    /*var mainviewht = Math.round(docwd * 60/100);
     var counter = 6;
     $("#tblmainbtnview").find("td").each(function(){
         $(this).css("height",Math.round(mainviewht/3)+"px");
         if(counter-- > 1){
             $(this).css("width",Math.round(tdwd)+"px");
         }
-    })
-    var btim = Math.round((mainviewht/3) * 70/100)
+    })*/
+    var btim = Math.round((tdwd) * 60/100)
     $(".custom-btn").each(function(){        
         $(this).css("height",btim+"px");
         $(this).css("width",btim+"px");
@@ -619,7 +621,7 @@ function sortarr(arrdata){
 
 var homepageinit = false;
 $( document ).on( "pageinit", "#homepage", function() {
-    var homecontentht = $(document).height() - 67;
+    var homecontentht = $(document).height() - 108;
     $("#home_feeds").css("height",homecontentht+"px");
     $("#home_messages").css("height",homecontentht+"px");
     
@@ -941,7 +943,7 @@ function loadData(xml){
     var monthObj = $(yearObj).find("month[id='"+ calUIdata["current-month"] + "']");
     var monthName = $(monthObj).attr("dn"); 
     //$("#selectedmonth").append('<img src="img/mn/monthname/'+month+'.png" width="auto" height="100%"/>');
-    $('.div-selected-month').text(function(i, oldText) {
+    $('#selectedmonth').text(function(i, oldText) {
         return monthName;
     });
     updatecalendardata();
@@ -979,7 +981,7 @@ function findermenuonclick(){
            if(!(jQuery.type(imgfile) === "undefined")){
             divstr = "<table width='100%'><tr><td>"+$(this).text()+"</td><td width='20%'><img src='"+ imgfile +"' width='40px' height='auto'/></td></tr></table>"
            }
-           $("#findercontent").append("<div style='padding:5px;' class='finddatacls'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+monthshortname[$(this).parent().parent().attr("id") - 1] + "</div><div style='background-color:#f2e9d9;padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:#f2e9d9;padding: 5px;'>"+divstr+"</td></tr></table></div>")
+           $("#findercontent").append("<div style='padding:5px;' class='finddatacls'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+monthshortname[$(this).parent().parent().attr("id") - 1] + "</div><div style='background-color:rgba(240,240,240,0.5);padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:rgba(240,240,240,0.5);padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
     });
 }
