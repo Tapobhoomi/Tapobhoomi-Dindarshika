@@ -399,7 +399,7 @@ $( document ).on( "pageinit", "#landingpage", function() {
     readstorefeedsdata(feednotificationdata,'notifyfeedsstore');
     readstorefeedsdata(feedmessagedata,'messagefeedsstore');
         
-    //funcLoadLatestFeedsInterval();
+    funcLoadLatestFeedsInterval();
 });
 
 var loadlatestfeedsInterval = null; 
@@ -856,6 +856,24 @@ $( document ).on( "pageinit", "#educationpage", function() {
     value = window.localStorage.getItem("today");
     window.localStorage.setItem("today", today);*/
 });
+
+$(document).on('click', '#prev-page', function () {
+  onclickprevbtn();
+});
+
+$(document).on('click', '#calprevpage', function () {
+  onclickprevbtn();
+});
+
+function onclickprevbtn(){
+    if ($.mobile.activePage.prev('.ui-page').length !== 0) {
+   var prev = $.mobile.activePage.prev('.ui-page');
+   $.mobile.changePage(prev, {
+       reverse: true
+   });
+  }
+}
+
 
 function oncalswiperight(){
     if(calUIdata["selected-month"] > 1){
