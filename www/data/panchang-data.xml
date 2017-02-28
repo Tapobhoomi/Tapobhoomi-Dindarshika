@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <calendar>
-    <data-tag><ti>Tithi</ti><ti-name>Tithi time</ti-name><nx>Nakshatra</nx><nx-time>Nakshatra time</nx-time>
+    <data-tag><ti>Tithi</ti><ti-time>Tithi time</ti-time><nx>Nakshatra</nx><nx-time>Nakshatra time</nx-time>
     <sunrise>Sunrise</sunrise><sunset>Sunset</sunset><mnrashi>Moon rashi</mnrashi><shub-day>How is the day</shub-day></data-tag>
     <calendar id="2017" dn="2017">
         <shub-day-type><type name="uttam" id="0">excellent</type><type name="shubh" id="1">auspicious</type><type name="anandit" id="2">cheerful</type><type name="changla" id="3">good</type><type name="anishta" id="4">unwelcome</type><type name="ashubh" id="5">unfavorable</type><type name="pratikul" id="6">unfavorable</type><type name="vajr" id="7">bad</type><type name="samanya" id="8">Normal</type>

@@ -11,8 +11,8 @@ var todaydate = todayDate.getDate();
 
 
 var panchangdatatag= {};
-var calUIdata1 = {"id":"1","theme-color":"#ED3237","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1,"disp-name":"Calendar"};
-var calUIdata2 = {"id":"2","theme-color":"#ED3237","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1,"disp-name":"Panchang"};
+var calUIdata1 = {"id":"1","theme-color":"#ED3237","currentday-class":"calerdar-currentdate","header-bgimage":"calendar-header-bgimage","header-class":"calendar-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1,"disp-name":"CALENDAR"};
+var calUIdata2 = {"id":"2","theme-color":"#ED3237","currentday-class":"panchang-currentdate","header-bgimage":"panchang-header-bgimage","header-class":"panchang-theme","selected-year":2017,"selected-month-changed":false,"selected-month":todaymonth,"selected-date":todaydate,"current-year":2017,"current-month":1,"current-date":1,"disp-name":"PANGHANG"};
 var calUIdata = calUIdata1;
 var calPrevUIdata = calUIdata1;
 
@@ -175,16 +175,16 @@ function updatecalendardata(){
                 $(cell).find('#imgdiv').attr("style","position: relative;top:-"+ (caltddim/8) +"px");
                // ismncylce = true;
         }
-        if(calUIdata["id"] == 2){
+        /*if(calUIdata["id"] == 2){
             var shubdaytypeval = getshubdaytypeval($(this).attr("id"));
             if(!(shubdaytypeval === undefined)){
                 var shubdaybgcolor = getshubdaytypecolor(shubdaytypeval);
                 var subdaydivheight = 2;
                 //$(cell).css("border","2px solid #db9c5d");
                 $(cell).css("background",shubdaybgcolor);
-                /*$(cell).find('#imgdiv').append('<div style="background:'+shubdaybgcolor+';width:70%; height:'+subdaydivheight+'px;margin-left:15%;opacity: 0.2;"></div>');*/
+                //$(cell).find('#imgdiv').append('<div style="background:'+shubdaybgcolor+';width:70%; height:'+subdaydivheight+'px;margin-left:15%;opacity: 0.2;"></div>');
             }
-        }
+        }*/
         if(wkday == 6){ y += 1;}
         if(y == 5){ y = 0;}        
     });       
@@ -238,23 +238,23 @@ function selectdate(id){
             //$(lastSelectedtd).css("width",caltddim);
             //$(lastSelectedtd).css("height",caltddim);
             $(lastSelectedtd).removeClass("td-selection");
-            if(calUIdata["id"] == 2){
+            /*if(calUIdata["id"] == 2){
                 var shubdaytypeval = getshubdaytypeval($(lastSelectedtd).attr("id"));
                 if(!(shubdaytypeval === undefined)){
                     var shubdaybgcolor = getshubdaytypecolor(shubdaytypeval);
                     $(lastSelectedtd).css("background",shubdaybgcolor);
                 }
-            }
+            }*/
         }
         
         $(datetd).addClass("td-selection");
-        if(calUIdata["id"] == 2){
+        /*if(calUIdata["id"] == 2){
             var shubdaytypeval = getshubdaytypeval($(datetd).attr("id"));
             if(!(shubdaytypeval === undefined)){
                 var shubdaybgcolor = getshubdaytypecolorForSelect(shubdaytypeval);
                 $(datetd).css("background",shubdaybgcolor);
             }
-        }
+        }*/
         //$(datetd).css("width",caltddim - 10)
         //$(datetd).css("height",caltddim - 10)
         /*selectedtdbg = $(datetd).css("background");
@@ -313,9 +313,12 @@ function selectdate(id){
 
 var caltddim = 0;
 function calculatedimensions(){
-    var docht = $(document).height();
+   // var docht = $(document).height();
+    //var landingpagedocht = $("#landingfooter").height();
+    var docht = screenheight ;
     var docwd = $(document).width();
-    var calheaderht = 130;
+    var calheaderht = 90;
+    //alert(docht);
     
     var selectedyearfontsz = "0.9em";
     var selectedmonthfontsz = "1.6em";
@@ -356,14 +359,14 @@ function calculatedimensions(){
     $("#calweeknames").css("font-size",calweeknamesfontsz);
     $(".div-selected-year").css("font-size",selectedyearfontsz);
     $("#selectedmonth").css("font-size",selectedmonthfontsz)
-    $("#calheader").css("height",(calheaderht) + "px !important");
+    //$("#calheader").css("height",(calheaderht) + "px !important");
     //calheaderht = $("#calheader").height();
     caltddim = (docwd/7);
-    var calcontentheight = (caltddim * 5) + (2 * 5);
-    $("#calcontent").height(calcontentheight);
-    var footerheight =  docht - (calheaderht + calcontentheight + 10);  //documentheight -(calendar header height + calendar content height - buffer)
-    $("#calfooter").height(footerheight);
-    $("#datedatacol").height(footerheight - 47);
+   // var calcontentheight = (caltddim * 5) + (2 * 5);
+   // $("#calcontent").height(calcontentheight);
+    //var footerheight =  docht - (calheaderht + calcontentheight);  //documentheight -(calendar header height + calendar content height - buffer)
+    //$("#calfooter").height(footerheight);
+    //$("#datedatacol").height(footerheight - 43);
     
     //var navheight = (calcontentheight+20);
     /*$("#calnavleft").css("height",navheight+"px");
@@ -377,8 +380,17 @@ function calculatedimensions(){
     
 }
 
+$( document ).bind("pagebeforechange", function(event,data) {
+    var toPage = data.toPage;
+    if(typeof toPage == "object" && toPage[ 0 ].id == "splashscreepage" && splashscreendisplayed){
+        event.preventDefault();
+        $.mobile.changePage("#landingpage", "fade");
+    }
+});
+
 $( document ).on( "pageinit", "#about-page", function() {
-    var docht = $(document).height();
+    var docht = screenheight - mainfooterht;
+    //alert(docht);
     $(".aboutpagecl").find("td.aboutcls").each(function(){
         var height = (docht/2) - 20;
        $(this).css("height",height); 
@@ -391,15 +403,44 @@ var feedmessagedata = [];
 var splsrnhide = null;
 //var intervalcount = 0;
 
-$( document ).on( "pageinit", "#landingpage", function() {    
-    splsrnhide = setTimeout(hidesplashscreen, 3000);
-    landingElementsDimensions();
-    loadCalendar();
+var pageundosequence = [];
+$(document).on("pagebeforehide",".data-role-pagetype",function(){
+   pageundosequence.push({"pageid":this.id,"data":null}); 
+});
+
+$(document).on("pagebeforeshow",".data-role-pagetype",function(){
+   pageundosequence = [];
+});
+
+var splashscreendisplayed = false;
+$( document ).on( "pageinit", "#splashscreepage", function() {  
     //window.localStorage.clear();
     readstorefeedsdata(feednotificationdata,'notifyfeedsstore');
     readstorefeedsdata(feedmessagedata,'messagefeedsstore');
+    
+    splsrnhide = setTimeout(hidesplashscreen, 5000);
+    var docht = $(document).height();
+    var docwd = $(document).width();
+    $("#splashscreenimg").height(docht);
+    $("#splashscreenimg").width(docwd);
+    
+});
+
+var mainfooterht = 0;
+$( document ).on( "pageinit", "#landingpage", function() {    
+    //splsrnhide = setTimeout(hidesplashscreen, 3000);
+    landingElementsDimensions();
+    loadCalendar();
+    
+    var feedContainer = $("#news-data");
+    populatefeedsandmessages(feedContainer,feednotificationdata);
+    
+    var messagesContainer = $("#messagescontainer");
+    populatefeedsandmessages(messagesContainer,feedmessagedata);
+    
+    homepageinit = true;
         
-    funcLoadLatestFeedsInterval();
+    //funcLoadLatestFeedsInterval();    
 });
 
 var loadlatestfeedsInterval = null; 
@@ -418,9 +459,9 @@ function funcLoadLatestFeedsInterval(){
 function landingElementsDimensions(){
     var docwd = $(document).width();
     var docht = $(document).height();
-    if(docwd < 350){
+    /*if(docwd < 350){
         $("#quoteoftheday").hide();
-    }
+    }*/
     //btim = Math.round(docwd * 25/100);
     tdwd = Math.round(docwd/3);
     //tdht = docht/3 - 3;
@@ -445,7 +486,7 @@ function landingElementsDimensions(){
             $(this).css("width",Math.round(tdwd)+"px");
         }
     })*/
-    var btim = Math.round((tdwd) * 60/100)
+    var btim = Math.round((tdwd) * 30/100)
     $(".custom-btn").each(function(){        
         $(this).css("height",btim+"px");
         $(this).css("width",btim+"px");
@@ -493,10 +534,17 @@ function retrievelinkjsonobject(str){
 }
 
 
-
+var screenheight = 0;
 function hidesplashscreen() {
-    hideNav("#splashscreen","-"+$(document).width());
+    //alert($("#splashscreepage").css("min-height"));
+    //alert($(document).height());
+    
+    screenheight = $(document).height();
+    $.mobile.changePage("#landingpage", "fade");
+    //$.mobile.changePage("#landingpage", {transition: "slide", reverse: false}, true, true); 
+    //hideNav("#splashscreen","-"+$(document).width());
     clearTimeout(splsrnhide);
+    splashscreendisplayed = true;
 }
 
 
@@ -506,7 +554,7 @@ var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
     alert("homepage");
 });*/
 
-var totalfeedcount = 10;
+var totalfeedcount = 15;
 var allowhistoryview = false;
 function loadhistorynotificationfeeds(){
     var id = (feednotificationdata.length > 0)? +(feednotificationdata[0].id) - 1: 0;
@@ -545,7 +593,7 @@ function loadlatestfeeds(){
     var id = 0;
     if(dataProcessStatus["type-1"] == false){
         id = (feednotificationdata.length > 0)? +(feednotificationdata[feednotificationdata.length -1].id) + 1: 0;
-        loadlatestfeedsProcess(feednotificationdata,"http://srigurudev.org/app/v1/views/latest?fromid="+id+"&limit="+totalfeedcount+"&type=1",$("#feedscontainer"),1);
+        loadlatestfeedsProcess(feednotificationdata,"http://srigurudev.org/app/v1/views/latest?fromid="+id+"&limit="+totalfeedcount+"&type=1",$("#news-data"),1);
     }
         
     if(dataProcessStatus["type-2"] == false){
@@ -564,7 +612,7 @@ function loadlatestfeedsProcess(feeddata,url,container,type){
                 updatefeedui($(container),dataarr[i],feeddata);
             }
             
-            var feedstorename = $(container).attr('id') == 'feedscontainer' ? 'notifyfeedsstore' : 'messagefeedsstore';
+            var feedstorename = $(container).attr('id') == 'news-data' ? 'notifyfeedsstore' : 'messagefeedsstore';
             var feedstorestr = window.localStorage.getItem(feedstorename);
             var feedstore =[];
             if(feedstorestr != null){
@@ -582,9 +630,9 @@ function loadlatestfeedsProcess(feeddata,url,container,type){
 
 function updatefeedui(container,data,feeddata){
     populatesinglefeedOrMessage(container,data,1);
-    setTimeout(function(){
+    /*setTimeout(function(){
         $(container).find(".newfeedscls").removeClass("newfeedscls").addClass("feedscls");
-    }, 1000);
+    }, 1000);*/
     
     
     /*if((feeddata.length - totalfeedcount) > 0){
@@ -620,20 +668,6 @@ function sortarr(arrdata){
 }
 
 var homepageinit = false;
-$( document ).on( "pageinit", "#homepage", function() {
-    var homecontentht = $(document).height() - 108;
-    $("#home_feeds").css("height",homecontentht+"px");
-    $("#home_messages").css("height",homecontentht+"px");
-    
-    var feedContainer = $("#feedscontainer");
-    populatefeedsandmessages(feedContainer,feednotificationdata);
-    
-    var messagesContainer = $("#messagescontainer");
-    populatefeedsandmessages(messagesContainer,feedmessagedata);
-    
-    homepageinit = true;
-    
-});
 
 function populatefeedsandmessages(container,data){
     for(var i in data){
@@ -645,26 +679,33 @@ var feedlastdatedisplay = null;
 var feedstypes = {"10":"news","11":"event","20":"msg-sg","21":"msg-t"};
 function populatesinglefeedOrMessage(container,data,newfeed){
     var type = feedstypes[data.type];
+    
     if(type == "event" || type == "news" || type == "msg-sg" || type == "msg-t"){
             var datatodisplay = "";
             var typeimg = type == "event"?"img/event.png":"img/news.png";
-            if(type == "msg-sg" || type == "msg-t"){
-                var msgfrom = type == "msg-sg" ? "Message from P. P. Sadguru:" : "Message from Tapobhumi:";
-                datatodisplay += "<div style='font-style: italic;padding-bottom:5px;'>"+msgfrom+"</div>";
-                
-                typeimg = type == "msg-sg"?"img/about_swamiji_sm.png":"img/about_sampradaya_sm.png";
-            }
-            datatodisplay += data.title != null ? "<div style='font-weight: bold;'>"+data.title+"</div>" : "";
-            datatodisplay += data.data != null ? "<div>"+data.data+"</div>" : "";
+        
+            var textdata = data.title != null ? "<div style='font-weight:bold;'>"+data.title+"</div>" : "";
+            textdata += data.data != null ? "<div>"+data.data+"</div>" : "";
+        
+            datatodisplay = textdata;
         
             if(data.link != null && data.link !== ""){
                 var linkdata = retrievelinkjsonobject(data.link);
                 datatodisplay +=  "<div><a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");'>"+linkdata.name+"</a></div>";
             }
-            datatodisplay += data.img != null ? "<div width='100%' style='text-align:center;'><img src='"+data.img+"' style='width:70%;height:auto;'/></div>" : "";
-            if(data.moredata != null && data.moredata !== ""){
+            if(type == "msg-sg" || type == "msg-t"){
+                datatodisplay += data.img !== undefined && data.img != null && data.img != "" ? "<div width='100%' style='text-align:center;'><img src='"+data.img+"' style='width:70%;height:auto;' onerror=\"this.src='img/no-preview.png'\"/></div>" : "";
+            }else{
+                dataimage = data.img !== undefined && data.img != null && data.img != "" ? data.img : "img/no-preview.png";
+            }
+            /*if(data.moredata != null && data.moredata !== ""){
                 var linkdata = retrievelinkjsonobject(data.moredata);
                 datatodisplay += "<div width='100%' style='text-align:center;'><a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");' data-role='button' class='ui-btn text-shadow-none' style='color:black' data-theme='b'>"+linkdata.name+"</a></div>";
+            }*/
+        
+            if(data.moredata != null && data.moredata !== ""){
+                var linkdata = retrievelinkjsonobject(data.moredata);
+                datatodisplay += "<div><a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");'>"+linkdata.name+"</a></div>";
             }
             
         
@@ -691,11 +732,42 @@ function populatesinglefeedOrMessage(container,data,newfeed){
             var feedclass = newfeed == 1 ? "newfeedscls" : "feedscls";
             var feedtypecls = $(container).attr('id')+datedisplayclass;
         
-            var feeddatahtml = "<div style='padding:1px;' class='"+feedclass+" "+feedtypecls+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>";
+            var nolinkdata = "<div>	<table><tr>		<td style='width:60%;vertical-align: top;'><table><tr><td style='width:20%;'><img style='width:100%;height:auto;'src='"+typeimg+"'/></td>			<td style='vertical-align: middle;text-align:left;color:grey;font-style: italic;padding-left:5px;font-weight: normal !important;'>"+displaydate+"</td></tr></table><div style='color:black;font-weight: normal !important;'>"+datatodisplay+"</div></td>		<td style='width:40%;padding:5px;'><img style='width:100%;height:auto;' src='"+dataimage+"'  onerror=\"this.src='img/no-preview.png'\"/></td>		</tr>	</table> 	</div>"
+            
+            if(type == "msg-sg" || type == "msg-t"){
+                var msgfrom = "Swamiji";
+                var fontcolor = "red";
+                if(type == "msg-t"){
+                    msgfrom =  "Tapobhumi";
+                    fontcolor =  "blue";
+                }
+                
+                
+                typeimg = type == "msg-sg"?"img/about_swamiji_sm.png":"img/about_sampradaya_sm.png";
+                $("#landingpgmesgcontainer").show();
+                var landingpgmessage = "<div class='latestmessagecls' style='font-style: italic;display: table;margin: 0 auto;'>" + textdata + " <div style='text-align:right;'>- " + msgfrom + "</div></div>"
+                $("#messagestodisplay").find(".latestmessagecls").remove();
+                $("#messagestodisplay").append(landingpgmessage);
+                msgfrom = "<div style='font-style: italic;padding-bottom:5px;color:"+fontcolor+"'>Message from "+msgfrom+":</div>";
+                
+                nolinkdata = "<div style='padding:1px;'><table width='100%'><tr><td style='vertical-align: middle;text-align:left;color:grey;font-style: italic;padding-left:5px;font-weight: normal !important;'>"+displaydate+"</td><td width='80%' style='vertical-align: top;'>"+msgfrom+"</td></tr><tr><td width='20%' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>";
+            }
+            
+            var linkdatahtml = nolinkdata;
+        
+            /*if(data.moredata != null && data.moredata !== ""){
+                var linkdata = retrievelinkjsonobject(data.moredata);
+                linkdatahtml = "<a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");' style='text-decoration:none;'>" + nolinkdata + "</a>";
+            }*/
+        
+            var feeddatahtml = "<div style='width:100%;'>	<div style='padding:5px;border: 0.1em solid rgb(200,200,200);'> "+linkdatahtml+"</div>	<div style='height:5px;background: linear-gradient(rgb(200,200,200), #fff);'></div></div>"
+        
+            $(container).prepend(feeddatahtml);
+            /*var feeddatahtml = "<div style='padding:1px;' class='"+feedclass+" "+feedtypecls+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>";*/
         
             
                         
-            if($("."+feedtypecls).size() > 0){
+            /*if($("."+feedtypecls).size() > 0){
                 if(newfeed == 0){
                     $("."+feedtypecls).last().after(feeddatahtml);
                 }else if(newfeed == 1 || newfeed == 2){
@@ -711,13 +783,21 @@ function populatesinglefeedOrMessage(container,data,newfeed){
                     $(container).find(".moreImgcls").before(feeddatehtml);
                     $(container).find(".moreImgcls").before(feeddatahtml);
                 }
+            }*/
+            if($(container).find(".feedscls").length > totalfeedcount && !allowhistoryview){
+                var oldlastfeed = $(container).find(".feedscls").last();
+                if($(oldlastfeed).prev().hasClass("feeddatecls")){
+                    $(oldlastfeed).prev().remove();
+                }
+                $(oldlastfeed).remove();
             }
         
-            /*var feedclass = newfeed ? "newfeedscls" : "feedscls";
+            //var feedclass = newfeed ? "newfeedscls" : "feedscls";
+        /*    var feedclass = "feedscls";
                         
             $(container).prepend("<div style='padding:1px;' class='"+feedclass+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
         
-            $(container).prepend("<div class='"+displaydate.replace(" ","_")+"cls feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>");*/
+            $(container).prepend("<div class='"+displaydate.replace(" ","_")+"cls feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>");
             
             if($(container).find(".feedscls").length > totalfeedcount && !allowhistoryview){
                 var oldlastfeed = $(container).find(".feedscls").last();
@@ -725,16 +805,12 @@ function populatesinglefeedOrMessage(container,data,newfeed){
                     $(oldlastfeed).prev().remove();
                 }
                 $(oldlastfeed).remove();
-                /*if($(container).find(".moreImgcls").length == 0){
-                    $(container).append("<div class='moreImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><img src='jquery/images/icons-png/carat-d-black.png' style='width:5%;height:auto;'/></div></td></tr></table></div>");
-                }*/
-            }/*else{
-                $(container).find(".moreImgcls").remove();
-            }*/
+            }
             var historyfunc = $(container).attr('id') == 'feedscontainer' ? 'loadhistorynotificationfeeds' : 'loadhistorymessagefeeds';
             if($(container).find(".moreImgcls").length == 0){
                 $(container).append("<div class='moreImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><a href='#' onclick='return "+historyfunc+"()'><img src='jquery/images/icons-png/carat-d-black.png' style='width:5%;height:auto;'/></a></div></td></tr></table></div>");
             }
+        */
         }
 }
 
@@ -781,6 +857,8 @@ function showcalender(){
     updateHeaderClass();
     $('#calfinderpanel').show();
     if(maincalloaded){ updatecalendardata();}
+    $("#panchanglink").show();
+    $("#calendarlink").hide();
 }
 
 function showpanchang(){
@@ -789,6 +867,8 @@ function showpanchang(){
     updateHeaderClass();
     $('#calfinderpanel').hide();
     if(maincalloaded){ updatecalendardata();}
+    $("#calendarlink").show();
+    $("#panchanglink").hide();
 }
 
 function updateHeaderClass(){
@@ -857,20 +937,33 @@ $( document ).on( "pageinit", "#educationpage", function() {
     window.localStorage.setItem("today", today);*/
 });
 
+/*$(document).on('click', '#message-prevpagebtn', function () {
+  onclickprevbtn();
+});
+
 $(document).on('click', '#prev-page', function () {
   onclickprevbtn();
 });
 
 $(document).on('click', '#calprevpage', function () {
   onclickprevbtn();
-});
+});*/
 
 function onclickprevbtn(){
+   /* prevpage = $.mobile.activePage.prev();
     if ($.mobile.activePage.prev('.ui-page').length !== 0) {
    var prev = $.mobile.activePage.prev('.ui-page');
    $.mobile.changePage(prev, {
        reverse: true
    });
+  }*/
+  pagedata = pageundosequence.pop();
+  if(pagedata.data == null){
+    $.mobile.changePage($("#"+pagedata.pageid), {
+       reverse: true
+   });
+  }else if(pagedata.pageid == "finder-page"){
+      loadcalendarfilterdata(pagedata.data.filterid,pagedata.data.filtername);
   }
 }
 
@@ -984,6 +1077,7 @@ function loadData(xml){
                                
 }
 
+var previousfilter={"filterid":-1,"filtername":""};
 function findermenuonclick(){
     monthshortname = new Array(12);
     monthshortname[0]="Jan";monthshortname[1]="Feb";monthshortname[2]="Mar";monthshortname[3]="Apr";
@@ -991,9 +1085,21 @@ function findermenuonclick(){
     monthshortname[8]="Sep";monthshortname[9]="Oct";monthshortname[10]="Nov";monthshortname[11]="Dec";
     $(".find-menu-item").click(function(){
        $("#finderhdrtxt").text($(this).text());
-       $("#findercontent").children().remove();
+        filtername = $(this).text();
         var tagid = $(this).attr("id").replace("find","");
-       $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month > date > d*[tag='"+tagid+"']").each(function(){
+        if(previousfilter.filterid != -1 && previousfilter.filterid  != tagid){
+            pageundosequence.push({"pageid":"finder-page","data":previousfilter});
+        }
+        previousfilter = {"filterid":tagid,"filtername":filtername};
+        loadcalendarfilterdata(tagid,filtername);
+        
+    });
+}
+
+function loadcalendarfilterdata(tagid,filtername){
+    $("#finderhdrtxt").text(filtername);
+    $("#findercontent").children().remove();
+    $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month > date > d*[tag='"+tagid+"']").each(function(){
            divstr = $(this).text();
            var imgfile = $(this).attr("img");
            if(!(jQuery.type(imgfile) === "undefined")){
@@ -1001,7 +1107,6 @@ function findermenuonclick(){
            }
            $("#findercontent").append("<div style='padding:5px;' class='finddatacls'><table width='100%'><tr><td width='20%' style='text-align:center'><div width='100%'><div style='background-color:"+monthcolorcode[$(this).parent().parent().attr("id") - 1]+";color:white;padding: 5px;border-top-left-radius: 10px;'>"+monthshortname[$(this).parent().parent().attr("id") - 1] + "</div><div style='background-color:rgba(240,240,240,0.5);padding: 5px;border-bottom-left-radius: 10px;'><img src='img/mn/"+$(this).parent().attr("id")+".png' width='30%' height='auto'/></div></div></td><td width='80%' style='background-color:rgba(240,240,240,0.5);padding: 5px;'>"+divstr+"</td></tr></table></div>")
        });
-    });
 }
 
 $(document).on("pagebeforeshow","#maincalender",function(){ // When entering mainclander
@@ -1038,12 +1143,13 @@ function removeAllBodyBackground(){
 
 $(document).on("pagebeforeshow","#landingpage",function(){
     removeAllBodyBackground();
-    $('body').addClass("body-landingpgbg");
+    //$('body').addClass("body-landingpgbg");
 });
 
 $(document).on("pagebeforehide","#landingpage",function(){
     removeAllBodyBackground();
      $('body').addClass("body-fixstyle");
+    mainfooterht = $("#landingfooter").height();
 });
 
 // Call onDeviceReady when Cordova is loaded.
@@ -1061,7 +1167,7 @@ function onLoad() {
 //
 function onDeviceReady() {
     deviceReadyBgchange();    
-    $('#splashscreen').show();
+    //$('#splashscreen').show();
     document.addEventListener("resume", onResume, false);
     funcLoadLatestFeedsInterval();
     var todayDate = new Date();

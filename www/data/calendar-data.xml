@@ -14,7 +14,7 @@
         </wd-data>
         <tag-data>
             <tag id="0" dn="Festival">FESTIVAL</tag><tag id="1" dn="Sampradaya Prog">SAMPRADAYPROG</tag><tag id="2" dn="Sankasti Chaturti">SANKASTICHATURTI</tag><tag id="3" dn="Ekadashi">EKADASHI</tag>
-            <tag id="4" dn="Sant Samaj Day">SANTSAMAJDAY</tag><tag id="5" dn="Jatra">JATRA</tag><tag id="6">DIWAS</tag><tag id="7" dn="Jayanti">JAYANTI</tag><tag id="8">VINAYAKICHATURTI</tag><tag id="SMU">SMRUTIDIWAS</tag><tag id="NAX">NAXATRA</tag><tag id="IMP">IMPORTANTDAY</tag>
+            <tag id="4" dn="Datta guruwar">SANTSAMAJDAY</tag><tag id="5" dn="Jatra">JATRA</tag><tag id="6">DIWAS</tag><tag id="7" dn="Jayanti">JAYANTI</tag><tag id="8">VINAYAKICHATURTI</tag><tag id="SMU">SMRUTIDIWAS</tag><tag id="NAX">NAXATRA</tag><tag id="IMP">IMPORTANTDAY</tag>
             <tag id="OTH">OTHERIMPORTANTDAY</tag>
         </tag-data>
         <month id="1" dn="January">
