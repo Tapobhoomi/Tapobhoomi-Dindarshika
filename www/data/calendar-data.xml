@@ -2,19 +2,19 @@
 <calendar>
     <calendar id="2017" dn="2017">
         <quotes>
-            <qoute id="1">Holding onto anger is like driking poison and expecting the other person to die - Buddha</qoute>
-            <qoute id="2">Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship - Buddha</qoute>
-            <qoute id="3">Happiness does not depend on what you have or who you are. It solely relies on what you think - Buddha </qoute>
-            <quote id="4">स्वतःचे जीवन धर्माप्रमाणे जगतो  तो पुरुषोत्तम होय</quote>
-            <quote id="5">किमान एकतरी व्यक्ती निर्व्यसनी बनविण्याचे व्रत समाजात आमूलाग्र  बदल घडवू शकते</quote>
+            <qoute id="1">धर्म,अर्थ,काम व मोक्ष ह्या पुरूषार्थासाठी रत असतो तो हिंदू होय. -Sadguru</qoute>
+            <qoute id="2">स्वतःचे जीवन धर्माप्रमाणे जगतो तो पुरुषोत्तम होय. -Sadguru</qoute>
+            <qoute id="3">स्वतःच्या चुका मान्य करून सुधारतो त्याला सज्जन असे म्हणतात. -Sadguru</qoute>
+            <quote id="4">सुख व दुःख मानवाने मानून घेतलेली समजूत आहे. -Sadguru</quote>
+            <quote id="5">किमान एकतरी व्यक्ती निर्व्यसनी बनविण्याचे व्रत समाजात आमूलाग्र  बदल घडवू शकते. -Sadguru</quote>
         </quotes>
         <wd-data>
             <wd id="0">Sun</wd> <wd id="1">Mon</wd><wd id="2">Tue</wd>
             <wd id="3">Wed</wd><wd id="4">Thu</wd><wd id="5">Fri</wd><wd id="6">Sat</wd>
         </wd-data>
         <tag-data>
-            <tag id="0" dn="Festival">FESTIVAL</tag><tag id="1" dn="Sampradaya Prog">SAMPRADAYPROG</tag><tag id="2" dn="Sankasti Chaturti">SANKASTICHATURTI</tag><tag id="3" dn="Ekadashi">EKADASHI</tag>
-            <tag id="4" dn="Datta guruwar">SANTSAMAJDAY</tag><tag id="5" dn="Jatra">JATRA</tag><tag id="6">DIWAS</tag><tag id="7" dn="Jayanti">JAYANTI</tag><tag id="8">VINAYAKICHATURTI</tag><tag id="SMU">SMRUTIDIWAS</tag><tag id="NAX">NAXATRA</tag><tag id="IMP">IMPORTANTDAY</tag>
+            <tag id="0" dn="Festival">FESTIVAL</tag><tag id="1" dn="Sampradaya Events">SAMPRADAYAPROG</tag><tag id="2" dn="Sankasti Chaturthi">SANKASTICHATURThI</tag><tag id="3" dn="Ekadashi">EKADASHI</tag>
+            <tag id="4" dn="Datta Guruwar">SANTSAMAJDAY</tag><tag id="5" dn="Jatra">JATRA</tag><tag id="6">DIWAS</tag><tag id="7" dn="Jayanti">JAYANTI</tag><tag id="8">VINAYAKICHATURTI</tag><tag id="SMU">SMRUTIDIWAS</tag><tag id="NAX">NAXATRA</tag><tag id="IMP">IMPORTANTDAY</tag>
             <tag id="OTH">OTHERIMPORTANTDAY</tag>
         </tag-data>
         <month id="1" dn="January">
@@ -50,14 +50,14 @@
                 <d>Paush Shukla Paksha 7</d>
                 <d>Guru Govind Birth day</d>
                 <d>Bhadravasa after 14:01 upto 25:17</d>
-                <d tag="4">Sant. Samaj Sukurwade</d>
+                <d tag="4">Sant Samaj Sukurwade</d>
             </date>
             <date id="6" dn="6" wd="5">
                 <d tag="NAX">Revati</d>
                 <d>Paush Shukla Paksha 8</d>
                 <d>Durgashtami</d>
                 <d>Shrivatsa upto 15:45</d>
-                <d>Fatarpa Jatra ends</d>
+                <d>Fatorpa Jatra ends</d>
                 <d tag="6">Journalist Day</d>
             </date>
             <date id="7" dn="7" wd="6">
@@ -84,7 +84,7 @@
             <date id="10" dn="10" wd="2">
                 <d tag="NAX">Rohini</d>
                 <d>Paush Shukla Paksha 13</d>
-                <d tag="SMU" img="img/Swami_1.png">Shri Bramhanand smruti din - Sant Samaj Bastoda Palye</d>
+                <d tag="SMU" img="img/Swami_1.png">Shri Brahmanand Smruti din - Sant Samaj Bastoda Palye</d>
                 <d tag="5">Shri Devi Bodgeshwar Jatra - Mapusa</d>
                 <d tag="6">World Laughter Day</d>
                 <d>Shri Devi Kudneshwar Kala - Kudne</d>
@@ -95,7 +95,7 @@
                 <d>Bhadravasa after 19:52 upto 30:26</d>
                 <d>Shri Devkikrishna Jatra - Marshel</d>
                 <d>Malini Pournima - Valvoi</d>
-                <d>Shri Kamlavati Ravalnath Mandir Kalautsav - Sakle bhat, Karmali</d>
+                <d>Shri Kamlavati Ravalnath Mandir Kalautsav - Sakle Bhat, Karmali</d>
                 <d>Shri Vishnu Mandir Kalautsav, Parke bhat - Karmali</d>
             </date>
             <date id="12" dn="12" wd="4" mncycle="1">
@@ -103,11 +103,11 @@
                 <d>Paush Shukla Paksha 15</d>
                 <d>Pournima</d>
                 <d>Gurupushyamrut Yog</d>
-                <d tag="SMU" img="img/Swami_2.png">Shri Sushen smruti din, Seva - Sant. Samaj Vajri</d>
+                <d tag="SMU" img="img/Swami_2.png">Shri Sushen smruti din, Seva - Sant Samaj Vazri</d>
                 <d>Dhalo ustsav - Shri Vishnu Mandir, Parke bhat, Karmali</d>
                 <d tag="6">National Youth Day</d>
                 <d tag="6" img="img/Swamivike.png">Swami Vivekanand birthday</d>
-                <d tag="4">Sant. Samaj Talegaon, Shaka - Sulbhat</d>
+                <d tag="4">Sant Samaj Talegaon, Shaka - Sulbhat</d>
             </date>
             <date id="13" dn="13" wd="5">
                 <d tag="NAX">Pushya </d>
@@ -1573,7 +1573,7 @@
             </date>
             <date id="21" dn="21" wd="1" mncycle="0">
                 <d tag="NAX">Ashlesha</d>
-                <d>Shravana Krishna Paksha 30</d>
+                <d>Shravana Krishna Paksha 15</d>
 				<d>Darsh Pithori Amavasya (Pola)</d>
             </date>
             <date id="22" dn="22" wd="2">
@@ -2142,7 +2142,7 @@
             </date>
             <date id="18" dn="18" wd="6" mncycle="0">
                 <d tag="NAX">Vishakha</d>
-                <d>Kartik Krishna Paksha 30</d>
+                <d>Kartik Krishna Paksha 15</d>
                 <d> Darsh Amavashya </d>
                 <d tag="5">Jagbai Devi Jatra -Arwali</d>
                 <d tag="5">Shree Ganjatlaxmi Jatra Valvai</d>
@@ -2355,7 +2355,7 @@
             </date>
             <date id="18" dn="18" wd="1" >
                 <d tag="NAX">Jyeshtha</d>
-                <d>Margshish Krishna Paksha 30</d>
+                <d>Margshish Krishna Paksha 15</d>
                 <d> kalbadevi Yatra -Mumbai</d>
             </date>
             <date id="19" dn="19" wd="2">

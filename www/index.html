@@ -416,7 +416,8 @@ div.divmainbtnview table{
 .page-header{
     background:rgba(237,50,55,0.8) !important;
     color:white !important; 
-    padding:1px;    
+    padding:5px;    
+    margin-top:-1px;
 }
 
 .page-header-text-devn{
@@ -536,20 +537,14 @@ div.splashabs {
     <div id="landingpage" data-role="page" class="landingpage-bg data-role-pagetype">
     <div id="home-content" data-role="content" class="text-shadow-none" style="padding:0px;overflow: auto;
      width: 100%;">
-        <!--
-<a href="#" onclick="window.open('http://srigurudev.org/edu-activities', '_system');">
-<a href="http://srigurudev.org/edu-activities" target="_blank">
-        <div class="ui-center-div landingpagerel" id="renderlandingpagediv">        
-        <div style="background-image: url(img/messagebg.jpg);
-        background-repeat:no-repeat;height:100px;text-align:center !important;" width="100%" height="auto"/><div style="padding:5px;font-size:1.2em;display: inline-block;  vertical-align: middle; line-height: normal;" id="quoteoftheday"></div></div>-->
-        <!--<div class="nopadding"><img src="img/messagebg.jpg" style="width:100%;height:auto;"/></div>-->
-        <div style="background: white;width:100%;"><div id="quoteoftheday" style="padding:20px;font-size:1.2em;display: inline-block; text-align:center;vertical-align: middle; line-height: normal;font-weight:bold;"></div></div>
-        <div id="landingpgmesgcontainer" style="background: cornsilk;width:100%;display:none;">
-            <div style="padding:5px;color:white !important;font-weight:bold;background:firebrick;"><table style="width:100%;"><tr><td>Latest Message</td><td style="text-align:right;"><a href="#messagespage" style="text-decoration:none !important;color:white !important;">View All ></a></td></tr></table></div><div id="messagestodisplay" style="font-size:1.2em;padding:10px;">
+        <div style="background: linear-gradient(rgba(237,50,55,0.5), #fff);width:100%;"><div id="quoteoftheday" style="padding:20px;font-size:1.2em;display: inline-block; text-align:center;vertical-align: middle; line-height: normal;font-weight:bold;"></div></div>
+        <div id="landingpgmesgcontainer" style="width:100%;display:none;">
+            <div style="padding:5px;padding-left:10px;color:rgba(237,50,55,0.8); !important;font-weight:bold;font-size:1.2em;border:0px;"><table style="width:100%;"><tr><td>Message</td><td style="text-align:right;"><a href="#messagespage" style="text-decoration:none !important;color:rgba(237,50,55,0.8); !important;">more ></a></td></tr></table></div><div id="messagestodisplay" style="font-size:1.2em;padding:5px;padding-bottom:20px;">
             </div>
         </div>
-        <div style="padding:5px;color:white !important;font-weight:bold;background:#ED3237;">News</div>
-        <div id="news-data" style="width:100%;">
+        
+        <div style="padding:5px;padding-left:10px;color:white !important;font-weight:bold;font-size:1.2em;background:rgba(237,50,55,0.8);">News</div>        
+        <div id="news-data" style="width:100%;padding-top:10px;">
             
         </div>
     </div>
@@ -563,15 +558,13 @@ div.splashabs {
             <td width="20%"><a href="#contactpage" data-role="button" id="inactive-contact-custom-btn" class="custom-btn"></a></td>
             </tr></table>
      </div>
-    <!--<div id="splashscreen" style="padding:0em !important;dispaly:none;height: 100%;width: 100%;position: absolute;right: 0;top: 0;"  class="splashabs body-initstyle">
-    </div>-->
 </div>
     
 <div id="maincalender" data-role="page" class="data-role-pagetype">
-     <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:12em">
+     <div data-role="panel" id="menuPanel" data-display="overlay" style="font-weight: normal;width:15em">
          <table width="100%"><tr><td><div id="monthmenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td><td width="20px"  style="text-align:center;"><a href="#menuPanel"><img id="finder" src="jquery/images/icons-png/carat-l-black.png" width="20px" height="auto"/></a></td></tr></table>
     </div>
-     <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:12em;padding:0em !important;">
+     <div data-role="panel" id="finderPanel" data-display="overlay" data-position="right" style="font-weight: normal;width:15em;padding:0em !important;">
          <table width="100%"><tr><td width="20px" style="text-align:center;"><a href="#finderPanel"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" width="20px" height="auto"/></a></td><td>
         <div id="findermenulist" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
@@ -613,13 +606,13 @@ div.splashabs {
     
 
 <div id="finder-page" data-role="page">
-    <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:12em">
+    <div data-role="panel" id="finderPanel2" data-display="overlay" data-position="right" style="font-weight: normal;width:15em">
           <table width="100%"><tr><td width="20px" style="text-align:center;"><a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/carat-r-black.png" width="20px" height="auto"/></a></td><td>
         <div id="findermenulist2" style="font-size: 1.2em;padding-top:0.5em"></div></td></tr></table>
     </div>
     <div data-role="header" class="text-shadow-none finder-header-text" data-id="persistheader" data-position="fixed" >
-        <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto" onclick="onclickprevbtn()"/></td><td width="auto" class="page-header-text text-shadow-none" id="finderhdrtxt">finder</td><td width="20px">
-        <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" style="padding-top:15px" width="20px" height="auto"/></a>
+        <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;" width="20px" height="auto" onclick="onclickprevbtn()"/></td><td width="auto" class="page-header-text text-shadow-none" id="finderhdrtxt">finder</td><td width="20px">
+        <a href="#finderPanel2"><img id="finder" src="jquery/images/icons-png/search-black.png" width="20px" height="auto"/></a>
         </td></tr></table>
         
     </div>
@@ -630,13 +623,13 @@ div.splashabs {
     
 <div id="about-page" data-role="page" class="data-role-pagetype">
  <div data-role="header" data-id="persistheader" data-position="fixed">
- <table width="100%" class="page-header"><tr><td width="auto" class="text-shadow-none page-header-text">SWAMIJI</td></tr></table>
+ <table width="100%" class="page-header"><tr><td width="auto" class="text-shadow-none page-header-text">SADGURU</td></tr></table>
  </div>
  <div data-role="content" style="padding:0em !important;" class="aboutpagecl">
      <table width="100%"><tr style="fvertical-align:middle;"><td style="text-align:center;position:relative;"  class="aboutcls">
-         <!--<a href="#aboutswami"><img src="img/about_swamiji_sm.png" style="width:auto;height:55%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Swamiji</div></a></td></tr><tr style="width:100%;height:auto;"><td style="width:100%;height:auto;"><img src="img/divider.png" style="width:100%;height:auto;"/></td></tr><tr style="vertical-align:middle;"><td style="text-align:center;position:relative;"   class="aboutcls"><a href="#aboutsampraday"><img src="img/about_sampradaya_sm.png" style="width:auto;height:55%;border-radius: 50% !important;  "/><div class="home-stamp-text text-shadow-none">Sampradaya</div></a>-->
+         
          <div style="padding:5px;padding-left:10px;padding-right:10px;width=100%">
-        <a href="#aboutswami" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">About Swamiji</a>
+        <a href="#aboutswami" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">About Sadguru</a>
         </div><div style="padding:5px;padding-left:10px;padding-right:10px;width=100%">
         <a href="#aboutsampraday" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">About Sampradaya</a>
         </div>
@@ -660,7 +653,7 @@ div.splashabs {
 
 <div id="aboutswami" data-role="page" class="text-shadow-none">
  <div data-role="header" data-id="persistheader" data-position="fixed">
- <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto" onclick='onclickprevbtn()'/></td><td width="auto" class="text-shadow-none page-header-text">About Swamiji</td></tr></table>
+ <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;" width="20px" height="auto" onclick='onclickprevbtn()'/></td><td width="auto" class="text-shadow-none page-header-text">About Sadguru</td></tr></table>
  </div>
   <div data-role="content">
  <div style="background-color:rgba(255, 255, 255, 0.2);">
@@ -668,25 +661,58 @@ div.splashabs {
  <img src="img/about_swami_pic.jpg" class="ui-center-img" style="padding:10px;"/>
  </div>
      <div style="padding:5px;">
-“Tapobhoomi”… Goa’s renowned spiritual hub located at Kundaim in Ponda Taluka has reached great heights due to the incessant efforts of the present Pithadeeshwar of the renowned “PADMANABH SHISHYA SAMPRADAY” his holiness (H.H.) Dharmabhushan Swami Brahmeshanandacharya Maharaj. The revered Swamiji has been instrumental in reviving Goa’s lost historical identity as “DEVBHUMI” and not just a hub for tourism oriented fun and frolic.
-<br/>
-<br/>
-This paradise has been gifted with a bounty of natural resources sun, sand and sea, along with powerhouses of positive energy the Goan temples. The native of this land are god fearing people and tolerant with a “LIVE AND LET LIVE” attitude. Thus sowing the spiritual seeds of the Padmanabh Sampraday was spiritually conducive here but times were turbulent and tyrannical amidst religious turmoil… yet this Sampraday (Cult) sprang its roots firmly with “SADGURUS” devine intervention for the “VEDIC SANATAN DHARMA”. This Dharma advocates tolerance which is the alfa and omega to live a fruitful life to mankind. The mantras chants, Vedic techniques of worship and meditation taught to crude minds and bodies made them peaceful and optimistic even in turbulent times. This spiritual meta morphosis has been achieved from ages by the Goan layman by divine togetherness and company of the “SADGURU”, thereby helping in Social, Ecological and Political transformation for Goa’s dawn of liberation and freedom.
-<br/>
-<br/>
-This noble ancestry of Padmanabh Shishya Sampraday dates back to H.H. Shri Sushenacharya Swami Maharaj, H.H. Shri Sadanandacharya Swami Maharaj, H.H. Shri Brahmanandacharya Swami Maharaj to the present heir to this spiritual throne H.H. Dharmabhushan Shri Brahmeshanandacharya Swami Maharaj the reverend Swamiji ascended the “GURUPITH” throne at a very young and tender age of 21 years. A noble son of Goan Soil. Swamiji is a rare and precious royal state treasurer. A golden chalice overflowing with the Vedic Science and dharmadnyana. A fountain of rejuvenating positivity that is the reason why not just blank and inquisitive minds but global leaders both Religious and political along with great seers, godmen, saint and philosophers worldwide flock to this jewel… the “Dharmabhushan”….
-<br/>
-<br/>
-His relentless efforts for a decade and half has put Goa on the global map in fields of various contributions for peace to the human race. One darshana and vichar of P. Swamiji converts the bad into good… the yin into Yan and each one bows in these lotus feet to quench the thirst of self- realization thro this “ Charisma” of this unique “Gurupeeth” which is the sole patent of the “ SATYA SHRESTHA ISHWARI DNYAN”… the supreme knowledge of truth.
+         <p style="font-weight:bold;">INTRODUCTION</p>
+         <p>
+India is distinguished as the land of Saints and Sages with Spiritualism ingrained in its core beliefs, rich heritage and diverse culture. 'Tapobhoomi', is a spiritually celebrated, internationally renowned place, which locates itself in the heart of Kundaim, Ponda Goa.It has an awe- inspiring achievements to its credit, attained under the diligently foresighted guidance of the present Peethadhishwar of 'PADMANABH SHISHYA SAMPRADAYA', the Ambassador of Peace, H.H DharamabhushanSadguruBrahmeshanandacharya Swami Maharaj. This Sampradaya upholds the divine lineage and tradition of the Guru-ShishyaParampara.
+         </p>
+         <p style="font-weight:bold;">EARLY LIFE</p>
+         <p>
+His grace, PujyaSadguru, ascended the throne of the holy 'GURUPEETH', at the tender age of twenty one, a truly noble son of the Goan soil. His holiness, PujyaSwamiji strenuously strives towards reviving the lost historical identity of Goa as 'Deva Bhoomi' and present an authentic picture of Goa in the Worldmap.His positively energizing stature and charisma attracts humongous followers, and the gathering keeps growing substantially.His guidance has proved to be a unfathomable spiritual metamorphosis for numerous.
+A treasured gem, a golden chalice overflowing with the wisdom of Vedic Science and Dharamagyan.A fountain of rejuvenating positivity, the reason why inquisitive yet highly enlightened minds cherish the moments spent with his grace. His charisma draws together minds from across geographical, ethnic, religious, political, philosophical and other rigid boundaries and also works towards providing a refined, spiritual living to the people from poor, lower, economically stranded strata of society.
+         </p>
+         <p style="font-weight:bold;">SPIRITUAL EXPERIENCE</p>
+         <p>
+The GURU-SHISHYA doctrine is meticulously observed by all followers of the P.P.Padmanabh Shishya Sampraday. The flame of ‘SADGURUTATWA’ is kept close to the soul of all disciples of the Sadguru.A quest for the power called GOD is simplified for the shishyas thro verbal elaborations or the ASHIRWACHANS of the Sadguru for Self-realization.Each soul is connected to the superpower thro BHAKTI. The real genuine search of the lord almighty ending in love. Remembrance of the guru thro the DHYAN or meditation, flowing like an unbroken stream of oil poured from one vessel to another. This kind of remembering has been taught in relation to GOD in the PadmanabhShishyaSampraday .THE CONSTANT REMEMBERING IS A MEANS TO LIBERATION .
+
+The  relentless efforts of Sadgurumaulito Revive the lost, Uphold the lineageof the Saints, Enlighten the living, Instill Universal Brotherhood, Infuse harmony and uplift humanity above all, has made Goa, a destination of Enlightened Spirituality and has given Goa a truer and more authentic picture of itself.One Darshan and Vichar of his grace transforms the yin into yang, egotistic into compassionate, ultimately one humbly bows down to the charisma of the 'Lotus Feet' of this holy 'Gurupeeth' to quench his thirst of self-realization.The 'Gurupeeth' is the sole delivering entity of 'SatyaShreshtaIshwariDnyan' i.e 'Supreme knowledge of truth'.
+The doctrine of the SATYA SHRESHTHA ESHWARI DNYANA or the divine supreme truth of knowledge  devoid of discrimination on the basis of caste or creed , devoid of blind faith or prejudice is the main mantra of this Sampraday, which has made itself eligible to work in collaboration for the World famous Peace  Conferences from time immemorial.
+        </p>
+         <p style="font-weight:bold;">THE GREAT INDIAN TRADITION</p>
+         <p>
+India is a land of saints’ seer’s philosophers and pious religious leaders. They have gifted humanity the doctrine of peace unity and brotherhood through their work and through the ideal lives they lived. The culturally religious BHARATBHOOMI is also known as the DHARMABHOOMI as we Indians obey and observe all our socio-religious obligations steadfastly reference in the BHAGWAD GITA mentions that god almighty incarnated himself every time there was a breach in these religiousness and righteousness so as to reset this spiritual fabric of truth and dharma.
+Many such incarnations throughout the ancient times have been witnessed amongst us specially of the three headed god LORD DATTATREYA who is a combined trident power of the BRAHMA VISHNU and MAHESHA. These incarnations have taken physical form in the form of guru or spiritual masters as in the PARAMPUJYA PADMANABH SHISHYA SAMPRADAY. In times of fanatism, nepotism, corruption addiction adversities and immorality this positive energy has sprung from the universe as shriDattamaharaj…shripadvallabh..ShriNarsimhasaraswati..shri Akkalkotswamiji…shriswamisamarth..Shrisiddapadacharya swami maharaj…shripadmanabhacharya swami maharaj..shrisusenacharyaswamimaharaj..shrisadanandacharya swami maharaj..shriBrahmanandacharya swami maharaj and the present pithadishwar of the padmanabhshishyasampraday H.H .DharmabhushanshrimadsadguruBrahmeshanandacharya swami maharajji.
+        </p>
+         <p style="font-weight:bold;">SOCIAL INITIATIVE</p>
+         <p>
+H.H. DharmabhushanshrimadsadguruBrahmeshanandacharya swami maharajji , contributions to the GURUPEETH are immense and beyond praise , having received National and International recognition for events like the BHAKTIBRAHMOTSAV,BHAKTI ANANDOTSAV,TAPOBHOOMI TAPAPURTI,DEVASTHAN SAVRAKSHAN,DIVYA DEVASTHAN SABHA, BHAVYA DEVASTHAN GAURAV,VANDE MATARAM,VASUDHAIVAKUTUMBHAKAM, JANKALYAN MAHAYADNYA, BHAGWATSAPTAH, GOA SUVARNAMOHOTSAV, AKHIL BHARTIYA SANTSABHA, THE HINDU DHARMA ACHARYA SABHA,VEDIC CONFERENCES , INTERNATIONAL SANSKRIT SAMMELAN and the yet to be DWI TAPOPURTI CELEBRATIONS in 2017 on the completion of 24 glorious years in history of GOA.
+
+It’s a matter of state and national pride under the brave leadership of H.H. DharmabhushanshrimadsadguruBrahmeshanandacharya swami maharajji, that Hindus and Hindu institutes are brought under one roof amicably with one positive step of the SADGURU amidst the fanatic howling in the world. Be it U.K, CHINA, ITALY, NEPAL, THAILAND, SINGAPORE, the flag of P.P Padmanabhshishyasampradaysoars high and is welcomed with immense love and affection.
+        </p>
+         <p style="font-weight:bold;">NATIONAL AND INTERNATIONAL RECOGNITION</p>
+         <p>
+The world recognition to the P.P SADGURU is for the message of peace and positivity that is given out in the World. It was proved with the proclamation by the British Parliament by honouring his Grace with the Title of  ‘AMBASSADOR OF PEACE’.The MAHABODHI SOCIETY in Srilanka, has conferred His Holinesswith the title of‘INTERNATIONAL PEACE PROMOTER’, for the intervention made to restore peace and bestow wisdom among the people in times of turmoil. SURYA CHANDRA YOGASHRAM has bestowed upon SADGURUJI the Presidential title wholeheartedly.
+SADHANAYOG, China declared Sadguruji as a ‘YOGAMASTER’. AKHIL BHARATIYA SANT SAMITHIconferred P. Gurudev with the title of ‘DHARMABHUSHAN’ on the occasion of AkhilBharatiyaSantSabha. Sadguruji is the one and only proud member representing Goa for the ‘HINDU DHARMA ACHARYA SAMITI’.
+        </p>         
+         <p style="font-weight:bold;">FUNCTIONING OF THE GURUPEETH</p>
+         <p>
+Divine administration, bureaucratic touch for every issue, spiritual and political guidance, super discipline, is taught to all 21 uniquely functioning committees of the Gurupeeth following the strictly laid down principles viz. Health, Yoga, Ayurveda, Social, Spiritual, Vedic research, Youth and Women personality development, ethical behavior, instilling positivity and optimistic attitude to ensure successful living.
+Goa has witnessed first time in the history the contributions of women in the study of the Vedas a brave opportunity granted by  the Dharmabhushan thus creating the VED VIDUSHI which was appreciated by the State Bureaucracy.
+The first Sanskrit University is functioning  in the state of Goa due to the relentless efforts of Sadgurujimaharaj. The Vedic Gurukul and Research Institute of this Tapobhoomi  will create milestone in the near future. The day is not far when Goa would be full of purohits and learned scholars conversing in Sanskrit, the language of the Gods thro the contributions of the purohitprathistan and Sanskrit Prabhodini of this Gurupeeth.
+The SadguruDnyanapeeth is instrumental in laying  strong  foundation in the Educational field for our children creating intellectual and optimistic citizens of India. 
+The NGO of this gurupeeth, the ‘SATGURU foundation’ is recognized internationally for its contributory effort in all fields. The Sat guru Councill of U.A.E is the rare institute framed to function in the Gulf and Arab countries relentlessly. 
+The SadguruYogGurukul and AyurvedDham are twin institutes of the gurupeeth going hand in hand, to ensure healthy living. The Kirtan and SangeetVidhyalay of the Gurupeeth, aims at training people in classical vocal and instrumental music, and have together also achieved many laurels in the state of Goa. The women are empowered to build a colorful social fabric  thro the motherly contributions of JagatJanani.The HINDU sanathan Dharma should blaze and soar high thro the Dharma Shastras. 
+All work is put up on a large canvass of 76 Santsamaj or regional organizations throughout Goa by efficient  administration, unitedly and ethically by the Santsamaj Sanghatana and governing all the above is the Pradhan Mandal, the governing body  after the Supreme hierarchy of SADGURUDEV.
+    </p>
+         
+     </div>
 </div>
- </div>
 </div>
 </div>
 
 
 <div id="aboutsampraday" data-role="page" class="text-shadow-none">
  <div data-role="header" data-id="persistheader" data-position="fixed">
- <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto" onclick='onclickprevbtn()'/></td><td width="auto" class="text-shadow-none page-header-text">About Sampraday</td></tr></table>
+ <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;" width="20px" height="auto" onclick='onclickprevbtn()'/></td><td width="auto" class="text-shadow-none page-header-text">About Sampraday</td></tr></table>
  </div>
   <div data-role="content" style="font-weight: normal;font-size: 1em;">
  <div style="padding:5px;background-color:rgba(255, 255, 255, 0.2);">
@@ -709,7 +735,7 @@ It is this devotion, Principles and philanthropic approach of each individual of
     
 <div id="messagespage" data-role="page" class="text-shadow-none">
  <div data-role="header" data-id="persistheader" data-position="fixed">
- <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;padding-top:15px" width="20px" height="auto" onclick='onclickprevbtn()'/></td><td width="auto" class="text-shadow-none page-header-text">Messages</td></tr></table>
+ <table width="100%" class="page-header"><tr><td width="20px"><img src="jquery/images/icons-png/arrow-l-black.png" style="padding-left:5px;" width="20px" height="auto" onclick='onclickprevbtn()'/></td><td width="auto" class="text-shadow-none page-header-text">Messages</td></tr></table>
  </div>
   <div data-role="content" style="padding:0px !important;">
  <div style="background-color:rgba(255, 255, 255, 0.2);">
@@ -752,13 +778,9 @@ It is this devotion, Principles and philanthropic approach of each individual of
           <div class="display-content-header">Diploma in Jyotish Shastra</div>
           <div class="display-content-body">B.A, M.A and other degree courses.</div>
       </div>
-      <!--<a href="http://srigurudev.org/edu-activities" target="_blank">more..</a>
-      <a id="btnedumore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">More</a>
-      <a id="btneduandmore" href="#" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">And more</a>-->
       <div style="padding:5px;padding-left:10px;padding-right:10px;width=100%">
         <a href="#" onclick="window.open('http://srigurudev.org/edu-activities', '_system');" data-role="button" class="ui-btn sriguru-ui-background text-shadow-none" style="color:black" data-theme="b">more</a>
     </div>
-      <!--<a href="#" onclick="window.open('http://www.kidzout.com', '_system');">www.kidzout.com</a>-->
  </div>
  <div id="edulandingfooter" data-role="footer" data-id="persistheader" data-position="fixed" style="background:rgba(240,240,240,0.7) !important;">
     <table width="100%"><tr>
@@ -776,7 +798,7 @@ It is this devotion, Principles and philanthropic approach of each individual of
  <table width="100%" class="page-header"><tr><td width="auto" class="text-shadow-none page-header-text">CONTACT</td></tr></table>
  </div>
   <div data-role="content">
-      <div class="display-content-body"><div>P.P.PADMANABH SHISHYA SAMPRADAYA<br/>H.O.SHREE KSHTRA TAPOBHOOMI GURUPITH<br/> KUNDAIM -PONDA –GOA.(INDIA) 403115<br/>PH.NO.(OFFICE) 0832-2985019.</div>
+      <div class="display-content-body"><div>P.P.PADMANABH SHISHYA SAMPRADAYA<br/>H.O.SHREE KSHETRA TAPOBHOOMI GURUPEETH<br/> KUNDAIM -PONDA –GOA.(INDIA) 403115<br/>PH.NO.(OFFICE) 0832-2985019.</div>
       <div style="padding-top:10px;text-align:center;"><a href="#" onclick="window.open('https://www.google.co.in/maps/place/Shri+kshetra+Tapobhoomi+gurupith/@15.4533396,73.9452895,14z/data=!4m5!3m4!1s0x3bbfbb939c0759bf:0xf2ea03fe6295bb6c!8m2!3d15.4533396!4d73.962799', '_system');"><img src="img/tapo-address.png" style="width:90%;height:auto;"/></a></div></div>
       <div style="padding-top:10px;width=100%">
           <div class="display-content-header">PRESENT PRESIDENT OF SAMPRADAYA :</div>

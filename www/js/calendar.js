@@ -16,78 +16,6 @@ var calUIdata2 = {"id":"2","theme-color":"#ED3237","currentday-class":"panchang-
 var calUIdata = calUIdata1;
 var calPrevUIdata = calUIdata1;
 
-/*$(document).on('swipeleft', '[id="calcontent"]', function(event){    
-    var months = $(calerdarxml).find("calendar[id='"+ year + "'] > month");
-    if(months.length > month){
-       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
-        nextmonth();
-    }    
-    return false;         
-});
-$(document).on('swiperight', '[id="calcontent"]', function(event){   
-    if(month > 1){
-       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
-        prevmonth();
-    }
-    return false;            
-});*/
-
-/*var panchangimgtopimg = 0;
-function pospanchangimg(){
-    if(panchangimgtopimg == 0){
-        var panheight = $(".panzoom-elements").height();
-        var height = $(".panzoom-elements > img").height();
-        if(height == 0){
-            height = $(".panzoom-elements > img").css("height");
-        }
-        panchangimgtopimg = (panheight - height) / 2
-    }
-    $(".panzoom-elements > img").css("margin-top",panchangimgtopimg+"px");
-}*/
-
-/*
-$( document ).on( "pageshow", "#panchangpage", function() {
-    pospanchangimg();
-});
-$( document ).on( "pageinit", "#panchangpage", function() {
-    $(".panzoom-elements").panzoom({ });    
-    //var img = document.getElementById('panchangimage'); 
-    //$(".panzoom-elements > img").attr("src","img/panchang/"+panchmonth+".jpg");
-    //$(".panzoom-elements > img").css("margin-top","100px");
-    var height = $(document).height();
-    $(".panzoom-elements").css("height",height - (45 + 90) );
-    
-    updateCurrentPachMonth(panchmonth);
-    $("#footerrightnavimgid").click(function(){
-        if(panchmonth == 3){ return;}
-        panchmonth += 1;
-        updateCurrentPachMonth(panchmonth);
-        pospanchangimg();
-    })
-    $("#footerleftnavimgid").click(function(){
-        if(panchmonth == 1){ return;}
-        panchmonth -= 1;        
-        updateCurrentPachMonth(panchmonth);
-        pospanchangimg();
-    })
-});
-
-function updateCurrentPachMonth(panchmonth){   
-    var width = $(document).width();    
-    //var headerht = $("#panchangheader").height();
-    //var footerht = $("#panchangfooter").height();
-    //$(".panzoom-elements > img").attr("width",width);
-    
-    var monthObj = $(calerdarxml).find("calendar[id='"+ year + "'] > month[id='"+ panchmonth + "']");
-    var monthName = $(monthObj).attr("dn"); 
-    $("#panchselectedmonth").text(function(i, oldText) {
-        return monthName;
-    });
-    $(".panzoom-elements").children().remove();
-    $(".panzoom-elements").append("<img src='img/panchang/"+panchmonth+".jpg' width='"+width+"px height='auto' style='margin-left:-15px;' />");
-    
-}*/
-
 function nextmonth(){
     var months = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month");
     if(months.length > calUIdata["selected-month"]){
@@ -106,13 +34,7 @@ function prevmonth(){
 }
 
 function updatecalendardata(){
-    //if(prevselmonth > 0){
-       // $('#calheader').removeClass("month"+ prevselmonth +"-theme");
-    //}    
-    //$('#calheader').addClass("month"+ month +"-theme");
-   // $('#caldivider').css("background",monthcolorcode[calUIdata["selected-month"]-1]);
-    //$('#datahdr').css("background","#e7b149");
-    
+     
     $("#cal-header-text").text(calUIdata["disp-name"]);
     $('#calheader').addClass("calendar-theme");
     $('#caltb').find('tr').remove();
@@ -148,24 +70,17 @@ function updatecalendardata(){
         var dateimg = 'img/mn/'+$(this).attr("id")+'.png';
         var dateclass = "td-non-currentdate";
         var festivaldate = $(this).find("d[tag='0']");
-        /*if($(this).attr("wd") == 0 || (festivaldate.length > 0 && calUIdata["id"] == 1)){
-            dateimg = 'img/mn/red/'+$(this).attr("id")+'.png';
-        }*/
+        
         if(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == $(this).attr("id")){
-            //$(cell).removeClass(calPrevUIdata["currentday-class"]);
-            //$(cell).addClass(calUIdata["currentday-class"]);
             $(cell).attr("style",'width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;');  
             dateimg = 'img/mn/red/'+$(this).attr("id")+'.png';
             dateclass = "td-currentdate"
         }
         
-        /*cell.append('<div id="datevalue"></div><div id="imgdiv" style="width:' + (caltddim - 10) +'px; height:' + (caltddim - 10)+'px;">'+$(this).attr("id")+'</div>');*/
         cell.append('<div id="datevalue"></div><div id="imgdiv" class="'+dateclass+'">'+$(this).attr("id")+'</div>');
-        //cell.append('<div id="datevalue"></div><div id="imgdiv"><img src="'+dateimg +'" width="50%" height="auto"/></div>');
         $(cell).attr("id",$(this).attr("id"));        
         
         
-       // var ismncylce = false;
         if(!($(this).attr("mncycle") === undefined)){
                 if($(this).attr("mncycle") == 0){
                     $(cell).find('#datevalue').attr("style",'background:black;width:' + (caltddim/4) +'px; height:' + (caltddim/4)+'px;border-radius:50%;position: relative;');
@@ -175,16 +90,6 @@ function updatecalendardata(){
                 $(cell).find('#imgdiv').attr("style","position: relative;top:-"+ (caltddim/8) +"px");
                // ismncylce = true;
         }
-        /*if(calUIdata["id"] == 2){
-            var shubdaytypeval = getshubdaytypeval($(this).attr("id"));
-            if(!(shubdaytypeval === undefined)){
-                var shubdaybgcolor = getshubdaytypecolor(shubdaytypeval);
-                var subdaydivheight = 2;
-                //$(cell).css("border","2px solid #db9c5d");
-                $(cell).css("background",shubdaybgcolor);
-                //$(cell).find('#imgdiv').append('<div style="background:'+shubdaybgcolor+';width:70%; height:'+subdaydivheight+'px;margin-left:15%;opacity: 0.2;"></div>');
-            }
-        }*/
         if(wkday == 6){ y += 1;}
         if(y == 5){ y = 0;}        
     });       
@@ -232,38 +137,12 @@ function selectdate(id){
         $("#datedatacol").find("div").each(function(){
          $(this).remove();                              
         });
-        //if(lastSelectedtd != null && !(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == $(lastSelectedtd).attr("id"))){ 
+        
         if(lastSelectedtd != null){
-            //$(lastSelectedtd).removeAttr("style"); 
-            //$(lastSelectedtd).css("width",caltddim);
-            //$(lastSelectedtd).css("height",caltddim);
             $(lastSelectedtd).removeClass("td-selection");
-            /*if(calUIdata["id"] == 2){
-                var shubdaytypeval = getshubdaytypeval($(lastSelectedtd).attr("id"));
-                if(!(shubdaytypeval === undefined)){
-                    var shubdaybgcolor = getshubdaytypecolor(shubdaytypeval);
-                    $(lastSelectedtd).css("background",shubdaybgcolor);
-                }
-            }*/
         }
         
         $(datetd).addClass("td-selection");
-        /*if(calUIdata["id"] == 2){
-            var shubdaytypeval = getshubdaytypeval($(datetd).attr("id"));
-            if(!(shubdaytypeval === undefined)){
-                var shubdaybgcolor = getshubdaytypecolorForSelect(shubdaytypeval);
-                $(datetd).css("background",shubdaybgcolor);
-            }
-        }*/
-        //$(datetd).css("width",caltddim - 10)
-        //$(datetd).css("height",caltddim - 10)
-        /*selectedtdbg = $(datetd).css("background");
-        $(datetd).attr("style",'border: 2px solid '+calUIdata["theme-color"]+';width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;font-weight:bold;');
-        $(datetd).css("background",selectedtdbg)*/
-        //if(!(calUIdata["current-month"] == calUIdata["selected-month"] && calUIdata["current-date"] == id)){
-            /*$(datetd).attr("style",'border: 2px solid '+calUIdata["theme-color"]+';width:' + (caltddim - 10) +'px; height:' + (caltddim - 10) +'px;border-radius:50%;');*/
-            /*$(datetd).find('#imgdiv').append('<div style="background:'+shubdaybgcolor+';width:70%; height:'+subdaydivheight+'px;margin-left:15%;opacity: 0.2;"></div>')*/
-        //}
         lastSelectedtd = $(datetd);
 
         if( "1" == calUIdata.id){
@@ -313,70 +192,19 @@ function selectdate(id){
 
 var caltddim = 0;
 function calculatedimensions(){
-   // var docht = $(document).height();
-    //var landingpagedocht = $("#landingfooter").height();
     var docht = screenheight ;
     var docwd = $(document).width();
     var calheaderht = 90;
-    //alert(docht);
     
     var selectedyearfontsz = "0.9em";
     var selectedmonthfontsz = "1.6em";
     var calweeknamesfontsz = "1.1em";
     var diff = 20;
     
-    /*if(docwd > 420 && docwd < 440){
-        selectedmonthfontsz = "1.6em";
-        selectedyearfontsz = "0.9em";
-        calweeknamesfontsz = "1.1em";
-        //diff += 2;
-    }else if(docwd >= 440 && docwd < 460){
-        calheaderht += 10
-        selectedmonthfontsz = "1.7em";
-        selectedyearfontsz = "0.95em";
-        calweeknamesfontsz = "1.15em";
-        //diff += 2;
-    }else if(docwd >= 460 && docwd < 480){
-        calheaderht += 10
-        selectedmonthfontsz = "1.8em";
-        selectedyearfontsz = "1em";
-        calweeknamesfontsz = "1.2em";
-        //diff += 3;
-    }else if(docwd >= 480 && docwd < 500){
-        calheaderht += 20
-        selectedmonthfontsz = "1.9em";
-         selectedyearfontsz = "1.1em";
-        calweeknamesfontsz = "1.3em";
-        //diff += 4;
-    }else if(docwd >= 500){
-        calheaderht += 30
-        selectedyearfontsz = "1.2em";
-        selectedmonthfontsz = "2em";
-        calweeknamesfontsz = "1.4em";
-        //diff += 6;
-    }
-    */
     $("#calweeknames").css("font-size",calweeknamesfontsz);
     $(".div-selected-year").css("font-size",selectedyearfontsz);
     $("#selectedmonth").css("font-size",selectedmonthfontsz)
-    //$("#calheader").css("height",(calheaderht) + "px !important");
-    //calheaderht = $("#calheader").height();
     caltddim = (docwd/7);
-   // var calcontentheight = (caltddim * 5) + (2 * 5);
-   // $("#calcontent").height(calcontentheight);
-    //var footerheight =  docht - (calheaderht + calcontentheight);  //documentheight -(calendar header height + calendar content height - buffer)
-    //$("#calfooter").height(footerheight);
-    //$("#datedatacol").height(footerheight - 43);
-    
-    //var navheight = (calcontentheight+20);
-    /*$("#calnavleft").css("height",navheight+"px");
-    $("#calnavright").css("height",navheight+"px");
-    $("#calnavleft").css("margin-top","-"+(navheight-10)+"px");
-    $("#calnavright").css("margin-top","-"+(navheight)+"px");
-    $("#calnavright").css("margin-left",docwd-30+"px");
-    $("#righnavimgid").css("margin-top",((navheight/2)-30)+"px");
-    $("#leftnavimgid").css("margin-top",((navheight/2)-30)+"px");*/
-    
     
 }
 
@@ -459,33 +287,13 @@ function funcLoadLatestFeedsInterval(){
 function landingElementsDimensions(){
     var docwd = $(document).width();
     var docht = $(document).height();
-    /*if(docwd < 350){
-        $("#quoteoftheday").hide();
-    }*/
-    //btim = Math.round(docwd * 25/100);
-    tdwd = Math.round(docwd/3);
-    //tdht = docht/3 - 3;
     
+    tdwd = Math.round(docwd/3);
     
     $("#landpgbannertop").find("td").each(function(){
         $(this).css("height",Math.round(docht * 2/100)+"px");
     })
-    /*$("#landpgbanner").find("td").each(function(){
-        $(this).css("height",Math.round(docht * 18/100)+"px");
-    })
-    $("#landpgmainbtnview").find("td").each(function(){
-        $(this).css("height",Math.round(docht * 70/100)+"px");
-    })*/
     
-    
-    /*var mainviewht = Math.round(docwd * 60/100);
-    var counter = 6;
-    $("#tblmainbtnview").find("td").each(function(){
-        $(this).css("height",Math.round(mainviewht/3)+"px");
-        if(counter-- > 1){
-            $(this).css("width",Math.round(tdwd)+"px");
-        }
-    })*/
     var btim = Math.round((tdwd) * 30/100)
     $(".custom-btn").each(function(){        
         $(this).css("height",btim+"px");
@@ -493,23 +301,6 @@ function landingElementsDimensions(){
        
     });
     
-    /*var calheight = 0;
-    $("#renderlandingpagediv").find("tr").each(function(){
-        
-        calheight += $(this).first().height();
-    });
-    alert(calheight);*/
-    /* var footerheight = docht - ($("#landpgbannertop").height() + $("#landpgbanner").height() + $("#landpgmainbtnview").height());
-    $("#landpgfooter").find("td").each(function(){
-        $(this).css("height",Math.round(footerheight)+"px");
-    })*/
-    /* if(docwd >= 460 && docwd < 500){
-            $(this).removeClass("custom-btn");
-            $(this).addClass("medium-custom-btn");
-        }else if(docwd >= 500){
-            $(this).removeClass("custom-btn");
-            $(this).addClass("large-custom-btn");
-        }*/
 }
 
 function readstorefeedsdata(feeddata,feedstorename){
@@ -536,23 +327,15 @@ function retrievelinkjsonobject(str){
 
 var screenheight = 0;
 function hidesplashscreen() {
-    //alert($("#splashscreepage").css("min-height"));
-    //alert($(document).height());
     
     screenheight = $(document).height();
     $.mobile.changePage("#landingpage", "fade");
-    //$.mobile.changePage("#landingpage", {transition: "slide", reverse: false}, true, true); 
-    //hideNav("#splashscreen","-"+$(document).width());
     clearTimeout(splsrnhide);
     splashscreendisplayed = true;
 }
 
 
 var tabmonth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-
-/*$(document).on("pageshow", "#homepage", function() {
-    alert("homepage");
-});*/
 
 var totalfeedcount = 15;
 var allowhistoryview = false;
@@ -630,14 +413,6 @@ function loadlatestfeedsProcess(feeddata,url,container,type){
 
 function updatefeedui(container,data,feeddata){
     populatesinglefeedOrMessage(container,data,1);
-    /*setTimeout(function(){
-        $(container).find(".newfeedscls").removeClass("newfeedscls").addClass("feedscls");
-    }, 1000);*/
-    
-    
-    /*if((feeddata.length - totalfeedcount) > 0){
-        feeddata.splice(0, feeddata.length - totalfeedcount);
-    }*/
 }
 
 function retrievejsondatafromsrv(url,type,callbackfunc){
@@ -720,7 +495,7 @@ function populatesinglefeedOrMessage(container,data,newfeed){
             //var dt = new Date(parts[2],parts[1]-1,parts[0]); 
             var feeddata = data.date.split(' ')[0];
             var dt = new Date(feeddata);
-            var displaydate = (todaydisp == feeddata) ?"Today":dt.getDate() + " "+tabmonth[dt.getMonth()];
+            var displaydate = (todaydisp == feeddata) ?"Today":dt.getDate() + " "+tabmonth[dt.getMonth()] + ", " + (parseInt(dt.getFullYear()) % 2000) ;
             var datedisplayclass = displaydate.replace(" ","_")+"cls";
         
             /*if(feedlastdatedisplay == displaydate){
@@ -732,10 +507,10 @@ function populatesinglefeedOrMessage(container,data,newfeed){
             var feedclass = newfeed == 1 ? "newfeedscls" : "feedscls";
             var feedtypecls = $(container).attr('id')+datedisplayclass;
         
-            var nolinkdata = "<div>	<table><tr>		<td style='width:60%;vertical-align: top;'><table><tr><td style='width:20%;'><img style='width:100%;height:auto;'src='"+typeimg+"'/></td>			<td style='vertical-align: middle;text-align:left;color:grey;font-style: italic;padding-left:5px;font-weight: normal !important;'>"+displaydate+"</td></tr></table><div style='color:black;font-weight: normal !important;'>"+datatodisplay+"</div></td>		<td style='width:40%;padding:5px;'><img style='width:100%;height:auto;' src='"+dataimage+"'  onerror=\"this.src='img/no-preview.png'\"/></td>		</tr>	</table> 	</div>"
+            var nolinkdata = "<div>	<table><tr>		<td style='width:60%;vertical-align: top;'><table><tr><td style='width:20%;'><img style='width:100%;height:auto;'src='"+typeimg+"'/></td>			<td style='vertical-align: middle;text-align:left;color:grey;font-style: italic;padding-left:5px;font-weight: normal !important;font-size:0.8em;'>"+displaydate+"</td></tr></table><div style='color:black;font-weight: normal !important;'>"+datatodisplay+"</div></td>		<td style='width:40%;padding:5px;'><img style='width:100%;height:auto;' src='"+dataimage+"'  onerror=\"this.src='img/no-preview.png'\"/></td>		</tr>	</table> 	</div>"
             
             if(type == "msg-sg" || type == "msg-t"){
-                var msgfrom = "Swamiji";
+                var msgfrom = "Sadguru";
                 var fontcolor = "red";
                 if(type == "msg-t"){
                     msgfrom =  "Tapobhumi";
@@ -750,7 +525,7 @@ function populatesinglefeedOrMessage(container,data,newfeed){
                 $("#messagestodisplay").append(landingpgmessage);
                 msgfrom = "<div style='font-style: italic;padding-bottom:5px;color:"+fontcolor+"'>Message from "+msgfrom+":</div>";
                 
-                nolinkdata = "<div style='padding:1px;'><table width='100%'><tr><td style='vertical-align: middle;text-align:left;color:grey;font-style: italic;padding-left:5px;font-weight: normal !important;'>"+displaydate+"</td><td width='80%' style='vertical-align: top;'>"+msgfrom+"</td></tr><tr><td width='20%' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>";
+                nolinkdata = "<div style='padding:1px;'><table width='100%'><tr><td style='vertical-align: middle;text-align:left;color:grey;font-style: italic;padding-left:5px;font-weight: normal !important;font-size:0.8em;'>"+displaydate+"</td><td width='80%' style='vertical-align: top;'>"+msgfrom+"</td></tr><tr><td width='20%' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>";
             }
             
             var linkdatahtml = nolinkdata;
@@ -760,44 +535,9 @@ function populatesinglefeedOrMessage(container,data,newfeed){
                 linkdatahtml = "<a href='#' onclick='window.open(\""+linkdata.url+"\", \"_system\");' style='text-decoration:none;'>" + nolinkdata + "</a>";
             }*/
         
-            var feeddatahtml = "<div style='width:100%;'>	<div style='padding:5px;border: 0.1em solid rgb(200,200,200);'> "+linkdatahtml+"</div>	<div style='height:5px;background: linear-gradient(rgb(200,200,200), #fff);'></div></div>"
+            var feeddatahtml = "<div style='width:100%;'>	<div style='padding:5px;border: 0.1em solid #eee;'> "+linkdatahtml+"</div>	<div style='height:5px;background: linear-gradient(#eee, #fff);'></div></div>"
         
             $(container).prepend(feeddatahtml);
-            /*var feeddatahtml = "<div style='padding:1px;' class='"+feedclass+" "+feedtypecls+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>";*/
-        
-            
-                        
-            /*if($("."+feedtypecls).size() > 0){
-                if(newfeed == 0){
-                    $("."+feedtypecls).last().after(feeddatahtml);
-                }else if(newfeed == 1 || newfeed == 2){
-                    $("."+feedtypecls).first().before(feeddatahtml);
-                }
-            }else{         
-                var feeddatehtml = "<div class='"+datedisplayclass+" feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>";
-                
-                if(newfeed == 1 || newfeed == 2){
-                    $(container).prepend(feeddatahtml);
-                    $(container).prepend(feeddatehtml);
-                }else{                    
-                    $(container).find(".moreImgcls").before(feeddatehtml);
-                    $(container).find(".moreImgcls").before(feeddatahtml);
-                }
-            }*/
-            if($(container).find(".feedscls").length > totalfeedcount && !allowhistoryview){
-                var oldlastfeed = $(container).find(".feedscls").last();
-                if($(oldlastfeed).prev().hasClass("feeddatecls")){
-                    $(oldlastfeed).prev().remove();
-                }
-                $(oldlastfeed).remove();
-            }
-        
-            //var feedclass = newfeed ? "newfeedscls" : "feedscls";
-        /*    var feedclass = "feedscls";
-                        
-            $(container).prepend("<div style='padding:1px;' class='"+feedclass+"'><table width='100%'><tr><td width='20%'' style='padding:5px;vertical-align: top;' ><img src='"+typeimg+"' style='width:80%;height:auto;'/></td><td width='80%' style='padding:5px;vertical-align: top;'>"+datatodisplay+"</td></tr></table></div>");
-        
-            $(container).prepend("<div class='"+displaydate.replace(" ","_")+"cls feeddatecls' style='margin-top:5px'><table width='100%'><tr><td style='text-align:center;font-style: italic;'>"+displaydate+"</td></tr></table></div>");
             
             if($(container).find(".feedscls").length > totalfeedcount && !allowhistoryview){
                 var oldlastfeed = $(container).find(".feedscls").last();
@@ -806,21 +546,9 @@ function populatesinglefeedOrMessage(container,data,newfeed){
                 }
                 $(oldlastfeed).remove();
             }
-            var historyfunc = $(container).attr('id') == 'feedscontainer' ? 'loadhistorynotificationfeeds' : 'loadhistorymessagefeeds';
-            if($(container).find(".moreImgcls").length == 0){
-                $(container).append("<div class='moreImgcls'><table width='100%'><tr><td><div width='100%' style='text-align:center;'><a href='#' onclick='return "+historyfunc+"()'><img src='jquery/images/icons-png/carat-d-black.png' style='width:5%;height:auto;'/></a></div></td></tr></table></div>");
-            }
-        */
+        
         }
 }
-
-/*function historyfeedsnotification(){
-    alert("hello1");
-}
-
-function historyfeedsmessages(){
-    alert("hello2");
-}*/
 
 var maincalloaded = false;
 $( document ).on( "pageinit", "#maincalender", function() {
@@ -831,13 +559,7 @@ $( document ).on( "pageinit", "#maincalender", function() {
     
     $('#calheader').addClass("month"+ month +"-theme");
     maincalloaded = true;
-    /*$("#calnavleft").find("img").click(function() {
-        prevmonth();
-    });
-    $("#calnavright").find("img").click(function() {
-        nextmonth();
-    });*/
-    
+        
 });
 
 function createFinderMenu(findermenuid){
@@ -848,8 +570,6 @@ function createFinderMenu(findermenuid){
         }
     });
 }
-
-
 
 function showcalender(){
     calPrevUIdata = calUIdata;
@@ -884,79 +604,11 @@ $( document ).on( "pageinit", "#finder-page", function() {
 });
 
 $( document ).on( "pageinit", "#educationpage", function() {
-    /* $("#btnedumore").on("click", function() {
-    if (typeof navigator !== "undefined" && navigator.app) {
-        // Mobile device.
-        alert("navigate");
-        window.open("http://www.google.com", '_self ', 'location=yes');
-        //navigator.app.loadUrl('http://srigurudev.org/edu-activities', {openExternal: true});
-    } else {
-        // Possible web browser
-        alert("Window open");
-        window.open("http://srigurudev.org/edu-activities", "_blank");
-    }
-    });
     
-   $("#btneduandmore").on("click", function() {
-    if (typeof navigator !== "undefined" && navigator.app) {
-        // Mobile device.
-        alert("navigate2");
-        //navigator.app.loadUrl('http://www.google.com', {openExternal: true});
-        window.open("http://www.google.com", "_blank");
-    } else {
-        // Possible web browser
-        alert("Window open");
-       window.open("http://srigurudev.org/edu-activities", '_self ', 'location=yes');
-    }
-    });*/
-    
-    /*var value = window.localStorage.getItem("today");
-    
-    alert(value);
-    
-    window.localStorage.clear();
-    
-    value = window.localStorage.getItem("today");
-    alert(value);
-    
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth()+1; //January is 0!
-    var yyyy = today.getFullYear();
-
-    if(dd<10) {
-        dd='0'+dd
-    } 
-
-    if(mm<10) {
-        mm='0'+mm
-    } 
-
-    today = mm+'/'+dd+'/'+yyyy;
-    value = window.localStorage.getItem("today");
-    window.localStorage.setItem("today", today);*/
 });
-
-/*$(document).on('click', '#message-prevpagebtn', function () {
-  onclickprevbtn();
-});
-
-$(document).on('click', '#prev-page', function () {
-  onclickprevbtn();
-});
-
-$(document).on('click', '#calprevpage', function () {
-  onclickprevbtn();
-});*/
 
 function onclickprevbtn(){
-   /* prevpage = $.mobile.activePage.prev();
-    if ($.mobile.activePage.prev('.ui-page').length !== 0) {
-   var prev = $.mobile.activePage.prev('.ui-page');
-   $.mobile.changePage(prev, {
-       reverse: true
-   });
-  }*/
+   
   pagedata = pageundosequence.pop();
   if(pagedata.data == null){
     $.mobile.changePage($("#"+pagedata.pageid), {
@@ -970,20 +622,16 @@ function onclickprevbtn(){
 
 function oncalswiperight(){
     if(calUIdata["selected-month"] > 1){
-       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: true}, true, true);
         prevmonth();
     }
-    //showNav("#calnavleft",-30);showNav("#calnavright",30);
     return false;     
 }
 
 function oncalswipeleft(){
     var months = $(calerdarxml).find("calendar[id='"+ calUIdata["selected-year"] + "'] > month");
     if(months.length > calUIdata["selected-month"]){
-       // $.mobile.changePage("#maincalender", {transition: "slide", reverse: false}, true, true);  
         nextmonth();
     }    
-    //showNav("#calnavleft",-30);showNav("#calnavright",30);
     return false;
 }
 
@@ -1114,36 +762,19 @@ $(document).on("pagebeforeshow","#maincalender",function(){ // When entering mai
   $('body').removeClass("body-initstyle");
   $('body').removeClass("body-mainpanchangbg");
   $('body').removeClass("body-maincalenderbg");
-  /*$("#maincalbgimage").removeClass("cal-bgimage");
-  $("#maincalbgimage").removeClass("panchang-bgimage");
-  if(calUIdata["id"] == "1"){ 
-      $('body').addClass("body-maincalenderbg");
-      $("#maincalbgimage").addClass("cal-bgimage");
-  }else{
-      $('body').addClass("body-mainpanchangbg");
-      $("#maincalbgimage").addClass("panchang-bgimage");
-  }*/
 });
 
 $(document).on("pagebeforehide","#maincalender",function(){ // When leaving mainclander
-    /*$('body').removeClass("body-initstyle");
-    $('body').removeClass("body-mainpanchangbg");
-    $('body').removeClass("body-maincalenderbg");
-    $('body').addClass("body-landingpgbg");*/
-    //removeAllBodyBackground()
 });
 
 function removeAllBodyBackground(){
   $('body').removeClass("body-landingpgbg");
   $('body').removeClass("body-initstyle");
-  /*$('body').removeClass("body-mainpanchangbg");
-  $('body').removeClass("body-maincalenderbg");*/
 }
 
 
 $(document).on("pagebeforeshow","#landingpage",function(){
     removeAllBodyBackground();
-    //$('body').addClass("body-landingpgbg");
 });
 
 $(document).on("pagebeforehide","#landingpage",function(){
@@ -1166,8 +797,7 @@ function onLoad() {
 // Cordova is loaded and it is now safe to make calls Cordova methods
 //
 function onDeviceReady() {
-    deviceReadyBgchange();    
-    //$('#splashscreen').show();
+    deviceReadyBgchange();
     document.addEventListener("resume", onResume, false);
     funcLoadLatestFeedsInterval();
     var todayDate = new Date();
